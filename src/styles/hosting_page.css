@@ -1,0 +1,128 @@
+.hosting_page .top {
+  height: 100vh;
+  background: url("../assets/images/timage6.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+}
+.hosting_page .more {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background: url("../assets/images/gif-bg\ stars.gif");
+}
+.hosting_page .top > .info {
+  padding: 0 1.5em;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* background: red; */
+}
+
+.hosting_page .top > .info > h1 {
+  color: #fff;
+  font-family: Saira;
+  font-size: 34px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 60px; /* 93.75% */
+  letter-spacing: -1.28px;
+  text-transform: uppercase;
+  /* margin-bottom: 2em; */
+}
+.hosting_page .top > .info > p {
+  width: 500px;
+  color: #fff;
+  font-family: Roboto;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 34px; /* 121.429% */
+  letter-spacing: -0.56px;
+  text-transform: capitalize;
+}
+.hosting_page .top .btns {
+  display: flex;
+  margin-top: 1em;
+}
+.hosting_page .top .btns > button:nth-child(1) {
+  /* display: flex; */
+  margin-right: 1em;
+}
+.hosting_page .hosting_compartido .hosting_compartido_cont {
+  display: flex;
+}
+.hosting_page .hosting_compartido .hosting_compartido_each {
+  width: calc((100% / 3) - 8em);
+  margin: 4em;
+}
+.hosting_page .hosting_compartido .hosting_compartido_each .image {
+  border-radius: 12px;
+  border: 1px solid #86ffe9;
+  background: rgba(43, 43, 43, 0.9);
+  backdrop-filter: blur(150px);
+  width: 100%;
+  padding: 2em 1em;
+  height: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.hosting_page .hosting_compartido .hosting_compartido_each .image img {
+  height: 100%;
+}
+.hosting_page .hosting_compartido .hosting_compartido_each h1 {
+  color: #fff;
+  text-align: center;
+  font-family: Saira;
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 700;
+  /* line-height: 42px; 116.667% */
+  margin: 1em 0;
+}
+.hosting_page .hosting_compartido .hosting_compartido_each p {
+  color: #fff;
+  text-align: center;
+  font-family: Saira;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  /* line-height: 36px; 150% */
+}
+.hosting_page .hosting_compartido .select_plan .select_plan_cont {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.hosting_page .hosting_compartido .select_plan .selct_plan_each {
+  border-radius: 12px;
+  border: 1px solid #86ffe9;
+  background: rgba(7, 11, 15, 0.3);
+  backdrop-filter: blur(150px);
+  text-align: center;
+  width: calc((100% / 2) - 4em);
+  padding: 2em 1.7em;
+  margin: 2em;
+}
+.hosting_page .hosting_compartido .select_plan .selct_plan_each h1 {
+  color: #fff;
+  text-align: center;
+  font-family: Saira;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 700;
+  /* line-height: 42px; 105% */
+}
+.hosting_page .hosting_compartido .select_plan .selct_plan_each p {
+  color: #fff;
+  text-align: center;
+  font-family: Saira;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  margin-bottom: 1em;
+  /* line-height: 36px; 128.571% */
+}

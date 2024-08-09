@@ -1,5 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Saira:ital,wght@0,100..900;1,100..900&display=swap');
-*{
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Saira:ital,wght@0,100..900;1,100..900&display=swap");
+* {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
@@ -7,39 +7,45 @@
   font-optical-sizing: auto;
   /* font-weight: <weight>; */
   font-style: normal;
-  font-variation-settings:
-    "wdth" 100;
+  font-variation-settings: "wdth" 100;
 }
-body{
+body {
   background: rgb(0, 62, 87);
 }
-.btn_op{
-  background: linear-gradient(90deg,#86FFE9, #237D8D,#1A9CA6,#AA6F56,#26AABC);
+.btn_op {
+  background: linear-gradient(
+    90deg,
+    #86ffe9,
+    #237d8d,
+    #1a9ca6,
+    #aa6f56,
+    #26aabc
+  );
   position: relative;
   border-radius: 8px;
   width: max-content;
   padding: 13px 35px;
   /* overflow: hidden; */
   min-width: 150px;
-  transition: .5s;
+  transition: 0.5s;
   cursor: pointer;
 }
-.btn_op > .word> p{
-  color: #FFFFFF;
+.btn_op > .word > p {
+  color: #ffffff;
   font-size: 16px;
   font-weight: 600;
   text-align: center;
-  transition: .5s;
+  transition: 0.5s;
 }
-.btn_op > .word{
+.btn_op > .word {
   position: relative;
   z-index: 2;
 }
-.btn_op > .bgSpan{
-  transition: .5s;
+.btn_op > .bgSpan {
+  transition: 0.5s;
   background: #2b2b2b;
   height: calc(100% - 2px);
-  width:  calc(100% - 2px);
+  width: calc(100% - 2px);
   position: absolute;
   left: 50%;
   top: 50%;
@@ -48,27 +54,55 @@ body{
   z-index: 1;
 }
 
-.full_gradient_btn{
-  background: linear-gradient(90deg,#3CD1E3B2,#98ADAEB2,#AF745CB2);
-  color: #86FFE9;
-  padding: .3em 1em;
+.full_gradient_btn {
+  background: linear-gradient(90deg, #3cd1e3b2, #98adaeb2, #af745cb2);
+  color: #86ffe9;
+  padding: 0.3em 1em;
   border: none;
   font-size: 20px;
   font-weight: 700;
   border-radius: 6px;
   cursor: pointer;
   width: max-content;
+  transition: ease-in-out 0.1;
+}
+.btn-1 {
+  border-radius: 8px;
+  border: 1px solid #86ffe9;
+  background: rgba(134, 255, 233, 0.2);
+  backdrop-filter: blur(150px);
+  display: flex;
+  padding: 0.3em 1em;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  flex-shrink: 0;
+  color: #fff;
+  font-family: Saira;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  cursor: pointer;
+  transition: ease-in-out 0.1s;
+}
+.btn-1:active,
+.full_gradient_btn:active {
+  transform: scale(0.95);
 }
 
-.title{
+.title {
   font-size: 40px;
   font-family: 700;
-  color: #FFFFFF;
+  color: #ffffff;
   text-align: center;
 }
-.sub_title{
+.sub_title {
   font-size: 26px;
   font-weight: 500;
-  color: #D9D9D9;
+  color: #d9d9d9;
   text-align: center;
+}
+body {
+  background: url("./assets/images/gif-bg\ stars.gif");
 }

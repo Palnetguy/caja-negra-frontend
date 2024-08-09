@@ -1,18 +1,23 @@
-.solicitar_page .top {
+.contactus_page .top {
   height: 100vh;
-  background: url("../assets/images/timage4.png");
+  background: url("../assets/images/Background-contact\ 1.png");
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
   display: flex;
   flex-direction: column;
   /* align-items: center; */
 }
-.solicitar_page .more {
+.contactus_page .more {
   background-repeat: no-repeat;
   background-size: cover;
   background: url("../assets/images/gif-bg\ stars.gif");
 }
-.solicitar_page .top > .info {
+.contactus_page .domains > button {
+  /* margin: 10em 0; */
+  margin: 3em auto;
+  display: block;
+}
+.contactus_page .top > .info {
   padding: 0 1.5em;
   flex: 1;
   display: flex;
@@ -21,7 +26,7 @@
   /* background: red; */
 }
 
-.solicitar_page .top > .info > h1 {
+.contactus_page .top > .info > h1 {
   color: #fff;
   font-family: Saira;
   font-size: 34px;
@@ -30,49 +35,56 @@
   line-height: 60px; /* 93.75% */
   letter-spacing: -1.28px;
   text-transform: uppercase;
+  /* margin-bottom: 2em; */
 }
-.solicitar_page .top > .info > p {
+.contactus_page .top > .info > p {
   color: #fff;
   font-family: Roboto;
-  font-size: 16x;
+  font-size: 18px;
   font-style: normal;
   font-weight: 400;
   line-height: 34px; /* 121.429% */
   letter-spacing: -0.56px;
   text-transform: capitalize;
 }
-
-.solicitar_page .quieres_saber {
-  padding-top: 2em;
-}
-.solicitar_page .quieres_saber .quieres {
+.contactus_page .top .btns {
   display: flex;
-  flex-wrap: wrap;
-  margin-top: 2em;
+  margin-top: 1em;
 }
-.solicitar_page .quieres_saber .quieres .quiery {
-  width: calc((100% / 3) - 2em);
-  margin: 1em;
+.contactus_page .top .btns > button:nth-child(1) {
+  /* display: flex; */
+  margin-right: 1em;
 }
 
-.solicitar_page .quieres_saber .quieres .quiery > h1 {
+.contactus_page .contactus_pageop .info {
+  text-align: center;
+  margin: 5em;
+}
+.contactus_page .contactus_pageop .more_info {
+  display: flex;
+  justify-content: center;
+}
+.contactus_page .contactus_pageop .info h1 {
   color: #fff;
-  /* text-align: center; */
+  text-align: center;
   font-family: Saira;
-  font-size: 26px;
+  font-size: 30px;
   font-style: normal;
   font-weight: 700;
-  line-height: 42px; /* 116.667% */
+  /* line-height: 42px; 105% */
 }
-.solicitar_page .quieres_saber .quieres .quiery > p {
+.contactus_page .contactus_pageop .info p {
   color: #fff;
   font-family: Saira;
-  font-size: 14px;
+  font-size: 18px;
   font-style: normal;
   font-weight: 500;
-  line-height: 36px; /* 150% */
+  /* line-height: 36px; 128.571% */
 }
-.solicitar_page input {
+.contactus_page .contactus_pageop .contact_form > h1{
+    margin-bottom: 2em;
+}
+.contactus_page .contactus_pageop .contact_form input {
   border-radius: 4px;
   border: 1px solid #d9d9d9;
   background: #2b2b2b;
@@ -88,7 +100,7 @@
   outline: none;
   margin: 0.5em 0;
 }
-.solicitar_page textarea {
+.contactus_page .contactus_pageop .contact_form textarea {
   margin: 0.5em 0;
   border-radius: 4px;
   border: 1px solid #d9d9d9;
@@ -105,12 +117,12 @@
   outline: none;
   min-height: 200px;
 }
-.solicitar_page .form {
+.contactus_page .contactus_pageop .contact_form {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-.solicitar_page .form > .full_gradient_btn {
+.contactus_page .contactus_pageop .contact_form > .full_gradient_btn {
   margin-top: 0.8em;
 }

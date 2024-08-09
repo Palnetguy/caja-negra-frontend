@@ -1,40 +1,41 @@
-.nav_bar{
-    /* background: red; */
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1.5em;
+.nav_bar {
+  /* background: red; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5em;
 }
 
 .nav_bar > .links > ul > li > a {
-    font-weight: 600;
-    font-size: 20px;
-    color: #FFFFFF;
-    text-decoration: none;
-    transition: .5s ease-in-out;
+  font-weight: 600;
+  font-size: 20px;
+  color: #ffffff;
+  text-decoration: none;
+  transition: 0.5s ease-in-out;
 }
 .nav_bar > .links > ul > li > a:hover {
-    color: #86FFE9;
+  color: #86ffe9;
 }
-.nav_bar > .links > ul > li{
-    margin: 0 .5em;
-    list-style-type: none;
+.nav_bar > .links > ul > li {
+  margin: 0 0.5em;
+  list-style-type: none;
 }
-.nav_bar > .links > ul  {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
- }
-.nav_bar > .contact_btn > button {
-    padding: 6px 20px;
-    font-size: 18px;
-    color: #003330;
-    font-weight: 700;
-    border-radius: 6px;
-    background: linear-gradient(#86FFE9, #02BAC6, #037B83);
-    border: none;
-    outline: none;
- }
+.nav_bar > .links > ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav_bar > .contact_btn button {
+  padding: 6px 20px;
+  font-size: 18px;
+  color: #003330;
+  font-weight: 700;
+  border-radius: 3px;
+  background: linear-gradient(90deg, #86ffe9, #02bac6, #037b83);
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
 .nav_bar > .logo > img {
-    width: 150px;
+  width: 150px;
 }
