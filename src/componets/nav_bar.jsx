@@ -20,27 +20,39 @@ const NavBar = () => {
         <div className="links">
           <ul>
             <li>
-              <Link to="/">Inicio</Link>
+              <Link target="_top" to="/">
+                Inicio
+              </Link>
             </li>
             <li>
-              <Link to="/desarollo">Desarollo</Link>
+              <Link target="_top" to="/desarollo">
+                Desarollo
+              </Link>
             </li>
             <li>
-              <Link to="/dominos">Dominios</Link>
+              <Link target="_top" to="/dominos">
+                Dominios
+              </Link>
             </li>
             <li>
-              <Link to="/servers">Servidores</Link>
+              <Link target="_top" to="/servers">
+                Servidores
+              </Link>
             </li>
             <li>
-              <Link to="/hosting">Hosting</Link>
+              <Link target="_top" to="/hosting">
+                Hosting
+              </Link>
             </li>
             <li>
-              <Link to="/about">Sobre nosotros</Link>
+              <Link target="_top" to="/about">
+                Sobre nosotros
+              </Link>
             </li>
           </ul>
         </div>
         <div className="contact_btn">
-          <Link to="/contact">
+          <Link target="_top" to="/contact">
             <button>Contacto</button>
           </Link>
         </div>
@@ -58,28 +70,39 @@ const NavBar = () => {
           <div className="links">
             <ul>
               <li>
-                <Link to="/">Inicio</Link>
+                <Link target="_top" to="/">
+                  Inicio
+                </Link>
               </li>
               <li>
-                <Link to="/desarollo">Desarollo</Link>
+                <Link target="_top" to="/desarollo">
+                  Desarollo
+                </Link>
               </li>
               <li>
-                <Link to="/dominos">Dominios</Link>
+                <Link target="_top" to="/dominos">
+                  Dominios
+                </Link>
               </li>
               <li>
-                <Link to="/servers">Servidores</Link>
+                <Link target="_top" to="/servers">
+                  Servidores
+                </Link>
               </li>
               <li>
-                <Link to="/hosting">Hosting</Link>
+                <Link target="_top" to="/hosting">
+                  Hosting
+                </Link>
               </li>
               <li>
-                <Link to="/about">Sobre nosotros</Link>
+                <Link target="_top" to="/about">
+                  Sobre nosotros
+                </Link>
               </li>
-             
             </ul>
           </div>
           <div className="contact_btn">
-            <Link to="/contact">
+            <Link target="_top" to="/contact">
               <button>Contacto</button>
             </Link>
           </div>

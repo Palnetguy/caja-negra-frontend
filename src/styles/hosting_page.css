@@ -195,6 +195,14 @@
   .hosting_page .top > .info > p {
     width: auto;
   }
+  .hosting_page .revender .hosting_compartido_each {
+    width: calc((100% / 1) - 8em);
+    margin: 4em;
+  }
+  .hosting_page .revender .hosting_compartido_cont {
+    display: flex;
+    flex-wrap: wrap;
+  }
   .hosting_page .hosting_compartido .hosting_compartido_each {
     width: calc((100% / 1) - 8em);
     margin: 4em;

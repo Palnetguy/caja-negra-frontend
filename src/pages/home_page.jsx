@@ -137,7 +137,9 @@ const Services = () => {
               <div className="info">
                 <h1>VPS Linux</h1>
                 <h2>CPU 2 - RAM 8GB - SSD 200GB</h2>
-                <button>Solicitar</button>
+                <Link target="_top" to="/solicitar">
+                  <button>Solicitar</button>
+                </Link>
               </div>
             </div>
             <div className="each_ofertas ">
@@ -145,7 +147,9 @@ const Services = () => {
               <div className="info">
                 <h1>VPS Linux</h1>
                 <h2>CPU 2 - RAM 8GB - SSD 200GB</h2>
-                <button>Solicitar</button>
+                <Link target="_top" to="/solicitar">
+                  <button>Solicitar</button>
+                </Link>
               </div>
             </div>
             <div className="each_ofertas ">
@@ -153,7 +157,9 @@ const Services = () => {
               <div className="info">
                 <h1>VPS Linux</h1>
                 <h2>CPU 2 - RAM 8GB - SSD 200GB</h2>
-                <button>Solicitar</button>
+                <Link target="_top" to="/solicitar">
+                  <button>Solicitar</button>
+                </Link>
               </div>
             </div>
           </div>
@@ -200,7 +206,7 @@ const Services = () => {
       </div>
       <div className="ver">
         <p>Ver todo los servicios de datos que ofrecemos</p>
-        <Link to="data-services">
+        <Link target="_top" to="data-services">
           <div className="btn_op">
             <div className="bgSpan"></div>
             <div className="word">
@@ -299,7 +305,7 @@ const Services = () => {
           ¿Estás interesado en datos y te gustaría conocer el tipo de servicio
           de datos que ofrecemos?"
         </h1>
-        <Link to="data-services">
+        <Link target="_top" to="data-services">
           <button className="full_gradient_btn">Ver Detalles</button>
         </Link>
       </div>

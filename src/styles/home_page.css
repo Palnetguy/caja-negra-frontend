@@ -11,13 +11,12 @@
   text-align: center;
   flex-direction: column;
 }
-.home_page {
-  /* padding: 1.5em; */
-}
 .home_page .main > h1 {
   color: #86ffe9;
   font-size: 44px;
   font-family: 800;
+  line-height: 1;
+  margin: 0 1.5em;
 }
 
 .home_page .main > p {
@@ -26,6 +25,8 @@
   font-family: 500;
   color: #ffffff;
   margin: 1em 0;
+  line-height: 1;
+  margin: 0.5em 1.5em;
 }
 @media (max-width: 980px) {
   .home_page .main > h1 {
@@ -351,13 +352,7 @@
   font-weight: 500;
   margin-bottom: 1em;
 }
-.home_page
-  .services
-  .oferta
-  > .ofertas_container
-  .each_ofertas
-  > .info
-  > button {
+.home_page .services .oferta > .ofertas_container .each_ofertas > .info button {
   background: linear-gradient(90deg, #3cd1e3b2, #98adaeb2, #af745cb2);
   color: #86ffe9;
   padding: 0.3em 1em;
@@ -839,6 +834,7 @@
   font-weight: 700;
   text-align: center;
   padding: 1.5em;
+  line-height: 1.2;
 }
 
 .home_page .remarks .remark {

@@ -69,3 +69,17 @@
 .aboutus_page .aboutusop {
   padding-bottom: 6em;
 }
+
+@media (max-width: 780px) {
+  .aboutus_page .aboutusop p {
+    color: #fff;
+    font-family: Roboto;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 34px;
+    letter-spacing: -0.56px;
+    text-transform: capitalize;
+    padding: 0 2.5em;
+  }
+}
