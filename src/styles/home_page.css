@@ -303,8 +303,8 @@
   /* overflow: hidden; */
   min-width: 150px;
   transition: 0.5s;
-  width: calc((100% / 2) - 3em);
-  margin-bottom: 2em;
+  width: calc((100% / 2) - 10em);
+  margin-bottom: 5em;
 }
 @media (max-width: 980px) {
   .home_page .services .oferta > .ofertas_container .each_ofertas {
@@ -326,6 +326,7 @@
 .home_page .services .oferta > .ofertas_container .each_ofertas > .info {
   position: relative;
   z-index: 2;
+  text-align: center;
 }
 .home_page .services .oferta > .ofertas_container .each_ofertas > .bgSpan {
   transition: 0.5s;
@@ -374,7 +375,7 @@
   margin: 0 1.5em;
   margin-top: 2em;
 }
-.home_page .services .ver  .btn_op {
+.home_page .services .ver .btn_op {
   display: flex;
   justify-content: center;
   align-items: center;

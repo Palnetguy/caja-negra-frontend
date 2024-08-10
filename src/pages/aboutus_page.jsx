@@ -44,7 +44,6 @@ const AboutUsPageOp = () => {
   return (
     <div className="aboutusop">
       <div className="info">
-        <h1>SOBRE nOSOTROS</h1>
         <p>
           Nuestra misión en Caja Negra es empoderar a empresas e individuos con
           soluciones tecnológicas de vanguardia que impulsen la eficiencia, la

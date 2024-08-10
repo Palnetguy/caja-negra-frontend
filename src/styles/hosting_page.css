@@ -192,6 +192,9 @@
   }
 }
 @media (max-width: 780px) {
+  .hosting_page .top > .info > p {
+    width: auto;
+  }
   .hosting_page .hosting_compartido .hosting_compartido_each {
     width: calc((100% / 1) - 8em);
     margin: 4em;
@@ -210,5 +213,5 @@
     width: calc((100% / 1) - 4em);
     padding: 2em 1.7em;
     margin: 2em;
-}
+  }
 }
