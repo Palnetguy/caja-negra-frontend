@@ -15,6 +15,7 @@ import pay_mth_im from "../assets/images/Group 36 (1).png";
 import bestVPSiM from "../assets/images/Best-VPS-Hosting-Plans 1 (1).png";
 import { useState } from "react";
 import CustomDropdown from "../componets/dropdown";
+import { Link } from "react-router-dom";
 
 const HomePage = () => {
   return (
@@ -59,8 +60,8 @@ const Services = () => {
 
   return (
     <div className="services">
-      <h2>Servicios Garantizado</h2>
-      <h1>¿Por qué elegirnos?</h1>
+      <h2 className="sub_title">Servicios Garantizado</h2>
+      <h1 className="title">¿Por qué elegirnos?</h1>
       {/* Services */}
       <div className="services_container">
         <div className="service">
@@ -104,8 +105,8 @@ const Services = () => {
         </div>
       </div>
       <div className="oferta">
-        <h2>Servidores Oferta</h2>
-        <h1>Nuestras ofertas</h1>
+        <h2 className="sub_title">Servidores Oferta</h2>
+        <h1 className="title">Nuestras ofertas</h1>
 
         <div className="btns">
           <div
@@ -199,12 +200,14 @@ const Services = () => {
       </div>
       <div className="ver">
         <p>Ver todo los servicios de datos que ofrecemos</p>
-        <div className="btn_op">
-          <div className="bgSpan"></div>
-          <div className="word">
-            <p>Ver</p>
+        <Link to="data-services">
+          <div className="btn_op">
+            <div className="bgSpan"></div>
+            <div className="word">
+              <p>Ver</p>
+            </div>
           </div>
-        </div>
+        </Link>
       </div>
       <div className="th_words">
         <p>Backup Diarios</p>
@@ -296,7 +299,9 @@ const Services = () => {
           ¿Estás interesado en datos y te gustaría conocer el tipo de servicio
           de datos que ofrecemos?"
         </h1>
-        <button className="full_gradient_btn">Ver Detalles</button>
+        <Link to="data-services">
+          <button className="full_gradient_btn">Ver Detalles</button>
+        </Link>
       </div>
       <div className="garantee">
         <h1>
@@ -329,7 +334,7 @@ const Services = () => {
           </div>
         </div>
 
-        <h1>Medios de pago</h1>
+        <h1 className="title">Medios de pago</h1>
         <div className="pay_mth_img">
           <img src={pay_mth_im} alt="" />
         </div>

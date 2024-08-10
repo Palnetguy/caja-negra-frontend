@@ -1,5 +1,5 @@
 .aboutus_page .top {
-  height: 100vh;
+  min-height: 100vh;
   background: url("../assets/images/Background-contact\ 1.png");
   background-repeat: no-repeat;
   background-size: fill;

@@ -1,79 +1,93 @@
-.data_services  .top{
-    height: 100vh;
-    background: url('../assets/images/timage7.png');
-    background-repeat: no-repeat;
-    background-size: contain;
-    display: flex;
-    flex-direction: column;
-    /* align-items: center; */
+.data_services .top {
+  height: 100vh;
+  background: url("../assets/images/timage7.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
 }
-.data_services .more{
-    background-repeat: no-repeat;
-    background-size: cover;
-    background: url('../assets/images/gif-bg\ stars.gif');
+.data_services .more {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background: url("../assets/images/gif-bg\ stars.gif");
 }
-.data_services  .top > .info{
-    padding: 0 1.5em;
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    /* background: red; */
+.data_services .top > .info {
+  padding: 0 1.5em;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* background: red; */
 }
 
-.data_services .top > .info >h1{
-    color: #FFF;
-    font-family: Saira;
-    font-size: 34px;
-    font-style: normal;
-    font-weight: 800;
-    line-height: 60px; /* 93.75% */
-    letter-spacing: -1.28px;
-    text-transform: uppercase;
+.data_services .top > .info > h1 {
+  color: #fff;
+  font-family: Saira;
+  font-size: 34px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 60px; /* 93.75% */
+  letter-spacing: -1.28px;
+  text-transform: uppercase;
 }
-.data_services .top > .info > p{
-    color: #FFF;
-    font-family: Roboto;
-    font-size: 16x;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 34px; /* 121.429% */
-    letter-spacing: -0.56px;
-    text-transform: capitalize;
+.data_services .top > .info > p {
+  color: #fff;
+  font-family: Roboto;
+  font-size: 16x;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 34px; /* 121.429% */
+  letter-spacing: -0.56px;
+  text-transform: capitalize;
 }
-.data_services .data_services_op > h1{
-    width: 500px;
-    margin: 0 auto;
+.data_services .data_services_op > h1 {
+  /* width: 500px; */
+  margin: 0 auto;
 }
-.data_services .data_services_op > .data_serv_container{
-    display: flex;
-    flex-wrap: wrap;
-    padding: 0 2em;
+.data_services .data_services_op > .data_serv_container {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 2em;
 }
-.data_services .data_services_op .data_serv{
+.data_services .data_services_op .data_serv {
+  border-radius: 12px;
+  border: 1px solid #86ffe9;
+  background: rgba(7, 11, 15, 0.3);
+  backdrop-filter: blur(150px);
+  padding: 2.5em;
+  width: calc((100% / 2) - 1em);
+  margin: 0.5em;
+}
+.data_services .data_services_op .data_serv > h1 {
+  color: #fff;
+  /* text-align: center; */
+  font-family: Saira;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 42px; /* 105% */
+}
+.data_services .data_services_op .data_serv > p {
+  color: #fff;
+  font-family: Saira;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 26px; /* 128.571% */
+  margin: 1em 0;
+}
+@media (max-width: 980px) {
+}
+@media (max-width: 780px) {
+  .data_services .data_services_op .data_serv {
     border-radius: 12px;
-    border: 1px solid #86FFE9;
-    background: rgba(7, 11, 15, 0.30);
+    border: 1px solid #86ffe9;
+    background: rgba(7, 11, 15, 0.3);
+    -webkit-backdrop-filter: blur(150px);
     backdrop-filter: blur(150px);
     padding: 2.5em;
-    width: calc((100%/2 ) - 1em);
-    margin: .5em;
-}
-.data_services .data_services_op .data_serv > h1{
-    color: #FFF;
-    /* text-align: center; */
-    font-family: Saira;
-    font-size: 30px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 42px; /* 105% */
-}
-.data_services .data_services_op .data_serv > p{
-    color: #FFF;
-    font-family: Saira;
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 26px; /* 128.571% */
-    margin: 1em 0;
+    width: calc((100% / 1) - 1em);
+    margin: 0.5em;
+  }
 }

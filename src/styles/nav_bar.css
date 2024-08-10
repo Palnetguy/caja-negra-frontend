@@ -5,27 +5,29 @@
   align-items: center;
   padding: 1.5em;
 }
-
-.nav_bar > .links > ul > li > a {
+.nav_bar * {
+  transition: 0.5s;
+}
+.nav_bar .links > ul > li > a {
   font-weight: 600;
   font-size: 20px;
   color: #ffffff;
   text-decoration: none;
   transition: 0.5s ease-in-out;
 }
-.nav_bar > .links > ul > li > a:hover {
+.nav_bar .links > ul > li > a:hover {
   color: #86ffe9;
 }
-.nav_bar > .links > ul > li {
+.nav_bar .links > ul > li {
   margin: 0 0.5em;
   list-style-type: none;
 }
-.nav_bar > .links > ul {
+.nav_bar .links > ul {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-.nav_bar > .contact_btn button {
+.nav_bar .contact_btn button {
   padding: 6px 20px;
   font-size: 18px;
   color: #003330;
@@ -36,6 +38,85 @@
   outline: none;
   cursor: pointer;
 }
-.nav_bar > .logo > img {
+.nav_bar .logo > img {
   width: 150px;
+}
+.nav_bar.mobile {
+  display: none;
+}
+.nav_bar.pc {
+  display: flex;
+}
+@media (max-width: 980px) {
+  .nav_bar.pc {
+    display: none;
+  }
+  .nav_bar.mobile {
+    display: flex;
+  }
+  .nav_bar.mobile .nav_bar {
+    background: black;
+    flex-direction: column;
+    /* height: 100vh; */
+    inset: 0;
+    /* position: absolute; */
+    z-index: 99;
+    position: fixed;
+    top: 0;
+    align-items: flex-start;
+    /* display: none; */
+  }
+  .nav_bar.mobile .nav_bar .links > ul {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+  }
+  .nav_bar.mobile .nav_bar .links > ul li a {
+    text-align: start;
+  }
+  .nav_bar.mobile .nav_bar .links > ul li {
+    margin: 0.3em 0;
+  }
+  .nav_bar.mobile .nav_bar .logo img {
+    width: 80px;
+    display: block;
+  }
+  .nav_bar.mobile .nav_bar .contact_btn button {
+    padding: 6px 20px;
+    font-size: 18px;
+    color: #003330;
+    font-weight: 700;
+    border-radius: 3px;
+    background: linear-gradient(90deg, #86ffe9, #02bac6, #037b83);
+    border: none;
+    outline: none;
+    cursor: pointer;
+  }
+  .nav_bar.mobile .nav_bar > .logo {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+  .nav_bar.mobile .nav_bar.closed {
+    height: max-content;
+    background: transparent;
+    position: static;
+    width: 100%;
+  }
+  .nav_bar.mobile .nav_bar.closed .links {
+    display: none;
+  }
+  .nav_bar.mobile .nav_bar.closed .contact_btn {
+    display: none;
+  }
+  .nav_bar.mobile .nav_bar > .logo > .hm {
+    width: 40px;
+    height: 40px;
+    /* background: red; */
+    padding: 0.2em;
+    cursor: pointer;
+  }
+  .nav_bar.mobile .nav_bar > .logo > .hm img {
+    width: 100%;
+  }
 }

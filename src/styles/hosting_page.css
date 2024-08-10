@@ -127,7 +127,6 @@
   /* line-height: 36px; 128.571% */
 }
 
-
 .hosting_page .revender .hosting_compartido_cont {
   display: flex;
 }
@@ -168,4 +167,48 @@
   font-style: normal;
   font-weight: 500;
   /* line-height: 36px; 150% */
+}
+@media (max-width: 980px) {
+  .servidores_page .servidoresOp_1_contain {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 3em;
+    flex-wrap: wrap;
+  }
+  .servidores_page .servidoresOp_1_contain .servidoresOp_1_each {
+    width: 290px;
+    margin-bottom: 2rem;
+  }
+}
+
+@media (max-width: 980px) {
+  .hosting_page .hosting_compartido .hosting_compartido_each {
+    width: calc((100% / 1) - 8em);
+    margin: 4em;
+  }
+  .hosting_page .hosting_compartido .hosting_compartido_cont {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+@media (max-width: 780px) {
+  .hosting_page .hosting_compartido .hosting_compartido_each {
+    width: calc((100% / 1) - 8em);
+    margin: 4em;
+  }
+  .hosting_page .hosting_compartido .hosting_compartido_cont {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .hosting_page .hosting_compartido .select_plan .selct_plan_each {
+    border-radius: 12px;
+    border: 1px solid #86ffe9;
+    background: rgba(7, 11, 15, 0.3);
+    -webkit-backdrop-filter: blur(150px);
+    backdrop-filter: blur(150px);
+    text-align: center;
+    width: calc((100% / 1) - 4em);
+    padding: 2em 1.7em;
+    margin: 2em;
+}
 }

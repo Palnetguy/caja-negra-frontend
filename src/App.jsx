@@ -26,6 +26,7 @@ function App() {
           <Route path="/desarollo" element={<DesarolloPage />} />
           <Route path="/servers" element={<Servidores />} />
           <Route path="/solicitar" element={<SolicitarPage />} />
+          <Route path="/data-services" element={<DataServicesPage />} />
         </Routes>
       </BrowserRouter>
       <Footer />

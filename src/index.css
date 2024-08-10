@@ -103,6 +103,34 @@ body {
   color: #d9d9d9;
   text-align: center;
 }
+@media (max-width: 980px) {
+  .title {
+    font-size: 30px !important;
+    font-weight: 700;
+    color: #ffffff;
+    text-align: center;
+  }
+  .sub_title {
+    font-size: 16px !important;
+    font-weight: 500;
+    color: #d9d9d9;
+    text-align: center;
+  }
+}
+@media (max-width: 780px) {
+  .title {
+    font-size: 30px !important;
+    font-weight: 700;
+    color: #ffffff;
+    text-align: center;
+  }
+  .sub_title {
+    font-size: 16px !important;
+    font-weight: 500;
+    color: #d9d9d9;
+    text-align: center;
+  }
+}
 body {
   background: url("./assets/images/gif-bg\ stars.gif");
 }
