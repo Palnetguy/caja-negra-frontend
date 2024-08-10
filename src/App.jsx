@@ -15,6 +15,7 @@ function App() {
   return (
     <div className="App">
       {/* <HomePage /> */}
+      {/* <SolicitarPage /> */}
       <BrowserRouter>
         <Routes>
           <Route index element={<HomePage />} />
@@ -23,8 +24,8 @@ function App() {
           <Route path="/about" element={<AboutUsPage />} />
           <Route path="/dominos" element={<RegisterDominio />} />
           <Route path="/desarollo" element={<DesarolloPage />} />
-          <Route path="/services" element={<Servidores />} />
-          {/* <Route path="*" element={<NoPage />} /> */}
+          <Route path="/servers" element={<Servidores />} />
+          <Route path="/solicitar" element={<SolicitarPage />} />
         </Routes>
       </BrowserRouter>
       <Footer />

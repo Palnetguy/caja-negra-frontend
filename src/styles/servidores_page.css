@@ -76,8 +76,7 @@
   cursor: pointer;
 }
 .servidores_page .servidores_op .changeBtns .changeBtn.active,
-.servidores_page .servidores_op .changeBtns .changeBtn:hover
- {
+.servidores_page .servidores_op .changeBtns .changeBtn:hover {
   background: #86ffe9;
   color: black;
 }
@@ -177,4 +176,143 @@
 }
 .servidores_page .servidores_op .nuestros {
   padding: 1.5em;
+}
+.servidores_page .servidoresOp_1_contain .servidoresOp_1_each .image {
+  border-radius: 12px;
+  border: 1px solid #86ffe9;
+  background: rgba(43, 43, 43, 0.9);
+  backdrop-filter: blur(150px);
+  flex-shrink: 0;
+  width: max-content;
+  width: 290px;
+  height: 230px;
+  flex-shrink: 0;
+  /* background: red; */
+}
+.servidores_page .servidoresOp_1_contain .servidoresOp_1_each .image img {
+  width: 290px;
+  height: 230px;
+  flex-shrink: 0;
+  /* background: red; */
+}
+.servidores_page .servidoresOp_1_contain {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 3em;
+}
+.servidores_page .servidoresOp_1_contain .servidoresOp_1_each {
+  width: 290px;
+}
+.servidores_page .servidoresOp_1_contain .servidoresOp_1_each h1 {
+  color: #fff;
+  text-align: center;
+  font-family: Saira;
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 700;
+  /* line-height: 42px; 116.667% */
+  margin: 0.3em 0;
+}
+.servidores_page .servidoresOp_1_contain .servidoresOp_1_each p {
+  color: #fff;
+  text-align: center;
+  font-family: Saira;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  /* line-height: 36px; 150% */
+}
+.servidores_page .servidoresOp_1_contain1 .servidoresOp_1_each_1 {
+  border-radius: 12px;
+  border: 1px solid #86ffe9;
+  background: rgba(7, 11, 15, 0.3);
+  backdrop-filter: blur(150px);
+  padding: 3em;
+  width: calc((100% / 2) - 3em);
+  margin: 1.5em;
+}
+.servidores_page .servidoresOp_1_contain1 .servidoresOp_1_each_1 h1 {
+  color: #fff;
+  text-align: center;
+  font-family: Saira;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 700;
+  /* line-height: 42px; 105% */
+}
+.servidores_page .servidoresOp_1_contain1 .servidoresOp_1_each_1 h2 {
+  color: #fff;
+  text-align: center;
+  font-family: Saira;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  /* line-height: 36px; 128.571% */
+}
+.servidores_page .servidoresOp_1_contain1 .servidoresOp_1_each_1 ul + h1 {
+  /* color: #fff; */
+  text-align: left;
+  /* font-family: Saira; */
+  margin: 0.5em 0;
+}
+.servidores_page .servidoresOp_1_contain1 {
+  display: flex;
+  flex-wrap: wrap;
+}
+.servidores_page .servidoresOp_1_contain1 .servidoresOp_1_each_1 li {
+  color: #fff;
+  font-family: Saira;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  /* line-height: 36px; 128.571% */
+  margin-left: 1.4em;
+}
+
+.servidores_page .servidoresOp_1 .nuestros_cont {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 2em;
+}
+.servidores_page .servidoresOp_1 .nuestros_cont .nuetro .image {
+  border-radius: 12px;
+  border: 1px solid #86ffe9;
+  background: rgba(43, 43, 43, 0.9);
+  backdrop-filter: blur(150px);
+  width: 200px;
+  padding: 2em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.servidores_page .servidoresOp_1 .nuestros_cont .nuetro .image img {
+  width: 80px;
+}
+.servidores_page .servidoresOp_1 .nuestros_cont .nuetro h1 {
+  color: #fff;
+  /* text-align: center; */
+  font-family: Saira;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 42px; /* 105% */
+}
+.servidores_page .servidoresOp_1 .nuestros_cont .nuetro p {
+  color: #fff;
+  font-family: Saira;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  /* line-height: 36px; 128.571% */
+}
+.servidores_page .servidoresOp_1 .nuestros_cont .nuetro {
+  width: calc((100% / 2) - 2em);
+  margin: 1em;
+}
+.servidores_page .servidoresop_1 .nuestros_cont {
+  display: flex;
+  flex-wrap: wrap;
+}
+.servidores_page .servidoresOp_1_contain1{
+  margin: 4em 0;
 }

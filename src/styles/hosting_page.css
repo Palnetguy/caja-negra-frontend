@@ -126,3 +126,46 @@
   margin-bottom: 1em;
   /* line-height: 36px; 128.571% */
 }
+
+
+.hosting_page .revender .hosting_compartido_cont {
+  display: flex;
+}
+.hosting_page .revender .hosting_compartido_each {
+  width: calc((100% / 3) - 8em);
+  margin: 4em;
+}
+.hosting_page .revender .hosting_compartido_each .image {
+  border-radius: 12px;
+  border: 1px solid #86ffe9;
+  background: rgba(43, 43, 43, 0.9);
+  backdrop-filter: blur(150px);
+  width: 100%;
+  padding: 2em 1em;
+  height: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.hosting_page .revender .hosting_compartido_each .image img {
+  height: 100%;
+}
+.hosting_page .revender .hosting_compartido_each h1 {
+  color: #fff;
+  text-align: center;
+  font-family: Saira;
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 700;
+  /* line-height: 42px; 116.667% */
+  margin: 1em 0;
+}
+.hosting_page .revender .hosting_compartido_each p {
+  color: #fff;
+  text-align: center;
+  font-family: Saira;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  /* line-height: 36px; 150% */
+}

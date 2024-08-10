@@ -13,6 +13,8 @@ import service11Img from "../assets/images/vigilancia-1-e1682337472905 (1).png";
 import service12Img from "../assets/images/service-12 (1).png";
 import pay_mth_im from "../assets/images/Group 36 (1).png";
 import bestVPSiM from "../assets/images/Best-VPS-Hosting-Plans 1 (1).png";
+import { useState } from "react";
+import CustomDropdown from "../componets/dropdown";
 
 const HomePage = () => {
   return (
@@ -45,6 +47,16 @@ const Main = () => {
 };
 
 const Services = () => {
+  const [vpsOpen, setVpsOpen] = useState(true);
+
+  const handleOnClickOffers = () => {
+    setVpsOpen((prev) => !prev);
+  };
+
+  // const handleSelect = (option) => {
+  //   console.log("Selected option:", option);
+  // };
+
   return (
     <div className="services">
       <h2>Servicios Garantizado</h2>
@@ -91,19 +103,24 @@ const Services = () => {
           </p>
         </div>
       </div>
-
       <div className="oferta">
         <h2>Servidores Oferta</h2>
         <h1>Nuestras ofertas</h1>
 
         <div className="btns">
-          <div className="btn_op active">
+          <div
+            className={`btn_op ${vpsOpen ? "active" : ""}`}
+            onClick={handleOnClickOffers}
+          >
             <div className="bgSpan"></div>
             <div className="word">
               <p>VPS</p>
             </div>
           </div>
-          <div className="btn_op">
+          <div
+            className={`btn_op ${!vpsOpen ? "active" : ""}`}
+            onClick={handleOnClickOffers}
+          >
             <div className="bgSpan"></div>
             <div className="word">
               <p>Dedicado</p>
@@ -111,34 +128,75 @@ const Services = () => {
           </div>
         </div>
 
-        <div className="ofertas_container">
-          <div className="each_ofertas ">
-            <div className="bgSpan"></div>
-            <div className="info">
-              <h1>VPS Linux</h1>
-              <h2>CPU 2 - RAM 8GB - SSD 200GB</h2>
-              <button>Solicitar</button>
+        {/* for vps */}
+        {vpsOpen && (
+          <div className="ofertas_container">
+            <div className="each_ofertas ">
+              <div className="bgSpan"></div>
+              <div className="info">
+                <h1>VPS Linux</h1>
+                <h2>CPU 2 - RAM 8GB - SSD 200GB</h2>
+                <button>Solicitar</button>
+              </div>
+            </div>
+            <div className="each_ofertas ">
+              <div className="bgSpan"></div>
+              <div className="info">
+                <h1>VPS Linux</h1>
+                <h2>CPU 2 - RAM 8GB - SSD 200GB</h2>
+                <button>Solicitar</button>
+              </div>
+            </div>
+            <div className="each_ofertas ">
+              <div className="bgSpan"></div>
+              <div className="info">
+                <h1>VPS Linux</h1>
+                <h2>CPU 2 - RAM 8GB - SSD 200GB</h2>
+                <button>Solicitar</button>
+              </div>
             </div>
           </div>
-          <div className="each_ofertas ">
-            <div className="bgSpan"></div>
-            <div className="info">
-              <h1>VPS Linux</h1>
-              <h2>CPU 2 - RAM 8GB - SSD 200GB</h2>
-              <button>Solicitar</button>
+        )}
+        {/* for dedicado */}
+        {!vpsOpen && (
+          <div className="ofertas_container">
+            <div className="each_ofertas ">
+              <div className="bgSpan"></div>
+              <div className="info">
+                <h1>Startup Dedicated Server</h1>
+                <h2>
+                  Están diseñados para alojar sitios web, de streaming o
+                  aplicaciones profesionales, de alta demanda.
+                </h2>
+                <button>Solicitar</button>
+              </div>
+            </div>
+            <div className="each_ofertas ">
+              <div className="bgSpan"></div>
+              <div className="info">
+                <h1>Storage Dedicate Server SDS</h1>
+                <h2>
+                  CPU : AMD Ryzen 5 Pro 3600 6c/12t - RAM : 32 GB - HDD : 4x 6TB
+                  - Network : 2Gb/s
+                </h2>
+                <button>Solicitar</button>
+              </div>
+            </div>
+            <div className="each_ofertas ">
+              <div className="bgSpan"></div>
+              <div className="info">
+                <h1>High Grade Dedicated Server HGDS-1</h1>
+                <h2>
+                  Dual Intel Xeon Gold 6226R - 32c/64t - 2.9GHz/3.9GHz 2x SSD
+                  SATA 480GB 192GB DDR4 ECC 2933MHz 6× 3.84TB SSD NVMe Soft RAID
+                  1Gbit/s unmetered and guaranteed
+                </h2>
+                <button>Solicitar</button>
+              </div>
             </div>
           </div>
-          <div className="each_ofertas ">
-            <div className="bgSpan"></div>
-            <div className="info">
-              <h1>VPS Linux</h1>
-              <h2>CPU 2 - RAM 8GB - SSD 200GB</h2>
-              <button>Solicitar</button>
-            </div>
-          </div>
-        </div>
+        )}
       </div>
-
       <div className="ver">
         <p>Ver todo los servicios de datos que ofrecemos</p>
         <div className="btn_op">
@@ -148,13 +206,11 @@ const Services = () => {
           </div>
         </div>
       </div>
-
       <div className="th_words">
         <p>Backup Diarios</p>
         <p>Migración gratis</p>
         <p>Configuración</p>
       </div>
-
       <div className="services_container">
         <div className="service">
           <div className="image">
@@ -235,7 +291,6 @@ const Services = () => {
           </p>
         </div>
       </div>
-
       <div className="word_btn">
         <h1>
           ¿Estás interesado en datos y te gustaría conocer el tipo de servicio
@@ -243,7 +298,6 @@ const Services = () => {
         </h1>
         <button className="full_gradient_btn">Ver Detalles</button>
       </div>
-
       <div className="garantee">
         <h1>
           Nos comprometemos como una de las mejor solución de servicios web de
@@ -280,7 +334,6 @@ const Services = () => {
           <img src={pay_mth_im} alt="" />
         </div>
       </div>
-
       <div className="vps">
         <div className="lft">
           <h1>Servidores privados virtuales (VPS)</h1>
@@ -352,7 +405,6 @@ const Services = () => {
           </div>
         </div>
       </div>
-
       <div className="remarks">
         <h1>
           Más de 20,000 personas han utilizado nuestros cursos, herramientas y

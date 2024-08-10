@@ -3,8 +3,17 @@ import "../styles/hosting_page.css";
 import cloudHost1 from "../assets/images/cloud-hosting-bg 1.png";
 import cloudHost2 from "../assets/images/462-4625058_server-illustration-web-hosting-vector-hd-png-download.png";
 import cloudHost3 from "../assets/images/30734110-removebg-preview.png";
+import revenderImg1 from "../assets/images/7331836 1.png";
+import revenderImg2 from "../assets/images/png-transparent-businessperson-consultant-organization-company-market-company-text-people 1.png";
+import revenderImg3 from "../assets/images/gratis-png-grafico-de-barras-3d-en-colores-surtidos-grafico-de-finanzas-dibujo-de-trabajo 1.png";
+import { useState } from "react";
 
 const HostingPage = () => {
+  const [Compartido, setCompartido] = useState(true);
+
+  const handleCompartido = () => {
+    setCompartido((prev) => !prev);
+  };
   return (
     <div className="hosting_page">
       <div className="top">
@@ -16,12 +25,26 @@ const HostingPage = () => {
             propia marca{" "}
           </p>
           <div className="btns">
-            <button className="full_gradient_btn">Compartido</button>
-            <button className="btn-1">Revender</button>
+            <button
+              className={`${Compartido ? "full_gradient_btn" : "btn-1"}`}
+              onClick={handleCompartido}
+            >
+              Compartido
+            </button>
+            <button
+              className={`${!Compartido ? "full_gradient_btn" : "btn-1"}`}
+              onClick={handleCompartido}
+            >
+              Revender
+            </button>
           </div>
         </div>
       </div>
-      <Hosting_Compartido />
+
+      {Compartido && <Hosting_Compartido />}
+      {!Compartido && <Revender />}
+      {/* <Revender />
+      <Hosting_Compartido /> */}
     </div>
   );
 };
@@ -97,4 +120,45 @@ const Hosting_Compartido = () => {
   );
 };
 
+const Revender = () => {
+  return (
+    <div className="revender">
+      <h2 className="sub_title">Tu Negocio, Nuestros Productos.</h2>
+      <h1 className="title">REVENDE NUESTROS PRODUCTOS </h1>
+      <h1 className="title">CON TU MARCA.</h1>
+      <div className="hosting_compartido_cont">
+        <div className="hosting_compartido_each">
+          <div className="image">
+            <img src={revenderImg1} alt="" />
+          </div>
+          <h1>Construye tu tienda en línea.</h1>
+          <p>
+            La tienda debería reflejar tu estilo. Crea un escaparate que se
+            parezca a tu negocio.
+          </p>
+        </div>
+        <div className="hosting_compartido_each">
+          <div className="image">
+            <img src={revenderImg2} alt="" />
+          </div>
+          <h1>Se reciben todo tipo de negocios.</h1>
+          <p>
+            Sabes cómo funciona tu área y cómo quieren hacer negocios tus
+            clientes. Te ayudamos a que unas las dos partes.
+          </p>
+        </div>
+        <div className="hosting_compartido_each">
+          <div className="image">
+            <img src={revenderImg3} alt="" />
+          </div>
+          <h1>Determina tus propios precios.</h1>
+          <p>
+            No obtengas simplemente una comisión, también determina tus propios
+            márgenes y precios de productos a tu manera.
+          </p>
+        </div>
+      </div>
+    </div>
+  );
+};
 export default HostingPage;

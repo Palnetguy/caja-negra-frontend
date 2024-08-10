@@ -1,6 +1,8 @@
 import Footer from "../componets/footer";
 import NavBar from "../componets/nav_bar";
 import "../styles/contactus_page.css";
+import phoneImg from "../assets/images/ic_baseline-phone.png";
+import emailImg from "../assets/images/mage_email-opened-fill.png";
 
 const ContactUsPage = () => {
   return (
@@ -34,11 +36,17 @@ const ContactUsPageOp = () => {
     <div className="contactus_pageop">
       <div className="more_info">
         <div className="info">
+          <div className="image">
+            <img src={phoneImg} alt="" />
+          </div>
           <h1>Telefonos</h1>
           <p>849-354-9727</p>
           <p>000-000-0047</p>
         </div>
         <div className="info">
+          <div className="image">
+            <img src={emailImg} alt="" />
+          </div>
           <h1>Correo Electrónico</h1>
           <p>cajanegrard@gmail.com</p>
           <p>ventas@cajanegra.com</p>

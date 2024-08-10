@@ -275,12 +275,12 @@
 }
 .home_page .services .oferta > .ofertas_container  .each_ofertas > .info > h1{
     color: #D9D9D9;
-    font-size: 32px;
+    font-size: 28px;
     font-weight: 700;
 }
 .home_page .services .oferta > .ofertas_container  .each_ofertas > .info > h2{
     color: #D9D9D9;
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 500;
     margin-bottom: 1em;
 }
