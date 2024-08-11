@@ -80,7 +80,7 @@ const Domains = () => {
         <p>.mobi</p>
       </div>
       <Link target="_top" to="/solicitar">
-        <button>Solicitar</button>
+        <button className="full_gradient_btn">Solicitar</button>
       </Link>
       <div className="more_domain">
         <h2 className="sub_title">
