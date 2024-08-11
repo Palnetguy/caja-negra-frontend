@@ -7,6 +7,7 @@ import includedfeat4 from "../assets/images/included-feature-5.png";
 import bestVpsImg from "../assets/images/Best-VPS-Hosting-Plans 1 (1).png";
 import pngTree from "../assets/images/pngtree-technological-isometric-server-illustrated-on-background-png-image_3174520 1.png";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 const Servidores = () => {
   const [vpsOpen, setVpsOpen] = useState(true);
@@ -28,6 +29,7 @@ const Servidores = () => {
             >
               VPS
             </button>
+
             <button
               className={`${!vpsOpen ? "full_gradient_btn" : "btn-1"}`}
               onClick={handleVpsOpen}
@@ -99,7 +101,7 @@ const ServidoresOp = () => {
   };
 
   return (
-    <div className="servidores_op">
+    <div className="servidores_op" id="servidores_op">
       <div className="changeBtns">
         <div
           className={`changeBtn ${current_server === 0 ? "active" : ""}`}
@@ -159,7 +161,9 @@ const ServidoresOp = () => {
             <p>IP</p>
             <p>{servers[current_server].IP}</p>
           </div>
-          <button className="full_gradient_btn">Solicitar</button>
+          <Link target="_top" to="/solicitar">
+            <button className="full_gradient_btn">Solicitar</button>
+          </Link>
         </div>
       </div>
 
@@ -220,7 +224,7 @@ const ServidoresOp = () => {
 
 const ServidoresOp_1 = () => {
   return (
-    <div className="servidoresOp_1">
+    <div className="servidoresOp_1" id="servidoresOp_1">
       <h2 className="sub_title">Servicio al Cliente Experimentado</h2>
       <h1 className="title">
         NOS DESTACAMOS POR 
@@ -268,7 +272,9 @@ const ServidoresOp_1 = () => {
             <li>Entrega 12 horas</li>
           </ul>
           <h1>$ 370</h1>
-          <button className="full_gradient_btn">Solicitar</button>
+          <Link target="_top" to="/solicitar">
+            <button className="full_gradient_btn">Solicitar</button>
+          </Link>
         </div>
         <div className="servidoresOp_1_each_1">
           <h1>PROCESADOR</h1>
@@ -280,7 +286,9 @@ const ServidoresOp_1 = () => {
             <li>Entrega 12 horas</li>
           </ul>
           <h1>$ 460</h1>
-          <button className="full_gradient_btn">Solicitar</button>
+          <Link target="_top" to="/solicitar">
+            <button className="full_gradient_btn">Solicitar</button>
+          </Link>
         </div>
         <div className="servidoresOp_1_each_1">
           <h1>PROCESADOR</h1>
@@ -292,7 +300,9 @@ const ServidoresOp_1 = () => {
             <li>Entrega 12 horas</li>
           </ul>
           <h1>$ 250</h1>
-          <button className="full_gradient_btn">Solicitar</button>
+          <Link target="_top" to="/solicitar">
+            <button className="full_gradient_btn">Solicitar</button>
+          </Link>
         </div>
         <div className="servidoresOp_1_each_1">
           <h1>PROCESADOR</h1>
@@ -304,7 +314,9 @@ const ServidoresOp_1 = () => {
             <li>Entrega 24 horas</li>
           </ul>
           <h1>$ 900</h1>
-          <button className="full_gradient_btn">Solicitar</button>
+          <Link target="_top" to="/solicitar">
+            <button className="full_gradient_btn">Solicitar</button>
+          </Link>
         </div>
         <div className="servidoresOp_1_each_1">
           <h1>PROCESADOR</h1>
@@ -316,7 +328,9 @@ const ServidoresOp_1 = () => {
             <li>Entrega 12 horas</li>
           </ul>
           <h1>$ 1000</h1>
-          <button className="full_gradient_btn">Solicitar</button>
+          <Link target="_top" to="/solicitar">
+            <button className="full_gradient_btn">Solicitar</button>
+          </Link>
         </div>
         <div className="servidoresOp_1_each_1">
           <h1>PROCESADOR</h1>
@@ -328,7 +342,9 @@ const ServidoresOp_1 = () => {
             <li>Entrega 72 horas</li>
           </ul>
           <h1>$ 1700</h1>
-          <button className="full_gradient_btn">Solicitar</button>
+          <Link target="_top" to="/solicitar">
+            <button className="full_gradient_btn">Solicitar</button>
+          </Link>
         </div>
         <div className="servidoresOp_1_each_1">
           <h1>PROCESADOR</h1>
@@ -340,7 +356,9 @@ const ServidoresOp_1 = () => {
             <li>Entrega 72 horas</li>
           </ul>
           <h1>$ 2100</h1>
-          <button className="full_gradient_btn">Solicitar</button>
+          <Link target="_top" to="/solicitar">
+            <button className="full_gradient_btn">Solicitar</button>
+          </Link>
         </div>
         <div className="servidoresOp_1_each_1">
           <h1>PROCESADOR</h1>
@@ -352,7 +370,9 @@ const ServidoresOp_1 = () => {
             <li>Entrega 72 horas</li>
           </ul>
           <h1>$ 1200</h1>
-          <button className="full_gradient_btn">Solicitar</button>
+          <Link target="_top" to="/solicitar">
+            <button className="full_gradient_btn">Solicitar</button>
+          </Link>
         </div>
         <div className="servidoresOp_1_each_1">
           <h1>PROCESADOR</h1>
@@ -364,7 +384,9 @@ const ServidoresOp_1 = () => {
             <li>Entrega 24 horas</li>
           </ul>
           <h1>$ 3500</h1>
-          <button className="full_gradient_btn">Solicitar</button>
+          <Link target="_top" to="/solicitar">
+            <button className="full_gradient_btn">Solicitar</button>
+          </Link>
         </div>
         <div className="servidoresOp_1_each_1">
           <h1>PROCESADOR</h1>
@@ -376,7 +398,9 @@ const ServidoresOp_1 = () => {
             <li>Entrega 72 horas</li>
           </ul>
           <h1>$ 4300</h1>
-          <button className="full_gradient_btn">Solicitar</button>
+          <Link target="_top" to="/solicitar">
+            <button className="full_gradient_btn">Solicitar</button>
+          </Link>
         </div>
       </div>
 

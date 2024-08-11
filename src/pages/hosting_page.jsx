@@ -7,6 +7,7 @@ import revenderImg1 from "../assets/images/7331836 1.png";
 import revenderImg2 from "../assets/images/png-transparent-businessperson-consultant-organization-company-market-company-text-people 1.png";
 import revenderImg3 from "../assets/images/gratis-png-grafico-de-barras-3d-en-colores-surtidos-grafico-de-finanzas-dibujo-de-trabajo 1.png";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 const HostingPage = () => {
   const [Compartido, setCompartido] = useState(true);
@@ -96,7 +97,9 @@ const Hosting_Compartido = () => {
               Un plan economico de 25 GB con dominio , correo electronico
               coincidentes gratis y 1 ssl gratis
             </p>
-            <button className="full_gradient_btn">Solicitar</button>
+            <Link target="_top" to="/solicitar">
+              <button className="full_gradient_btn">Solicitar</button>
+            </Link>
           </div>
           <div className="selct_plan_each">
             <h1>STANDARD</h1>
@@ -104,7 +107,9 @@ const Hosting_Compartido = () => {
               Mayor capacidad de procesamiento mutiples sitios, correo
               electronico coincidentes gratis y 1 ssl gratis
             </p>
-            <button className="full_gradient_btn">Solicitar</button>
+            <Link target="_top" to="/solicitar">
+              <button className="full_gradient_btn">Solicitar</button>
+            </Link>
           </div>
           <div className="selct_plan_each">
             <h1>Premium +</h1>
@@ -112,7 +117,9 @@ const Hosting_Compartido = () => {
               Capacidad Y Velocidad de procesamiento maximizadas, correo
               electronico coincidentes gratis y 1 ssl gratis
             </p>
-            <button className="full_gradient_btn">Solicitar</button>
+            <Link target="_top" to="/solicitar">
+              <button className="full_gradient_btn">Solicitar</button>
+            </Link>
           </div>
         </div>
       </div>

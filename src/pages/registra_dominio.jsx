@@ -3,6 +3,7 @@ import pagedomaion1 from "../assets/images/Landing Page_Domains_1200x800_APAC 1.
 import pagedomaion2 from "../assets/images/pngtree-computer-information-file-privacy-protection-illustration-png-image_4267628 1.png";
 import pagedomaion3 from "../assets/images/png-transparent-technical-support-business-customer-service-consultant-business-service-computer-people 2.png";
 import "../styles/registra_dominio.css";
+import { Link } from "react-router-dom";
 
 const RegisterDominio = () => {
   return (
@@ -14,7 +15,9 @@ const RegisterDominio = () => {
             REGISTRAR <br /> DOMINIO
           </h1>
           <p>Asegura el nombre de dominio perfecto con nosotros</p>
-          <button className="full_gradient_btn">Solicitar</button>
+          <Link target="_top" to="/solicitar">
+            <button className="btn-1">Solicitar</button>
+          </Link>
         </div>
       </div>
       <div className="more">
@@ -76,7 +79,9 @@ const Domains = () => {
         <p>.info</p>
         <p>.mobi</p>
       </div>
-      <button className="full_gradient_btn">Solicitar</button>
+      <Link target="_top" to="/solicitar">
+        <button>Solicitar</button>
+      </Link>
       <div className="more_domain">
         <h2 className="sub_title">
           Estamos aquí para apoyar su viaje en línea

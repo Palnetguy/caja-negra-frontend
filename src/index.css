@@ -12,7 +12,11 @@
 body {
   background: rgb(0, 62, 87);
 }
+a {
+  text-decoration: none;
+}
 .btn_op {
+  text-decoration: none;
   background: linear-gradient(
     90deg,
     #86ffe9,
@@ -66,6 +70,7 @@ body {
   width: max-content;
   transition: ease-in-out 0.1;
   min-width: 150px;
+  text-decoration: none;
 }
 .btn-1 {
   border-radius: 8px;
@@ -87,6 +92,7 @@ body {
   cursor: pointer;
   transition: ease-in-out 0.1s;
   min-width: 150px;
+  text-decoration: none;
 }
 .btn-1:active,
 .full_gradient_btn:active {
@@ -134,5 +140,6 @@ body {
   }
 }
 body {
+  background-color: black;
   background: url("./assets/images/gif-bg\ stars.gif");
 }

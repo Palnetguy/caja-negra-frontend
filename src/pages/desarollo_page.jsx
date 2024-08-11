@@ -1,4 +1,5 @@
 // import "../assets/images/timage5.png";
+import { Link } from "react-router-dom";
 import dedicatedServerIMg from "../assets/images/Dedicated-Server-PNG-Photo 1.png";
 import NavBar from "../componets/nav_bar";
 import "../styles/desarollo_page.css";
@@ -9,12 +10,14 @@ const DesarolloPage = () => {
       <div className="top">
         <NavBar />
         <div className="info">
-          <h1>DOMINIO</h1>
+          <h1>DESAROLLO</h1>
           <p>
             Somos experto en el desarrollo de aplicaciones para todos los
             dispositivos móviles
           </p>
-          <button className="full_gradient_btn">Solicitar</button>
+          <Link target="_top" to="/solicitar">
+            <button className="btn-1">Solicitar</button>
+          </Link>
         </div>
       </div>
 
