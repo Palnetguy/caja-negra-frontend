@@ -9,6 +9,10 @@
   font-style: normal;
   font-variation-settings: "wdth" 100;
 }
+html {
+  scroll-behavior: smooth;
+  /* scroll-snap-type: proximity; */
+}
 body {
   background: rgb(0, 62, 87);
 }

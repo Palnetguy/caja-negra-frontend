@@ -15,7 +15,7 @@ function App() {
   return (
     <div className="App">
       {/* <HomePage /> */}
-      {/* <SolicitarPage /> */}
+      {/* <FullPageLoader /> */}
       <BrowserRouter>
         <Routes>
           <Route index element={<HomePage />} />

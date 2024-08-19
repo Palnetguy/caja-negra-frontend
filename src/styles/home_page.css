@@ -142,6 +142,9 @@
   left: 50%;
   transform: translate(-50%, -50%);
 }
+.home_page .services .service > .image > .img > img {
+  width: 100%;
+}
 .home_page .services .service {
   width: calc((100% / 3) - 4em);
   display: flex;

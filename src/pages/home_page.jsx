@@ -1,25 +1,37 @@
 import NavBar from "../componets/nav_bar";
 import "../styles/home_page.css";
 import bgVideo from "../assets/images/gif-bg blue stars.gif";
-import chooseUs1Img from "../assets/images/choose-us-1.png";
-import chooseUs2Img from "../assets/images/choose-us-2.png";
-import chooseUs3Img from "../assets/images/choose-us-3.png";
+// import chooseUs1Img from "../assets/images/choose-us-1.png";
+// import chooseUs2Img from "../assets/images/choose-us-2.png";
+// import chooseUs3Img from "../assets/images/choose-us-3.png";
 
-import service7Img from "../assets/images/service-7 (1).png";
-import service8Img from "../assets/images/service-8 (1) (1).png";
-import service9Img from "../assets/images/service-9 (1).png";
-import service10Img from "../assets/images/service-10 (1).png";
-import service11Img from "../assets/images/vigilancia-1-e1682337472905 (1).png";
-import service12Img from "../assets/images/service-12 (1).png";
+// import service7Img from "../assets/images/service-7 (1).png";
+// import service8Img from "../assets/images/service-8 (1) (1).png";
+// import service9Img from "../assets/images/service-9 (1).png";
+// import service10Img from "../assets/images/service-10 (1).png";
+// import service11Img from "../assets/images/vigilancia-1-e1682337472905 (1).png";
+// import service12Img from "../assets/images/service-12 (1).png";
 import pay_mth_im from "../assets/images/Group 36 (1).png";
 import bestVPSiM from "../assets/images/Best-VPS-Hosting-Plans 1 (1).png";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import CustomDropdown from "../componets/dropdown";
 import { Link } from "react-router-dom";
+import axios from "axios";
+import config from "./config";
+import FullPageLoader from "../componets/fullpage_loader";
 
 const HomePage = () => {
+  const [isloading, setislaoding] = useState(true);
+
+  const handleLoading = (value) => {
+    setTimeout(() => {
+      setislaoding(value);
+    }, 2000);
+  };
+
   return (
     <div className="home_page">
+      {isloading && <FullPageLoader />}
       <div className="top">
         <div className="bgVideo">
           <img src={bgVideo} alt="" srcset="" />
@@ -27,7 +39,7 @@ const HomePage = () => {
         <NavBar />
         <Main />
       </div>
-      <Services />
+      <Services handleLoading={handleLoading} />
     </div>
   );
 };
@@ -42,13 +54,28 @@ const Main = () => {
         simplicidad, sin sacrificar la complejidad que su infraestructura pueda
         requerir.
       </p>
-      <button className="btn-1">Explorar</button>
+      <a href="#why_choose_us">
+        <button className="btn-1">Explorar</button>
+      </a>
     </div>
   );
 };
 
-const Services = () => {
+const Services = ({ handleLoading }) => {
+  // const [isloadingfully, setisloadingfully] = useState(true);
+
+  const [isloadingwhychooseus, setisloadingwhychooseus] = useState(true);
+  const [isloadingcomments, setisloadingcomments] = useState(true);
+  const [isloadingoffer, setisloadingoffer] = useState(true);
   const [vpsOpen, setVpsOpen] = useState(true);
+
+  useEffect(() => {
+    if (!isloadingwhychooseus && !isloadingcomments && !isloadingcomments) {
+      handleLoading(false);
+    } else if (isloadingwhychooseus && isloadingcomments && isloadingcomments) {
+      handleLoading(true);
+    }
+  }, [isloadingwhychooseus, isloadingcomments, isloadingoffer]);
 
   const handleOnClickOffers = () => {
     setVpsOpen((prev) => !prev);
@@ -58,13 +85,98 @@ const Services = () => {
   //   console.log("Selected option:", option);
   // };
 
+  const [whyChooseUsdata, setwhyChooseUsData] = useState([]);
+  const [offersData, setoffersData] = useState([]);
+  const [servicesData, setservicesData] = useState([]);
+  const [commetsData, setcommetsData] = useState([]);
+  // const [error, setError] = useState(null);
+
+  useEffect(() => {
+    setisloadingcomments(true);
+    setisloadingwhychooseus(true);
+    setisloadingoffer(true);
+    // Define the API endpoint and the API key
+
+    // Set up the Axios request
+    axios
+      .get(config.apiEndpoint + "/why-choose-us/", {
+        headers: {
+          Authorization: `API-Key ${config.apiKey}`, // or 'API-Key': apiKey, depending on API
+          // Authorization: `Bearer ${apiKey}`, // or 'API-Key': apiKey, depending on API
+        },
+      })
+      .then((response) => {
+        setwhyChooseUsData(response.data);
+        setisloadingwhychooseus(false);
+        console.log(response.data);
+      })
+      .catch((error) => {
+        // setError(error.message);
+        setisloadingwhychooseus(false);
+        console.log(error.message);
+      });
+
+    // Set up the Axios request
+    axios
+      .get(config.apiEndpoint + "/offers/", {
+        headers: {
+          Authorization: `API-Key ${config.apiKey}`, // or 'API-Key': apiKey, depending on API
+          // Authorization: `Bearer ${apiKey}`, // or 'API-Key': apiKey, depending on API
+        },
+      })
+      .then((response) => {
+        setoffersData(response.data);
+        setisloadingoffer(false);
+        console.log(response.data);
+      })
+      .catch((error) => {
+        // setError(error.message);
+        console.log(error.message);
+        setisloadingoffer(false);
+      });
+
+    axios
+      .get(config.apiEndpoint + "/services/", {
+        headers: {
+          Authorization: `API-Key ${config.apiKey}`, // or 'API-Key': apiKey, depending on API
+          // Authorization: `Bearer ${apiKey}`, // or 'API-Key': apiKey, depending on API
+        },
+      })
+      .then((response) => {
+        setservicesData(response.data);
+        console.log(response.data);
+      })
+      .catch((error) => {
+        // setError(error.message);
+        console.log(error.message);
+      });
+
+    axios
+      .get(config.apiEndpoint + "/comments/", {
+        headers: {
+          Authorization: `API-Key ${config.apiKey}`, // or 'API-Key': apiKey, depending on API
+          // Authorization: `Bearer ${apiKey}`, // or 'API-Key': apiKey, depending on API
+        },
+      })
+      .then((response) => {
+        setisloadingcomments(false);
+        setcommetsData(response.data);
+        console.log(response.data);
+      })
+      .catch((error) => {
+        // setError(error.message);
+        console.log(error.message);
+        setisloadingcomments(false);
+      });
+  }, []); // Empty dependency array means this effect runs once on mount
+
   return (
-    <div className="services">
+    <div className="services" id="why_choose_us">
       <h2 className="sub_title">Servicios Garantizado</h2>
       <h1 className="title">¿Por qué elegirnos?</h1>
       {/* Services */}
       <div className="services_container">
-        <div className="service">
+        {/* <div className="service">
           <div className="image">
             <div className="bgSpan"></div>
             <div className="img">
@@ -102,7 +214,20 @@ const Services = () => {
             Nuestro equipo técnicos esta capacitados para solucionar cualquier
             incidente en el menor tiempo posible
           </p>
-        </div>
+        </div> */}
+
+        {whyChooseUsdata.map((e) => (
+          <div className="service" key={Math.random()}>
+            <div className="image">
+              <div className="bgSpan"></div>
+              <div className="img">
+                <img src={e.image} alt="" />
+              </div>
+            </div>
+            <h2>{e.title}</h2>
+            <p>{e.info}</p>
+          </div>
+        ))}
       </div>
       <div className="oferta">
         <h2 className="sub_title">Servidores Oferta</h2>
@@ -132,7 +257,7 @@ const Services = () => {
         {/* for vps */}
         {vpsOpen && (
           <div className="ofertas_container">
-            <div className="each_ofertas ">
+            {/* <div className="each_ofertas ">
               <div className="bgSpan"></div>
               <div className="info">
                 <h1>VPS Linux</h1>
@@ -161,13 +286,28 @@ const Services = () => {
                   <button>Solicitar</button>
                 </Link>
               </div>
-            </div>
+            </div> */}
+
+            {offersData
+              .filter((e) => e.offer_type == "VPS")
+              .map((e) => (
+                <div className="each_ofertas ">
+                  <div className="bgSpan"></div>
+                  <div className="info">
+                    <h1>{e.title}</h1>
+                    <h2>{e.info}</h2>
+                    <Link target="_top" to="/solicitar">
+                      <button>Solicitar</button>
+                    </Link>
+                  </div>
+                </div>
+              ))}
           </div>
         )}
         {/* for dedicado */}
         {!vpsOpen && (
           <div className="ofertas_container">
-            <div className="each_ofertas ">
+            {/* <div className="each_ofertas ">
               <div className="bgSpan"></div>
               <div className="info">
                 <h1>Startup Dedicated Server</h1>
@@ -200,7 +340,22 @@ const Services = () => {
                 </h2>
                 <button>Solicitar</button>
               </div>
-            </div>
+            </div> */}
+
+            {offersData
+              .filter((e) => e.offer_type == "Dedicated")
+              .map((e) => (
+                <div className="each_ofertas ">
+                  <div className="bgSpan"></div>
+                  <div className="info">
+                    <h1>{e.title}</h1>
+                    <h2>{e.info}</h2>
+                    <Link target="_top" to="/solicitar">
+                      <button>Solicitar</button>
+                    </Link>
+                  </div>
+                </div>
+              ))}
           </div>
         )}
       </div>
@@ -220,8 +375,10 @@ const Services = () => {
         <p>Migración gratis</p>
         <p>Configuración</p>
       </div>
+      <h2 className="sub_title">Servicios Profesionales</h2>
+      <h1 className="title">Nuestros servicios</h1>
       <div className="services_container">
-        <div className="service">
+        {/* <div className="service">
           <div className="image">
             <div className="bgSpan"></div>
             <div className="img">
@@ -298,7 +455,20 @@ const Services = () => {
             Nuestro equipo técnicos esta capacitados para solucionar cualquier
             incidente en el menor tiempo posible
           </p>
-        </div>
+        </div> */}
+
+        {servicesData.map((e) => (
+          <div className="service">
+            <div className="image">
+              <div className="bgSpan"></div>
+              <div className="img">
+                <img src={e.image} alt="" />
+              </div>
+            </div>
+            <h2>{e.title}</h2>
+            <p>{e.info}</p>
+          </div>
+        ))}
       </div>
       <div className="word_btn">
         <h1>
@@ -422,7 +592,7 @@ const Services = () => {
           asesoramiento para ayudar a que sus negocios prosperen.
         </h1>
         <div className="remarks_container">
-          <div className="remark">
+          {/* <div className="remark">
             <div className="bgSpan"></div>
             <p>
               "Trabajar con Caja Negra ha sido un cambio radical para nuestra
@@ -469,7 +639,17 @@ const Services = () => {
               ofrecer soluciones personalizadas es incomparable."
             </p>
             <p> Jane Smith, CEO de Tech Solutions Inc.</p>
-          </div>
+          </div> */}
+
+          {commetsData.map((e) => (
+            <div className="remark">
+              <div className="bgSpan"></div>
+              <p>{e.info}</p>
+              <p>
+                {e.name}, {e.profession}
+              </p>
+            </div>
+          ))}
         </div>
       </div>
     </div>

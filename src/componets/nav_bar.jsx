@@ -14,9 +14,11 @@ const NavBar = () => {
   return (
     <div className="navContainer">
       <div className="nav_bar pc">
-        <div className="logo">
-          <img src={logo} alt="" srcset="" />
-        </div>
+        <Link to="/">
+          <div className="logo">
+            <img src={logo} alt="" srcset="" />
+          </div>
+        </Link>
         <div className="links">
           <ul>
             <li>

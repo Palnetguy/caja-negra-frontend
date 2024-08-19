@@ -6,8 +6,10 @@ import cloudHost3 from "../assets/images/30734110-removebg-preview.png";
 import revenderImg1 from "../assets/images/7331836 1.png";
 import revenderImg2 from "../assets/images/png-transparent-businessperson-consultant-organization-company-market-company-text-people 1.png";
 import revenderImg3 from "../assets/images/gratis-png-grafico-de-barras-3d-en-colores-surtidos-grafico-de-finanzas-dibujo-de-trabajo 1.png";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
+import axios from "axios";
+import config from "./config";
 
 const HostingPage = () => {
   const [Compartido, setCompartido] = useState(true);
@@ -51,6 +53,27 @@ const HostingPage = () => {
 };
 
 const Hosting_Compartido = () => {
+  const [hosting_plans, sethosting_plans] = useState([]);
+
+  useEffect(() => {
+    axios
+      .get(config.apiEndpoint + "/hosting-plans/", {
+        headers: {
+          Authorization: `API-Key ${config.apiKey}`, // or 'API-Key': apiKey, depending on API
+          // Authorization: `Bearer ${apiKey}`, // or 'API-Key': apiKey, depending on API
+        },
+      })
+      .then((response) => {
+        sethosting_plans(response.data);
+        console.log(response.data);
+        // setisDoneLoadingdedicatedserversData(false);
+      })
+      .catch((error) => {
+        // setError(error.message);
+        console.log(error.message);
+        // setisDoneLoadingdedicatedserversData(false);
+      });
+  }, []);
   return (
     <div className="hosting_compartido">
       <h2 className="sub_title">Hosting Compartido</h2>
@@ -91,7 +114,7 @@ const Hosting_Compartido = () => {
         <h2 className="sub_title">Especificaciones Técnicas</h2>
         <h1 className="title">HOSTING NÚMERO TOP 10</h1>
         <div className="select_plan_cont">
-          <div className="selct_plan_each">
+          {/* <div className="selct_plan_each">
             <h1>REGULAR</h1>
             <p>
               Un plan economico de 25 GB con dominio , correo electronico
@@ -120,7 +143,21 @@ const Hosting_Compartido = () => {
             <Link target="_top" to="/solicitar">
               <button className="full_gradient_btn">Solicitar</button>
             </Link>
-          </div>
+          </div> */}
+
+          {hosting_plans.map((e) => (
+            <div className="selct_plan_each">
+              <h1>
+                {e.plan_type == "Premium"
+                  ? e.plan_type + " " + "+"
+                  : e.plan_type}
+              </h1>
+              <p>{e.info}</p>
+              <Link target="_top" to="/solicitar">
+                <button className="full_gradient_btn">Solicitar</button>
+              </Link>
+            </div>
+          ))}
         </div>
       </div>
     </div>

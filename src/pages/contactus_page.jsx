@@ -3,6 +3,7 @@ import NavBar from "../componets/nav_bar";
 import "../styles/contactus_page.css";
 import phoneImg from "../assets/images/ic_baseline-phone.png";
 import emailImg from "../assets/images/mage_email-opened-fill.png";
+import { useState } from "react";
 
 const ContactUsPage = () => {
   return (
@@ -32,6 +33,40 @@ const ContactUsPage = () => {
 };
 
 const ContactUsPageOp = () => {
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
+
+  const handleGetName = (e) => {
+    setName(e.target.value);
+    // console.log(e.target.value);
+    // console.log(name);
+  };
+  const handleGetEmail = (e) => {
+    setEmail(e.target.value);
+  };
+  const handleGetMessege = (e) => {
+    setMessage(e.target.value);
+  };
+
+  const handlesendtoWp = (e) => {
+    e.preventDefault();
+    // Create the WhatsApp message
+    const whatsappMessage = `Hello, my name is ${name}. Email: ${email}. Message: ${message}`;
+
+    // WhatsApp API URL
+    const whatsappUrl = `https://wa.me/0786307411?text=${encodeURIComponent(
+      whatsappMessage
+    )}`;
+
+    // Redirect to WhatsApp
+    window.open(whatsappUrl, "_blank");
+
+    setName("");
+    setEmail("");
+    setMessage("");
+    // console.log(whatsappMessage);
+  };
   return (
     <div className="contactus_pageop">
       <div className="more_info">
@@ -52,14 +87,37 @@ const ContactUsPageOp = () => {
           <p>ventas@cajanegra.com</p>
         </div>
       </div>
-      <div className="contact_form">
+      <form className="contact_form">
         <h2 className="sub_title">¿Tienes Preguntas?</h2>
         <h1 className="title">ENVIANOS UN MENSAJE</h1>
-        <input type="text" placeholder="Nombre completo" />
-        <input type="text" placeholder="Correo electronico" />
-        <textarea name="" id="" placeholder="Mensajes"></textarea>
-        <button className="full_gradient_btn">Enviar</button>
-      </div>
+        <input
+          name="name"
+          type="text"
+          placeholder="Nombre completo"
+          required
+          onChange={handleGetName}
+          value={name}
+        />
+        <input
+          name="email"
+          type="text"
+          placeholder="Correo electronico"
+          required
+          onChange={handleGetEmail}
+          value={email}
+        />
+        <textarea
+          name="message"
+          id=""
+          placeholder="Mensajes"
+          required
+          onChange={handleGetMessege}
+          value={message}
+        ></textarea>
+        <button className="full_gradient_btn" onClick={handlesendtoWp}>
+          Enviar
+        </button>
+      </form>
     </div>
   );
 };

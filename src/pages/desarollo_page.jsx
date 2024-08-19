@@ -3,6 +3,9 @@ import { Link } from "react-router-dom";
 import dedicatedServerIMg from "../assets/images/Dedicated-Server-PNG-Photo 1.png";
 import NavBar from "../componets/nav_bar";
 import "../styles/desarollo_page.css";
+import { useEffect, useState } from "react";
+import config from "./config";
+import axios from "axios";
 
 const DesarolloPage = () => {
   return (
@@ -27,10 +30,29 @@ const DesarolloPage = () => {
 };
 
 const Desarollo = () => {
+  const [developmentinfoData, setdevelopmentinfoData] = useState([]);
+
+  useEffect(() => {
+    axios
+      .get(config.apiEndpoint + "/development-info/", {
+        headers: {
+          Authorization: `API-Key ${config.apiKey}`, // or 'API-Key': apiKey, depending on API
+          // Authorization: `Bearer ${apiKey}`, // or 'API-Key': apiKey, depending on API
+        },
+      })
+      .then((response) => {
+        setdevelopmentinfoData(response.data);
+        console.log(response.data);
+      })
+      .catch((error) => {
+        // setError(error.message);
+        console.log(error.message);
+      });
+  }, []);
   return (
     <div className="desarollo">
       <div className="desarollo_each_cont">
-        <div className="desarollo_each">
+        {/* <div className="desarollo_each">
           <h1>Imagen de Marca</h1>
           <p>
             Implemente la imagen de su marca en una aplicación para su negocio.
@@ -56,7 +78,14 @@ const Desarollo = () => {
             Los equipos móviles de sus clientes no son una limitante,
             desarrollamos 100% nativo
           </p>
-        </div>
+        </div> */}
+
+        {developmentinfoData.map((e) => (
+          <div className="desarollo_each" key={e.id}>
+            <h1>{e.title}</h1>
+            <p>{e.info}</p>
+          </div>
+        ))}
       </div>
 
       <div className="desarollo_more">
