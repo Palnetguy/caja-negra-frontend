@@ -10,6 +10,7 @@ import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import axios from "axios";
 import config from "./config";
+import { PlanComponent } from "../componets/hosting/plan";
 
 const HostingPage = () => {
   const [Compartido, setCompartido] = useState(true);
@@ -74,6 +75,27 @@ const Hosting_Compartido = () => {
         // setisDoneLoadingdedicatedserversData(false);
       });
   }, []);
+
+  const planData=[
+    {
+      id: 0,
+      h1: 'REGULAR',
+      p: `Un plan economico de 25 GB con dominio , correo electronico
+          coincidentes gratis y 1 ssl gratis`
+    },
+    {
+      id:1,
+      h1:'STANDARD',
+      p:`Mayor capacidad de procesamiento mutiples sitios, correo
+        electronico coincidentes gratis y 1 ssl grati`
+    },
+    {
+      id: 2,
+      h1: 'Premium +',
+      p:`Capacidad Y Velocidad de procesamiento maximizadas, correo
+          electronico coincidentes gratis y 1 ssl gratis`
+    }
+  ]
   return (
     <div className="hosting_compartido">
       <h2 className="sub_title">Hosting Compartido</h2>
@@ -114,6 +136,9 @@ const Hosting_Compartido = () => {
         <h2 className="sub_title">Especificaciones Técnicas</h2>
         <h1 className="title">HOSTING NÚMERO TOP 10</h1>
         <div className="select_plan_cont">
+          {planData.map(p=>(
+            <PlanComponent key={p.id} h1={p.h1} p={p.p}/>
+          ))}
           {/* <div className="selct_plan_each">
             <h1>REGULAR</h1>
             <p>
