@@ -21,6 +21,8 @@ import config from "./config";
 import FullPageLoader from "../componets/fullpage_loader";
 //helper components
 import { ServicesComponent } from "../componets/home_page/services";
+import { VpsComponent } from "../componets/home_page/vps";
+import { DedicaoComponent } from "../componets/home_page/dedicao";
 
 const HomePage = () => {
   const [isloading, setislaoding] = useState(true);
@@ -191,9 +193,50 @@ const services_data=[
     heading: '99.9% Disponibilidad Garantizada',
     body: 'Nuestro equipo técnicos esta capacitados para solucionar cualquier incidente en el menor tiempo posible'
   }
+];
+
+const vpsData=[
+  {
+    id: 0,
+    h1: 'VPS Linux',
+    h2: 'CPU 2 - RAM 8GB - SSD 200GB',
+    bt: 'Solicitar'
+  },
+  {
+    id: 1,
+    h1: 'Basic VPS Linux',
+    h2: 'CPU  - RAM 16GB - SSD 200GB',
+    bt: 'Solicitar'
+  },
+  {
+    id: 2,
+    h1: 'VPS Remote Desktop',
+    h2: 'CPU 2 - RAM 4GB - SSD 80GB',
+    bt: 'Solicitar'
+  }
 ]
 
-  return (
+const dedicaoData = [
+  {
+    id: 0,
+    h1: 'VPS Remote Desktop',
+    h2: 'CPU 2 - RAM 4GB - SSD 80GB',
+    bt: 'Solicitar'
+  },
+  {
+    id: 1,
+    h1: 'VPS Remote Desktop',
+    h2: 'CPU 2 - RAM 4GB - SSD 80GB',
+    bt: 'Solicitar'
+  },
+  {
+    id: 2,
+    h1: 'VPS Remote Desktop',
+    h2: 'CPU 2 - RAM 4GB - SSD 80GB',
+    bt: 'Solicitar'
+  }
+];
+return (
     <div className="services" id="why_choose_us">
       <h2 className="sub_title">Servicios Garantizado</h2>
       <h1 className="title">¿Por qué elegirnos?</h1>
@@ -283,6 +326,9 @@ const services_data=[
         {/* for vps */}
         {vpsOpen && (
           <div className="ofertas_container">
+            {vpsData.map(i =>(
+              <VpsComponent key={i.id} heading1={i.h1} heading2={i.h2} buttonTitle={i.bt}/>
+            ))}
             {/* <div className="each_ofertas ">
               <div className="bgSpan"></div>
               <div className="info">
@@ -333,6 +379,10 @@ const services_data=[
         {/* for dedicado */}
         {!vpsOpen && (
           <div className="ofertas_container">
+            {dedicaoData.map(i => (
+              <DedicaoComponent key={i.id} h1={i.heading1} h2={i.heading2} bt={i.buttonTitle}
+            ))};
+
             {/* <div className="each_ofertas ">
               <div className="bgSpan"></div>
               <div className="info">

@@ -3,16 +3,17 @@ import { Link } from "react-router-dom";
 import '../../styles/home_page.css'
 
 
-export const vps = () => {
+export const VpsComponent = ({heading1, heading2, buttonTitle}) => {
   return (
 <div className="each_ofertas ">
-              <div className="bgSpan"></div>
-              <div className="info">
-                <h1>VPS Linux</h1>
-                <h2>CPU 2 - RAM 8GB - SSD 200GB</h2>
-                <Link target="_top" to="/solicitar">
-                  <button>Solicitar</button>
-                </Link>
-              </div>
-            </div>  )
+    <div className="bgSpan"></div>
+        <div className="info">
+            <h1>{heading1}</h1>
+            <h2>{heading2}</h2>
+            <Link target="_top" to="/solicitar">
+                <button>{buttonTitle}</button>
+            </Link>
+        </div>
+    </div>
+    )
 }
