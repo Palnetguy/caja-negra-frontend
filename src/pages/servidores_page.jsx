@@ -10,6 +10,7 @@ import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import axios from "axios";
 import config from "./config";
+import { ServidoresOpOneComponent } from "../componets/servidore_page/servidoresOpOne";
 
 const Servidores = () => {
   const [vpsOpen, setVpsOpen] = useState(true);
@@ -42,7 +43,7 @@ const Servidores = () => {
         </div>
       </div>
       {vpsOpen && <ServidoresOp />}
-      {!vpsOpen && <ServidoresOp_1 />}
+      {!vpsOpen && <ServidoresOp1 />}
     </div>
   );
 };
@@ -125,6 +126,8 @@ const ServidoresOp = () => {
     setcurrent_server(e);
   };
 
+  const typeData=['Basico', 'Freelancer', 'Ecommerce', 'Agencia', 'Empresarial']
+
   return (
     <div className="servidores_op" id="servidores_op">
       <div className="changeBtns">
@@ -141,30 +144,38 @@ const ServidoresOp = () => {
       {!isDoneLoadingserversData && (
         <>
           <div className="specs_contain">
+            <div className="type-container">
+              <div className="type-container-left">
+                {typeData.map(i=>(
+                  <div>{i}</div>
+                  ))}
+              </div>
+              <div className="empty-type-container-left"></div>
+            </div>
             <div className="specs">
               <div className="info">
                 <p>CPU</p>
-                <p>{serversData[current_server].cpu}</p>
+                {/* <p>{serversData[current_server].cpu}</p> */}
               </div>
               <div className="info">
                 <p>Bandwidth</p>
-                <p>{serversData[current_server].bandwidth}</p>
+                {/* <p>{serversData[current_server].bandwidth}</p> */}
               </div>
               <div className="info">
                 <p>Bandwidth Two</p>
-                <p>{serversData[current_server].bandwidth_two}</p>
+                {/* <p>{serversData[current_server].bandwidth_two}</p> */}
               </div>
               <div className="info">
                 <p>RAM</p>
-                <p>{serversData[current_server].ram}</p>
+                {/* <p>{serversData[current_server].ram}</p> */}
               </div>
               <div className="info">
                 <p>Disk Space</p>
-                <p>{serversData[current_server].diskspace}</p>
+                {/* <p>{serversData[current_server].diskspace}</p> */}
               </div>
               <div className="info">
                 <p>IP</p>
-                <p>{serversData[current_server].ip}</p>
+                {/* <p>{serversData[current_server].ip}</p> */}
               </div>
               <Link target="_top" to="/solicitar">
                 <button className="full_gradient_btn">Solicitar</button>
@@ -229,7 +240,7 @@ const ServidoresOp = () => {
   );
 };
 
-const ServidoresOp_1 = () => {
+const ServidoresOp1 = () => {
   const [
     isDoneLoadingdedicatedserversData,
     setisDoneLoadingdedicatedserversData,
@@ -255,6 +266,77 @@ const ServidoresOp_1 = () => {
         setisDoneLoadingdedicatedserversData(false);
       });
   }, []);
+
+  const serverDetailIndepth=[
+    {
+      id:0,
+      h1: 'PROCESADOR',
+      h2: 'Dual Xeon 2603',
+      liItem: ['Memoria 64GB', 'Almacenamiento 120GB SSD', 'Transferencia 1Gpbs/ilimitado','Entrega 12 horas'],
+      bt: 'Solicitar'
+    },{
+      id:1,
+      h1: 'PROCESADOR',
+      h2: 'DELL Dual Xenon 5520',
+      liItem: ['Memoria 72GB', 'Almacenamiento 4 x 250GB SSD', 'Transferencia 10Gpbs at 95%','Entrega 12 horas'],
+      bt: 'Solicitar'
+    },
+    {
+      id:2,
+      h1: 'PROCESADOR',
+      h2: 'Dual Xenon ES-2650CPU',
+      liItem: ['Memoria 128GB', 'Almacenamiento 240GB SSD', 'Transferencia 10Gpbs, port 100TB','Entrega 12 horas'],
+      bt: 'Solicitar'
+    },{
+      id:3,
+      h1: 'PROCESADOR',
+      h2: 'Dual Xenon 5520',
+      liItem: ['Memoria 72GB', 'Almacenamiento 4x4TB SSD', 'Transferencia 10Gpbs/ilimitado','Entrega 24 horas'],
+      bt: 'Solicitar'
+    },
+    {
+      id:4,
+      h1: 'PROCESADOR',
+      h2: 'Dual Xenon 5520',
+      liItem: ['Memoria 64GB', 'Almacenamiento 4x18TB HDD', 'Transferencia 10Gpbs/ilimitado','Entrega 12 horas'],
+      bt: 'Solicitar'
+    },
+    {
+      id:5,
+      h1: 'PROCESADOR',
+      h2: 'Dual Xenon ES-2650',
+      liItem: ['Memoria 128GB', 'Almacenamiento 2 x 4TB NVMe', 'Transferencia 40Gpbs/ilimitado','Entrega 72 horas'],
+      bt: 'Solicitar'
+    },
+    {
+      id:6,
+      h1: 'PROCESADOR',
+      h2: 'Dual AMD Epyc - 128c/256f',
+      liItem: ['Memoria 1TB', 'Almacenamiento 2 x 2TB NVMe', 'Transferencia 10Gpbs/ilimitado','Entrega 72 horas'],
+      bt: 'Solicitar'
+    },
+    {
+      id:7,
+      h1: 'PROCESADOR',
+      h2: 'AMD Ryzen 9 5950X',
+      liItem: ['Memoria 128GB', 'Almacenamiento 2 x 2Tb NVMe', 'Transferencia 10Gpbs/ilimitado','Entrega 72 horas'],
+      bt: 'Solicitar'
+    },
+    {
+      id:8,
+      h1: 'PROCESADOR',
+      h2: 'Dual AMD Epyc - 128c/256f',
+      liItem: ['Memoria 1TB', 'Almacenamiento 2 x 2TB NVMe', 'Transferencia 200Gpbs/ilimitado','Entrega 24 horas'],
+      bt: 'Solicitar'
+    },
+    {
+      id:9,
+      h1: 'PROCESADOR',
+      h2: 'Single AMD EPYC 7702P 64c/128f',
+      liItem: ['Memoria 512TB', 'Almacenamiento 2 x 2TB NVMe', 'Transferencia 100Gpbs/ilimitado','Entrega 72 horas'],
+      bt: 'Solicitar'
+    }
+  ]
   return (
     <div className="servidoresOp_1" id="servidoresOp_1">
       <h2 className="sub_title">Servicio al Cliente Experimentado</h2>
@@ -294,6 +376,9 @@ const ServidoresOp_1 = () => {
       </div>
 
       <div className="servidoresOp_1_contain1">
+        {serverDetailIndepth.map(i=>(
+          <ServidoresOpOneComponent key={i.id} h1={i.h1} h2={i.h2} liItem={i.liItem} bt={i.bt}/>
+        ))}
         {/* <div className="servidoresOp_1_each_1">
           <h1>PROCESADOR</h1>
           <h2>Dual Xeon 2603</h2>
@@ -309,22 +394,7 @@ const ServidoresOp_1 = () => {
           </Link>
         </div> */}
 
-        {dicatedserversData.map((e) => (
-          <div className="servidoresOp_1_each_1">
-            <h1>PROCESADOR</h1>
-            <h2>{e.PROCESSORS}</h2>
-            <ul>
-              <li>Memoria {e.memoria}</li>
-              <li>Almacenamiento {e.storage}</li>
-              <li>Transferencia {e.transfer}</li>
-              <li>Entrega {e.time}</li>
-            </ul>
-            <h1>$ 370</h1>
-            <Link target="_top" to="/solicitar">
-              <button className="full_gradient_btn">Solicitar</button>
-            </Link>
-          </div>
-        ))}
+        
       </div>
 
       <div className="nuestros_cont">
