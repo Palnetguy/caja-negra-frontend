@@ -222,19 +222,28 @@ const dedicaoData = [
   {
     id: 0,
     h1: 'Startup Dedicated Server',
-    h2: 'Están diseñados para alojar sitios web, de streaming o aplicaciones profesionales, de alta demanda.',
+    h2: `Están diseñados para alojar sitios web, de
+    streaming o aplicaciones profesionales, de
+    alta demanda.`,
     bt: 'Solicitar'
   },
   {
     id: 1,
     h1: 'Storage Dedicate Server SDS',
-    h2: 'CPU : AMD Ryzen 5 Pro 3600 6c/12t - RAM : 32 GB - HDD : 4x 6TB - Network : 2Gb/',
+    h2: `CPU : AMD Ryzen 5 Pro 3600
+    6c/12t - RAM : 32 GB - HDD : 4x
+    6TB - Network : 2Gb/s`,
     bt: 'Solicitar'
   },
   {
     id: 2,
     h1: 'High Grade Dedicated Server HGDS-1',
-    h2: 'Dual Intel Xeon Gold 6226R - 32c/64t - 2.9GHz/3.9GHz 2x SSD SATA 480GB 192GB DDR4 ECC 2933MHz 6× 3.84TB SSD NVMe Soft RAID 1Gbit/s unmetered and guaranteed',
+    h2: `Dual Intel Xeon Gold 6226R -
+    32c/64t - 2.9GHz/3.9GHz 2x SSD
+    SATA 480GB 192GB DDR4 ECC 
+    2933MHz 6× 3.84TB SSD NVMe
+    Soft RAID 1Gbit/s unmetered and
+    guaranteed`,
     bt: 'Solicitar'
   }
 ];
