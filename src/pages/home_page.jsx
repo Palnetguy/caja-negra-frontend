@@ -219,20 +219,20 @@ const vpsData=[
 const dedicaoData = [
   {
     id: 0,
-    h1: 'VPS Remote Desktop',
-    h2: 'CPU 2 - RAM 4GB - SSD 80GB',
+    h1: 'Startup Dedicated Server',
+    h2: 'Están diseñados para alojar sitios web, de streaming o aplicaciones profesionales, de alta demanda.',
     bt: 'Solicitar'
   },
   {
     id: 1,
-    h1: 'VPS Remote Desktop',
-    h2: 'CPU 2 - RAM 4GB - SSD 80GB',
+    h1: 'Storage Dedicate Server SDS',
+    h2: 'CPU : AMD Ryzen 5 Pro 3600 6c/12t - RAM : 32 GB - HDD : 4x 6TB - Network : 2Gb/',
     bt: 'Solicitar'
   },
   {
     id: 2,
-    h1: 'VPS Remote Desktop',
-    h2: 'CPU 2 - RAM 4GB - SSD 80GB',
+    h1: 'High Grade Dedicated Server HGDS-1',
+    h2: 'Dual Intel Xeon Gold 6226R - 32c/64t - 2.9GHz/3.9GHz 2x SSD SATA 480GB 192GB DDR4 ECC 2933MHz 6× 3.84TB SSD NVMe Soft RAID 1Gbit/s unmetered and guaranteed',
     bt: 'Solicitar'
   }
 ];
@@ -380,8 +380,8 @@ return (
         {!vpsOpen && (
           <div className="ofertas_container">
             {dedicaoData.map(i => (
-              <DedicaoComponent key={i.id} h1={i.heading1} h2={i.heading2} bt={i.buttonTitle}
-            ))};
+              <DedicaoComponent key={i.id} heading1={i.h1} heading2={i.h2} buttonTitle={i.bt}/>
+            ))}
 
             {/* <div className="each_ofertas ">
               <div className="bgSpan"></div>

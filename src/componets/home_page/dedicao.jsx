@@ -6,7 +6,7 @@ export const DedicaoComponent = ({heading1, heading2, buttonTitle}) => {
     <div className="each_ofertas ">
     <div className="bgSpan"></div>
     <div className="info">
-      <h1>S{heading1}</h1>
+      <h1>{heading1}</h1>
       <h2>{heading2}</h2>
       <button>{buttonTitle}</button>
     </div>
