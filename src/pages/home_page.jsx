@@ -24,6 +24,7 @@ import { ServicesComponent } from "../componets/home_page/services";
 import { VpsComponent } from "../componets/home_page/vps";
 import { DedicaoComponent } from "../componets/home_page/dedicao";
 import { ProfessionaleService } from "../componets/home_page/professionale_service";
+import { RemarksContainer } from "../componets/home_page/remarks";
 
 const HomePage = () => {
   const [isloading, setislaoding] = useState(true);
@@ -270,7 +271,50 @@ const profesionalesServiceData=[
     h2: '99.9% Disponibilidad Garantizada',
     p: 'Nuestro equipo técnicos esta capacitados para solucionar cualquier incidente en el menor tiempo posible',
   },
+]
 
+const remarksData = [
+  {
+    id: 0,
+    pb: `"Trabajar con Caja Negra ha sido un cambio radical para nuestra
+          empresa. Su experiencia en análisis de datos e integración nos
+          permitió optimizar nuestras operaciones y obtener valiosos
+          conocimientos que han impulsado nuestras decisiones estratégicas.
+          La dedicación del equipo para entender nuestras necesidades y
+          ofrecer soluciones personalizadas es incomparable."`,
+    pf: 'Jane Smith, CEO de Tech Solutions Inc.'
+  },
+  {
+    id: 1,
+    pb: `"Caja Negra ha demonstrado ser un socio confiable y 
+    visionario en nuestro viaje de transfomarción digital. 
+    Su enfoque innovador para resolver problemas y su 
+    compromiso con la excelencia la superado nuesteras
+    expectativas. Estamos encantados con los resultados y
+    esperamos una colaboratión a largo plazo."`,
+    pf: 'Jane Smith, CEO de Tech Solutions Inc.'
+  },
+  {
+    id: 2,
+    pb: `El servio al cliente y el soporte de Caja Negra son
+    exceptionales. Siempre  so receptivos y están listos
+    para abordar cualqier problema o inquietud que
+    tengamos. Su apoyo continuo ha sido invaluable para
+    garantizar que nuestros sistemas funcionen sin
+    problemas y de manera eficiente."`,
+    pf: 'Jane Smith, CEO de Tech Solutions Inc.'
+  },
+  {
+    id: 3,
+    pb: `"Las soluciones innovadoras y el profundo
+    conocimiento de la industria de Caja Negra los han
+    distinguido de otras firmas technológicas con las que
+    hemos trabajado. Su capacidad para ofrecer
+    resultados de alta calidad a tiempo y dentro del
+    presupuesto los ha convertido en nuestro socio
+    technolóico preferido"`,
+    pf: 'Jane Smith, CEO de Tech Solutions Inc.'
+  }
 ]
 return (
     <div className="services" id="why_choose_us">
@@ -707,6 +751,9 @@ return (
           asesoramiento para ayudar a que sus negocios prosperen.
         </h1>
         <div className="remarks_container">
+          {remarksData.map(i=>(
+            <RemarksContainer key={i.id} pBody={i.pb} pFooter={i.pf}/>
+          ))}
           {/* <div className="remark">
             <div className="bgSpan"></div>
             <p>
