@@ -1,9 +1,9 @@
 import NavBar from "../componets/nav_bar";
 import "../styles/home_page.css";
 import bgVideo from "../assets/images/gif-bg blue stars.gif";
-// import chooseUs1Img from "../assets/images/choose-us-1.png";
-// import chooseUs2Img from "../assets/images/choose-us-2.png";
-// import chooseUs3Img from "../assets/images/choose-us-3.png";
+import chooseUs1Img from "../assets/images/choose-us-1.png";
+import chooseUs2Img from "../assets/images/choose-us-2.png";
+import chooseUs3Img from "../assets/images/choose-us-3.png";
 
 // import service7Img from "../assets/images/service-7 (1).png";
 // import service8Img from "../assets/images/service-8 (1) (1).png";
@@ -19,6 +19,8 @@ import { Link } from "react-router-dom";
 import axios from "axios";
 import config from "./config";
 import FullPageLoader from "../componets/fullpage_loader";
+//helper components
+import { ServicesComponent } from "../componets/home_page/services";
 
 const HomePage = () => {
   const [isloading, setislaoding] = useState(true);
@@ -170,12 +172,36 @@ const Services = ({ handleLoading }) => {
       });
   }, []); // Empty dependency array means this effect runs once on mount
 
+const services_data=[
+  {
+    id: 0,
+    img: chooseUs1Img,
+    heading: '99.9% Disponibilidad Garantizada',
+    body: 'Nuestro equipo técnicos esta capacitados para solucionar cualquier incidente en el menor tiempo posible'
+  },
+  {
+    id: 1,
+    img: chooseUs2Img,
+    heading: '99.9% Disponibilidad Garantizada',
+    body: 'Nuestro equipo técnicos esta capacitados para solucionar cualquier incidente en el menor tiempo posible'
+  },
+  {
+    id: 2,
+    img: chooseUs3Img,
+    heading: '99.9% Disponibilidad Garantizada',
+    body: 'Nuestro equipo técnicos esta capacitados para solucionar cualquier incidente en el menor tiempo posible'
+  }
+]
+
   return (
     <div className="services" id="why_choose_us">
       <h2 className="sub_title">Servicios Garantizado</h2>
       <h1 className="title">¿Por qué elegirnos?</h1>
       {/* Services */}
       <div className="services_container">
+        {services_data.map(item=>(
+        <ServicesComponent key={item.id} image={item.img} heading={item.heading} paragraph={item.body} />
+      ))}
         {/* <div className="service">
           <div className="image">
             <div className="bgSpan"></div>
