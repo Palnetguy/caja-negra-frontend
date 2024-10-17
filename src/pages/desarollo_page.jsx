@@ -6,6 +6,8 @@ import "../styles/desarollo_page.css";
 import { useEffect, useState } from "react";
 import config from "./config";
 import axios from "axios";
+import { DesarolloComponent } from "../componets/desarollo_page/desarollo";
+import { DesarolloBotomComponent } from "../componets/desarollo_page/desarolloBotom";
 
 const DesarolloPage = () => {
   return (
@@ -49,6 +51,46 @@ const Desarollo = () => {
         console.log(error.message);
       });
   }, []);
+
+  const developmentInfoData=[
+    {
+      id: 0,
+      title: 'Imagen de Marca',
+      info: 'Implemente la imagen de su marca en una aplicación para su negocio.',
+    },
+    {
+      id: 1,
+      title: 'Diseño Personalizable',
+      info: 'Con su logo, perfiles de redes sociales, imágenes y esquema de colores. Donde su negocio se destaque.',
+    },
+    {
+      id: 2,
+      title: 'Presencia en Internet',
+      info: 'Lleve su negocio a todas partes. El Internet le da potencial a cualquier negocio.',
+    },
+    {
+      id: 3,
+      title: 'Aplicaciones Android - IOS',
+      info: 'Los equipos móviles de sus clientes no son una limitante, desarrollamos 100% nativo',
+    }
+  ]
+
+  const extraData =[
+    {
+      id: 0,
+      title:'IOS  Mobile',
+      p: 'Applicatión básicas para negotios',
+      info: ['publicada en playstore', 'iconos de Redes sociales', 'Chat Whatsapp', 'Sitio Web', 'Notificationes Generales'],
+      bt: 'Solicitar'
+    },
+    {
+      id: 1,
+      title:'Android Mobile',
+      p: 'Applicatión básicas para negotios',
+      info: ['publicada en playstore', 'iconos de Redes sociales', 'Chat Whatsapp', 'Sitio Web', 'Notificationes Generales'],
+      bt: 'Solicitar'
+    }
+  ]
   return (
     <div className="desarollo">
       <div className="desarollo_each_cont">
@@ -80,11 +122,8 @@ const Desarollo = () => {
           </p>
         </div> */}
 
-        {developmentinfoData.map((e) => (
-          <div className="desarollo_each" key={e.id}>
-            <h1>{e.title}</h1>
-            <p>{e.info}</p>
-          </div>
+        {developmentInfoData.map((e) => (
+          <DesarolloComponent className="desarollo_each" key={e.id} title={e.title} info={e.info}/>
         ))}
       </div>
 
@@ -109,6 +148,11 @@ const Desarollo = () => {
             <img src={dedicatedServerIMg} alt="" />
           </div>
         </div>
+      </div>
+      <div className="desarollo_each_cont">
+        {extraData.map(d=>(
+          <DesarolloBotomComponent key={d.id} des={d.p} title={d.title} info={d.info} buttonTitle={d.bt}/>
+        ))}
       </div>
     </div>
   );
