@@ -4,6 +4,7 @@ import pagedomaion2 from "../assets/images/pngtree-computer-information-file-pri
 import pagedomaion3 from "../assets/images/png-transparent-technical-support-business-customer-service-consultant-business-service-computer-people 2.png";
 import "../styles/registra_dominio.css";
 import { Link } from "react-router-dom";
+import { DomionBotomomponent } from "../componets/registra_dominio/domionBotom";
 
 const RegisterDominio = () => {
   return (
@@ -65,6 +66,49 @@ const RegisterDominioOp = () => {
 };
 
 const Domains = () => {
+  const dData =[
+    {
+      id: 0,
+      img: pagedomaion1,
+      h1: 'Fácil Gestión e Dominions',
+      p: `Despuès de la compra, puede dirigirse directamente
+      al panel de su cuenta de Bluerey Group y comezar a
+      usar su dominio. El panel del la cuenta está ordenado
+      y es fácil de usar, por lo que puede concentrarse
+      rápidamente en las cosas que importan.`
+    },
+    {
+      id: 1,
+      img: pagedomaion1,
+      h1: 'Configuracio Fácil',
+      p: `Tu dirección de correo elctrónico gratuita está lista y
+      esperádote. ¿Ya tienes configurada una própera
+      página de comercio electrónico o redes sociales? Utilice
+      el reenvio de URL para dirigir a sus visitantes a su
+      página de Instagram. Weebly o Shopify de su elección`
+    }
+    ,
+    {
+      id: 2,
+      img: pagedomaion1,
+      h1: 'Estamos Par Ayudarte',
+      p:`Su dominio Ileva su marca. Imagen pública y
+      reputacion profesional. Además de atención al
+      cliente las 24 horas del dia, los 7 dias de la semana,
+      le brindamos todo lo que necesita para dessarollar
+      su sitio personal o commercial.`
+    },
+    {
+      id: 3,
+      img: pagedomaion1,
+      h1: 'Privacidad y seguridad',
+      p: `La seguridad y la privacidad de su sitio web son lo
+      primero en Bluerey Group, y siempre apoyaremos los
+      derechos de las personans y los dos consumidores en
+      linea. Nuestra misión es mantener Internet abierta,
+      gratuita y segura para todos`
+    }
+  ]
   return (
     <div className="domains">
       <h2 className="sub_title">Dominios</h2>
@@ -88,7 +132,10 @@ const Domains = () => {
         </h2>
         <h1 className="title">AYUDA EN CADA ETAPA</h1>
         <div className="more_domain_container">
-          <div className="more_domain_each">
+          {dData.map(d=>(
+            <DomionBotomomponent key={d.id} img={d.img} h1={d.h1} p={d.p}/>
+          ))}
+          {/* <div className="more_domain_each">
             <div className="image">
               <img src={pagedomaion1} alt="" />
             </div>
@@ -117,7 +164,7 @@ const Domains = () => {
               Utilice nuestra herramienta de búsqueda de precios de dominios y
               ahorre dinero.
             </p>
-          </div>
+          </div> */}
         </div>
       </div>
     </div>
