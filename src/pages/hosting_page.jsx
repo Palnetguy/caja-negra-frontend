@@ -45,7 +45,7 @@ const HostingPage = () => {
         </div>
       </div>
 
-      {Compartido && <Hosting_Compartido />}
+      {Compartido && <HostingCompartido />}
       {!Compartido && <Revender />}
       {/* <Revender />
       <Hosting_Compartido /> */}
@@ -53,7 +53,7 @@ const HostingPage = () => {
   );
 };
 
-const Hosting_Compartido = () => {
+const HostingCompartido = () => {
   const [hosting_plans, sethosting_plans] = useState([]);
 
   useEffect(() => {
