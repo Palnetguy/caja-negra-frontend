@@ -5,7 +5,7 @@ import '../../styles/home_page.css'
 
 export const VpsComponent = ({heading1, heading2, buttonTitle}) => {
   return (
-<div className="each_ofertas ">
+<div className="each_ofertas">
     <div className="bgSpan"></div>
         <div className="info">
             <h1>{heading1}</h1>
