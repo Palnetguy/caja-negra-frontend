@@ -5,12 +5,12 @@ import chooseUs1Img from "../assets/images/choose-us-1.png";
 import chooseUs2Img from "../assets/images/choose-us-2.png";
 import chooseUs3Img from "../assets/images/choose-us-3.png";
 
-// import service7Img from "../assets/images/service-7 (1).png";
-// import service8Img from "../assets/images/service-8 (1) (1).png";
-// import service9Img from "../assets/images/service-9 (1).png";
-// import service10Img from "../assets/images/service-10 (1).png";
-// import service11Img from "../assets/images/vigilancia-1-e1682337472905 (1).png";
-// import service12Img from "../assets/images/service-12 (1).png";
+import service7Img from "../assets/images/service-7 (1).png";
+import service8Img from "../assets/images/service-8 (1) (1).png";
+import service9Img from "../assets/images/service-9 (1).png";
+import service10Img from "../assets/images/service-10 (1).png";
+import service11Img from "../assets/images/vigilancia-1-e1682337472905 (1).png";
+import service12Img from "../assets/images/service-12 (1).png";
 import pay_mth_im from "../assets/images/Group 36 (1).png";
 import bestVPSiM from "../assets/images/Best-VPS-Hosting-Plans 1 (1).png";
 import { useEffect, useState } from "react";
@@ -23,6 +23,7 @@ import FullPageLoader from "../componets/fullpage_loader";
 import { ServicesComponent } from "../componets/home_page/services";
 import { VpsComponent } from "../componets/home_page/vps";
 import { DedicaoComponent } from "../componets/home_page/dedicao";
+import { ProfessionaleService } from "../componets/home_page/professionale_service";
 
 const HomePage = () => {
   const [isloading, setislaoding] = useState(true);
@@ -236,6 +237,41 @@ const dedicaoData = [
     bt: 'Solicitar'
   }
 ];
+const profesionalesServiceData=[
+  {
+    id: 0,
+    img: service7Img,
+    h2: '99.9% Disponibilidad Garantizada',
+    p: 'Nuestro equipo técnicos esta capacitados para solucionar cualquier incidente en el menor tiempo posible',
+  },
+  {
+    id: 1,
+    img: service8Img,
+    h2: '99.9% Disponibilidad Garantizada',
+    p: 'Nuestro equipo técnicos esta capacitados para solucionar cualquier incidente en el menor tiempo posible',
+  }, {
+    id: 2,
+    img: service9Img,
+    h2: '99.9% Disponibilidad Garantizada',
+    p: 'Nuestro equipo técnicos esta capacitados para solucionar cualquier incidente en el menor tiempo posible',
+  }, {
+    id: 3,
+    img: service10Img,
+    h2: '99.9% Disponibilidad Garantizada',
+    p: 'Nuestro equipo técnicos esta capacitados para solucionar cualquier incidente en el menor tiempo posible',
+  }, {
+    id: 4,
+    img: service11Img,
+    h2: '99.9% Disponibilidad Garantizada',
+    p: 'Nuestro equipo técnicos esta capacitados para solucionar cualquier incidente en el menor tiempo posible',
+  }, {
+    id: 5,
+    img: service12Img,
+    h2: '99.9% Disponibilidad Garantizada',
+    p: 'Nuestro equipo técnicos esta capacitados para solucionar cualquier incidente en el menor tiempo posible',
+  },
+
+]
 return (
     <div className="services" id="why_choose_us">
       <h2 className="sub_title">Servicios Garantizado</h2>
@@ -454,6 +490,9 @@ return (
       <h2 className="sub_title">Servicios Profesionales</h2>
       <h1 className="title">Nuestros servicios</h1>
       <div className="services_container">
+        {profesionalesServiceData.map(i => (
+          <ProfessionaleService img={i.img} h2={i.h2} p={i.p}/>
+        ))}
         {/* <div className="service">
           <div className="image">
             <div className="bgSpan"></div>
