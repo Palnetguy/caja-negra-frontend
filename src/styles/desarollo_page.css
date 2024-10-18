@@ -1,6 +1,5 @@
 .desarollo{
   background: linear-gradient(27.09deg, #012B38 11.5%, #002C3B 33.12%, #002C3A 43.32%, #00090B 93.09%);
-
 }
 .desarollo_page .top {
   height: 100vh;
@@ -62,7 +61,8 @@
 .desarollo_page .desarollo_each {
   border-radius: 12px;
   border: 1px solid #86ffe9;
-  background: rgba(43, 43, 43, 0.9);
+  /* background: rgba(43, 43, 43, 0.9); */
+  background: #003C50;
   backdrop-filter: blur(150px);
   padding: 3em 2em;
   width: calc((100% / 2) - 2em);
@@ -72,7 +72,8 @@
   .desarollo_page .desarollo_each {
     border-radius: 12px;
     border: 1px solid #86ffe9;
-    background: rgba(43, 43, 43, 0.9);
+    /* background: rgba(43, 43, 43, 0.9); */
+    background: #003C50;
     backdrop-filter: blur(150px);
     padding: 3em 2em;
     width: calc((100% / 1) - 2em);
@@ -138,7 +139,8 @@
 .desarollo_page .desarollo .desarollo_more .rgt .image {
   border-radius: 12px;
   border: 1px solid #86ffe9;
-  background: rgba(43, 43, 43, 0.9);
+  /* background: rgba(43, 43, 43, 0.9); */
+  background: #003C50;
   backdrop-filter: blur(150px);
   width: 100%;
   height: 320px;

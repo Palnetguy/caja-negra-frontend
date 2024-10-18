@@ -74,7 +74,6 @@ const Desarollo = () => {
       info: 'Los equipos móviles de sus clientes no son una limitante, desarrollamos 100% nativo',
     }
   ]
-
   const extraData =[
     {
       id: 0,
