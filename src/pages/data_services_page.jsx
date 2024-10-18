@@ -28,6 +28,7 @@ const DataServicesPage = () => {
 };
 
 const DataServices = () => {
+  
   return (
     <div className="data_services_op">
       <h1 className="title">SERVICIOS DE DATOS QUE OFRECEMOS</h1>

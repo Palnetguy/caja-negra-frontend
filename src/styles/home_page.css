@@ -191,7 +191,7 @@
   text-align: center;
 }
 .home_page .services .service > .image > .bgSpan {
-  background: #2b2b2b;
+  background: #003C50;
   height: 229px;
   width: 289px;
   position: absolute;
@@ -811,7 +811,7 @@
   text-align: center;
 }
 .home_page .vps.sus .service .image > .bgSpan {
-  background: #2b2b2b;
+  background: #003C50;
   height: 269px;
   width: 289px;
   position: absolute;
@@ -819,6 +819,9 @@
   top: 50%;
   transform: translate(-50%, -50%);
   border-radius: 12px;
+}
+.home_page .rht .service .image .bgSpan {
+  background: #003C50;
 }
 @media (max-width: 920px) {
   .home_page .sus {
