@@ -1,3 +1,6 @@
+.register_domino{
+  margin-bottom: -2em;
+}
 .register_domino .top {
   height: 100vh;
   background: url("../assets/images/timage2.png");
@@ -102,7 +105,8 @@
 .register_domino .register_domino_op .register_domin_each .image {
   border-radius: 12px;
   border: 1px solid #86ffe9;
-  background: rgba(43, 43, 43, 0.9);
+  /* background: rgba(43, 43, 43, 0.9); */
+  background: #003C50;
   backdrop-filter: blur(150px);
   width: max-content;
   width: 290px;
@@ -161,7 +165,8 @@
 .register_domino .domains .more_domain .more_domain_each .image {
   border-radius: 12px;
   border: 1px solid #86ffe9;
-  background: rgba(43, 43, 43, 0.9);
+  /* background: rgba(43, 43, 43, 0.9); */
+  background: #003C50;
   backdrop-filter: blur(150px);
   width: max-content;
   width: 290px;
