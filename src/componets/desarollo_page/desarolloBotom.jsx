@@ -41,17 +41,18 @@ export const DesarolloBotomComponent = ({title, des, info, buttonTitle}) => {
         ))}
     </ul>
     <Link target="_top" to="/solicitar">
-    <button className='bottom_btn' style={{ fontFamily : 'Saira', fontSize : '32px',
+    <button className='bottom_btn' style={{ fontFamily : 'Saira', fontSize : '24px',
       fontWeight: '700',
       lineHeight: '42px',
       textAlign: 'center',
-      width: '125px',
-      height: '42px',
+      width: '110px',
+      height: '40px',
       top: '3025px',
       left: '201px',
       gap: '0px',
       opacity: '0px',
-      background: 'linear-gradient(90deg, #002C3A 0%, #33817C 50%, #012B38 100%)'
+      background: '#86ffe9',
+      borderRadius: '10px',
     }}>{buttonTitle}</button>
            </Link>
   </div>
