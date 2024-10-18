@@ -25,6 +25,7 @@ import { VpsComponent } from "../componets/home_page/vps";
 import { DedicaoComponent } from "../componets/home_page/dedicao";
 import { ProfessionaleService } from "../componets/home_page/professionale_service";
 import { RemarksContainer } from "../componets/home_page/remarks";
+import useResponsive from "../utils/useResponsive";
 
 const HomePage = () => {
   const [isloading, setislaoding] = useState(true);
@@ -34,12 +35,12 @@ const HomePage = () => {
       setislaoding(value);
     }, 2000);
   };
-
+  const screenSize = useResponsive();
   return (
-    <div className="home_page">
+    <div className="home_page" style={{ fontSize: screenSize === 'mobile' ? '14px' : screenSize === 'largeDesktop' ? '22px' : '18px' }}>
       {isloading && <FullPageLoader />}
-      <div className="top">
-        <div className="bgVideo">
+      <div className="top" style={{ fontSize: screenSize === 'mobile' ? '14px' : screenSize === 'largeDesktop' ? '22px' : '18px' }}>
+        <div className="bgVideo" style={{ fontSize: screenSize === 'mobile' ? '14px' : screenSize === 'largeDesktop' ? '22px' : '18px' }}>
           <img src={bgVideo} alt="" srcset="" />
         </div>
         <NavBar />
@@ -51,8 +52,9 @@ const HomePage = () => {
 };
 
 const Main = () => {
+  const screenSize = useResponsive();
   return (
-    <div className="main">
+    <div className="main" style={{ fontSize: screenSize === 'mobile' ? '14px' : screenSize === 'largeDesktop' ? '22px' : '18px' }}>
       <h1>Bienvenido a Caja Negra</h1>
       <h1>La tecnología futura en el ámbito virtual.</h1>
       <p>
@@ -61,7 +63,7 @@ const Main = () => {
         requerir.
       </p>
       <a href="#why_choose_us">
-        <button className="btn-1">Explorar</button>
+        <button className="btn-1" style={{ fontSize: screenSize === 'mobile' ? '14px' : screenSize === 'largeDesktop' ? '22px' : '18px' }}>Explorar</button>
       </a>
     </div>
   );
@@ -325,12 +327,13 @@ const remarksData = [
     pf: 'Jane Smith, CEO de Tech Solutions Inc.'
   }
 ]
+const screenSize = useResponsive();
 return (
-    <div className="services" id="why_choose_us">
-      <h2 className="sub_title">Servicios Garantizado</h2>
-      <h1 className="title">¿Por qué elegirnos?</h1>
+    <div className="services" id="why_choose_us" style={{ fontSize: screenSize === 'mobile' ? '14px' : screenSize === 'largeDesktop' ? '22px' : '18px' }}>
+      <h2 className="sub_title" style={{ fontSize: screenSize === 'mobile' ? '14px' : screenSize === 'largeDesktop' ? '22px' : '18px' }}>Servicios Garantizado</h2>
+      <h1 className="title" style={{ fontSize: screenSize === 'mobile' ? '14px' : screenSize === 'largeDesktop' ? '22px' : '18px' }}>¿Por qué elegirnos?</h1>
       {/* Services */}
-      <div className="services_container">
+      <div className="services_container" style={{ fontSize: screenSize === 'mobile' ? '14px' : screenSize === 'largeDesktop' ? '22px' : '18px' }}>
         {services_data.map(item=>(
         <ServicesComponent key={item.id} image={item.img} heading={item.heading} paragraph={item.body} />
       ))}
@@ -375,10 +378,10 @@ return (
         </div> */}
 
         {whyChooseUsdata.map((e) => (
-          <div className="service" key={Math.random()}>
-            <div className="image">
-              <div className="bgSpan"></div>
-              <div className="img">
+          <div className="service" key={Math.random()} style={{ fontSize: screenSize === 'mobile' ? '14px' : screenSize === 'largeDesktop' ? '22px' : '18px' }}>
+            <div className="image" style={{ fontSize: screenSize === 'mobile' ? '14px' : screenSize === 'largeDesktop' ? '22px' : '18px' }}>
+              <div className="bgSpan" style={{ fontSize: screenSize === 'mobile' ? '14px' : screenSize === 'largeDesktop' ? '22px' : '18px' }}></div>
+              <div className="img" style={{ fontSize: screenSize === 'mobile' ? '14px' : screenSize === 'largeDesktop' ? '22px' : '18px' }}>
                 <img src={e.image} alt="" />
               </div>
             </div>
@@ -387,26 +390,28 @@ return (
           </div>
         ))}
       </div>
-      <div className="oferta">
-        <h2 className="sub_title">Servidores Oferta</h2>
-        <h1 className="title">Nuestras ofertas</h1>
+      <div className="oferta" style={{ fontSize: screenSize === 'mobile' ? '14px' : screenSize === 'largeDesktop' ? '22px' : '18px' }}>
+        <h2 className="sub_title" style={{ fontSize: screenSize === 'mobile' ? '14px' : screenSize === 'largeDesktop' ? '22px' : '18px' }}>Servidores Oferta</h2>
+        <h1 className="title" style={{ fontSize: screenSize === 'mobile' ? '14px' : screenSize === 'largeDesktop' ? '22px' : '18px' }}>Nuestras ofertas</h1>
 
-        <div className="btns">
+        <div className="btns" style={{ fontSize: screenSize === 'mobile' ? '14px' : screenSize === 'largeDesktop' ? '22px' : '18px' }}>
           <div
             className={`btn_op ${vpsOpen ? "active" : ""}`}
             onClick={handleOnClickOffers}
+            style={{ fontSize: screenSize === 'mobile' ? '14px' : screenSize === 'largeDesktop' ? '22px' : '18px' }}
           >
-            <div className="bgSpan"></div>
-            <div className="word">
+            <div className="bgSpan" style={{ fontSize: screenSize === 'mobile' ? '14px' : screenSize === 'largeDesktop' ? '22px' : '18px' }}></div>
+            <div className="word" style={{ fontSize: screenSize === 'mobile' ? '14px' : screenSize === 'largeDesktop' ? '22px' : '18px' }}>
               <p>VPS</p>
             </div>
           </div>
           <div
             className={`btn_op ${!vpsOpen ? "active" : ""}`}
             onClick={handleOnClickOffers}
+            style={{ fontSize: screenSize === 'mobile' ? '14px' : screenSize === 'largeDesktop' ? '22px' : '18px' }}
           >
-            <div className="bgSpan"></div>
-            <div className="word">
+            <div className="bgSpan" style={{ fontSize: screenSize === 'mobile' ? '14px' : screenSize === 'largeDesktop' ? '22px' : '18px' }}></div>
+            <div className="word" style={{ fontSize: screenSize === 'mobile' ? '14px' : screenSize === 'largeDesktop' ? '22px' : '18px' }}>
               <p>Dedicado</p>
             </div>
           </div>
@@ -414,7 +419,7 @@ return (
 
         {/* for vps */}
         {vpsOpen && (
-          <div className="ofertas_container">
+          <div className="ofertas_container" style={{ fontSize: screenSize === 'mobile' ? '14px' : screenSize === 'largeDesktop' ? '22px' : '18px' }}>
             {vpsData.map(i =>(
               <VpsComponent key={i.id} heading1={i.h1} heading2={i.h2} buttonTitle={i.bt}/>
             ))}
@@ -452,9 +457,9 @@ return (
             {offersData
               .filter((e) => e.offer_type == "VPS")
               .map((e) => (
-                <div className="each_ofertas ">
-                  <div className="bgSpan"></div>
-                  <div className="info">
+                <div className="each_ofertas " style={{ fontSize: screenSize === 'mobile' ? '14px' : screenSize === 'largeDesktop' ? '22px' : '18px' }}>
+                  <div className="bgSpan" style={{ fontSize: screenSize === 'mobile' ? '14px' : screenSize === 'largeDesktop' ? '22px' : '18px' }}></div>
+                  <div className="info" style={{ fontSize: screenSize === 'mobile' ? '14px' : screenSize === 'largeDesktop' ? '22px' : '18px' }}>
                     <h1>{e.title}</h1>
                     <h2>{e.info}</h2>
                     <Link target="_top" to="/solicitar">
@@ -467,7 +472,7 @@ return (
         )}
         {/* for dedicado */}
         {!vpsOpen && (
-          <div className="ofertas_container">
+          <div className="ofertas_container " style={{ fontSize: screenSize === 'mobile' ? '14px' : screenSize === 'largeDesktop' ? '22px' : '18px' }}>
             {dedicaoData.map(i => (
               <DedicaoComponent key={i.id} heading1={i.h1} heading2={i.h2} buttonTitle={i.bt}/>
             ))}
@@ -510,9 +515,9 @@ return (
             {offersData
               .filter((e) => e.offer_type == "Dedicated")
               .map((e) => (
-                <div className="each_ofertas ">
-                  <div className="bgSpan"></div>
-                  <div className="info">
+                <div className="each_ofertas " style={{ fontSize: screenSize === 'mobile' ? '14px' : screenSize === 'largeDesktop' ? '22px' : '18px' }}>
+                  <div className="bgSpan" style={{ fontSize: screenSize === 'mobile' ? '14px' : screenSize === 'largeDesktop' ? '22px' : '18px' }}></div>
+                  <div className="info" style={{ fontSize: screenSize === 'mobile' ? '14px' : screenSize === 'largeDesktop' ? '22px' : '18px' }}>
                     <h1>{e.title}</h1>
                     <h2>{e.info}</h2>
                     <Link target="_top" to="/solicitar">
@@ -524,25 +529,25 @@ return (
           </div>
         )}
       </div>
-      <div className="ver">
+      <div className="ver" style={{ fontSize: screenSize === 'mobile' ? '14px' : screenSize === 'largeDesktop' ? '22px' : '18px' }}>
         <p>Ver todo los servicios de datos que ofrecemos</p>
         <Link target="_top" to="data-services">
-          <div className="btn_op">
-            <div className="bgSpan"></div>
-            <div className="word">
+          <div className="btn_op" style={{ fontSize: screenSize === 'mobile' ? '14px' : screenSize === 'largeDesktop' ? '22px' : '18px' }}>
+            <div className="bgSpan" style={{ fontSize: screenSize === 'mobile' ? '14px' : screenSize === 'largeDesktop' ? '22px' : '18px' }}></div>
+            <div className="word" style={{ fontSize: screenSize === 'mobile' ? '14px' : screenSize === 'largeDesktop' ? '22px' : '18px' }}>
               <p>Ver</p>
             </div>
           </div>
         </Link>
       </div>
-      <div className="th_words">
+      <div className="th_words" style={{ fontSize: screenSize === 'mobile' ? '14px' : screenSize === 'largeDesktop' ? '22px' : '18px' }}>
         <p>Backup Diarios</p>
         <p>Migración gratis</p>
         <p>Configuración</p>
       </div>
-      <h2 className="sub_title">Servicios Profesionales</h2>
-      <h1 className="title">Nuestros servicios</h1>
-      <div className="services_container">
+      <h2 className="sub_title" style={{ fontSize: screenSize === 'mobile' ? '14px' : screenSize === 'largeDesktop' ? '22px' : '18px' }}>Servicios Profesionales</h2>
+      <h1 className="title" style={{ fontSize: screenSize === 'mobile' ? '14px' : screenSize === 'largeDesktop' ? '22px' : '18px' }}>Nuestros servicios</h1>
+      <div className="services_container" style={{ fontSize: screenSize === 'mobile' ? '14px' : screenSize === 'largeDesktop' ? '22px' : '18px' }}>
         {profesionalesServiceData.map(i => (
           <ProfessionaleService img={i.img} h2={i.h2} p={i.p}/>
         ))}
@@ -626,10 +631,10 @@ return (
         </div> */}
 
         {servicesData.map((e) => (
-          <div className="service">
-            <div className="image">
-              <div className="bgSpan"></div>
-              <div className="img">
+          <div className="service" style={{ fontSize: screenSize === 'mobile' ? '14px' : screenSize === 'largeDesktop' ? '22px' : '18px' }}>
+            <div className="image" style={{ fontSize: screenSize === 'mobile' ? '14px' : screenSize === 'largeDesktop' ? '22px' : '18px' }}>
+              <div className="bgSpan" style={{ fontSize: screenSize === 'mobile' ? '14px' : screenSize === 'largeDesktop' ? '22px' : '18px' }}></div>
+              <div className="img" style={{ fontSize: screenSize === 'mobile' ? '14px' : screenSize === 'largeDesktop' ? '22px' : '18px' }}>
                 <img src={e.image} alt="" />
               </div>
             </div>
@@ -638,25 +643,25 @@ return (
           </div>
         ))}
       </div>
-      <div className="word_btn">
+      <div className="word_btn" style={{ fontSize: screenSize === 'mobile' ? '14px' : screenSize === 'largeDesktop' ? '22px' : '18px' }}>
         <h1>
           ¿Estás interesado en datos y te gustaría conocer el tipo de servicio
           de datos que ofrecemos?"
         </h1>
         <Link target="_top" to="data-services">
-          <button className="full_gradient_btn">Ver Detalles</button>
+          <button className="full_gradient_btn" style={{ fontSize: screenSize === 'mobile' ? '14px' : screenSize === 'largeDesktop' ? '22px' : '18px' }}>Ver Detalles</button>
         </Link>
       </div>
-      <div className="garantee">
+      <div className="garantee" style={{ fontSize: screenSize === 'mobile' ? '14px' : screenSize === 'largeDesktop' ? '22px' : '18px' }}>
         <h1>
           Nos comprometemos como una de las mejor solución de servicios web de
           latinoamerica
         </h1>
 
-        <div className="contain_grns">
-          <div className="each_grns ">
-            <div className="bgSpan"></div>
-            <div className="info">
+        <div className="contain_grns" style={{ fontSize: screenSize === 'mobile' ? '14px' : screenSize === 'largeDesktop' ? '22px' : '18px' }}>
+          <div className="each_grns " style={{ fontSize: screenSize === 'mobile' ? '14px' : screenSize === 'largeDesktop' ? '22px' : '18px' }}>
+            <div className="bgSpan" style={{ fontSize: screenSize === 'mobile' ? '14px' : screenSize === 'largeDesktop' ? '22px' : '18px' }}></div>
+            <div className="info" style={{ fontSize: screenSize === 'mobile' ? '14px' : screenSize === 'largeDesktop' ? '22px' : '18px' }}>
               <h1>30 Dias de Garantia</h1>
               <h2>
                 Prueba nuestros servicios con toda tranquilidad, ya que cuentas
@@ -665,9 +670,9 @@ return (
               <button>Más</button>
             </div>
           </div>
-          <div className="each_grns ">
-            <div className="bgSpan"></div>
-            <div className="info">
+          <div className="each_grns " style={{ fontSize: screenSize === 'mobile' ? '14px' : screenSize === 'largeDesktop' ? '22px' : '18px' }}>
+            <div className="bgSpan" style={{ fontSize: screenSize === 'mobile' ? '14px' : screenSize === 'largeDesktop' ? '22px' : '18px' }}></div>
+            <div className="info" style={{ fontSize: screenSize === 'mobile' ? '14px' : screenSize === 'largeDesktop' ? '22px' : '18px' }}>
               <h1>Infraestructura anti-DDoS</h1>
               <h2>
                 Nuestra infraestructura anti-DDoS combina una protección de red
@@ -678,13 +683,13 @@ return (
           </div>
         </div>
 
-        <h1 className="title">Medios de pago</h1>
-        <div className="pay_mth_img">
+        <h1 className="title" style={{ fontSize: screenSize === 'mobile' ? '14px' : screenSize === 'largeDesktop' ? '22px' : '18px' }}>Medios de pago</h1>
+        <div className="pay_mth_img" style={{ fontSize: screenSize === 'mobile' ? '14px' : screenSize === 'largeDesktop' ? '22px' : '18px' }}>
           <img src={pay_mth_im} alt="" />
         </div>
       </div>
-      <div className="vps">
-        <div className="lft">
+      <div className="vps" style={{ fontSize: screenSize === 'mobile' ? '14px' : screenSize === 'largeDesktop' ? '22px' : '18px' }}>
+        <div className="lft" style={{ fontSize: screenSize === 'mobile' ? '14px' : screenSize === 'largeDesktop' ? '22px' : '18px' }}>
           <h1>Servidores privados virtuales (VPS)</h1>
           <p>
             Nuestros VPS están especialmente diseñados para adaptarse a sus
@@ -695,22 +700,22 @@ return (
             <li> Ancho de banda ilimitado de hasta 2 Gb/s*</li>
             <li> Protección anti-DDoS incluida</li>
           </ul>
-          <button className="full_gradient_btn">Contratar</button>
+          <button className="full_gradient_btn" style={{ fontSize: screenSize === 'mobile' ? '14px' : screenSize === 'largeDesktop' ? '22px' : '18px' }}>Contratar</button>
         </div>
 
-        <div className="rht">
-          <div className="service">
-            <div className="image">
-              <div className="bgSpan"></div>
-              <div className="img">
+        <div className="rht" style={{ fontSize: screenSize === 'mobile' ? '14px' : screenSize === 'largeDesktop' ? '22px' : '18px' }}>
+          <div className="service" style={{ fontSize: screenSize === 'mobile' ? '14px' : screenSize === 'largeDesktop' ? '22px' : '18px' }}>
+            <div className="image" style={{ fontSize: screenSize === 'mobile' ? '14px' : screenSize === 'largeDesktop' ? '22px' : '18px' }}>
+              <div className="bgSpan" style={{ fontSize: screenSize === 'mobile' ? '14px' : screenSize === 'largeDesktop' ? '22px' : '18px' }}></div>
+              <div className="img" style={{ fontSize: screenSize === 'mobile' ? '14px' : screenSize === 'largeDesktop' ? '22px' : '18px' }}>
                 <img src={bestVPSiM} alt="" />
               </div>
             </div>
           </div>
         </div>
       </div>
-      <div className="vps sus">
-        <div className="lft">
+      <div className="vps sus" style={{ fontSize: screenSize === 'mobile' ? '14px' : screenSize === 'largeDesktop' ? '22px' : '18px' }}>
+        <div className="lft" style={{ fontSize: screenSize === 'mobile' ? '14px' : screenSize === 'largeDesktop' ? '22px' : '18px' }}>
           <h1>
             Seleccione el servidor dedicado más adecuado para sus aplicaciones
           </h1>
@@ -732,34 +737,34 @@ return (
               el fin de ofrecerle la máxima seguridad en sus infraestructuras.
             </p>
           </ul>
-          <button className="full_gradient_btn">Contratar</button>
+          <button className="full_gradient_btn" style={{ fontSize: screenSize === 'mobile' ? '14px' : screenSize === 'largeDesktop' ? '22px' : '18px' }}>Contratar</button>
         </div>
 
-        <div className="rht">
-          <div className="service">
-            <div className="image">
-              <div className="bgSpan"></div>
-              <div className="img">
+        <div className="rht" style={{ fontSize: screenSize === 'mobile' ? '14px' : screenSize === 'largeDesktop' ? '22px' : '18px' }}>
+          <div className="service" style={{ fontSize: screenSize === 'mobile' ? '14px' : screenSize === 'largeDesktop' ? '22px' : '18px' }}>
+            <div className="image" style={{ fontSize: screenSize === 'mobile' ? '14px' : screenSize === 'largeDesktop' ? '22px' : '18px' }}>
+              <div className="bgSpan" style={{ fontSize: screenSize === 'mobile' ? '14px' : screenSize === 'largeDesktop' ? '22px' : '18px' }}></div>
+              <div className="img" style={{ fontSize: screenSize === 'mobile' ? '14px' : screenSize === 'largeDesktop' ? '22px' : '18px' }}>
                 <img src={bestVPSiM} alt="" />
               </div>
             </div>
           </div>
-          <div className="service">
-            <div className="image">
-              <div className="bgSpan"></div>
-              <div className="img">
+          <div className="service" style={{ fontSize: screenSize === 'mobile' ? '14px' : screenSize === 'largeDesktop' ? '22px' : '18px' }}>
+            <div className="image" style={{ fontSize: screenSize === 'mobile' ? '14px' : screenSize === 'largeDesktop' ? '22px' : '18px' }}>
+              <div className="bgSpan" style={{ fontSize: screenSize === 'mobile' ? '14px' : screenSize === 'largeDesktop' ? '22px' : '18px' }}></div>
+              <div className="img" style={{ fontSize: screenSize === 'mobile' ? '14px' : screenSize === 'largeDesktop' ? '22px' : '18px' }}>
                 <img src={bestVPSiM} alt="" />
               </div>
             </div>
           </div>
         </div>
       </div>
-      <div className="remarks">
+      <div className="remarks" style={{ fontSize: screenSize === 'mobile' ? '14px' : screenSize === 'largeDesktop' ? '22px' : '18px' }}>
         <h1>
           Más de 20,000 personas han utilizado nuestros cursos, herramientas y
           asesoramiento para ayudar a que sus negocios prosperen.
         </h1>
-        <div className="remarks_container">
+        <div className="remarks_container" style={{ fontSize: screenSize === 'mobile' ? '14px' : screenSize === 'largeDesktop' ? '22px' : '18px' }}>
           {remarksData.map(i=>(
             <RemarksContainer key={i.id} pBody={i.pb} pFooter={i.pf}/>
           ))}
@@ -813,8 +818,8 @@ return (
           </div> */}
 
           {commetsData.map((e) => (
-            <div className="remark">
-              <div className="bgSpan"></div>
+            <div className="remark" style={{ fontSize: screenSize === 'mobile' ? '14px' : screenSize === 'largeDesktop' ? '22px' : '18px' }}>
+              <div className="bgSpan" style={{ fontSize: screenSize === 'mobile' ? '14px' : screenSize === 'largeDesktop' ? '22px' : '18px' }}></div>
               <p>{e.info}</p>
               <p>
                 {e.name}, {e.profession}

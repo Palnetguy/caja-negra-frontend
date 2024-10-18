@@ -11,6 +11,7 @@ import { Link } from "react-router-dom";
 import axios from "axios";
 import config from "./config";
 import { PlanComponent } from "../componets/hosting/plan";
+import useResponsive from "../utils/useResponsive";
 
 const HostingPage = () => {
   const [Compartido, setCompartido] = useState(true);
@@ -18,26 +19,29 @@ const HostingPage = () => {
   const handleCompartido = () => {
     setCompartido((prev) => !prev);
   };
+  const screenSize = useResponsive();
   return (
-    <div className="hosting_page">
-      <div className="top">
+    <div className="hosting_page" style={{ fontSize: screenSize === 'mobile' ? '14px' : screenSize === 'largeDesktop' ? '22px' : '18px' }}>
+      <div className="top" style={{ fontSize: screenSize === 'mobile' ? '14px' : screenSize === 'largeDesktop' ? '22px' : '18px' }}>
         <NavBar />
-        <div className="info">
+        <div className="info" style={{ fontSize: screenSize === 'mobile' ? '14px' : screenSize === 'largeDesktop' ? '22px' : '18px' }}>
           <h1>HOSTING</h1>
           <p>
             Hosting Compartido & Revendedores de nuestro servicios Bajo de tu
             propia marca{" "}
           </p>
-          <div className="btns">
+          <div className="btns" style={{ fontSize: screenSize === 'mobile' ? '14px' : screenSize === 'largeDesktop' ? '22px' : '18px' }}>
             <button
               className={`${Compartido ? "full_gradient_btn" : "btn-1"}`}
               onClick={handleCompartido}
+              style={{ fontSize: screenSize === 'mobile' ? '14px' : screenSize === 'largeDesktop' ? '22px' : '18px' }}
             >
               Compartido
             </button>
             <button
               className={`${!Compartido ? "full_gradient_btn" : "btn-1"}`}
               onClick={handleCompartido}
+              style={{ fontSize: screenSize === 'mobile' ? '14px' : screenSize === 'largeDesktop' ? '22px' : '18px' }}
             >
               Revender
             </button>
@@ -96,13 +100,14 @@ const HostingCompartido = () => {
           electronico coincidentes gratis y 1 ssl gratis`
     }
   ]
+  const screenSize = useResponsive();
   return (
-    <div className="hosting_compartido">
-      <h2 className="sub_title">Hosting Compartido</h2>
-      <h1 className="title">HOSTING NÚMERO TOP 10</h1>
-      <div className="hosting_compartido_cont">
-        <div className="hosting_compartido_each">
-          <div className="image">
+    <div className="hosting_compartido" style={{ fontSize: screenSize === 'mobile' ? '14px' : screenSize === 'largeDesktop' ? '22px' : '18px' }}>
+      <h2 className="sub_title" style={{ fontSize: screenSize === 'mobile' ? '14px' : screenSize === 'largeDesktop' ? '22px' : '18px' }}>Hosting Compartido</h2>
+      <h1 className="title" style={{ fontSize: screenSize === 'mobile' ? '14px' : screenSize === 'largeDesktop' ? '22px' : '18px' }}>HOSTING NÚMERO TOP 10</h1>
+      <div className="hosting_compartido_cont" style={{ fontSize: screenSize === 'mobile' ? '14px' : screenSize === 'largeDesktop' ? '22px' : '18px' }}>
+        <div className="hosting_compartido_each" style={{ fontSize: screenSize === 'mobile' ? '14px' : screenSize === 'largeDesktop' ? '22px' : '18px' }}>
+          <div className="image" style={{ fontSize: screenSize === 'mobile' ? '14px' : screenSize === 'largeDesktop' ? '22px' : '18px' }}>
             <img src={cloudHost1} alt="" />
           </div>
           <h1>Seguridad de hosting.</h1>
@@ -111,8 +116,8 @@ const HostingCompartido = () => {
             actividades sospechosas y ayudar a desviar los ataques DDoS
           </p>
         </div>
-        <div className="hosting_compartido_each">
-          <div className="image">
+        <div className="hosting_compartido_each" style={{ fontSize: screenSize === 'mobile' ? '14px' : screenSize === 'largeDesktop' ? '22px' : '18px' }}>
+          <div className="image" style={{ fontSize: screenSize === 'mobile' ? '14px' : screenSize === 'largeDesktop' ? '22px' : '18px' }}>
             <img src={cloudHost2} alt="" />
           </div>
           <h1>Seguridad de hosting.</h1>
@@ -121,8 +126,8 @@ const HostingCompartido = () => {
             actividades sospechosas y ayudar a desviar los ataques DDoS
           </p>
         </div>
-        <div className="hosting_compartido_each">
-          <div className="image">
+        <div className="hosting_compartido_each" style={{ fontSize: screenSize === 'mobile' ? '14px' : screenSize === 'largeDesktop' ? '22px' : '18px' }}>
+          <div className="image" style={{ fontSize: screenSize === 'mobile' ? '14px' : screenSize === 'largeDesktop' ? '22px' : '18px' }}>
             <img src={cloudHost3} alt="" />
           </div>
           <h1>Seguridad de hosting.</h1>
@@ -132,10 +137,10 @@ const HostingCompartido = () => {
           </p>
         </div>
       </div>
-      <div className="select_plan">
-        <h2 className="sub_title">Especificaciones Técnicas</h2>
-        <h1 className="title">HOSTING NÚMERO TOP 10</h1>
-        <div className="select_plan_cont">
+      <div className="select_plan" style={{ fontSize: screenSize === 'mobile' ? '14px' : screenSize === 'largeDesktop' ? '22px' : '18px' }}>
+        <h2 className="sub_title" style={{ fontSize: screenSize === 'mobile' ? '14px' : screenSize === 'largeDesktop' ? '22px' : '18px' }}>Especificaciones Técnicas</h2>
+        <h1 className="title" style={{ fontSize: screenSize === 'mobile' ? '14px' : screenSize === 'largeDesktop' ? '22px' : '18px' }}>HOSTING NÚMERO TOP 10</h1>
+        <div className="select_plan_cont" style={{ fontSize: screenSize === 'mobile' ? '14px' : screenSize === 'largeDesktop' ? '22px' : '18px' }}>
           {planData.map(p=>(
             <PlanComponent key={p.id} h1={p.h1} p={p.p}/>
           ))}
@@ -179,7 +184,7 @@ const HostingCompartido = () => {
               </h1>
               <p>{e.info}</p>
               <Link target="_top" to="/solicitar">
-                <button className="full_gradient_btn">Solicitar</button>
+                <button className="full_gradient_btn" style={{ fontSize: screenSize === 'mobile' ? '14px' : screenSize === 'largeDesktop' ? '22px' : '18px' }}>Solicitar</button>
               </Link>
             </div>
           ))}
@@ -190,14 +195,15 @@ const HostingCompartido = () => {
 };
 
 const Revender = () => {
+  const screenSize = useResponsive();
   return (
-    <div className="revender">
-      <h2 className="sub_title">Tu Negocio, Nuestros Productos.</h2>
-      <h1 className="title">REVENDE NUESTROS PRODUCTOS </h1>
-      <h1 className="title">CON TU MARCA.</h1>
-      <div className="hosting_compartido_cont">
-        <div className="hosting_compartido_each">
-          <div className="image">
+    <div className="revender" style={{ fontSize: screenSize === 'mobile' ? '14px' : screenSize === 'largeDesktop' ? '22px' : '18px' }}>
+      <h2 className="sub_title" style={{ fontSize: screenSize === 'mobile' ? '14px' : screenSize === 'largeDesktop' ? '22px' : '18px' }}>Tu Negocio, Nuestros Productos.</h2>
+      <h1 className="title" style={{ fontSize: screenSize === 'mobile' ? '14px' : screenSize === 'largeDesktop' ? '22px' : '18px' }}>REVENDE NUESTROS PRODUCTOS </h1>
+      <h1 className="title" style={{ fontSize: screenSize === 'mobile' ? '14px' : screenSize === 'largeDesktop' ? '22px' : '18px' }}>CON TU MARCA.</h1>
+      <div className="hosting_compartido_cont" style={{ fontSize: screenSize === 'mobile' ? '14px' : screenSize === 'largeDesktop' ? '22px' : '18px' }}>
+        <div className="hosting_compartido_each" style={{ fontSize: screenSize === 'mobile' ? '14px' : screenSize === 'largeDesktop' ? '22px' : '18px' }}>
+          <div className="image" style={{ fontSize: screenSize === 'mobile' ? '14px' : screenSize === 'largeDesktop' ? '22px' : '18px' }}>
             <img src={revenderImg1} alt="" />
           </div>
           <h1>Construye tu tienda en línea.</h1>
@@ -206,8 +212,8 @@ const Revender = () => {
             parezca a tu negocio.
           </p>
         </div>
-        <div className="hosting_compartido_each">
-          <div className="image">
+        <div className="hosting_compartido_each" style={{ fontSize: screenSize === 'mobile' ? '14px' : screenSize === 'largeDesktop' ? '22px' : '18px' }}>
+          <div className="image" style={{ fontSize: screenSize === 'mobile' ? '14px' : screenSize === 'largeDesktop' ? '22px' : '18px' }}>
             <img src={revenderImg2} alt="" />
           </div>
           <h1>Se reciben todo tipo de negocios.</h1>
@@ -216,8 +222,8 @@ const Revender = () => {
             clientes. Te ayudamos a que unas las dos partes.
           </p>
         </div>
-        <div className="hosting_compartido_each">
-          <div className="image">
+        <div className="hosting_compartido_each" style={{ fontSize: screenSize === 'mobile' ? '14px' : screenSize === 'largeDesktop' ? '22px' : '18px' }}>
+          <div className="image" style={{ fontSize: screenSize === 'mobile' ? '14px' : screenSize === 'largeDesktop' ? '22px' : '18px' }}>
             <img src={revenderImg3} alt="" />
           </div>
           <h1>Determina tus propios precios.</h1>

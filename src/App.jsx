@@ -10,10 +10,12 @@ import AboutUsPage from "./pages/aboutus_page";
 import ContactUsPage from "./pages/contactus_page";
 import Footer from "./componets/footer";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import useResponsive from "./utils/useResponsive";
 
 function App() {
+  const screenSize = useResponsive();
   return (
-    <div className="App">
+    <div className="App"  style={{ fontSize: screenSize === 'mobile' ? '14px' : screenSize === 'largeDesktop' ? '22px' : '18px' }}>
       {/* <HomePage /> */}
       {/* <FullPageLoader /> */}
       <BrowserRouter>

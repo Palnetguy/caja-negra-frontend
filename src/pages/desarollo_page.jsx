@@ -8,20 +8,22 @@ import config from "./config";
 import axios from "axios";
 import { DesarolloComponent } from "../componets/desarollo_page/desarollo";
 import { DesarolloBotomComponent } from "../componets/desarollo_page/desarolloBotom";
+import useResponsive from "../utils/useResponsive";
 
 const DesarolloPage = () => {
+  const screenSize = useResponsive();
   return (
-    <div className="desarollo_page">
-      <div className="top">
+    <div className="desarollo_page" style={{ fontSize: screenSize === 'mobile' ? '14px' : screenSize === 'largeDesktop' ? '22px' : '18px' }}>
+      <div className="top" style={{ fontSize: screenSize === 'mobile' ? '14px' : screenSize === 'largeDesktop' ? '22px' : '18px' }}>
         <NavBar />
-        <div className="info">
+        <div className="info" style={{ fontSize: screenSize === 'mobile' ? '14px' : screenSize === 'largeDesktop' ? '22px' : '18px' }}>
           <h1>DESAROLLO</h1>
           <p>
             Somos experto en el desarrollo de aplicaciones para todos los
             dispositivos móviles
           </p>
           <Link target="_top" to="/solicitar">
-            <button className="btn-1">Solicitar</button>
+            <button className="btn-1" style={{ fontSize: screenSize === 'mobile' ? '14px' : screenSize === 'largeDesktop' ? '22px' : '18px' }}>Solicitar</button>
           </Link>
         </div>
       </div>
@@ -90,9 +92,10 @@ const Desarollo = () => {
       bt: 'Solicitar'
     }
   ]
+  const screenSize = useResponsive();
   return (
-    <div className="desarollo">
-      <div className="desarollo_each_cont">
+    <div className="desarollo" style={{ fontSize: screenSize === 'mobile' ? '14px' : screenSize === 'largeDesktop' ? '22px' : '18px' }}>
+      <div className="desarollo_each_cont" style={{ fontSize: screenSize === 'mobile' ? '14px' : screenSize === 'largeDesktop' ? '22px' : '18px' }}>
         {/* <div className="desarollo_each">
           <h1>Imagen de Marca</h1>
           <p>
@@ -126,8 +129,8 @@ const Desarollo = () => {
         ))}
       </div>
 
-      <div className="desarollo_more">
-        <div className="lft">
+      <div className="desarollo_more" style={{ fontSize: screenSize === 'mobile' ? '14px' : screenSize === 'largeDesktop' ? '22px' : '18px' }}>
+        <div className="lft" style={{ fontSize: screenSize === 'mobile' ? '14px' : screenSize === 'largeDesktop' ? '22px' : '18px' }}>
           <h1>Desarrollar, Actualizar y Publicar</h1>
           <p>
             Las aplicaciones son de uso intuitivo, de forma que cualquier
@@ -142,13 +145,13 @@ const Desarollo = () => {
             <li>Estará disponible en Play Store y/o App Store.</li>
           </ul>
         </div>
-        <div className="rgt">
-          <div className="image">
+        <div className="rgt" style={{ fontSize: screenSize === 'mobile' ? '14px' : screenSize === 'largeDesktop' ? '22px' : '18px' }}>
+          <div className="image" style={{ fontSize: screenSize === 'mobile' ? '14px' : screenSize === 'largeDesktop' ? '22px' : '18px' }}>
             <img src={dedicatedServerIMg} alt="" />
           </div>
         </div>
       </div>
-      <div className="desarollo_each_cont">
+      <div className="desarollo_each_cont" style={{ fontSize: screenSize === 'mobile' ? '14px' : screenSize === 'largeDesktop' ? '22px' : '18px' }}>
         {extraData.map(d=>(
           <DesarolloBotomComponent key={d.id} des={d.p} title={d.title} info={d.info} buttonTitle={d.bt}/>
         ))}
