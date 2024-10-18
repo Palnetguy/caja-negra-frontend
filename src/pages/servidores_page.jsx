@@ -54,53 +54,53 @@ const ServidoresOp = () => {
   const [serversData, setserversData] = useState([]);
   const [isDoneLoadingserversData, setisDoneLoadingserversData] =
     useState(true);
-  // const servers = [
-  //   {
-  //     name: "Basico",
-  //     cpu: "1 Core",
-  //     Bandwidth: "100 GB",
-  //     BandwidthTwo: "100 GB",
-  //     RAM: "1 GB",
-  //     DiskSpace: "20 GB",
-  //     IP: "1",
-  //   },
-  //   {
-  //     name: "Freelancer",
-  //     cpu: "2 Core",
-  //     Bandwidth: "2 TB",
-  //     BandwidthTwo: "100 GB",
-  //     RAM: "2 GB",
-  //     DiskSpace: "80 GB",
-  //     IP: "0",
-  //   },
-  //   {
-  //     name: "Ecommerce",
-  //     cpu: "2 Core",
-  //     Bandwidth: "2 GB",
-  //     BandwidthTwo: "200 GB",
-  //     RAM: "2 GB",
-  //     DiskSpace: "100 GB SSD",
-  //     IP: "1",
-  //   },
-  //   {
-  //     name: "Agencia",
-  //     cpu: "8 Core",
-  //     Bandwidth: "12T TB",
-  //     BandwidthTwo: "150 GB",
-  //     RAM: "16 GB",
-  //     DiskSpace: "2 GB SSD",
-  //     IP: "1",
-  //   },
-  //   {
-  //     name: "Basico",
-  //     cpu: "1 Core",
-  //     Bandwidth: "12 TB",
-  //     BandwidthTwo: "150 GB",
-  //     RAM: "8 GB",
-  //     DiskSpace: "1TB SSD",
-  //     IP: "5",
-  //   },
-  // ];
+  const servers = [
+    {
+      name: "Basico",
+      cpu: "1 Core",
+      Bandwidth: "100 GB",
+      BandwidthTwo: "100 GB",
+      RAM: "1 GB",
+      DiskSpace: "20 GB",
+      IP: "1",
+    },
+    {
+      name: "Freelancer",
+      cpu: "2 Core",
+      Bandwidth: "2 TB",
+      BandwidthTwo: "100 GB",
+      RAM: "2 GB",
+      DiskSpace: "80 GB",
+      IP: "0",
+    },
+    {
+      name: "Ecommerce",
+      cpu: "2 Core",
+      Bandwidth: "2 GB",
+      BandwidthTwo: "200 GB",
+      RAM: "2 GB",
+      DiskSpace: "100 GB SSD",
+      IP: "1",
+    },
+    {
+      name: "Agencia",
+      cpu: "8 Core",
+      Bandwidth: "12T TB",
+      BandwidthTwo: "150 GB",
+      RAM: "16 GB",
+      DiskSpace: "2 GB SSD",
+      IP: "1",
+    },
+    {
+      name: "Basico",
+      cpu: "1 Core",
+      Bandwidth: "12 TB",
+      BandwidthTwo: "150 GB",
+      RAM: "8 GB",
+      DiskSpace: "1TB SSD",
+      IP: "5",
+    },
+  ];
 
   useEffect(() => {
     axios
@@ -126,12 +126,11 @@ const ServidoresOp = () => {
     setcurrent_server(e);
   };
 
-  const typeData=['Basico', 'Freelancer', 'Ecommerce', 'Agencia', 'Empresarial']
 
   return (
     <div className="servidores_op" id="servidores_op">
       <div className="changeBtns">
-        {serversData.map((e, index) => (
+        {servers.map((e, index) => (
           <div
             className={`changeBtn ${current_server === index ? "active" : ""}`}
             onClick={() => handleChangeServer(index)}
@@ -145,37 +144,31 @@ const ServidoresOp = () => {
         <>
           <div className="specs_contain">
             <div className="type-container">
-              <div className="type-container-left">
-                {typeData.map(i=>(
-                  <div>{i}</div>
-                  ))}
-              </div>
-              <div className="empty-type-container-left"></div>
             </div>
             <div className="specs">
               <div className="info">
                 <p>CPU</p>
-                {/* <p>{serversData[current_server].cpu}</p> */}
+                <p>{servers[current_server].cpu}</p>
               </div>
               <div className="info">
                 <p>Bandwidth</p>
-                {/* <p>{serversData[current_server].bandwidth}</p> */}
+                <p>{servers[current_server].Bandwidth}</p>
               </div>
               <div className="info">
                 <p>Bandwidth Two</p>
-                {/* <p>{serversData[current_server].bandwidth_two}</p> */}
+                <p>{servers[current_server].BandwidthTwo}</p>
               </div>
               <div className="info">
                 <p>RAM</p>
-                {/* <p>{serversData[current_server].ram}</p> */}
+                <p>{servers[current_server].RAM}</p>
               </div>
               <div className="info">
                 <p>Disk Space</p>
-                {/* <p>{serversData[current_server].diskspace}</p> */}
+                <p>{servers[current_server].DiskSpace}</p>
               </div>
               <div className="info">
                 <p>IP</p>
-                {/* <p>{serversData[current_server].ip}</p> */}
+                <p>{servers[current_server].IP}</p>
               </div>
               <Link target="_top" to="/solicitar">
                 <button className="full_gradient_btn">Solicitar</button>

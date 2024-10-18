@@ -61,11 +61,13 @@
   /* display: flex; */
   margin-right: 1em;
 }
+
 .servidores_page .servidores_op .changeBtns .changeBtn {
   flex-shrink: 0;
   border-radius: 8px;
   border: 1px solid #86ffe9;
-  background: rgba(43, 43, 43, 0.9);
+  /* background: rgba(43, 43, 43, 0.9); */
+  background: #003C50;
   backdrop-filter: blur(150px);
   color: #fff;
   text-align: center;
@@ -91,9 +93,11 @@
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  width: 800px;
-  margin: 0 auto;
+  width: 782px;
+  /* margin: 0 auto; */
+  justify-self: flex-start;
 }
+
 .servidores_page .servidores_op .specs {
   border-radius: 12px;
   border: 1px solid #86ffe9;
@@ -102,15 +106,18 @@
   padding: 2em 1em;
   display: flex;
   flex-wrap: wrap;
-  width: 500px;
+  width: 700px;
+  height: 315px;
   align-items: center;
-  /* float: right; */
-  margin: 2em 1.5em;
+  top:1479;
+  left: 700px;
+  /* margin: 2em 1.5em; */
 }
 .servidores_page .servidores_op .specs_contain {
   display: flex;
   justify-content: flex-end;
 }
+
 .servidores_page .servidores_op .specs .info {
   margin: 1em;
 }
@@ -145,7 +152,8 @@
 .servidores_page .servidores_op .nuestros .nuetro .image {
   border-radius: 12px;
   border: 1px solid #86ffe9;
-  background: rgba(43, 43, 43, 0.9);
+  /* background: rgba(43, 43, 43, 0.9); */
+  background: #003C50;
   backdrop-filter: blur(150px);
   width: 200px;
   padding: 2em;
@@ -187,7 +195,8 @@
 .servidores_page .servidoresOp_1_contain .servidoresOp_1_each .image {
   border-radius: 12px;
   border: 1px solid #86ffe9;
-  background: rgba(43, 43, 43, 0.9);
+  /* background: rgba(43, 43, 43, 0.9); */
+  background: #003C50;
   backdrop-filter: blur(150px);
   flex-shrink: 0;
   width: max-content;
@@ -232,7 +241,8 @@
 .servidores_page .servidoresOp_1_contain1 .servidoresOp_1_each_1 {
   border-radius: 12px;
   border: 1px solid #86ffe9;
-  background: rgba(7, 11, 15, 0.3);
+  /* background: rgba(7, 11, 15, 0.3); */
+  background: #003C50;
   backdrop-filter: blur(150px);
   padding: 3em;
   width: calc((100% / 2) - 3em);
@@ -284,7 +294,8 @@
 .servidores_page .servidoresOp_1 .nuestros_cont .nuetro .image {
   border-radius: 12px;
   border: 1px solid #86ffe9;
-  background: rgba(43, 43, 43, 0.9);
+  /* background: rgba(43, 43, 43, 0.9); */
+  background: #003C50;
   backdrop-filter: blur(150px);
   width: 200px;
   padding: 2em;
@@ -382,7 +393,8 @@
   .servidores_page .servidoresOp_1_contain1 .servidoresOp_1_each_1 {
     border-radius: 12px;
     border: 1px solid #86ffe9;
-    background: rgba(7, 11, 15, 0.3);
+    /* background: rgba(7, 11, 15, 0.3); */
+    background: #003C50;
     -webkit-backdrop-filter: blur(150px);
     backdrop-filter: blur(150px);
     padding: 3em;
