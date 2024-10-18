@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 export const DesarolloBotomComponent = ({title, des, info, buttonTitle}) => {
   return (
@@ -39,6 +40,7 @@ export const DesarolloBotomComponent = ({title, des, info, buttonTitle}) => {
             <li>{i}</li>
         ))}
     </ul>
+    <Link target="_top" to="/solicitar">
     <button className='bottom_btn' style={{ fontFamily : 'Saira', fontSize : '32px',
       fontWeight: '700',
       lineHeight: '42px',
@@ -51,6 +53,7 @@ export const DesarolloBotomComponent = ({title, des, info, buttonTitle}) => {
       opacity: '0px',
       background: 'linear-gradient(90deg, #002C3A 0%, #33817C 50%, #012B38 100%)'
     }}>{buttonTitle}</button>
+           </Link>
   </div>
   )
 }
