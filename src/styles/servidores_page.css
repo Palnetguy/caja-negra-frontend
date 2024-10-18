@@ -103,13 +103,13 @@
   border: 1px solid #86ffe9;
   background: rgba(134, 255, 233, 0.2);
   backdrop-filter: blur(150px);
-  padding: 2em 1em;
+  /* padding: 2em 1em; */
   display: flex;
   flex-wrap: wrap;
   width: 700px;
-  height: 315px;
+  height: 290px;
   align-items: center;
-  top:1479;
+  /* top:1479; */
   left: 700px;
   /* margin: 2em 1.5em; */
 }
