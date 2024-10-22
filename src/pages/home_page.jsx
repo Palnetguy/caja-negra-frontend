@@ -26,6 +26,7 @@ import { DedicaoComponent } from "../componets/home_page/dedicao";
 import { ProfessionaleService } from "../componets/home_page/professionale_service";
 import { RemarksContainer } from "../componets/home_page/remarks";
 import useResponsive from "../utils/useResponsive";
+import { ListComponent } from "../componets/home_page/listComponent";
 
 const HomePage = () => {
   const [isloading, setislaoding] = useState(true);
@@ -325,6 +326,24 @@ const remarksData = [
     presupuesto los ha convertido en nuestro socio
     technolóico preferido"`,
     pf: 'Jane Smith, CEO de Tech Solutions Inc.'
+  }
+]
+
+const listData=[
+  {
+    li:'Escalabilidad y personalización',
+    p: `Todos los servidores dedicados incluyen un sistema anti-DDoS con
+        el fin de ofrecerle la máxima seguridad en sus infraestructuras.`
+  },
+  {
+    li:'Ancho de banda ilimitado de hasta 2 Gb/s*',
+    p: `Todos los servidores dedicados incluyen un sistema anti-DDoS con
+              el fin de ofrecerle la máxima seguridad en sus infraestructuras.`
+  },
+  {
+    li:'Protección anti-DDoS incluida',
+    p: ` Todos los servidores dedicados incluyen un sistema anti-DDoS con
+          el fin de ofrecerle la máxima seguridad en sus infraestructuras.`
   }
 ]
 const screenSize = useResponsive();
@@ -721,21 +740,25 @@ return (
           </h1>
           {/* <p>Nuestros VPS están especialmente diseñados para adaptarse a sus necesidades y crecer con su negocio.</p> */}
           <ul>
-            <li> Escalabilidad y personalización</li>
+            {/* <li> Escalabilidad y personalización</li>
             <p>
               Todos los servidores dedicados incluyen un sistema anti-DDoS con
               el fin de ofrecerle la máxima seguridad en sus infraestructuras.
-            </p>
-            <li> Ancho de banda ilimitado de hasta 2 Gb/s*</li>
+            </p> */}
+
+            {/* <li> Ancho de banda ilimitado de hasta 2 Gb/s*</li>
             <p>
               Todos los servidores dedicados incluyen un sistema anti-DDoS con
               el fin de ofrecerle la máxima seguridad en sus infraestructuras.
-            </p>
-            <li> Protección anti-DDoS incluida</li>
+            </p> */}
+            {/* <li> Protección anti-DDoS incluida</li>
             <p>
               Todos los servidores dedicados incluyen un sistema anti-DDoS con
               el fin de ofrecerle la máxima seguridad en sus infraestructuras.
-            </p>
+            </p> */}
+            {listData.map(d=>(
+              <ListComponent li={d.li} p={d.p}/>
+            ))}
           </ul>
           <button className="full_gradient_btn" style={{ fontSize: screenSize === 'mobile' ? '14px' : screenSize === 'largeDesktop' ? '22px' : '18px' }}>Contratar</button>
         </div>
