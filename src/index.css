@@ -146,6 +146,11 @@ a {
 body {
   background-color: black;
   /* background: url("./assets/images/gif-bg\ stars.gif"); */
-  background: linear-gradient(27.09deg, #012B38 11.5%, #002C3B 33.12%, #002C3A 43.32%, #00090B 93.09%);
+  /* background: linear-gradient(27.09deg, #012B38 11.5%, #002C3B 33.12%, #002C3A 43.32%, #00090B 93.09%); */
+  background: url('./assets/images/Background.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
 
 }
