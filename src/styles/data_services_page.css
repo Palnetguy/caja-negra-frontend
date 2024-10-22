@@ -10,7 +10,7 @@
 .data_services .more {
   background-repeat: no-repeat;
   background-size: cover;
-  background: linear-gradient(27.09deg, #012B38 11.5%, #002C3B 33.12%, #002C3A 43.32%, #00090B 93.09%);
+  /* background: linear-gradient(27.09deg, #012B38 11.5%, #002C3B 33.12%, #002C3A 43.32%, #00090B 93.09%); */
 }
 .data_services .top > .info {
   padding: 0 1.5em;

@@ -18,7 +18,7 @@ import CustomDropdown from "../componets/dropdown";
 import { Link } from "react-router-dom";
 import axios from "axios";
 import config from "./config";
-import FullPageLoader from "../componets/fullpage_loader";
+// import FullPageLoader from "../componets/fullpage_loader";
 //helper components
 import { ServicesComponent } from "../componets/home_page/services";
 import { VpsComponent } from "../componets/home_page/vps";
@@ -38,7 +38,7 @@ const HomePage = () => {
   const screenSize = useResponsive();
   return (
     <div className="home_page" style={{ fontSize: screenSize === 'mobile' ? '14px' : screenSize === 'largeDesktop' ? '22px' : '18px' }}>
-      {isloading && <FullPageLoader />}
+      {/* {isloading && <FullPageLoader />} */}
       <div className="top" style={{ fontSize: screenSize === 'mobile' ? '14px' : screenSize === 'largeDesktop' ? '22px' : '18px' }}>
         <div className="bgVideo" style={{ fontSize: screenSize === 'mobile' ? '14px' : screenSize === 'largeDesktop' ? '22px' : '18px' }}>
           <img src={bgVideo} alt="" srcset="" />
@@ -455,7 +455,7 @@ return (
             </div> */}
 
             {offersData
-              .filter((e) => e.offer_type == "VPS")
+              .filter((e) => e.offer_type === "VPS")
               .map((e) => (
                 <div className="each_ofertas " style={{ fontSize: screenSize === 'mobile' ? '14px' : screenSize === 'largeDesktop' ? '22px' : '18px' }}>
                   <div className="bgSpan" style={{ fontSize: screenSize === 'mobile' ? '14px' : screenSize === 'largeDesktop' ? '22px' : '18px' }}></div>
@@ -513,7 +513,7 @@ return (
             </div> */}
 
             {offersData
-              .filter((e) => e.offer_type == "Dedicated")
+              .filter((e) => e.offer_type === "Dedicated")
               .map((e) => (
                 <div className="each_ofertas " style={{ fontSize: screenSize === 'mobile' ? '14px' : screenSize === 'largeDesktop' ? '22px' : '18px' }}>
                   <div className="bgSpan" style={{ fontSize: screenSize === 'mobile' ? '14px' : screenSize === 'largeDesktop' ? '22px' : '18px' }}></div>

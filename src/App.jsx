@@ -16,8 +16,6 @@ function App() {
   const screenSize = useResponsive();
   return (
     <div className="App"  style={{ fontSize: screenSize === 'mobile' ? '14px' : screenSize === 'largeDesktop' ? '22px' : '18px' }}>
-      {/* <HomePage /> */}
-      {/* <FullPageLoader /> */}
       <BrowserRouter>
         <Routes>
           <Route index element={<HomePage />} />
