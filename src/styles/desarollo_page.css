@@ -65,6 +65,7 @@
   /* background: rgba(43, 43, 43, 0.9); */
   background: #003C50;
   backdrop-filter: blur(150px);
+  -webkit-backdrop-filter: blur(150px);
   padding: 3em 2em;
   width: calc((100% / 2) - 2em);
   margin: 1em;
