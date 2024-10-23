@@ -626,7 +626,7 @@ return (
           de datos que ofrecemos?"
         </h1>
         <Link target="_top" to="data-services">
-          <button className="full_gradient_btn"    >Ver Detalles</button>
+          <button className="link-btn">Ver Detalles</button>
         </Link>
       </div>
       <div className="garantee"    >
@@ -677,7 +677,7 @@ return (
             <li> Ancho de banda ilimitado de hasta 2 Gb/s*</li>
             <li> Protección anti-DDoS incluida</li>
           </ul>
-          <button className="full_gradient_btn"    >Contratar</button>
+          <button className="full_gradient_btn contratar-btn">Contratar</button>
         </div>
 
         <div className="rht"    >

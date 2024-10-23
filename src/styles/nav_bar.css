@@ -4,9 +4,46 @@
   justify-content: space-between;
   align-items: center;
   padding: 1.5em;
+
+  display: block;
 }
 .nav_bar * {
   transition: 0.5s;
+}
+.nav_bar .links {
+  width: 416px;
+  height: 38px;
+  top: 32px;
+  margin-right:20px;
+  gap: 0px;
+  opacity: 0px;
+}
+.nav_bar .links > ul .dropdown{
+  width: 120px;
+  /* height: auto; */
+  /* top: 32px; */
+  /* gap: 0px; */
+  /* opacity: 0px; */
+  border: none;
+  background-color: Transparent;
+  stop-opacity: inherit;
+}
+.nav_bar .links > ul .dropdown >span{
+  background: url('../assets/images/Vector.png');
+}
+.nav_bar .links > ul .dropdown ul{
+  background: inherit;
+  border: none;
+}
+.nav_bar .links > ul .dropdown ul > li > a{
+  font-weight: 600;
+  font-size: 20px;
+  color: #ffffff;
+  text-decoration: none;
+  transition: 0.5s ease-in-out;
+}
+.nav_bar .links > ul .dropdown ul > li > a:hover {
+  color: #86ffe9;
 }
 .nav_bar .links > ul > li > a {
   font-weight: 600;

@@ -1,6 +1,5 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import useResponsive from '../../utils/useResponsive'
 
 export const DesarolloBotomComponent = ({title, des, info, buttonTitle}) => {
       
@@ -10,8 +9,7 @@ export const DesarolloBotomComponent = ({title, des, info, buttonTitle}) => {
     fontFamily: 'Saira',
     fontWeight: '700',
     lineHeight: '42px',
-    textAlign: 'center',
-    fontSize: screenSize === 'mobile' ? '14px' : screenSize === 'largeDesktop' ? '22px' : '18px' }}>{title}</h1>
+    textAlign: 'center'}}>{title}</h1>
     <p style={{
       width: '431px',
       height: '36px',
@@ -22,7 +20,7 @@ export const DesarolloBotomComponent = ({title, des, info, buttonTitle}) => {
       fontFamily: 'Saira',
       fontWeight: '500',
       lineHeight: '36px',
-      textAlign: 'center', fontSize: screenSize === 'mobile' ? '14px' : screenSize === 'largeDesktop' ? '22px' : '18px' }}>{des}</p>
+      textAlign: 'center'}}>{des}</p>
     <ul style={{width: '448px',
         height: '178px',
         top: '2768px',
@@ -33,15 +31,14 @@ export const DesarolloBotomComponent = ({title, des, info, buttonTitle}) => {
         fontWeight: '500',
         lineHeight: '36px',
         textAlign: 'left',
-        color: '#FFFFFF',
-       fontSize: screenSize === 'mobile' ? '14px' : screenSize === 'largeDesktop' ? '22px' : '18px' }}>
+        color: '#FFFFFF' }}>
         {info.map(i=>(
             <li>{i}</li>
         ))}
     </ul>
     <Link target="_top" to="/solicitar">
     <button className='bottom_btn full_gradient_btn' 
-    style={{ fontFamily : 'Saira', fontSize: screenSize === 'mobile' ? '14px' : screenSize === 'largeDesktop' ? '22px' : '18px' }}>{buttonTitle}</button>
+    style={{ fontFamily : 'Saira' }}>{buttonTitle}</button>
            </Link>
   </div>
   )
