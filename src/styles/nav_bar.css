@@ -25,8 +25,7 @@
   /* gap: 0px; */
   /* opacity: 0px; */
   border: none;
-  background-color: Transparent;
-  stop-opacity: inherit;
+  background-color: transparent;
 }
 .nav_bar .links > ul .dropdown >span{
   background: url('../assets/images/Vector.png');
