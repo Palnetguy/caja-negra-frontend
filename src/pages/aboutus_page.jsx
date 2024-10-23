@@ -1,14 +1,14 @@
 import NavBar from "../componets/nav_bar";
 import "../styles/aboutus_page.css";
-import useResponsive from "../utils/useResponsive";
+     
 
 const AboutUsPage = () => {
-  const screenSize = useResponsive();
+      
   return (
-    <div className="aboutus_page" style={{ fontSize: screenSize === 'mobile' ? '14px' : screenSize === 'largeDesktop' ? '22px' : '18px' }}>
-      <div className="top" style={{ fontSize: screenSize === 'mobile' ? '14px' : screenSize === 'largeDesktop' ? '22px' : '18px' }}>
+    <div className="aboutus_page"    >
+      <div className="top"    >
         <NavBar />
-        <div className="info" style={{ fontSize: screenSize === 'mobile' ? '14px' : screenSize === 'largeDesktop' ? '22px' : '18px' }}>
+        <div className="info"    >
           <h1>SOBRE nOSOTROS</h1>
           <p>
             Caja Negra se fundó con una única visión: revolucionar el panorama
@@ -43,10 +43,10 @@ const AboutUsPage = () => {
 };
 
 const AboutUsPageOp = () => {
-  const screenSize = useResponsive();
+      
   return (
-    <div className="aboutusop" style={{ fontSize: screenSize === 'mobile' ? '14px' : screenSize === 'largeDesktop' ? '22px' : '18px' }}>
-      <div className="info" style={{ fontSize: screenSize === 'mobile' ? '14px' : screenSize === 'largeDesktop' ? '22px' : '18px' }}>
+    <div className="aboutusop"    >
+      <div className="info"    >
         <p>
           Nuestra misión en Caja Negra es empoderar a empresas e individuos con
           soluciones tecnológicas de vanguardia que impulsen la eficiencia, la

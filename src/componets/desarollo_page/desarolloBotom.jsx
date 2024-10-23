@@ -3,9 +3,9 @@ import { Link } from 'react-router-dom'
 import useResponsive from '../../utils/useResponsive'
 
 export const DesarolloBotomComponent = ({title, des, info, buttonTitle}) => {
-  const screenSize = useResponsive();
+      
   return (
-  <div className="desarollo_each" style={{ fontSize: screenSize === 'mobile' ? '14px' : screenSize === 'largeDesktop' ? '22px' : '18px' }}>
+  <div className="desarollo_each"    >
     <h1 style={{width: '204px', height: '42px', top: '26px',left: '168px', gap: '0px', opacity: '0px',
     fontFamily: 'Saira',
     fontWeight: '700',

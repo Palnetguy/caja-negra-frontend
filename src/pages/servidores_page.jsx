@@ -11,7 +11,7 @@ import { Link } from "react-router-dom";
 import axios from "axios";
 import config from "./config";
 import { ServidoresOpOneComponent } from "../componets/servidore_page/servidoresOpOne";
-import useResponsive from "../utils/useResponsive";
+     
 
 const Servidores = () => {
   const [vpsOpen, setVpsOpen] = useState(true);
@@ -19,19 +19,19 @@ const Servidores = () => {
   const handleVpsOpen = () => {
     setVpsOpen((prev) => !prev);
   };
-  const screenSize = useResponsive();
+      
   return (
-    <div className="servidores_page" style={{ fontSize: screenSize === 'mobile' ? '14px' : screenSize === 'largeDesktop' ? '22px' : '18px' }}>
-      <div className="top" style={{ fontSize: screenSize === 'mobile' ? '14px' : screenSize === 'largeDesktop' ? '22px' : '18px' }}>
+    <div className="servidores_page"    >
+      <div className="top"    >
         <NavBar />
-        <div className="info" style={{ fontSize: screenSize === 'mobile' ? '14px' : screenSize === 'largeDesktop' ? '22px' : '18px' }}>
+        <div className="info"    >
           <h1>Servidores</h1>
           <p>Servidores Privados Virtuales & Servidores Dedicados</p>
-          <div className="btns" style={{ fontSize: screenSize === 'mobile' ? '14px' : screenSize === 'largeDesktop' ? '22px' : '18px' }}>
+          <div className="btns"    >
             <button
               className={`${vpsOpen ? "full_gradient_btn" : "btn-1"}`}
               onClick={handleVpsOpen}
-              style={{ fontSize: screenSize === 'mobile' ? '14px' : screenSize === 'largeDesktop' ? '22px' : '18px' }}
+                 
             >
               VPS
             </button>
@@ -39,7 +39,7 @@ const Servidores = () => {
             <button
               className={`${!vpsOpen ? "full_gradient_btn" : "btn-1"}`}
               onClick={handleVpsOpen}
-              style={{ fontSize: screenSize === 'mobile' ? '14px' : screenSize === 'largeDesktop' ? '22px' : '18px' }}
+                 
             >
               Dedicados
             </button>
@@ -129,10 +129,10 @@ const ServidoresOp = () => {
   const handleChangeServer = (e) => {
     setcurrent_server(e);
   };
-  const screenSize = useResponsive();
+      
   return (
-    <div className="servidores_op" id="servidores_op" style={{ fontSize: screenSize === 'mobile' ? '14px' : screenSize === 'largeDesktop' ? '22px' : '18px' }}>
-      <div className="changeBtns" style={{ fontSize: screenSize === 'mobile' ? '14px' : screenSize === 'largeDesktop' ? '22px' : '18px' }}>
+    <div className="servidores_op" id="servidores_op"    >
+      <div className="changeBtns"    >
         {servers.map((e, index) => (
           <div
             className={`changeBtn ${current_server === index ? "active" : ""}`}
@@ -145,48 +145,48 @@ const ServidoresOp = () => {
 
       {!isDoneLoadingserversData && (
         <>
-          <div className="specs_contain" style={{ fontSize: screenSize === 'mobile' ? '14px' : screenSize === 'largeDesktop' ? '22px' : '18px' }}>
-            <div className="type-container" style={{ fontSize: screenSize === 'mobile' ? '14px' : screenSize === 'largeDesktop' ? '22px' : '18px' }}>
+          <div className="specs_contain"    >
+            <div className="type-container"    >
             </div>
-            <div className="specs" style={{ fontSize: screenSize === 'mobile' ? '14px' : screenSize === 'largeDesktop' ? '22px' : '18px' }}>
-              <div className="info" style={{ fontSize: screenSize === 'mobile' ? '14px' : screenSize === 'largeDesktop' ? '22px' : '18px' }}>
+            <div className="specs"    >
+              <div className="info"    >
                 <p>CPU</p>
                 <p>{servers[current_server].cpu}</p>
               </div>
-              <div className="info" style={{ fontSize: screenSize === 'mobile' ? '14px' : screenSize === 'largeDesktop' ? '22px' : '18px' }}>
+              <div className="info"    >
                 <p>Bandwidth</p>
                 <p>{servers[current_server].Bandwidth}</p>
               </div>
-              <div className="info" style={{ fontSize: screenSize === 'mobile' ? '14px' : screenSize === 'largeDesktop' ? '22px' : '18px' }}>
+              <div className="info"    >
                 <p>Bandwidth Two</p>
                 <p>{servers[current_server].BandwidthTwo}</p>
               </div>
-              <div className="info" style={{ fontSize: screenSize === 'mobile' ? '14px' : screenSize === 'largeDesktop' ? '22px' : '18px' }}>
+              <div className="info"    >
                 <p>RAM</p>
                 <p>{servers[current_server].RAM}</p>
               </div>
-              <div className="info" style={{ fontSize: screenSize === 'mobile' ? '14px' : screenSize === 'largeDesktop' ? '22px' : '18px' }}>
+              <div className="info"    >
                 <p>Disk Space</p>
                 <p>{servers[current_server].DiskSpace}</p>
               </div>
-              <div className="info" style={{ fontSize: screenSize === 'mobile' ? '14px' : screenSize === 'largeDesktop' ? '22px' : '18px' }}>
+              <div className="info"    >
                 <p>IP</p>
                 <p>{servers[current_server].IP}</p>
               </div>
               <Link target="_top" to="/solicitar">
-                <button className="full_gradient_btn" style={{ fontSize: screenSize === 'mobile' ? '14px' : screenSize === 'largeDesktop' ? '22px' : '18px' }}>Solicitar</button>
+                <button className="full_gradient_btn"    >Solicitar</button>
               </Link>
             </div>
           </div>
         </>
       )}
 
-      <div className="nuestros" style={{ fontSize: screenSize === 'mobile' ? '14px' : screenSize === 'largeDesktop' ? '22px' : '18px' }}>
-        <h2 className="sub_title" style={{ fontSize: screenSize === 'mobile' ? '14px' : screenSize === 'largeDesktop' ? '22px' : '18px' }}>Nuestros</h2>
-        <h1 className="title" style={{ fontSize: screenSize === 'mobile' ? '14px' : screenSize === 'largeDesktop' ? '22px' : '18px' }}>BENEFICIOS</h1>
-        <div className="nuestros_cont" style={{ fontSize: screenSize === 'mobile' ? '14px' : screenSize === 'largeDesktop' ? '22px' : '18px' }}>
-          <div className="nuetro" style={{ fontSize: screenSize === 'mobile' ? '14px' : screenSize === 'largeDesktop' ? '22px' : '18px' }}>
-            <div className="image" style={{ fontSize: screenSize === 'mobile' ? '14px' : screenSize === 'largeDesktop' ? '22px' : '18px' }}>
+      <div className="nuestros"    >
+        <h2 className="sub_title"    >Nuestros</h2>
+        <h1 className="title"    >BENEFICIOS</h1>
+        <div className="nuestros_cont"    >
+          <div className="nuetro"    >
+            <div className="image"    >
               <img src={includedfeat1} alt="" />
             </div>
             <h1>Discos SSD</h1>
@@ -196,8 +196,8 @@ const ServidoresOp = () => {
               proyecto en línea de mediana o gran escala.
             </p>
           </div>
-          <div className="nuetro" style={{ fontSize: screenSize === 'mobile' ? '14px' : screenSize === 'largeDesktop' ? '22px' : '18px' }}>
-            <div className="image" style={{ fontSize: screenSize === 'mobile' ? '14px' : screenSize === 'largeDesktop' ? '22px' : '18px' }}>
+          <div className="nuetro"    >
+            <div className="image"    >
               <img src={includedfeat2} alt="" />
             </div>
             <h1>Acceso Root al Servidor</h1>
@@ -207,8 +207,8 @@ const ServidoresOp = () => {
               recursos en tiempo real.
             </p>
           </div>
-          <div className="nuetro" style={{ fontSize: screenSize === 'mobile' ? '14px' : screenSize === 'largeDesktop' ? '22px' : '18px' }}>
-            <div className="image" style={{ fontSize: screenSize === 'mobile' ? '14px' : screenSize === 'largeDesktop' ? '22px' : '18px' }}>
+          <div className="nuetro"    >
+            <div className="image"    >
               <img src={includedfeat3} alt="" />
             </div>
             <h1>Red de 1000 Mb/s</h1>
@@ -219,8 +219,8 @@ const ServidoresOp = () => {
               sin preocuparse por tiempos de inactividad inesperados.
             </p>
           </div>
-          <div className="nuetro" style={{ fontSize: screenSize === 'mobile' ? '14px' : screenSize === 'largeDesktop' ? '22px' : '18px' }}>
-            <div className="image" style={{ fontSize: screenSize === 'mobile' ? '14px' : screenSize === 'largeDesktop' ? '22px' : '18px' }}>
+          <div className="nuetro"    >
+            <div className="image"    >
               <img src={includedfeat4} alt="" />
             </div>
             <h1>DiscCopias de Seguridad y Snapshots</h1>
@@ -333,18 +333,18 @@ const ServidoresOp1 = () => {
       bt: 'Solicitar'
     }
   ]
-  const screenSize = useResponsive();
+      
   return (
-    <div className="servidoresOp_1" id="servidoresOp_1" style={{ fontSize: screenSize === 'mobile' ? '14px' : screenSize === 'largeDesktop' ? '22px' : '18px' }}>
-      <h2 className="sub_title" style={{ fontSize: screenSize === 'mobile' ? '14px' : screenSize === 'largeDesktop' ? '22px' : '18px' }}>Servicio al Cliente Experimentado</h2>
-      <h1 className="title" style={{ fontSize: screenSize === 'mobile' ? '14px' : screenSize === 'largeDesktop' ? '22px' : '18px' }}>
+    <div className="servidoresOp_1" id="servidoresOp_1"    >
+      <h2 className="sub_title"    >Servicio al Cliente Experimentado</h2>
+      <h1 className="title"    >
         NOS DESTACAMOS POR 
         <br />
         LA EXPERIENCIA
       </h1>
-      <div className="servidoresOp_1_contain" style={{ fontSize: screenSize === 'mobile' ? '14px' : screenSize === 'largeDesktop' ? '22px' : '18px' }}>
-        <div className="servidoresOp_1_each" style={{ fontSize: screenSize === 'mobile' ? '14px' : screenSize === 'largeDesktop' ? '22px' : '18px' }}>
-          <div className="image" style={{ fontSize: screenSize === 'mobile' ? '14px' : screenSize === 'largeDesktop' ? '22px' : '18px' }}>
+      <div className="servidoresOp_1_contain"    >
+        <div className="servidoresOp_1_each"    >
+          <div className="image"    >
             <img src={bestVpsImg} alt="" />
           </div>
           <h1>Servidores de última generación</h1>
@@ -352,8 +352,8 @@ const ServidoresOp1 = () => {
             Caja Negra presenta más de 1000 modelos de servidores a configurar
           </p>
         </div>
-        <div className="servidoresOp_1_each" style={{ fontSize: screenSize === 'mobile' ? '14px' : screenSize === 'largeDesktop' ? '22px' : '18px' }}>
-          <div className="image" style={{ fontSize: screenSize === 'mobile' ? '14px' : screenSize === 'largeDesktop' ? '22px' : '18px' }}>
+        <div className="servidoresOp_1_each"    >
+          <div className="image"    >
             <img src={bestVpsImg} alt="" />
           </div>
           <h1>Servidores de última generación</h1>
@@ -361,8 +361,8 @@ const ServidoresOp1 = () => {
             Caja Negra presenta más de 1000 modelos de servidores a configurar
           </p>
         </div>
-        <div className="servidoresOp_1_each" style={{ fontSize: screenSize === 'mobile' ? '14px' : screenSize === 'largeDesktop' ? '22px' : '18px' }}>
-          <div className="image" style={{ fontSize: screenSize === 'mobile' ? '14px' : screenSize === 'largeDesktop' ? '22px' : '18px' }}>
+        <div className="servidoresOp_1_each"    >
+          <div className="image"    >
             <img src={bestVpsImg} alt="" />
           </div>
           <h1>Servidores de última generación</h1>
@@ -372,7 +372,7 @@ const ServidoresOp1 = () => {
         </div>
       </div>
 
-      <div className="servidoresOp_1_contain1" style={{ fontSize: screenSize === 'mobile' ? '14px' : screenSize === 'largeDesktop' ? '22px' : '18px' }}>
+      <div className="servidoresOp_1_contain1"    >
         {serverDetailIndepth.map(i=>(
           <ServidoresOpOneComponent key={i.id} h1={i.h1} h2={i.h2} liItem={i.liItem} bt={i.bt}/>
         ))}
@@ -394,9 +394,9 @@ const ServidoresOp1 = () => {
         
       </div>
 
-      <div className="nuestros_cont" style={{ fontSize: screenSize === 'mobile' ? '14px' : screenSize === 'largeDesktop' ? '22px' : '18px' }}>
-        <div className="nuetro" style={{ fontSize: screenSize === 'mobile' ? '14px' : screenSize === 'largeDesktop' ? '22px' : '18px' }}>
-          <div className="image" style={{ fontSize: screenSize === 'mobile' ? '14px' : screenSize === 'largeDesktop' ? '22px' : '18px' }}>
+      <div className="nuestros_cont"    >
+        <div className="nuetro"    >
+          <div className="image"    >
             <img src={pngTree} alt="" />
           </div>
           <h1>Servidores No Administrados</h1>
@@ -404,8 +404,8 @@ const ServidoresOp1 = () => {
             El control total sobre su servidor está completamente en sus manos.
           </p>
         </div>
-        <div className="nuetro" style={{ fontSize: screenSize === 'mobile' ? '14px' : screenSize === 'largeDesktop' ? '22px' : '18px' }}>
-          <div className="image" style={{ fontSize: screenSize === 'mobile' ? '14px' : screenSize === 'largeDesktop' ? '22px' : '18px' }}>
+        <div className="nuetro"    >
+          <div className="image"    >
             <img src={includedfeat2} alt="" />
           </div>
           <h1>Hardware Más Reciente</h1>
@@ -414,8 +414,8 @@ const ServidoresOp1 = () => {
             garantizar el mejor servicio.
           </p>
         </div>
-        <div className="nuetro" style={{ fontSize: screenSize === 'mobile' ? '14px' : screenSize === 'largeDesktop' ? '22px' : '18px' }}>
-          <div className="image" style={{ fontSize: screenSize === 'mobile' ? '14px' : screenSize === 'largeDesktop' ? '22px' : '18px' }}>
+        <div className="nuetro"    >
+          <div className="image"    >
             <img src={includedfeat3} alt="" />
           </div>
           <h1>Privacidad</h1>
@@ -424,8 +424,8 @@ const ServidoresOp1 = () => {
             puntuación está segura con nosotros.
           </p>
         </div>
-        <div className="nuetro" style={{ fontSize: screenSize === 'mobile' ? '14px' : screenSize === 'largeDesktop' ? '22px' : '18px' }}>
-          <div className="image" style={{ fontSize: screenSize === 'mobile' ? '14px' : screenSize === 'largeDesktop' ? '22px' : '18px' }}>
+        <div className="nuetro"    >
+          <div className="image"    >
             <img src={includedfeat4} alt="" />
           </div>
           <h1>Atención al Cliente</h1>

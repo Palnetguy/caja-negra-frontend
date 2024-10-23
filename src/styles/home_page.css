@@ -3,37 +3,91 @@
     background: red;
     width: 100%; */
   /* background: url('../assets/videos/-be65-414f-85e8-949a1e5e112a.mp4'); */
-  flex: 1;
+  /* flex: 1;
   position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
-  flex-direction: column;
+  flex-direction: column; */
+  margin-left: 4em;
+  width: 820px;
+  height: 491px;
+  top: 500px;
+  /* left: 130px; */
+  gap: 0px;
+  border: 1px 0px 0px 0px;
+  opacity: 0px;
 }
 .home_page .main > h1 {
-  color: #86ffe9;
+  /* color: #86ffe9;
   font-size: 44px;
   font-family: 800;
   line-height: 1;
-  margin: 0 1.5em;
+  margin: 0 1.5em; */
+  width: 756px;
+  height: 203px;
+  top: 367px;
+  left: 130px;
+  gap: 0px;
+  opacity: 0px;
+  font-family: Saira;
+  font-size: 44px;
+  font-weight: 800;
+  /* line-height: 79px; */
+  /* letter-spacing: -0.02em; */
+  text-align: left;
+  color: #86FFE9;
+
 }
 
 .home_page .main > p {
-  /* color: #86FFE9; */
+  /* color: #86FFE9;
   font-size: 26px;
   font-family: 500;
   color: #ffffff;
   margin: 1em 0;
   line-height: 1;
-  margin: 0.5em 1.5em;
+  margin: 0.5em 1.5em; */
+  width: 820px;
+  height: 138px;
+  top: 600px;
+  left: 130px;
+  gap: 0px;
+  opacity: 0px;
+  font-family: Saira;
+  font-size: 26px;
+  font-weight: 500;
+  line-height: 46px;
+  letter-spacing: -0.02em;
+  text-align: left;
+  font-family: Saira;
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 46px;
+  letter-spacing: -0.02em;
+  text-align: left;
+  color: #FFFFFF;
 }
-.home_page .services{
+.home_page .main .btn_1{
+  width: Fixed (234px)px;
+  height: Fixed (80px)px;
+  top: 778px;
+  left: 130px;
+  padding: 6px 30px 6px 30px;
+  gap: 10px;
+  border-radius: 12px 0px 0px 0px;
+  border: 1px 0px 0px 0px;
+  opacity: 0px;
+}
+/* .home_page .services{
   background-attachment: fixed;
-  /* change background image */
-  /* background-image: url('../assets/images/Background-contact\ 1.png'); */
-  /* background: linear-gradient(27.09deg, #012B38 11.5%, #002C3B 33.12%, #002C3A 43.32%, #00090B 93.09%); */
+  /* change background image 
+  /* background-image: url('../assets/images/Background-contact\ 1.png'); 
+  /* background: linear-gradient(27.09deg, #012B38 11.5%, #002C3B 33.12%, #002C3A 43.32%, #00090B 93.09%);
 }
+*/
+
 @media (max-width: 980px) {
   .home_page .main > h1 {
     color: #86ffe9;
@@ -111,8 +165,12 @@
   object-fit: cover;
 }
 .home_page .services {
-  padding-top: 1em;
+  padding-top: 6em;
 }
+.home_page .services .title {
+  padding-bottom:2em;
+}
+
 .home_page .services .oferta > h1 {
   font-size: 40px;
   font-family: 700;
@@ -149,7 +207,51 @@
   transform: translate(-50%, -50%);
 }
 .home_page .services .service > .image > .img > img {
-  width: 100%;
+  /* width: 100%; */
+  width: 254px;
+height: 190px;
+top: 1465px;
+left: 557px;
+gap: 0px;
+opacity: 0px;
+
+}
+.home_page .services .service h2{
+  width: 364px;
+height: 80px;
+top: 1705px;
+left: 29px;
+gap: 0px;
+opacity: 0px;
+font-family: Saira;
+font-size: 36px;
+font-weight: 700;
+line-height: 42px;
+text-align: center;
+}
+.home_page .services .service p{
+/* width: 333px;
+height: 144px;
+top: 1813px;
+left: 44px;
+gap: 0px;
+opacity: 0px;
+font-family: Saira;
+font-size: 24px;
+font-weight: 500;
+line-height: 36px;
+text-align: center; */
+width: 355px;
+height: 144px;
+top: 1813px;
+left: 506px;
+gap: 0px;
+opacity: 0px;
+font-family: Saira;
+font-size: 24px;
+font-weight: 500;
+line-height: 36px;
+text-align: center;
 }
 .home_page .services .service {
   width: calc((100% / 3) - 4em);
@@ -206,7 +308,7 @@
   border-radius: 12px;
 }
 .home_page .services .oferta {
-  padding-top: 4em;
+  padding-top: 2em;
 }
 .home_page .services > h1 {
   font-size: 40px;
@@ -222,14 +324,14 @@
   text-align: center;
 }
 .home_page .services .oferta > h1 {
-  font-size: 40px;
+  font-size: 50px;
   font-family: 700;
   color: #ffffff;
   text-align: center;
   margin-bottom: 1em;
 }
 .home_page .services .oferta > h2 {
-  font-size: 26px;
+  font-size: 32px;
   font-weight: 500;
   color: #d9d9d9;
   text-align: center;
