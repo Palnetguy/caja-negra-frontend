@@ -38,7 +38,6 @@ const HomePage = () => {
   const screenSize = useResponsive();
   return (
     <div className="home_page" style={{ fontSize: screenSize === 'mobile' ? '14px' : screenSize === 'largeDesktop' ? '22px' : '18px' }}>
-      {isloading && <FullPageLoader />}
       <div className="top" style={{ fontSize: screenSize === 'mobile' ? '14px' : screenSize === 'largeDesktop' ? '22px' : '18px' }}>
         <div className="bgVideo" style={{ fontSize: screenSize === 'mobile' ? '14px' : screenSize === 'largeDesktop' ? '22px' : '18px' }}>
           <img src={bgVideo} alt="" srcset="" />

@@ -32,7 +32,7 @@
   background-attachment: fixed;
   /* change background image */
   /* background-image: url('../assets/images/Background-contact\ 1.png'); */
-  background: linear-gradient(27.09deg, #012B38 11.5%, #002C3B 33.12%, #002C3A 43.32%, #00090B 93.09%);
+  /* background: linear-gradient(27.09deg, #012B38 11.5%, #002C3B 33.12%, #002C3A 43.32%, #00090B 93.09%); */
 }
 @media (max-width: 980px) {
   .home_page .main > h1 {

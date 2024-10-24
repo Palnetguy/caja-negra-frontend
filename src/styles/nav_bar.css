@@ -8,6 +8,9 @@
 .nav_bar * {
   transition: 0.5s;
 }
+.nav_bar .links{
+  margin-right: 8px;
+}
 .nav_bar .links > ul > li > a {
   font-weight: 600;
   font-size: 20px;

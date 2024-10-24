@@ -47,12 +47,12 @@
   display: flex;
   margin-top: 1em;
 }
-.hosting_page .hosting_compartido {
+/* .hosting_page .hosting_compartido {
   background: linear-gradient(27.09deg, #012B38 11.5%, #002C3B 33.12%, #002C3A 43.32%, #00090B 93.09%);
 }
 .hosting_page .revender{
   background: linear-gradient(27.09deg, #012B38 11.5%, #002C3B 33.12%, #002C3A 43.32%, #00090B 93.09%);
-}
+} */
 .hosting_page .top .btns > button:nth-child(1) {
   /* display: flex; */
   margin-right: 1em;

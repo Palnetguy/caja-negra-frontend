@@ -1,6 +1,6 @@
-.desarollo{
+/* .desarollo{
   background: linear-gradient(27.09deg, #012B38 11.5%, #002C3B 33.12%, #002C3A 43.32%, #00090B 93.09%);
-}
+} */
 .desarollo_page .top {
   height: 100vh;
   background: url("../assets/images/timage5.png");
@@ -14,7 +14,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   /* background: url("../assets/images/gif-bg\ stars.gif"); */
-  background: linear-gradient(27.09deg, #012B38 11.5%, #002C3B 33.12%, #002C3A 43.32%, #00090B 93.09%);
+  /* background: linear-gradient(27.09deg, #012B38 11.5%, #002C3B 33.12%, #002C3A 43.32%, #00090B 93.09%); */
 
 }
 .desarollo_page .domains  button {

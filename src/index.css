@@ -144,6 +144,7 @@ a {
   }
 }
 body {
-  background-color: black;
-  background: url("./assets/images/gif-bg\ stars.gif");
+  /* background-color: black; */
+  /* background: url("./assets/images/gif-bg\ stars.gif"); */
+  background: url("./assets/images/BackgroundCompressed.png");
 }
