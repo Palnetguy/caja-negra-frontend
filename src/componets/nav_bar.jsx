@@ -36,12 +36,13 @@ const NavBar = () => {
             <div style={{ position: 'relative', display: 'inline-block' }}>
             <button onClick={toggleDropdown} style={{ backgroundColor: '#3498db',
             color: 'white',
-            padding: '10px 20px',
+            padding: '8px 16px',
             border: 'none',
             cursor: 'pointer',
             borderRadius: '5px',
             background: 'transparent',
             fontSize: '20px',
+            fontWeight:'600'
             }}>
               Servicios <span><img src={v} alt=""/></span>
             </button>
@@ -51,46 +52,40 @@ const NavBar = () => {
                 top: '100%',
                 left: 0,
                 listStyle: 'none',
-                padding: '10px',
+                padding: '4px',
                 borderRadius: '5px',
                 zIndex: 1,
                  background: 'transparent',
-                 color: '#ffffff'
-
               }}>
             <li style={{
-              padding: '8px 12px',
+              padding: '4px 12px',
               cursor: 'pointer',
-              color: '#ffffff'
             }}>
-              <Link target="_top" to="/desarollo">
+              <Link target="_top" to="/desarollo" style={{ color: 'white', textDecoration: 'none' }}> 
                 Desarollo
               </Link>
             </li>
             <li style={{
-              padding: '8px 12px',
+              padding: '4px 12px',
               cursor: 'pointer',
-              color: '#ffffff'
             }}>
-              <Link target="_top" to="/dominos">
+              <Link target="_top" to="/dominos" style={{ color: 'white', textDecoration: 'none' }}>
                 Dominios
               </Link>
             </li>
             <li style={{
-            padding: '8px 12px',
+            padding: '4px 12px',
             cursor: 'pointer',
-            color: '#ffffff'
           }}>
-              <Link target="_top" to="/servers">
+              <Link target="_top" to="/servers" style={{ color: 'white', textDecoration: 'none' }}>
                 Servidores
               </Link>
             </li>
             <li style={{
-                padding: '8px 12px',
+                padding: '4px 12px',
                 cursor: 'pointer',
-                color: '#ffffff'
               }}>
-              <Link target="_top" to="/hosting">
+              <Link target="_top" to="/hosting" style={{ color: 'white', textDecoration: 'none' }}>
                 Hosting
               </Link>
             </li>
