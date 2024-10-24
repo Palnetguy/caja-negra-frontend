@@ -18,12 +18,20 @@ import CustomDropdown from "../componets/dropdown";
 import { Link } from "react-router-dom";
 import axios from "axios";
 import config from "./config";
+<<<<<<< HEAD
+=======
+// import FullPageLoader from "../componets/fullpage_loader";
+>>>>>>> 207d112df583328855a77b51e4facfe749af5a54
 //helper components
 import { ServicesComponent } from "../componets/home_page/services";
 import { VpsComponent } from "../componets/home_page/vps";
 import { DedicaoComponent } from "../componets/home_page/dedicao";
 import { ProfessionaleService } from "../componets/home_page/professionale_service";
 import { RemarksContainer } from "../componets/home_page/remarks";
+<<<<<<< HEAD
+=======
+import { ListComponent } from "../componets/home_page/listComponent";
+>>>>>>> 207d112df583328855a77b51e4facfe749af5a54
 
 const HomePage = () => {
   const [isloading, setislaoding] = useState(true);
@@ -34,9 +42,16 @@ const HomePage = () => {
     }, 2000);
   };
   return (
+<<<<<<< HEAD
     <div className="home_page" >
       <div className="top" >
         <div className="bgVideo">
+=======
+    <div className="home_page"    >
+      {/* {isloading && <FullPageLoader />} */}
+      <div className="top"    >
+        <div className="bgVideo"    >
+>>>>>>> 207d112df583328855a77b51e4facfe749af5a54
           <img src={bgVideo} alt="" srcset="" />
         </div>
         <NavBar />
@@ -48,8 +63,14 @@ const HomePage = () => {
 };
 
 const Main = () => {
+<<<<<<< HEAD
   return (
     <div className="main" >
+=======
+      
+  return (
+    <div className="main"    >
+>>>>>>> 207d112df583328855a77b51e4facfe749af5a54
       <h1>Bienvenido a Caja Negra
       La tecnología futura en el ámbito virtual.</h1>
       <p>
@@ -58,7 +79,11 @@ const Main = () => {
         requerir.
       </p>
       <a href="#why_choose_us">
+<<<<<<< HEAD
         <button className="btn-1">Explorar</button>
+=======
+        <button className="btn-1"    >Explorar</button>
+>>>>>>> 207d112df583328855a77b51e4facfe749af5a54
       </a>
     </div>
   );
@@ -66,7 +91,6 @@ const Main = () => {
 
 const Services = ({ handleLoading }) => {
   // const [isloadingfully, setisloadingfully] = useState(true);
-
   const [isloadingwhychooseus, setisloadingwhychooseus] = useState(true);
   const [isloadingcomments, setisloadingcomments] = useState(true);
   const [isloadingoffer, setisloadingoffer] = useState(true);
@@ -191,7 +215,7 @@ const services_data=[
     img: chooseUs3Img,
     heading: '99.9% Disponibilidad Garantizada',
     body: 'Nuestro equipo técnicos esta capacitados para solucionar cualquier incidente en el menor tiempo posible'
-  }
+  },
 ];
 
 const vpsData=[
@@ -322,60 +346,56 @@ const remarksData = [
     pf: 'Jane Smith, CEO de Tech Solutions Inc.'
   }
 ]
+<<<<<<< HEAD
 return (
     <div className="services" id="why_choose_us">
       <h2 className="sub_title">Servicios Garantizado</h2>
       <h1 className="title" >¿Por qué elegirnos?</h1>
       {/* Services */}
       <div className="services_container" >
+=======
+
+const listData=[
+  {
+    li:'Escalabilidad y personalización',
+    p: `Todos los servidores dedicados incluyen un sistema anti-DDoS con
+        el fin de ofrecerle la máxima seguridad en sus infraestructuras.`
+  },
+  {
+    li:'Ancho de banda ilimitado de hasta 2 Gb/s*',
+    p: `Todos los servidores dedicados incluyen un sistema anti-DDoS con
+              el fin de ofrecerle la máxima seguridad en sus infraestructuras.`
+  },
+  {
+    li:'Protección anti-DDoS incluida',
+    p: ` Todos los servidores dedicados incluyen un sistema anti-DDoS con
+          el fin de ofrecerle la máxima seguridad en sus infraestructuras.`
+  }
+]
+    
+return (
+    <div className="services" id="why_choose_us"    >
+      <h2 className="sub_title"    >Servicios Garantizado</h2>
+      <h1 className="title"    >¿Por qué elegirnos?</h1>
+      {/* Services */}
+      <div className="services_container"    >
+>>>>>>> 207d112df583328855a77b51e4facfe749af5a54
         {services_data.map(item=>(
         <ServicesComponent key={item.id} image={item.img} heading={item.heading} paragraph={item.body} />
       ))}
-        {/* <div className="service">
-          <div className="image">
-            <div className="bgSpan"></div>
-            <div className="img">
-              <img src={chooseUs1Img} alt="" />
-            </div>
-          </div>
-          <h2>99.9% Disponibilidad Garantizada</h2>
-          <p>
-            Nuestro equipo técnicos esta capacitados para solucionar cualquier
-            incidente en el menor tiempo posible
-          </p>
-        </div>
-        <div className="service">
-          <div className="image">
-            <div className="bgSpan"></div>
-            <div className="img">
-              <img src={chooseUs2Img} alt="" />
-            </div>
-          </div>
-          <h2>99.9% Disponibilidad Garantizada</h2>
-          <p>
-            Nuestro equipo técnicos esta capacitados para solucionar cualquier
-            incidente en el menor tiempo posible
-          </p>
-        </div>
-        <div className="service">
-          <div className="image">
-            <div className="bgSpan"></div>
-            <div className="img">
-              <img src={chooseUs3Img} alt="" />
-            </div>
-          </div>
-          <h2>99.9% Disponibilidad Garantizada</h2>
-          <p>
-            Nuestro equipo técnicos esta capacitados para solucionar cualquier
-            incidente en el menor tiempo posible
-          </p>
-        </div> */}
 
         {whyChooseUsdata.map((e) => (
+<<<<<<< HEAD
           <div className="service" key={Math.random()}>
             <div className="image">
               <div className="bgSpan"></div>
               <div className="img" >
+=======
+          <div className="service" key={Math.random()}    >
+            <div className="image"    >
+              <div className="bgSpan"    ></div>
+              <div className="img"    >
+>>>>>>> 207d112df583328855a77b51e4facfe749af5a54
                 <img src={e.image} alt="" />
               </div>
             </div>
@@ -384,6 +404,7 @@ return (
           </div>
         ))}
       </div>
+<<<<<<< HEAD
       <div className="oferta">
         <h2 className="sub_title">Servidores Oferta</h2>
         <h1 className="title" >Nuestras ofertas</h1>
@@ -395,15 +416,36 @@ return (
           >
             <div className="bgSpan"></div>
             <div className="word">
+=======
+      <div className="oferta"    >
+        <h2 className="sub_title"    >Servidores Oferta</h2>
+        <h1 className="title"    >Nuestras ofertas</h1>
+
+        <div className="btns"    >
+          <div
+            className={`btn_op ${vpsOpen ? "active" : ""}`}
+            onClick={handleOnClickOffers}
+               
+          >
+            <div className="bgSpan"    ></div>
+            <div className="word"    >
+>>>>>>> 207d112df583328855a77b51e4facfe749af5a54
               <p>VPS</p>
             </div>
           </div>
           <div
             className={`btn_op ${!vpsOpen ? "active" : ""}`}
             onClick={handleOnClickOffers}
+<<<<<<< HEAD
           >
             <div className="bgSpan"></div>
             <div className="word">
+=======
+               
+          >
+            <div className="bgSpan"    ></div>
+            <div className="word"    >
+>>>>>>> 207d112df583328855a77b51e4facfe749af5a54
               <p>Dedicado</p>
             </div>
           </div>
@@ -411,7 +453,11 @@ return (
 
         {/* for vps */}
         {vpsOpen && (
+<<<<<<< HEAD
           <div className="ofertas_container">
+=======
+          <div className="ofertas_container"    >
+>>>>>>> 207d112df583328855a77b51e4facfe749af5a54
             {vpsData.map(i =>(
               <VpsComponent key={i.id} heading1={i.h1} heading2={i.h2} buttonTitle={i.bt}/>
             ))}
@@ -447,11 +493,17 @@ return (
             </div> */}
 
             {offersData
-              .filter((e) => e.offer_type == "VPS")
+              .filter((e) => e.offer_type === "VPS")
               .map((e) => (
+<<<<<<< HEAD
                 <div className="each_ofertas " >
                   <div className="bgSpan"></div>
                   <div className="info" >
+=======
+                <div className="each_ofertas "    >
+                  <div className="bgSpan"    ></div>
+                  <div className="info"    >
+>>>>>>> 207d112df583328855a77b51e4facfe749af5a54
                     <h1>{e.title}</h1>
                     <h2>{e.info}</h2>
                     <Link target="_top" to="/solicitar">
@@ -464,7 +516,11 @@ return (
         )}
         {/* for dedicado */}
         {!vpsOpen && (
+<<<<<<< HEAD
           <div className="ofertas_container ">
+=======
+          <div className="ofertas_container "    >
+>>>>>>> 207d112df583328855a77b51e4facfe749af5a54
             {dedicaoData.map(i => (
               <DedicaoComponent key={i.id} heading1={i.h1} heading2={i.h2} buttonTitle={i.bt}/>
             ))}
@@ -505,11 +561,17 @@ return (
             </div> */}
 
             {offersData
-              .filter((e) => e.offer_type == "Dedicated")
+              .filter((e) => e.offer_type === "Dedicated")
               .map((e) => (
+<<<<<<< HEAD
                 <div className="each_ofertas ">
                   <div className="bgSpan"></div>
                   <div className="info">
+=======
+                <div className="each_ofertas "    >
+                  <div className="bgSpan"    ></div>
+                  <div className="info"    >
+>>>>>>> 207d112df583328855a77b51e4facfe749af5a54
                     <h1>{e.title}</h1>
                     <h2>{e.info}</h2>
                     <Link target="_top" to="/solicitar">
@@ -521,25 +583,44 @@ return (
           </div>
         )}
       </div>
+<<<<<<< HEAD
       <div className="ver" >
         <p>Ver todo los servicios de datos que ofrecemos</p>
         <Link target="_top" to="data-services">
           <div className="btn_op">
             <div className="bgSpan"></div>
             <div className="word" >
+=======
+      <div className="ver"    >
+        <p>Ver todo los servicios de datos que ofrecemos</p>
+        <Link target="_top" to="data-services">
+          <div className="btn_op"    >
+            <div className="bgSpan"    ></div>
+            <div className="word"    >
+>>>>>>> 207d112df583328855a77b51e4facfe749af5a54
               <p>Ver</p>
             </div>
           </div>
         </Link>
       </div>
+<<<<<<< HEAD
       <div className="th_words">
+=======
+      <div className="th_words"    >
+>>>>>>> 207d112df583328855a77b51e4facfe749af5a54
         <p>Backup Diarios</p>
         <p>Migración gratis</p>
         <p>Configuración</p>
       </div>
+<<<<<<< HEAD
       <h2 className="sub_title">Servicios Profesionales</h2>
       <h1 className="title" >Nuestros servicios</h1>
       <div className="services_container">
+=======
+      <h2 className="sub_title"    >Servicios Profesionales</h2>
+      <h1 className="title"    >Nuestros servicios</h1>
+      <div className="services_container"    >
+>>>>>>> 207d112df583328855a77b51e4facfe749af5a54
         {profesionalesServiceData.map(i => (
           <ProfessionaleService img={i.img} h2={i.h2} p={i.p}/>
         ))}
@@ -623,10 +704,17 @@ return (
         </div> */}
 
         {servicesData.map((e) => (
+<<<<<<< HEAD
           <div className="service" >
             <div className="image" >
               <div className="bgSpan" ></div>
               <div className="img" >
+=======
+          <div className="service"    >
+            <div className="image"    >
+              <div className="bgSpan"    ></div>
+              <div className="img"    >
+>>>>>>> 207d112df583328855a77b51e4facfe749af5a54
                 <img src={e.image} alt="" />
               </div>
             </div>
@@ -635,25 +723,43 @@ return (
           </div>
         ))}
       </div>
+<<<<<<< HEAD
       <div className="word_btn" >
+=======
+      <div className="word_btn"    >
+>>>>>>> 207d112df583328855a77b51e4facfe749af5a54
         <h1>
           ¿Estás interesado en datos y te gustaría conocer el tipo de servicio
           de datos que ofrecemos?"
         </h1>
         <Link target="_top" to="data-services">
+<<<<<<< HEAD
           <button className="full_gradient_btn" >Ver Detalles</button>
         </Link>
       </div>
       <div className="garantee" >
+=======
+          <button className="link-btn">Ver Detalles</button>
+        </Link>
+      </div>
+      <div className="garantee"    >
+>>>>>>> 207d112df583328855a77b51e4facfe749af5a54
         <h1>
           Nos comprometemos como una de las mejor solución de servicios web de
           latinoamerica
         </h1>
 
+<<<<<<< HEAD
         <div className="contain_grns" >
           <div className="each_grns " >
             <div className="bgSpan" ></div>
             <div className="info" >
+=======
+        <div className="contain_grns"    >
+          <div className="each_grns "    >
+            <div className="bgSpan"    ></div>
+            <div className="info"    >
+>>>>>>> 207d112df583328855a77b51e4facfe749af5a54
               <h1>30 Dias de Garantia</h1>
               <h2>
                 Prueba nuestros servicios con toda tranquilidad, ya que cuentas
@@ -662,9 +768,15 @@ return (
               <button>Más</button>
             </div>
           </div>
+<<<<<<< HEAD
           <div className="each_grns " >
             <div className="bgSpan" ></div>
             <div className="info" >
+=======
+          <div className="each_grns "    >
+            <div className="bgSpan"    ></div>
+            <div className="info"    >
+>>>>>>> 207d112df583328855a77b51e4facfe749af5a54
               <h1>Infraestructura anti-DDoS</h1>
               <h2>
                 Nuestra infraestructura anti-DDoS combina una protección de red
@@ -675,6 +787,7 @@ return (
           </div>
         </div>
 
+<<<<<<< HEAD
         <h1 className="title" >Medios de pago</h1>
         <div className="pay_mth_img" >
           <img src={pay_mth_im} alt="" />
@@ -682,6 +795,15 @@ return (
       </div>
       <div className="vps" >
         <div className="lft" >
+=======
+        <h1 className="title"    >Medios de pago</h1>
+        <div className="pay_mth_img"    >
+          <img src={pay_mth_im} alt="" />
+        </div>
+      </div>
+      <div className="vps">
+        <div className="lft"    >
+>>>>>>> 207d112df583328855a77b51e4facfe749af5a54
           <h1>Servidores privados virtuales (VPS)</h1>
           <p>
             Nuestros VPS están especialmente diseñados para adaptarse a sus
@@ -692,6 +814,7 @@ return (
             <li> Ancho de banda ilimitado de hasta 2 Gb/s*</li>
             <li> Protección anti-DDoS incluida</li>
           </ul>
+<<<<<<< HEAD
           <button className="full_gradient_btn" >Contratar</button>
         </div>
 
@@ -700,58 +823,95 @@ return (
             <div className="image" >
               <div className="bgSpan" ></div>
               <div className="img" >
+=======
+          <button className="full_gradient_btn contratar-btn">Contratar</button>
+        </div>
+
+        <div className="rht"    >
+          <div className="service"    >
+            <div className="image"    >
+              <div className="bgSpan"    ></div>
+              <div className="img"    >
+>>>>>>> 207d112df583328855a77b51e4facfe749af5a54
                 <img src={bestVPSiM} alt="" />
               </div>
             </div>
           </div>
         </div>
       </div>
+<<<<<<< HEAD
       <div className="vps sus" >
+=======
+      <div className="vps sus">
+>>>>>>> 207d112df583328855a77b51e4facfe749af5a54
         <div className="lft" >
           <h1>
             Seleccione el servidor dedicado más adecuado para sus aplicaciones
           </h1>
           {/* <p>Nuestros VPS están especialmente diseñados para adaptarse a sus necesidades y crecer con su negocio.</p> */}
           <ul>
-            <li> Escalabilidad y personalización</li>
+            {/* <li> Escalabilidad y personalización</li>
             <p>
               Todos los servidores dedicados incluyen un sistema anti-DDoS con
               el fin de ofrecerle la máxima seguridad en sus infraestructuras.
-            </p>
-            <li> Ancho de banda ilimitado de hasta 2 Gb/s*</li>
+            </p> */}
+
+            {/* <li> Ancho de banda ilimitado de hasta 2 Gb/s*</li>
             <p>
               Todos los servidores dedicados incluyen un sistema anti-DDoS con
               el fin de ofrecerle la máxima seguridad en sus infraestructuras.
-            </p>
-            <li> Protección anti-DDoS incluida</li>
+            </p> */}
+            {/* <li> Protección anti-DDoS incluida</li>
             <p>
               Todos los servidores dedicados incluyen un sistema anti-DDoS con
               el fin de ofrecerle la máxima seguridad en sus infraestructuras.
-            </p>
+            </p> */}
+            {listData.map(d=>(
+              <ListComponent li={d.li} p={d.p}/>
+            ))}
           </ul>
           <button className="full_gradient_btn" >Contratar</button>
         </div>
 
+<<<<<<< HEAD
         <div className="rht" >
           <div className="service" >
             <div className="image" >
               <div className="bgSpan" ></div>
               <div className="img" >
+=======
+        <div className="rht">
+          <div className="service" >
+            <div className="image">
+              <div className="bgSpan" ></div>
+              <div className="img">
+>>>>>>> 207d112df583328855a77b51e4facfe749af5a54
                 <img src={bestVPSiM} alt="" />
               </div>
             </div>
           </div>
+<<<<<<< HEAD
           <div className="service" >
             <div className="image" >
               <div className="bgSpan" ></div>
               <div className="img" >
+=======
+          <div className="service">
+            <div className="image" >
+              <div className="bgSpan"></div>
+              <div className="img">
+>>>>>>> 207d112df583328855a77b51e4facfe749af5a54
                 <img src={bestVPSiM} alt="" />
               </div>
             </div>
           </div>
         </div>
       </div>
+<<<<<<< HEAD
       <div className="remarks" >
+=======
+      <div className="remarks">
+>>>>>>> 207d112df583328855a77b51e4facfe749af5a54
         <h1>
           Más de 20,000 personas han utilizado nuestros cursos, herramientas y
           asesoramiento para ayudar a que sus negocios prosperen.

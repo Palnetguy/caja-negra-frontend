@@ -1,16 +1,20 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import useResponsive from '../../utils/useResponsive'
 
 export const DesarolloBotomComponent = ({title, des, info, buttonTitle}) => {
+<<<<<<< HEAD
   return (
   <div className="desarollo_each" >
+=======
+      
+  return (
+  <div className="desarollo_each"    >
+>>>>>>> 207d112df583328855a77b51e4facfe749af5a54
     <h1 style={{width: '204px', height: '42px', top: '26px',left: '168px', gap: '0px', opacity: '0px',
     fontFamily: 'Saira',
     fontWeight: '700',
     lineHeight: '42px',
-    textAlign: 'center',
-    fontSize: screenSize === 'mobile' ? '14px' : screenSize === 'largeDesktop' ? '22px' : '18px' }}>{title}</h1>
+    textAlign: 'center'}}>{title}</h1>
     <p style={{
       width: '431px',
       height: '36px',
@@ -21,7 +25,7 @@ export const DesarolloBotomComponent = ({title, des, info, buttonTitle}) => {
       fontFamily: 'Saira',
       fontWeight: '500',
       lineHeight: '36px',
-      textAlign: 'center', fontSize: screenSize === 'mobile' ? '14px' : screenSize === 'largeDesktop' ? '22px' : '18px' }}>{des}</p>
+      textAlign: 'center'}}>{des}</p>
     <ul style={{width: '448px',
         height: '178px',
         top: '2768px',
@@ -32,26 +36,14 @@ export const DesarolloBotomComponent = ({title, des, info, buttonTitle}) => {
         fontWeight: '500',
         lineHeight: '36px',
         textAlign: 'left',
-        color: '#FFFFFF',
-       fontSize: screenSize === 'mobile' ? '14px' : screenSize === 'largeDesktop' ? '22px' : '18px' }}>
+        color: '#FFFFFF' }}>
         {info.map(i=>(
             <li>{i}</li>
         ))}
     </ul>
     <Link target="_top" to="/solicitar">
-    <button className='bottom_btn' style={{ fontFamily : 'Saira',
-      fontWeight: '700',
-      lineHeight: '42px',
-      textAlign: 'center',
-      width: '110px',
-      height: '40px',
-      top: '3025px',
-      left: '201px',
-      gap: '0px',
-      opacity: '0px',
-      background: '#86ffe9',
-      borderRadius: '10px',
-       fontSize: screenSize === 'mobile' ? '14px' : screenSize === 'largeDesktop' ? '22px' : '18px' }}>{buttonTitle}</button>
+    <button className='bottom_btn full_gradient_btn' 
+    style={{ fontFamily : 'Saira' }}>{buttonTitle}</button>
            </Link>
   </div>
   )

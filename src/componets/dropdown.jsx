@@ -16,6 +16,7 @@ const CustomDropdown = ({ options, onSelect, placeholder }) => {
     setIsOpen(false);
     onSelect(option);
   };
+<<<<<<< HEAD
   return (
     <div className="dropdown" >
       <div className="dropdown-header" onClick={toggleDropdown} >
@@ -24,12 +25,27 @@ const CustomDropdown = ({ options, onSelect, placeholder }) => {
       </div>
       {isOpen && (
         <div className="dropdown-menu" >
+=======
+      
+  return (
+    <div className="dropdown"    >
+      <div className="dropdown-header" onClick={toggleDropdown}    >
+        {selectedOption ? selectedOption.label : placeholder}
+        <span className={`arrow ${isOpen ? 'open' : ''}`}    ></span>
+      </div>
+      {isOpen && (
+        <div className="dropdown-menu"    >
+>>>>>>> 207d112df583328855a77b51e4facfe749af5a54
           {options.map(option => (
             <div
               key={option.value}
               className="dropdown-item"
               onClick={() => handleOptionClick(option)}
+<<<<<<< HEAD
               
+=======
+                 
+>>>>>>> 207d112df583328855a77b51e4facfe749af5a54
             >
               {option.label}
             </div>

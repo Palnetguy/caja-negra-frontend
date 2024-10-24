@@ -2,14 +2,23 @@ import NavBar from "../componets/nav_bar";
 import timage from "../assets/images/timage4.png";
 import "../styles/solicitar_page.css";
 import CustomDropdown from "../componets/dropdown";
-import useResponsive from "../utils/useResponsive";
+     
 
 const SolicitarPage = () => {
+<<<<<<< HEAD
   return (
     <div className="solicitar_page " >
       <div className="top" >
         <NavBar />
         <div className="info" >
+=======
+      
+  return (
+    <div className="solicitar_page "    >
+      <div className="top"    >
+        <NavBar />
+        <div className="info"    >
+>>>>>>> 207d112df583328855a77b51e4facfe749af5a54
           <h1>SOLICITAR </h1>
           <p>
             En Caja Negra, nos enorgullece ofrecer soluciones personalizadas que
@@ -20,7 +29,11 @@ const SolicitarPage = () => {
           </p>
         </div>
       </div>
+<<<<<<< HEAD
       <div className="more" >
+=======
+      <div className="more"    >
+>>>>>>> 207d112df583328855a77b51e4facfe749af5a54
         <QuieresSaber />
       </div>
     </div>
@@ -32,26 +45,44 @@ const QuieresSaber = () => {
     console.log("Selected option:", option);
   };
 
+<<<<<<< HEAD
   return (
     <div className="quieres_saber" >
       <h2 className="sub_title" >Quieres saber </h2>
       <h1 className="title" >Quieres saber </h1>
       <div className="quieres" >
         <div className="quiery" >
+=======
+      
+  return (
+    <div className="quieres_saber"    >
+      <h2 className="sub_title"    >Quieres saber </h2>
+      <h1 className="title"    >Quieres saber </h1>
+      <div className="quieres"    >
+        <div className="quiery"    >
+>>>>>>> 207d112df583328855a77b51e4facfe749af5a54
           <h1>1.Completa el Formulario</h1>
           <p>
             Proporciona tus datos de contacto y una descripción detallada de tus
             necesidades o intereses.
           </p>
         </div>
+<<<<<<< HEAD
         <div className="quiery" >
+=======
+        <div className="quiery"    >
+>>>>>>> 207d112df583328855a77b51e4facfe749af5a54
           <h1>2.Revisión y Análisis</h1>
           <p>
             Proporciona tus datos de contacto y una descripción detallada de tus
             necesidades o intereses.
           </p>
         </div>
+<<<<<<< HEAD
         <div className="quiery" >
+=======
+        <div className="quiery"    >
+>>>>>>> 207d112df583328855a77b51e4facfe749af5a54
           <h1>3.Propuesta Personalizada</h1>
           <p>
             Proporciona tus datos de contacto y una descripción detallada de tus
@@ -60,8 +91,13 @@ const QuieresSaber = () => {
         </div>
       </div>
 
+<<<<<<< HEAD
       <h1 className="title" >SOLICITA TUS SERVICIOS</h1>
       <div className="form" >
+=======
+      <h1 className="title"    >SOLICITA TUS SERVICIOS</h1>
+      <div className="form"    >
+>>>>>>> 207d112df583328855a77b51e4facfe749af5a54
         <input type="text" placeholder="Nombre completo" />
         <input type="text" placeholder="Correo electronico" />
         <input type="text" placeholder="Telefono" />
@@ -87,7 +123,11 @@ const QuieresSaber = () => {
           id=""
           placeholder="Detalles/ Especificaciones"
         ></textarea>
+<<<<<<< HEAD
         <button className="full_gradient_btn"  >Enviar</button>
+=======
+        <button className="full_gradient_btn"     >Enviar</button>
+>>>>>>> 207d112df583328855a77b51e4facfe749af5a54
       </div>
     </div>
   );

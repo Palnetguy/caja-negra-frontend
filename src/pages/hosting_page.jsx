@@ -11,7 +11,7 @@ import { Link } from "react-router-dom";
 import axios from "axios";
 import config from "./config";
 import { PlanComponent } from "../componets/hosting/plan";
-import useResponsive from "../utils/useResponsive";
+     
 
 const HostingPage = () => {
   const [Compartido, setCompartido] = useState(true);
@@ -19,28 +19,49 @@ const HostingPage = () => {
   const handleCompartido = () => {
     setCompartido((prev) => !prev);
   };
+<<<<<<< HEAD
   return (
     <div className="hosting_page" >
       <div className="top" >
         <NavBar />
         <div className="info" >
+=======
+      
+  return (
+    <div className="hosting_page"    >
+      <div className="top"    >
+        <NavBar />
+        <div className="info"    >
+>>>>>>> 207d112df583328855a77b51e4facfe749af5a54
           <h1>HOSTING</h1>
           <p>
             Hosting Compartido & Revendedores de nuestro servicios Bajo de tu
             propia marca{" "}
           </p>
+<<<<<<< HEAD
           <div className="btns" >
             <button
               className={`${Compartido ? "full_gradient_btn" : "btn-1"}`}
               onClick={handleCompartido}
               
+=======
+          <div className="btns"    >
+            <button
+              className={`${Compartido ? "full_gradient_btn" : "btn-1"}`}
+              onClick={handleCompartido}
+                 
+>>>>>>> 207d112df583328855a77b51e4facfe749af5a54
             >
               Compartido
             </button>
             <button
               className={`${!Compartido ? "full_gradient_btn" : "btn-1"}`}
               onClick={handleCompartido}
+<<<<<<< HEAD
               
+=======
+                 
+>>>>>>> 207d112df583328855a77b51e4facfe749af5a54
             >
               Revender
             </button>
@@ -99,6 +120,7 @@ const HostingCompartido = () => {
           electronico coincidentes gratis y 1 ssl gratis`
     }
   ]
+<<<<<<< HEAD
   return (
     <div className="hosting_compartido" >
       <h2 className="sub_title" >Hosting Compartido</h2>
@@ -106,6 +128,16 @@ const HostingCompartido = () => {
       <div className="hosting_compartido_cont" >
         <div className="hosting_compartido_each" >
           <div className="image" >
+=======
+      
+  return (
+    <div className="hosting_compartido"    >
+      <h2 className="sub_title"    >Hosting Compartido</h2>
+      <h1 className="title"    >HOSTING NÚMERO TOP 10</h1>
+      <div className="hosting_compartido_cont"    >
+        <div className="hosting_compartido_each"    >
+          <div className="image"    >
+>>>>>>> 207d112df583328855a77b51e4facfe749af5a54
             <img src={cloudHost1} alt="" />
           </div>
           <h1>Seguridad de hosting.</h1>
@@ -114,8 +146,13 @@ const HostingCompartido = () => {
             actividades sospechosas y ayudar a desviar los ataques DDoS
           </p>
         </div>
+<<<<<<< HEAD
         <div className="hosting_compartido_each" >
           <div className="image" >
+=======
+        <div className="hosting_compartido_each"    >
+          <div className="image"    >
+>>>>>>> 207d112df583328855a77b51e4facfe749af5a54
             <img src={cloudHost2} alt="" />
           </div>
           <h1>Seguridad de hosting.</h1>
@@ -124,8 +161,13 @@ const HostingCompartido = () => {
             actividades sospechosas y ayudar a desviar los ataques DDoS
           </p>
         </div>
+<<<<<<< HEAD
         <div className="hosting_compartido_each" >
           <div className="image" >
+=======
+        <div className="hosting_compartido_each"    >
+          <div className="image"    >
+>>>>>>> 207d112df583328855a77b51e4facfe749af5a54
             <img src={cloudHost3} alt="" />
           </div>
           <h1>Seguridad de hosting.</h1>
@@ -135,10 +177,17 @@ const HostingCompartido = () => {
           </p>
         </div>
       </div>
+<<<<<<< HEAD
       <div className="select_plan" >
         <h2 className="sub_title" >Especificaciones Técnicas</h2>
         <h1 className="title" >HOSTING NÚMERO TOP 10</h1>
         <div className="select_plan_cont" >
+=======
+      <div className="select_plan"    >
+        <h2 className="sub_title"    >Especificaciones Técnicas</h2>
+        <h1 className="title"    >HOSTING NÚMERO TOP 10</h1>
+        <div className="select_plan_cont"    >
+>>>>>>> 207d112df583328855a77b51e4facfe749af5a54
           {planData.map(p=>(
             <PlanComponent key={p.id} h1={p.h1} p={p.p}/>
           ))}
@@ -182,7 +231,11 @@ const HostingCompartido = () => {
               </h1>
               <p>{e.info}</p>
               <Link target="_top" to="/solicitar">
+<<<<<<< HEAD
                 <button className="full_gradient_btn" >Solicitar</button>
+=======
+                <button className="full_gradient_btn"    >Solicitar</button>
+>>>>>>> 207d112df583328855a77b51e4facfe749af5a54
               </Link>
             </div>
           ))}
@@ -193,6 +246,7 @@ const HostingCompartido = () => {
 };
 
 const Revender = () => {
+<<<<<<< HEAD
   return (
     <div className="revender" >
       <h2 className="sub_title" >Tu Negocio, Nuestros Productos.</h2>
@@ -201,6 +255,17 @@ const Revender = () => {
       <div className="hosting_compartido_cont" >
         <div className="hosting_compartido_each" >
           <div className="image" >
+=======
+      
+  return (
+    <div className="revender"    >
+      <h2 className="sub_title"    >Tu Negocio, Nuestros Productos.</h2>
+      <h1 className="title"    >REVENDE NUESTROS PRODUCTOS </h1>
+      <h1 className="title"    >CON TU MARCA.</h1>
+      <div className="hosting_compartido_cont"    >
+        <div className="hosting_compartido_each"    >
+          <div className="image"    >
+>>>>>>> 207d112df583328855a77b51e4facfe749af5a54
             <img src={revenderImg1} alt="" />
           </div>
           <h1>Construye tu tienda en línea.</h1>
@@ -209,8 +274,13 @@ const Revender = () => {
             parezca a tu negocio.
           </p>
         </div>
+<<<<<<< HEAD
         <div className="hosting_compartido_each" >
           <div className="image" >
+=======
+        <div className="hosting_compartido_each"    >
+          <div className="image"    >
+>>>>>>> 207d112df583328855a77b51e4facfe749af5a54
             <img src={revenderImg2} alt="" />
           </div>
           <h1>Se reciben todo tipo de negocios.</h1>
@@ -219,8 +289,13 @@ const Revender = () => {
             clientes. Te ayudamos a que unas las dos partes.
           </p>
         </div>
+<<<<<<< HEAD
         <div className="hosting_compartido_each" >
           <div className="image" >
+=======
+        <div className="hosting_compartido_each"    >
+          <div className="image"    >
+>>>>>>> 207d112df583328855a77b51e4facfe749af5a54
             <img src={revenderImg3} alt="" />
           </div>
           <h1>Determina tus propios precios.</h1>

@@ -4,12 +4,11 @@
   justify-content: space-between;
   align-items: center;
   padding: 1.5em;
+
+  display: block;
 }
 .nav_bar * {
   transition: 0.5s;
-}
-.nav_bar .links{
-  margin-right: 8px;
 }
 .nav_bar .links > ul > li > a {
   font-weight: 600;
