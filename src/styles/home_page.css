@@ -10,13 +10,20 @@
   justify-content: center;
   text-align: center;
   flex-direction: column;
+  width: 78vw;
+  height: 490px;
 }
 .home_page .main > h1 {
   color: #86ffe9;
-  font-size: 44px;
-  font-family: 800;
-  line-height: 1;
+  /* line-height: 1; */
   margin: 0 1.5em;
+  font-family: Saira;
+  font-size: 64px;
+  font-weight: 800;
+  line-height: 79px;
+  letter-spacing: -0.02em;
+  text-align: left;
+
 }
 
 .home_page .main > p {
@@ -27,6 +34,24 @@
   margin: 1em 0;
   line-height: 1;
   margin: 0.5em 1.5em;
+  font-family: Saira;
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 46px;
+  letter-spacing: -0.02em;
+  text-align: left;
+  font-family: Saira;
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 46px;
+  letter-spacing: -0.02em;
+  text-align: left;
+  margin-left: 100px;
+}
+.home_page .main > a{
+  display: flex;
+  align-self: start;
+  margin-left: 100px;
 }
 .home_page .services{
   background-attachment: fixed;
@@ -71,6 +96,9 @@
   border-radius: 6px;
   /* overflow: hidden; */
   background: #237d8d;
+
+
+
 }
 /* .home_page .main > button::after{
     content: '';

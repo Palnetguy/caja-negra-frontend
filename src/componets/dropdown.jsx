@@ -16,21 +16,20 @@ const CustomDropdown = ({ options, onSelect, placeholder }) => {
     setIsOpen(false);
     onSelect(option);
   };
-  const screenSize = useResponsive();
   return (
-    <div className="dropdown" style={{ fontSize: screenSize === 'mobile' ? '14px' : screenSize === 'largeDesktop' ? '22px' : '18px' }}>
-      <div className="dropdown-header" onClick={toggleDropdown} style={{ fontSize: screenSize === 'mobile' ? '14px' : screenSize === 'largeDesktop' ? '22px' : '18px' }}>
+    <div className="dropdown" >
+      <div className="dropdown-header" onClick={toggleDropdown} >
         {selectedOption ? selectedOption.label : placeholder}
-        <span className={`arrow ${isOpen ? 'open' : ''}`} style={{ fontSize: screenSize === 'mobile' ? '14px' : screenSize === 'largeDesktop' ? '22px' : '18px' }}></span>
+        <span className={`arrow ${isOpen ? 'open' : ''}`} ></span>
       </div>
       {isOpen && (
-        <div className="dropdown-menu" style={{ fontSize: screenSize === 'mobile' ? '14px' : screenSize === 'largeDesktop' ? '22px' : '18px' }}>
+        <div className="dropdown-menu" >
           {options.map(option => (
             <div
               key={option.value}
               className="dropdown-item"
               onClick={() => handleOptionClick(option)}
-              style={{ fontSize: screenSize === 'mobile' ? '14px' : screenSize === 'largeDesktop' ? '22px' : '18px' }}
+              
             >
               {option.label}
             </div>

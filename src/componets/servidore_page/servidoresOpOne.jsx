@@ -5,7 +5,7 @@ import useResponsive from '../../utils/useResponsive'
 export const ServidoresOpOneComponent = ({h1, h2, liItem, bt}) => {
     const screenSize = useResponsive()
   return (
-  <div className="servidoresOp_1_each_1" style={{ fontSize: screenSize === 'mobile' ? '14px' : screenSize === 'largeDesktop' ? '22px' : '18px' }}>
+  <div className="servidoresOp_1_each_1" >
     <h1>{h1}</h1>
     <h2>{h2}</h2>
     <ul>
@@ -14,7 +14,7 @@ export const ServidoresOpOneComponent = ({h1, h2, liItem, bt}) => {
         ))}
     </ul>
     <Link target="_top" to="/solicitar">
-        <button className="full_gradient_btn" style={{ fontSize: screenSize === 'mobile' ? '14px' : screenSize === 'largeDesktop' ? '22px' : '18px' }}>{bt}</button>
+        <button className="full_gradient_btn" >{bt}</button>
     </Link>
     </div>  )
 }
