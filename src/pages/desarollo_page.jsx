@@ -11,31 +11,20 @@ import { DesarolloBotomComponent } from "../componets/desarollo_page/desarolloBo
      
 
 const DesarolloPage = () => {
-<<<<<<< HEAD
-  return (
-    <div className="desarollo_page" >
-      <div className="top" >
-        <NavBar />
-        <div className="info" >
-=======
+
       
   return (
     <div className="desarollo_page"    >
       <div className="top"    >
         <NavBar />
         <div className="info"    >
->>>>>>> 207d112df583328855a77b51e4facfe749af5a54
           <h1>DESAROLLO</h1>
           <p>
             Somos experto en el desarrollo de aplicaciones para todos los
             dispositivos móviles
           </p>
           <Link target="_top" to="/solicitar">
-<<<<<<< HEAD
             <button className="btn-1" >Solicitar</button>
-=======
-            <button className="btn-1"    >Solicitar</button>
->>>>>>> 207d112df583328855a77b51e4facfe749af5a54
           </Link>
         </div>
       </div>
@@ -104,16 +93,9 @@ const Desarollo = () => {
       bt: 'Solicitar'
     }
   ]
-<<<<<<< HEAD
   return (
     <div className="desarollo" >
       <div className="desarollo_each_cont" >
-=======
-      
-  return (
-    <div className="desarollo"    >
-      <div className="desarollo_each_cont"    >
->>>>>>> 207d112df583328855a77b51e4facfe749af5a54
         {/* <div className="desarollo_each">
           <h1>Imagen de Marca</h1>
           <p>
@@ -147,13 +129,8 @@ const Desarollo = () => {
         ))}
       </div>
 
-<<<<<<< HEAD
       <div className="desarollo_more" >
         <div className="lft" >
-=======
-      <div className="desarollo_more"    >
-        <div className="lft"    >
->>>>>>> 207d112df583328855a77b51e4facfe749af5a54
           <h1>Desarrollar, Actualizar y Publicar</h1>
           <p>
             Las aplicaciones son de uso intuitivo, de forma que cualquier
@@ -168,22 +145,13 @@ const Desarollo = () => {
             <li>Estará disponible en Play Store y/o App Store.</li>
           </ul>
         </div>
-<<<<<<< HEAD
         <div className="rgt" >
           <div className="image" >
-=======
-        <div className="rgt"    >
-          <div className="image"    >
->>>>>>> 207d112df583328855a77b51e4facfe749af5a54
             <img src={dedicatedServerIMg} alt="" />
           </div>
         </div>
       </div>
-<<<<<<< HEAD
       <div className="desarollo_each_cont" >
-=======
-      <div className="desarollo_each_cont"    >
->>>>>>> 207d112df583328855a77b51e4facfe749af5a54
         {extraData.map(d=>(
           <DesarolloBotomComponent key={d.id} des={d.p} title={d.title} info={d.info} buttonTitle={d.bt}/>
         ))}

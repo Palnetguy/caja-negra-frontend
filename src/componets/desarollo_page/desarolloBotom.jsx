@@ -2,14 +2,8 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 
 export const DesarolloBotomComponent = ({title, des, info, buttonTitle}) => {
-<<<<<<< HEAD
   return (
   <div className="desarollo_each" >
-=======
-      
-  return (
-  <div className="desarollo_each"    >
->>>>>>> 207d112df583328855a77b51e4facfe749af5a54
     <h1 style={{width: '204px', height: '42px', top: '26px',left: '168px', gap: '0px', opacity: '0px',
     fontFamily: 'Saira',
     fontWeight: '700',

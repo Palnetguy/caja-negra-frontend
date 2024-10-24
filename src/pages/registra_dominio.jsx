@@ -8,38 +8,21 @@ import { DomionBotomomponent } from "../componets/registra_dominio/domionBotom";
      
 
 const RegisterDominio = () => {
-<<<<<<< HEAD
   return (
     <div className="register_domino" >
       <div className="top" >
         <NavBar />
         <div className="info" >
-=======
-      
-  return (
-    <div className="register_domino"    >
-      <div className="top"    >
-        <NavBar />
-        <div className="info"    >
->>>>>>> 207d112df583328855a77b51e4facfe749af5a54
           <h1>
             REGISTRAR <br /> DOMINIO
           </h1>
           <p>Asegura el nombre de dominio perfecto con nosotros</p>
           <Link target="_top" to="/solicitar">
-<<<<<<< HEAD
             <button className="btn-1" >Solicitar</button>
           </Link>
         </div>
       </div>
       <div className="more" >
-=======
-            <button className="btn-1"    >Solicitar</button>
-          </Link>
-        </div>
-      </div>
-      <div className="more"    >
->>>>>>> 207d112df583328855a77b51e4facfe749af5a54
         {/* <DataServices /> */}
         <RegisterDominioOp />
         <Domains />
@@ -49,7 +32,6 @@ const RegisterDominio = () => {
 };
 
 const RegisterDominioOp = () => {
-<<<<<<< HEAD
   return (
     <div className="register_domino_op" >
       <h2 className="sub_title" >Elige Caja Negra</h2>
@@ -57,16 +39,6 @@ const RegisterDominioOp = () => {
       <div className="register_domino_op_container" >
         <div className="register_domin_each" >
           <div className="image" >
-=======
-      
-  return (
-    <div className="register_domino_op"    >
-      <h2 className="sub_title"    >Elige Caja Negra</h2>
-      <h1 className="title"    >3 RAZONES PARA REGISTRARSE HOY</h1>
-      <div className="register_domino_op_container"    >
-        <div className="register_domin_each"    >
-          <div className="image"    >
->>>>>>> 207d112df583328855a77b51e4facfe749af5a54
             <img src={pagedomaion1} alt="" />
           </div>
           <h1>Dominios a precios competitivos</h1>
@@ -75,25 +47,15 @@ const RegisterDominioOp = () => {
             ahorre dinero.
           </p>
         </div>
-<<<<<<< HEAD
         <div className="register_domin_each" >
           <div className="image" >
-=======
-        <div className="register_domin_each"    >
-          <div className="image"    >
->>>>>>> 207d112df583328855a77b51e4facfe749af5a54
             <img src={pagedomaion2} alt="" />
           </div>
           <h1>Soporte y orientación technico</h1>
           <p>Ayuda y asesoramiento de expertos, siempre que lo necesite.</p>
         </div>
-<<<<<<< HEAD
         <div className="register_domin_each" >
           <div className="image" >
-=======
-        <div className="register_domin_each"    >
-          <div className="image"    >
->>>>>>> 207d112df583328855a77b51e4facfe749af5a54
             <img src={pagedomaion3} alt="" />
           </div>
           <h1>Soporte y orientación technico</h1>
@@ -148,20 +110,11 @@ const Domains = () => {
       gratuita y segura para todos`
     }
   ]
-<<<<<<< HEAD
   return (
     <div className="domains" >
       <h2 className="sub_title" >Dominios</h2>
       <h1 className="title" >Nombre</h1>
       <div className="domainsContainer" >
-=======
-      
-  return (
-    <div className="domains"    >
-      <h2 className="sub_title"    >Dominios</h2>
-      <h1 className="title"    >Nombre</h1>
-      <div className="domainsContainer"    >
->>>>>>> 207d112df583328855a77b51e4facfe749af5a54
         <p>.com</p>
         <p>.biz</p>
         <p>.net</p>
@@ -172,7 +125,6 @@ const Domains = () => {
         <p>.mobi</p>
       </div>
       <Link target="_top" to="/solicitar">
-<<<<<<< HEAD
         <button className="full_gradient_btn" >Solicitar</button>
       </Link>
       <div className="more_domain" >
@@ -181,16 +133,6 @@ const Domains = () => {
         </h2>
         <h1 className="title" >AYUDA EN CADA ETAPA</h1>
         <div className="more_domain_container" >
-=======
-        <button className="full_gradient_btn"    >Solicitar</button>
-      </Link>
-      <div className="more_domain"    >
-        <h2 className="sub_title"    >
-          Estamos aquí para apoyar su viaje en línea
-        </h2>
-        <h1 className="title"    >AYUDA EN CADA ETAPA</h1>
-        <div className="more_domain_container"    >
->>>>>>> 207d112df583328855a77b51e4facfe749af5a54
           {dData.map(d=>(
             <DomionBotomomponent key={d.id} img={d.img} h1={d.h1} p={d.p}/>
           ))}

@@ -4,20 +4,11 @@ import "../styles/data_services_page.css";
      
 
 const DataServicesPage = () => {
-<<<<<<< HEAD
   return (
     <div className="data_services" >
       <div className="top" >
         <NavBar />
         <div className="info" >
-=======
-      
-  return (
-    <div className="data_services"    >
-      <div className="top"    >
-        <NavBar />
-        <div className="info"    >
->>>>>>> 207d112df583328855a77b51e4facfe749af5a54
           <h1>SERVICIO DE DATOS </h1>
           <p>
             En Caja Negra, comprendemos la importancia de los datos en el mundo
@@ -30,11 +21,7 @@ const DataServicesPage = () => {
           </p>
         </div>
       </div>
-<<<<<<< HEAD
       <div className="more" >
-=======
-      <div className="more"    >
->>>>>>> 207d112df583328855a77b51e4facfe749af5a54
         <DataServices />
       </div>
     </div>
@@ -42,22 +29,12 @@ const DataServicesPage = () => {
 };
 
 const DataServices = () => {
-<<<<<<< HEAD
   return (
     <div className="data_services_op" >
       <h1 className="title" >SERVICIOS DE DATOS QUE OFRECEMOS</h1>
       <br />
       <div className="data_serv_container" >
         <div className="data_serv" >
-=======
-      
-  return (
-    <div className="data_services_op"    >
-      <h1 className="title"    >SERVICIOS DE DATOS QUE OFRECEMOS</h1>
-      <br />
-      <div className="data_serv_container"    >
-        <div className="data_serv"    >
->>>>>>> 207d112df583328855a77b51e4facfe749af5a54
           <h1>Análisis de Datos</h1>
           <p>
             Análisis descriptivo Análisis predictivo Análisis prescriptivo
@@ -65,34 +42,20 @@ const DataServices = () => {
           </p>
 
           <Link target="_top" to="/solicitar">
-<<<<<<< HEAD
             <button className="full_gradient_btn" >Solicitar</button>
           </Link>
         </div>
         <div className="data_serv" >
-=======
-            <button className="full_gradient_btn"    >Solicitar</button>
-          </Link>
-        </div>
-        <div className="data_serv"    >
->>>>>>> 207d112df583328855a77b51e4facfe749af5a54
           <h1>Inteligencia de Negocios (BI)</h1>
           <p>
             Desarrollo de paneles de control Informes y reportes avanzados
             Visualización de datos Análisis de rendimiento
           </p>
           <Link target="_top" to="/solicitar">
-<<<<<<< HEAD
             <button className="full_gradient_btn" >Solicitar</button>
           </Link>
         </div>
         <div className="data_serv" >
-=======
-            <button className="full_gradient_btn"    >Solicitar</button>
-          </Link>
-        </div>
-        <div className="data_serv"    >
->>>>>>> 207d112df583328855a77b51e4facfe749af5a54
           <h1>Big Data</h1>
           <p>
             Almacenamiento y gestión de grandes volúmenes de datos Procesamiento
@@ -100,68 +63,40 @@ const DataServices = () => {
             de big data
           </p>
           <Link target="_top" to="/solicitar">
-<<<<<<< HEAD
             <button className="full_gradient_btn" >Solicitar</button>
           </Link>
         </div>
         <div className="data_serv" >
-=======
-            <button className="full_gradient_btn"    >Solicitar</button>
-          </Link>
-        </div>
-        <div className="data_serv"    >
->>>>>>> 207d112df583328855a77b51e4facfe749af5a54
           <h1>Integración de Datos</h1>
           <p>
             ntegración de datos de múltiples fuentes Migración de datos
             Transformación de datos (ETL) Calidad de datos y limpieza de datos
           </p>
           <Link target="_top" to="/solicitar">
-<<<<<<< HEAD
             <button className="full_gradient_btn" >Solicitar</button>
           </Link>
         </div>
         <div className="data_serv" >
-=======
-            <button className="full_gradient_btn"    >Solicitar</button>
-          </Link>
-        </div>
-        <div className="data_serv"    >
->>>>>>> 207d112df583328855a77b51e4facfe749af5a54
           <h1>Minería de Datos</h1>
           <p>
             Extracción de patrones y tendencias Análisis de texto y datos no
             estructurados Descubrimiento de conocimiento en bases de datos (KDD)
           </p>
           <Link target="_top" to="/solicitar">
-<<<<<<< HEAD
             <button className="full_gradient_btn" >Solicitar</button>
           </Link>
         </div>
         <div className="data_serv" >
-=======
-            <button className="full_gradient_btn"    >Solicitar</button>
-          </Link>
-        </div>
-        <div className="data_serv"    >
->>>>>>> 207d112df583328855a77b51e4facfe749af5a54
           <h1>Almacenamiento de Datos</h1>
           <p>
             Diseño y desarrollo de almacenes de datos Gestión de bases de datos
             Optimización de consultas y rendimiento de bases de datos
           </p>
           <Link target="_top" to="/solicitar">
-<<<<<<< HEAD
             <button className="full_gradient_btn" >Solicitar</button>
           </Link>
         </div>
         <div className="data_serv" >
-=======
-            <button className="full_gradient_btn"    >Solicitar</button>
-          </Link>
-        </div>
-        <div className="data_serv"    >
->>>>>>> 207d112df583328855a77b51e4facfe749af5a54
           <h1>Seguridad de Datos</h1>
           <p>
             Protección de datos y ciberseguridad Cumplimiento de normativas y
@@ -169,34 +104,20 @@ const DataServices = () => {
             Gestión de accesos y autenticación
           </p>
           <Link target="_top" to="/solicitar">
-<<<<<<< HEAD
             <button className="full_gradient_btn" >Solicitar</button>
           </Link>
         </div>
         <div className="data_serv" >
-=======
-            <button className="full_gradient_btn"    >Solicitar</button>
-          </Link>
-        </div>
-        <div className="data_serv"    >
->>>>>>> 207d112df583328855a77b51e4facfe749af5a54
           <h1>Gobernanza de Datos</h1>
           <p>
             Políticas y procedimientos de datos Gestión de calidad de datos
             Modelos de datos y arquitectura de datos
           </p>
           <Link target="_top" to="/solicitar">
-<<<<<<< HEAD
             <button className="full_gradient_btn" >Solicitar</button>
           </Link>
         </div>
         <div className="data_serv" >
-=======
-            <button className="full_gradient_btn"    >Solicitar</button>
-          </Link>
-        </div>
-        <div className="data_serv"    >
->>>>>>> 207d112df583328855a77b51e4facfe749af5a54
           <h1>Machine Learning y IA</h1>
           <p>
             Desarrollo de modelos predictivos Implementación de algoritmos de
@@ -204,45 +125,27 @@ const DataServices = () => {
             de lenguaje natural (NLP)
           </p>
           <Link target="_top" to="/solicitar">
-<<<<<<< HEAD
             <button className="full_gradient_btn" >Solicitar</button>
           </Link>
         </div>
         <div className="data_serv" >
-=======
-            <button className="full_gradient_btn"    >Solicitar</button>
-          </Link>
-        </div>
-        <div className="data_serv"    >
->>>>>>> 207d112df583328855a77b51e4facfe749af5a54
           <h1>Consultoría en Estrategia de Datos</h1>
           <p>
             Evaluación de estrategias de datos existentes Desarrollo de hojas de
             ruta de datos Optimización de procesos basados en datos
           </p>
           <Link target="_top" to="/solicitar">
-<<<<<<< HEAD
             <button className="full_gradient_btn" >Solicitar</button>
           </Link>
         </div>
         <div className="data_serv" >
-=======
-            <button className="full_gradient_btn"    >Solicitar</button>
-          </Link>
-        </div>
-        <div className="data_serv"    >
->>>>>>> 207d112df583328855a77b51e4facfe749af5a54
           <h1>Desarrollo de Aplicaciones de Datos</h1>
           <p>
             Análisis descriptivo Análisis predictivo Análisis prescriptivo
             Análisis de datos en tiempo real
           </p>
           <Link target="_top" to="/solicitar">
-<<<<<<< HEAD
             <button className="full_gradient_btn" >Solicitar</button>
-=======
-            <button className="full_gradient_btn"    >Solicitar</button>
->>>>>>> 207d112df583328855a77b51e4facfe749af5a54
           </Link>
         </div>
         <div className="data_serv">
@@ -253,28 +156,17 @@ const DataServices = () => {
             accesible
           </p>
           <Link target="_top" to="/solicitar">
-<<<<<<< HEAD
             <button className="full_gradient_btn" >Solicitar</button>
           </Link>
         </div>
         <div className="data_serv" >
-=======
-            <button className="full_gradient_btn"    >Solicitar</button>
-          </Link>
-        </div>
-        <div className="data_serv"    >
->>>>>>> 207d112df583328855a77b51e4facfe749af5a54
           <h1>Automatización de Procesos de Datos</h1>
           <p>
             Automatización de flujos de trabajo de datos Integración de sistemas
             y datos Automatización de análisis y reportes
           </p>
           <Link target="_top" to="/solicitar">
-<<<<<<< HEAD
             <button className="full_gradient_btn" >Solicitar</button>
-=======
-            <button className="full_gradient_btn"    >Solicitar</button>
->>>>>>> 207d112df583328855a77b51e4facfe749af5a54
           </Link>
         </div>
       </div>

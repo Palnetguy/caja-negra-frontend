@@ -7,20 +7,11 @@ import { useState } from "react";
      
 
 const ContactUsPage = () => {
-<<<<<<< HEAD
   return (
     <div className="contactus_page" >
       <div className="top" >
         <NavBar />
         <div className="info" >
-=======
-      
-  return (
-    <div className="contactus_page"    >
-      <div className="top"    >
-        <NavBar />
-        <div className="info"    >
->>>>>>> 207d112df583328855a77b51e4facfe749af5a54
           <h1>Contáctanos</h1>
           <p>
             estamos aquí para ayudarte a encontrar soluciones tecnológicas
@@ -77,33 +68,19 @@ const ContactUsPageOp = () => {
     setMessage("");
     // console.log(whatsappMessage);
   };
-<<<<<<< HEAD
   return (
     <div className="contactus_pageop" >
       <div className="more_info" >
         <div className="info" >
           <div className="image" >
-=======
-      
-  return (
-    <div className="contactus_pageop"    >
-      <div className="more_info"    >
-        <div className="info"    >
-          <div className="image"    >
->>>>>>> 207d112df583328855a77b51e4facfe749af5a54
             <img src={phoneImg} alt="" />
           </div>
           <h1>Telefonos</h1>
           <p>849-354-9727</p>
           <p>000-000-0047</p>
         </div>
-<<<<<<< HEAD
         <div className="info" >
           <div className="image" >
-=======
-        <div className="info"    >
-          <div className="image"    >
->>>>>>> 207d112df583328855a77b51e4facfe749af5a54
             <img src={emailImg} alt="" />
           </div>
           <h1>Correo Electrónico</h1>
@@ -111,15 +88,9 @@ const ContactUsPageOp = () => {
           <p>ventas@cajanegra.com</p>
         </div>
       </div>
-<<<<<<< HEAD
       <form className="contact_form" >
         <h2 className="sub_title" >¿Tienes Preguntas?</h2>
         <h1 className="title" >ENVIANOS UN MENSAJE</h1>
-=======
-      <form className="contact_form"    >
-        <h2 className="sub_title"    >¿Tienes Preguntas?</h2>
-        <h1 className="title"    >ENVIANOS UN MENSAJE</h1>
->>>>>>> 207d112df583328855a77b51e4facfe749af5a54
         <input
           name="name"
           type="text"
@@ -144,11 +115,7 @@ const ContactUsPageOp = () => {
           onChange={handleGetMessege}
           value={message}
         ></textarea>
-<<<<<<< HEAD
         <button className="full_gradient_btn" onClick={handlesendtoWp} >
-=======
-        <button className="full_gradient_btn" onClick={handlesendtoWp}    >
->>>>>>> 207d112df583328855a77b51e4facfe749af5a54
           Enviar
         </button>
       </form>

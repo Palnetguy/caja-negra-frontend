@@ -3,20 +3,11 @@ import "../styles/aboutus_page.css";
      
 
 const AboutUsPage = () => {
-<<<<<<< HEAD
   return (
     <div className="aboutus_page" >
       <div className="top" >
         <NavBar />
         <div className="info" >
-=======
-      
-  return (
-    <div className="aboutus_page"    >
-      <div className="top"    >
-        <NavBar />
-        <div className="info"    >
->>>>>>> 207d112df583328855a77b51e4facfe749af5a54
           <h1>SOBRE nOSOTROS</h1>
           <p>
             Caja Negra se fundó con una única visión: revolucionar el panorama
@@ -51,16 +42,9 @@ const AboutUsPage = () => {
 };
 
 const AboutUsPageOp = () => {
-<<<<<<< HEAD
   return (
     <div className="aboutusop" >
       <div className="info" >
-=======
-      
-  return (
-    <div className="aboutusop"    >
-      <div className="info"    >
->>>>>>> 207d112df583328855a77b51e4facfe749af5a54
         <p>
           Nuestra misión en Caja Negra es empoderar a empresas e individuos con
           soluciones tecnológicas de vanguardia que impulsen la eficiencia, la
