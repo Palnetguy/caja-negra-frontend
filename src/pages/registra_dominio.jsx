@@ -125,13 +125,22 @@ const Domains = () => {
         <p>.mobi</p>
       </div>
       <Link target="_top" to="/solicitar">
-        <button className="full_gradient_btn" >Solicitar</button>
+        <button className="full_gradient_btn" style={{
+          color:'black',
+          width: '234px',
+          height: '80px',
+          fontFamily: 'Saira',
+          fontSize: '32px',
+          fontWeight: '700',
+          lineHeight: '42px',
+          textAlign: 'center'
+        }}>Solicitar</button>
       </Link>
       <div className="more_domain" >
         <h2 className="sub_title" >
           Estamos aquí para apoyar su viaje en línea
         </h2>
-        <h1 className="title" >AYUDA EN CADA ETAPA</h1>
+        <h1 className="title" style={{marginBottom: '2.5em'}}>AYUDA EN CADA ETAPA</h1>
         <div className="more_domain_container" >
           {dData.map(d=>(
             <DomionBotomomponent key={d.id} img={d.img} h1={d.h1} p={d.p}/>
@@ -171,5 +180,4 @@ const Domains = () => {
     </div>
   );
 };
-
 export default RegisterDominio;

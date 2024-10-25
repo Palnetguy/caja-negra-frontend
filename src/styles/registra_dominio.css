@@ -53,6 +53,7 @@
 }
 .register_domino .register_domino_op {
   padding-top: 3em;
+  margin-top: 4em;
 }
 .register_domino .register_domino_op .register_domino_op_container {
   display: flex;
@@ -158,9 +159,10 @@
   /* margin: 2.5em; */
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
   /* justify-content: center; */
   margin-bottom: 2em;
+  height: 512px;
 }
 .register_domino .domains .more_domain .more_domain_each .image {
   border-radius: 12px;
@@ -172,6 +174,10 @@
   width: 290px;
   height: 230px;
   flex-shrink: 0;
+  width: 290px;
+height: 230px;
+
+
 }
 .register_domino .domains .more_domain .more_domain_each h1 {
   color: #fff;
@@ -181,6 +187,11 @@
   font-style: normal;
   font-weight: 700;
   margin: 0.8em 0;
+  font-family: Saira;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 42px;
+  text-align: center;
 }
 .register_domino .domains .more_domain .more_domain_each p {
   color: #fff;
@@ -189,12 +200,19 @@
   font-size: 15px;
   font-style: normal;
   font-weight: 500;
+  font-family: Saira;
+font-size: 24px;
+font-weight: 500;
+line-height: 36px;
+text-align: left;
+
 }
 .register_domino .domains .more_domain .more_domain_container {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   padding: 2em;
+  height: 1125px;
 }
 @media (max-width: 980px) {
   .register_domino .domains .more_domain .more_domain_each {
