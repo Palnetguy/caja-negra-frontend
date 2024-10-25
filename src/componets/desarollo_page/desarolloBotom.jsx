@@ -22,7 +22,8 @@ fontSize: '32px',
 fontWeight: '700',
 lineHeight: '42px',
 textAlign: 'center',
-marginTop: '2.5em'
+marginTop: '2.5em',
+color: 'black'
        }}>{buttonTitle}</button>
            </Link>
           </div>
