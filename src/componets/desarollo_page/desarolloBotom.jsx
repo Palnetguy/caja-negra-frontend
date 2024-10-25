@@ -3,42 +3,30 @@ import { Link } from 'react-router-dom'
 
 export const DesarolloBotomComponent = ({title, des, info, buttonTitle}) => {
   return (
-  <div className="desarollo_each" >
-    <h1 style={{width: '204px', height: '42px', top: '26px',left: '168px', gap: '0px', opacity: '0px',
-    fontFamily: 'Saira',
-    fontWeight: '700',
-    lineHeight: '42px',
-    textAlign: 'center'}}>{title}</h1>
-    <p style={{
-      width: '431px',
-      height: '36px',
-      top: '2720px',
-      // left: '146px',
-      gap: '0px',
-      opacity: '0px',
-      fontFamily: 'Saira',
-      fontWeight: '500',
-      lineHeight: '36px',
-      textAlign: 'center'}}>{des}</p>
-    <ul style={{width: '448px',
-        height: '178px',
-        top: '2768px',
-        left: '146px',
-        gap: '0px',
-        opacity: '0px',
-        fontFamily: 'Saira',
-        fontWeight: '500',
-        lineHeight: '36px',
-        textAlign: 'left',
-        color: '#FFFFFF' }}>
+  <div className="desarollo_bottom_each" >
+    <div className="align">
+    <h1>{title}</h1>
+    <div className="desc">
+    <p >{des}</p>
+    <ul>
         {info.map(i=>(
             <li>{i}</li>
         ))}
     </ul>
     <Link target="_top" to="/solicitar">
     <button className='bottom_btn full_gradient_btn' 
-    style={{ fontFamily : 'Saira' }}>{buttonTitle}</button>
+    style={{ fontFamily : 'Saira',
+      width: '234px',
+      height: '80px',
+fontSize: '32px',
+fontWeight: '700',
+lineHeight: '42px',
+textAlign: 'center',
+marginTop: '2.5em'
+       }}>{buttonTitle}</button>
            </Link>
+          </div>
+        </div>
   </div>
   )
 }

@@ -58,6 +58,7 @@
 .desarollo_page .desarollo_each_cont {
   display: flex;
   flex-wrap: wrap;
+  margin-top:6em;
 }
 .desarollo_page .desarollo_each {
   border-radius: 12px;
@@ -69,6 +70,9 @@
   padding: 3em 2em;
   width: calc((100% / 2) - 2em);
   margin: 1em;
+height: 310px;
+/* border: 1px solid;
+border-image-source: linear-gradient(148.77deg, #86FFE9 4.57%, #237D8D 22.17%, #1A9CA6 43.61%, #AA6F56 62.75%, #26AABC 81.13%); */
 }
 @media (max-width: 780px) {
   .desarollo_page .desarollo_each {
@@ -91,6 +95,11 @@
   font-style: normal;
   font-weight: 700;
   /* line-height: 42px; 105% */
+  font-family: Saira;
+font-size: 40px;
+font-weight: 700;
+line-height: 42px;
+text-align: center;
 }
 .desarollo_page .desarollo_each p {
   color: #fff;
@@ -100,12 +109,23 @@
   font-style: normal;
   font-weight: 500;
   /* line-height: 36px; 128.571% */
+  font-family: Saira;
+font-size: 24px;
+font-weight: 500;
+line-height: 36px;
+text-align: center;
 }
 .desarollo_page .desarollo .desarollo_more {
   display: flex;
   justify-content: space-between;
   padding: 1.5em;
   padding-top: 4em;
+}
+.desarollo_page .desarollo .desarollo_more .lft{
+  width: calc((100% / 2) - 2em);
+height: 374px;
+
+
 }
 .desarollo_page .desarollo .desarollo_more .lft > h1 {
   color: #fff;
@@ -115,6 +135,12 @@
   font-weight: 700;
   /* line-height: 42px; 105% */
   margin-bottom: 1em;
+  font-family: Saira;
+font-size: 36px;
+font-weight: 700;
+line-height: 42px;
+text-align: left;
+
 }
 .desarollo_page .desarollo .desarollo_more .lft > p {
   color: #fff;
@@ -124,6 +150,16 @@
   font-weight: 500;
   /* line-height: 36px; 128.571% */
   margin-bottom: 1em;
+  font-family: Saira;
+font-size: 24px;
+font-weight: 500;
+line-height: 36px;
+text-align: left;
+}
+.desarollo_page .desarollo .desarollo_more .lft > ul{
+  width: 80%;
+height: 184px;
+
 }
 .desarollo_page .desarollo .desarollo_more .lft > ul > li {
   color: #fff;
@@ -133,10 +169,18 @@
   font-weight: 500;
   /* line-height: 36px; 128.571% */
   margin-left: 1.5em;
+  font-family: Saira;
+font-size: 24px;
+font-weight: 500;
+line-height: 36px;
+text-align: left;
+
 }
 .desarollo_page .desarollo .desarollo_more .rgt {
   margin-left: 2em;
-  width: 50%;
+  /* width: 50%; */
+  width: 700px;
+height: 410px;
 }
 .desarollo_page .desarollo .desarollo_more .rgt .image {
   border-radius: 12px;
@@ -153,6 +197,69 @@
 .desarollo_page .desarollo .desarollo_more .rgt .image img {
   height: 100%;
 }
+.desarollo_page .desarollo .desarollo_each_cont{
+  display: flex;
+  justify-content: space-around;
+}
+.desarollo_page .desarollo .desarollo_each_cont .desarollo_bottom_each{
+  width: calc((100% / 2) - 4em);
+  /* width: 660px; */
+  height: 614px;
+  display: flex;
+  color: white;
+  margin: 0.5em;
+  margin-left: 0.5em;
+  align-items: center;
+  justify-items: center;
+  justify-content: space-around;
+  border: #86ffe9 1px solid;
+}
+.desarollo_page .desarollo .desarollo_each_cont .desarollo_bottom_each .align{
+  width: 448px;
+height: 418px;
+
+align-items: center;
+justify-items: center;
+justify-content: center;
+}
+.desarollo_page .desarollo .desarollo_each_cont .desarollo_bottom_each .align > h1{
+  font-family: Saira;
+font-size: 40px;
+font-weight: 700;
+line-height: 42px;
+text-align: center;
+text-align: left;
+margin-left: 0;
+}
+.desarollo_page .desarollo .desarollo_each_cont .desarollo_bottom_each .align .desc{
+  width: 448px;
+height: 366px;
+top: 2720px;
+left: 146px;
+gap: 0px;
+border-radius: 12px 0px 0px 0px;
+opacity: 0px;
+}
+.desarollo_page .desarollo .desarollo_each_cont .desarollo_bottom_each .align .desc >p{
+  font-family: Saira;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 36px;
+  text-align: center;
+  
+}
+
+.desarollo_page .desarollo .desarollo_each_cont .desarollo_bottom_each .align .desc > ul{
+  font-family: Saira;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 36px;
+  text-align: left;
+  margin-left:2em;  
+}
+/* .desarollo_page .desarollo .desarollo_each_cont .desarollo_bottom_each .align .dec > ul > li{
+
+} */
 
 @media (max-width: 780px) {
   .desarollo_page .desarollo .desarollo_more {
