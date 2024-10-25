@@ -155,6 +155,8 @@ body {
   background: url("./assets/images/BackgroundCompressed.png");
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
 }
 
 body {
