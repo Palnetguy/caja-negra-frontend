@@ -164,7 +164,7 @@ const NavBar = () => {
             </Link>
           </div>
         </div>
-        <div className="nav_bar mobile"    >
+        <div className="nav_bar mobile">
           <div className={`nav_bar ${mobileNavOpen ? "" : "closed"}`}    >
             <div className="logo"    >
               <div className="">

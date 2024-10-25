@@ -1127,3 +1127,23 @@ line-height: 36px;
 text-align: left;
 
 }
+
+@media (max-width: 768px) {
+  body {
+      background-color: #ffffff;
+  }
+  .home_page .main {
+    width: 90vw;
+    height: auto;
+    padding: 20px; 
+  }
+}
+
+@media (max-width: 480px) {
+  .home_page .main {
+    width: 95vw;
+    padding: 16px;
+    font-size: 0.9em;
+    z-index: -1;
+  }
+}
