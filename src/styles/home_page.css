@@ -746,8 +746,8 @@ color: black;
   margin-top: 2em;
 }
 .home_page .vps .lft{
-  width: 877px;
-height: 546px;
+  /* width: 877px;
+height: 546px; */
 }
 .home_page .vps .lft > h1 {
   font-size: 40px;
@@ -909,8 +909,6 @@ text-align: left;
   flex-direction: row-reverse;
   width: auto;
 height: 998px;
-
-
 }
 .home_page .vps.sus .rht {
   /* width: 40%;/ */
@@ -918,6 +916,8 @@ height: 998px;
 
   width: auto;
 height: 998px;
+
+
 }
 .home_page .vps.sus .lft > ul {
   margin-top: 2em;
@@ -978,6 +978,7 @@ text-align: left;
   left: 50%;
   transform: translate(-50%, -50%);
   height: 100%;
+  
 }
 .home_page .vps.sus .service .image > .img img {
   width: 300px;
@@ -993,9 +994,12 @@ text-align: left;
   overflow: hidden;
   width: max-content;
   justify-content: space-between;
+  width: auto;
+/* width: 402px; */
+height: 480px;
 
-  /* width: auto; */
-height: 400px;
+
+
 }
 .home_page .vps.sus .service h2 {
   font-weight: 700;

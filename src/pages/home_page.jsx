@@ -51,7 +51,7 @@ const Main = () => {
   return (
     <div className="main" >
       <h1>Bienvenido a Caja Negra
-      La tecnología futura en el ámbito virtual.</h1>
+      La Tecnología Futura En El Ámbito Virtual.</h1>
       <p>
         Caja Virtual es un producto diseñado para quienes buscan flexibilidad y
         simplicidad, sin sacrificar la complejidad que su infraestructura pueda
