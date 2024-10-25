@@ -156,3 +156,8 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
 }
+@media (max-width: 768px) { /* Adjust for screens up to 768px wide */
+  body {
+      background-color: #ffffff; /* Ensure the background stays light */
+  }
+}

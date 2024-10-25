@@ -65,6 +65,7 @@
     color: #86ffe9;
     font-size: 34px;
     font-family: 800;
+
   }
   .home_page .main > p {
     /* color: #86FFE9; */
@@ -73,7 +74,7 @@
     color: #ffffff;
   }
 }
-@media (max-width: 780px) {
+@media (max-width: 768px) {
   .home_page .main > h1 {
     color: #86ffe9;
     font-size: 34px;
@@ -1030,6 +1031,7 @@ height: 380px;
   /* justify-content: space-eve; */
   flex-wrap: wrap;
   padding: 1.5em;
+  justify-content: center;
 }
 .home_page .remarks h1 {
   font-size: 40px;
