@@ -348,7 +348,6 @@ return (
         {services_data.map(item=>(
         <ServicesComponent key={item.id} image={item.img} heading={item.heading} paragraph={item.body} />
       ))}
-
         {whyChooseUsdata.map((e) => (
           <div className="service" key={Math.random()}>
             <div className="image">
@@ -365,7 +364,6 @@ return (
       <div className="oferta">
         <h2 className="sub_title">Servidores Oferta</h2>
         <h1 className="title" >Nuestras ofertas</h1>
-
         <div className="btns">
           <div
             className={`btn_op ${vpsOpen ? "active" : ""}`}

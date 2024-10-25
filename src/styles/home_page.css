@@ -243,7 +243,7 @@
 }
 .home_page .services > h2 {
   font-size: 26px;
-  font-weight: 500;
+  font-weight: Saira;
   color: #d9d9d9;
   text-align: center;
   margin-top: 2em;
@@ -262,14 +262,14 @@
   text-align: center;
 }
 .home_page .services .oferta > .btns > .btn_op {
-  background: linear-gradient(
+  /* background: linear-gradient(
     90deg,
     #86ffe9,
     #237d8d,
     #1a9ca6,
     #aa6f56,
     #26aabc
-  );
+  ); */
   position: relative;
   border-radius: 8px;
   width: max-content;
@@ -278,6 +278,11 @@
   min-width: 150px;
   transition: 0.5s;
   cursor: pointer;
+  border: 1px solid;
+
+background: linear-gradient(148.77deg, #86FFE9 4.57%, #237D8D 22.17%, #1A9CA6 43.61%, #AA6F56 62.75%, #26AABC 81.13%);
+
+
 }
 .home_page .services .oferta > .btns > .btn_op > .word > p {
   color: #ffffff;
@@ -311,7 +316,9 @@
 }
 .home_page .services .oferta > .btns > .btn_op.active,
 .home_page .services .oferta > .btns > .btn_op.active > .bgSpan {
-  background: #86ffe9;
+  /* background: #86ffe9; */
+  background: linear-gradient(90deg, #86FFE9 0%, #02BAC6 50%, #037B83 100%);
+
 }
 .home_page .services .oferta > .btns > .btn_op.active > .word > p {
   color: #000000;
