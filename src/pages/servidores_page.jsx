@@ -29,8 +29,7 @@ const Servidores = () => {
           <div className="btns" >
             <button
               className={`${vpsOpen ? "full_gradient_btn" : "btn-1"}`}
-              onClick={handleVpsOpen}
-              
+              onClick={handleVpsOpen}              
             >
               VPS
             </button>
