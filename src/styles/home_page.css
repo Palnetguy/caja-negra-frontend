@@ -221,10 +221,10 @@ justify-content: space-around;
   border: 1px solid transparent;
   justify-content: space-around;
 }
-.home_page .services .service.profesional-services .image{
-  width: 90%;
+/* .home_page .services .service.profesional-services .image{
+  width: 99%;
   height: fit-content;
-}
+} */
 .home_page .services .service.profesional-services .image .bgSpan{
 width: 100%;
 /* height: 100%; */
