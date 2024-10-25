@@ -60,7 +60,7 @@ const QuieresSaber = () => {
         </div>
       </div>
 
-      <h1 className="title" >SOLICITA TUS SERVICIOS</h1>
+      <h1 className="title" style={{marginBottom: '2em'}}>SOLICITA TUS SERVICIOS</h1>
       <div className="form" >
         <input type="text" placeholder="Nombre completo" />
         <input type="text" placeholder="Correo electronico" />
@@ -87,7 +87,7 @@ const QuieresSaber = () => {
           id=""
           placeholder="Detalles/ Especificaciones"
         ></textarea>
-        <button className="full_gradient_btn"  >Enviar</button>
+        <button className="full_gradient_btn"  style={{color:'black'}}>Enviar</button>
       </div>
     </div>
   );

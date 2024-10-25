@@ -51,6 +51,7 @@
   display: flex;
   flex-wrap: wrap;
   margin-top: 2em;
+  margin-bottom: 3.5em;
 }
 .solicitar_page .quieres_saber .quieres .quiery {
   width: calc((100% / 3) - 2em);
@@ -65,6 +66,7 @@
   font-style: normal;
   font-weight: 700;
   line-height: 42px; /* 116.667% */
+  margin-bottom: 1em;
 }
 .solicitar_page .quieres_saber .quieres .quiery > p {
   color: #fff;
