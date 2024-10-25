@@ -17,8 +17,8 @@ const Footer = () => {
           <div className="wtpIm" >
             <img src={watIco} alt="" />
           </div>
-          <div>
-            <a href="">Hosting</a>
+          <div className="rlnk">
+            {/* <a href="">Hosting</a> */}
             <a href="">Sobre nosotros</a>
           </div>
         </div>

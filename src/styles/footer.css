@@ -74,3 +74,9 @@
 .footer > .cc {
   cursor: pointer;
 }
+.footer .links .rgt{
+  margin-top: -2em;
+}
+.footer .links .rgt .rlnk>a{
+  margin-top: -5.2em;
+}
