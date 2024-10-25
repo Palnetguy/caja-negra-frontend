@@ -60,6 +60,7 @@
   flex-wrap: wrap;
   padding: 1.5em;
   justify-content: space-between;
+  margin-top: 2em;
 }
 .register_domino .register_domino_op .register_domin_each {
   width: calc((100% / 3) - 5em);
@@ -68,6 +69,7 @@
   flex-direction: column;
   align-items: center;
   /* justify-content: center; */
+height: 488px;
 }
 .desarollo_page .desarollo .desarollo_more {
   display: flex;
@@ -113,6 +115,9 @@
   width: 290px;
   height: 230px;
   flex-shrink: 0;
+  width: 290px;
+height: 230px;
+
 }
 .register_domino .register_domino_op .register_domin_each h1 {
   color: #fff;
@@ -122,6 +127,12 @@
   font-style: normal;
   font-weight: 700;
   margin: 0.8em 0;
+  font-family: Saira;
+font-size: 36px;
+font-weight: 700;
+line-height: 42px;
+text-align: center;
+
 }
 .register_domino .register_domino_op .register_domin_each p {
   color: #fff;
@@ -130,6 +141,12 @@
   font-size: 15px;
   font-style: normal;
   font-weight: 500;
+  font-family: Saira;
+font-size: 24px;
+font-weight: 500;
+line-height: 36px;
+text-align: center;
+
 }
 .register_domino .domains {
   padding-top: 3em;
@@ -161,7 +178,7 @@
   flex-direction: column;
   align-items: flex-start;
   /* justify-content: center; */
-  margin-bottom: 2em;
+  margin-bottom: 3.5em;
   height: 512px;
 }
 .register_domino .domains .more_domain .more_domain_each .image {
