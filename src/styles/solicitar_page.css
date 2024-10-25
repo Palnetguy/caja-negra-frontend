@@ -21,6 +21,14 @@
   flex-direction: column;
   justify-content: center;
   /* background: red; */
+  position: relative;
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  text-align: start;
+  flex-direction: column;
+  width: 70vw;
+  height: 490px;
 }
 
 .solicitar_page .top > .info > h1 {

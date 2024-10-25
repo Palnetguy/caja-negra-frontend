@@ -57,6 +57,14 @@ const NavBar = () => {
                 zIndex: 1,
                  background: 'transparent',
               }}>
+                <li style={{
+              padding: '4px 12px',
+              cursor: 'pointer',
+            }}>
+              <Link target="_top" to="/data-services" style={{ color: 'white', textDecoration: 'none' }}> 
+                Servicios
+              </Link>
+            </li>
             <li style={{
               padding: '4px 12px',
               cursor: 'pointer',
