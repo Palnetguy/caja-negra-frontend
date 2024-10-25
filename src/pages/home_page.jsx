@@ -668,7 +668,16 @@ return (
             <li> Ancho de banda ilimitado de hasta 2 Gb/s*</li>
             <li> Protección anti-DDoS incluida</li>
           </ul>
-          <button className="full_gradient_btn" >Contratar</button>
+          <button className="full_gradient_btn" style={{
+            width: '234px',
+          height: '80px',
+          fontFamily: 'Saira',
+            fontSize: '32px',
+            fontWeight: '700',
+            lineHeight: '42px',
+            textAlign: 'center',
+            color:  'black'
+          }}>Contratar</button>
         </div>
 
         <div className="rht" >
@@ -709,7 +718,15 @@ return (
               <ListComponent li={d.li} p={d.p}/>
             ))}
           </ul>
-          <button className="full_gradient_btn" >Contratar</button>
+          <button className="full_gradient_btn" style={{width: '234px',
+          height: '80px',
+          fontFamily: 'Saira',
+          fontSize: '32px',
+          fontWeight: '700',
+          lineHeight: '42px',
+          textAlign: 'center',
+          color: 'black'
+          }}>Contratar</button>
         </div>
 
         <div className="rht" >

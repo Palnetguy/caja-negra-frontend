@@ -77,6 +77,9 @@ background: linear-gradient(148.77deg, #86FFE9 4.57%, #237D8D 22.17%, #1A9CA6 43
   transition: ease-in-out 0.1;
   min-width: 150px;
   text-decoration: none;
+
+  background: linear-gradient(90deg, #86FFE9 0%, #02BAC6 50%, #037B83 100%);
+
 }
 
 .btn-1 {
@@ -150,4 +153,6 @@ body {
   /* background-color: black; */
   /* background: url("./assets/images/gif-bg\ stars.gif"); */
   background: url("./assets/images/BackgroundCompressed.png");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
