@@ -15,11 +15,6 @@
   /* background: linear-gradient(27.09deg, #012B38 11.5%, #002C3B 33.12%, #002C3A 43.32%, #00090B 93.09%); */
   /* width: Fixed (1,440px)px;
 height: Fixed (2661px)px; */
-top: 1075px;
-left: 1440px;
-padding: 12px 40px 12px 40px;
-gap: 10px;
-opacity: 0px;
 }
 .solicitar_page .top > .info {
   padding: 0 1.5em;
