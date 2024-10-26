@@ -12,6 +12,15 @@
   flex-direction: column;
   width: 78vw;
   height: 490px;
+  /* eee */
+  width: 820px;
+height: 491px;
+left: 100px;
+gap: 0px;
+border-radius: 12px 0px 0px 0px;
+border: 1px 0px 0px 0px;
+opacity: 0px;
+/* ee */
 }
 .home_page .main > h1 {
   color: #86ffe9;
@@ -23,7 +32,21 @@
   line-height: 79px;
   letter-spacing: -0.02em;
   text-align: left;
+/* eee */
+width: 756px;
+height: 203px;
+top: 367px;
+left: 130px;
+gap: 0px;
+opacity: 0px;
+font-family: Saira;
+font-size: 64px;
+font-weight: 800;
+line-height: 79px;
+letter-spacing: -0.02em;
+text-align: left;
 
+/* ee */
 }
 
 .home_page .main > p {
@@ -47,11 +70,38 @@
   letter-spacing: -0.02em;
   text-align: left;
   margin-left: 100px;
+  /* eee */
+  width: 820px;
+height: 138px;
+top: 600px;
+left: 130px;
+gap: 0px;
+opacity: 0px;
+font-family: Saira;
+font-size: 32px;
+font-weight: 500;
+line-height: 46px;
+letter-spacing: -0.02em;
+text-align: left;
+  /* ee */
 }
 .home_page .main > a{
   display: flex;
   align-self: start;
-  margin-left: 100px;
+  /* margin-left: 100px; */
+  /* eee */
+  width: Fixed (234px)px;
+height: Fixed (80px)px;
+top: 778px;
+left: 130px;
+padding: 6px 30px 6px 30px;
+gap: 10px;
+border-radius: 12px 0px 0px 0px;
+border: 1px 0px 0px 0px;
+opacity: 0px;
+backdrop-filter: blur(300px)
+
+  /* ee */
 }
 .home_page .services{
   background-attachment: fixed;
