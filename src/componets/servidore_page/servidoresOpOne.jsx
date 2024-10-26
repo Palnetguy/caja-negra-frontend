@@ -13,7 +13,17 @@ export const ServidoresOpOneComponent = ({h1, h2, liItem, bt}) => {
         ))}
     </ul>
     <Link target="_top" to="/solicitar">
-        <button className="full_gradient_btn" >{bt}</button>
+        <button className="full_gradient_btn" style={{
+            width: '234px',
+            height: '80px',
+            color:'black',
+            fontFamily:'Saira',
+            fontWeight:'700',
+            fontSize:'32px',
+            marginTop:'2em',
+            marginLeft: '2.4em'
+            }}>{bt}</button>
     </Link>
-    </div>  )
+    </div>
+    )
 }
