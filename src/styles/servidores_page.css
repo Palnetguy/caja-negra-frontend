@@ -392,6 +392,11 @@ margin-top:0.2em;
   margin-top: 2em;
   justify-content: center;
   align-items: center;
+  width: 90%;
+  justify-self: center;
+/* height: 166px; */
+
+
 }
 .servidores_page .servidoresOp_1 .nuestros_cont .nuetro .image {
   border-radius: 12px;
@@ -437,7 +442,7 @@ line-height: 42px;
   font-style: normal;
   font-weight: 500;
   /* line-height: 36px; 128.571% */
-  width: 618px;
+  /* width: 618px; */
 height: 142px;
 font-family: Saira;
 font-size: 28px;
