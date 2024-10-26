@@ -110,12 +110,12 @@
   /* padding: 2em 1em; */
   display: flex;
   flex-wrap: wrap;
-  width: 700px;
-  height: 290px;
+  width: 660px;
+  height: 260px;
   align-items: center;
   /* top:1479; */
   left: 700px;
-  /* margin: 2em 1.5em; */
+  margin: 2em 1.5em;
 }
 .servidores_page .servidores_op .specs_contain {
   display: flex;
@@ -154,7 +154,7 @@
 }
 .servidores_page .servidores_op .nuestros > h1 {
   text-align: start;
-  margin-bottom:4em;
+  margin-bottom:2em;
 }
 
 .servidores_page .servidores_op .nuestros .nuetro .image {

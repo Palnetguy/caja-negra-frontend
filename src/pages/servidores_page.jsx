@@ -222,7 +222,7 @@ const ServidoresOp = () => {
             <div className="image" >
               <img src={includedfeat4} alt="" />
             </div>
-            <h1>DiscCopias de Seguridad y Snapshots</h1>
+            <h1>Copias de Seguridad y Snapshots</h1>
             <p>
               No pierdas tu información! Tu sitio web se podrá restaurar en
               cuestión de minutos, gracias a las copias de seguridad automáticas
