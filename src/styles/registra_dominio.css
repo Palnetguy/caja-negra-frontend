@@ -185,6 +185,7 @@ text-align: center;
   /* justify-content: center; */
   margin-bottom: 3.5em;
   height: 512px;
+  margin-top: 3.5em;
 }
 .register_domino .domains .more_domain .more_domain_each .image {
   border-radius: 12px;
