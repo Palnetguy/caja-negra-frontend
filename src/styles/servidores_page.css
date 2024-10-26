@@ -390,6 +390,8 @@ margin-top:0.2em;
   display: flex;
   flex-wrap: wrap;
   margin-top: 2em;
+  justify-content: center;
+  align-items: center;
 }
 .servidores_page .servidoresOp_1 .nuestros_cont .nuetro .image {
   border-radius: 12px;
@@ -404,7 +406,7 @@ margin-top:0.2em;
   align-items: center;
   width: 230.49px;
 height: 200.44px;
-
+margin-bottom: 3em;
 
 }
 .servidores_page .servidoresOp_1 .nuestros_cont .nuetro .image img {
