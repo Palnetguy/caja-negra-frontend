@@ -402,6 +402,10 @@ margin-top:0.2em;
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 230.49px;
+height: 200.44px;
+
+
 }
 .servidores_page .servidoresOp_1 .nuestros_cont .nuetro .image img {
   width: 80px;
@@ -414,6 +418,15 @@ margin-top:0.2em;
   font-style: normal;
   font-weight: 700;
   line-height: 42px; /* 105% */
+  width: 355px;
+min-height: 42px;
+height:auto;
+font-family: Saira;
+font-size: 40px;
+font-weight: 700;
+line-height: 42px;
+/* text-align: center; */
+
 }
 .servidores_page .servidoresOp_1 .nuestros_cont .nuetro p {
   color: #fff;
@@ -422,10 +435,21 @@ margin-top:0.2em;
   font-style: normal;
   font-weight: 500;
   /* line-height: 36px; 128.571% */
+  width: 618px;
+height: 142px;
+font-family: Saira;
+font-size: 28px;
+font-weight: 500;
+line-height: 36px;
+text-align: left;
 }
 .servidores_page .servidoresOp_1 .nuestros_cont .nuetro {
   width: calc((100% / 2) - 2em);
   margin: 1em;
+  /* width: 618px; */
+height: 436.03px;
+
+
 }
 .servidores_page .servidoresop_1 .nuestros_cont {
   display: flex;
