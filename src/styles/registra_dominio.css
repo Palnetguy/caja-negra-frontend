@@ -9,6 +9,11 @@
   display: flex;
   flex-direction: column;
   /* align-items: center; */
+  width: 1440px;
+height: 1080px;
+gap: 0px;
+width: 100vw;
+
 }
 .register_domino .more {
   background-repeat: no-repeat;

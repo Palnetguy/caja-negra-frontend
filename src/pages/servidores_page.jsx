@@ -332,7 +332,7 @@ const ServidoresOp1 = () => {
   ]
   return (
     <div className="servidoresOp_1" id="servidoresOp_1" >
-      <h2 className="sub_title" >Servicio al Cliente Experimentado</h2>
+      <h2 className="sub_title" style={{marginTop:"4em"}}>Servicio al Cliente Experimentado</h2>
       <h1 className="title" >
         NOS DESTACAMOS POR 
         <br />
