@@ -108,10 +108,9 @@ const HostingCompartido = () => {
           <div className="image" >
             <img src={cloudHost1} alt="" />
           </div>
-          <h1>Seguridad de hosting.</h1>
+          <h1>Sube de nivel.</h1>
           <p>
-            Nuestra seguridad de hosting trabaja 24/7 para monitorear las
-            actividades sospechosas y ayudar a desviar los ataques DDoS
+          Contamos con recursos (CPU, memoria, procesos de entrada, E/S) disponibles cuando los necesites y recibirás una alerta cuando estés cerca de llegar a su límite.
           </p>
         </div>
         <div className="hosting_compartido_each" >
@@ -128,10 +127,9 @@ const HostingCompartido = () => {
           <div className="image" >
             <img src={cloudHost3} alt="" />
           </div>
-          <h1>Seguridad de hosting.</h1>
+          <h1>Un web hosting confiable.</h1>
           <p>
-            Nuestra seguridad de hosting trabaja 24/7 para monitorear las
-            actividades sospechosas y ayudar a desviar los ataques DDoS
+          Cuando tu sitio web está inactivo pierdes el potencial de comunicarte con tus clientes (o clientes potenciales).
           </p>
         </div>
       </div>
