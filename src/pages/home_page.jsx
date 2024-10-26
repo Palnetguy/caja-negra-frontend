@@ -182,14 +182,14 @@ const services_data=[
   {
     id: 1,
     img: chooseUs2Img,
-    heading: '99.9% Disponibilidad Garantizada',
-    body: 'Nuestro equipo técnicos esta capacitados para solucionar cualquier incidente en el menor tiempo posible'
+    heading: 'Protocolos de Seguridad Avanzados',
+    body: 'Nuestro estándar de seguridad esta basado en protocolos (TLS, IPsec, VPN...) cumpliendo con normativas internaciones.'
   },
   {
     id: 2,
     img: chooseUs3Img,
-    heading: '99.9% Disponibilidad Garantizada',
-    body: 'Nuestro equipo técnicos esta capacitados para solucionar cualquier incidente en el menor tiempo posible'
+    heading: 'Soporte Técnico Dedicado 24/7',
+    body: 'Disponibilidad en cualquier horario para cumplir las exigencias de su empresa o negocio y brindar apoyo inmediato.'
   },
 ];
 
@@ -247,34 +247,34 @@ const profesionalesServiceData=[
   {
     id: 0,
     img: service7Img,
-    h2: '99.9% Disponibilidad Garantizada',
-    p: 'Nuestro equipo técnicos esta capacitados para solucionar cualquier incidente en el menor tiempo posible',
-  },
+    h2: 'Backups',
+    p: 'Mantenga sus datos asegurados, con nuestro servicio de copia de seguridad para su computadora o servidor hacia la nube.'
+    },
   {
     id: 1,
     img: service8Img,
-    h2: '99.9% Disponibilidad Garantizada',
-    p: 'Nuestro equipo técnicos esta capacitados para solucionar cualquier incidente en el menor tiempo posible',
+    h2: 'Reseller VPS',
+    p: 'Brindamos las herramientas para que pueda rentar nuestros VPS a sus clientes y recibir comisiones por cada venta.'
   }, {
     id: 2,
     img: service9Img,
-    h2: '99.9% Disponibilidad Garantizada',
-    p: 'Nuestro equipo técnicos esta capacitados para solucionar cualquier incidente en el menor tiempo posible',
+    h2: 'Storage High Grade',
+    p: 'Ofrecemos almacenamiento de alta demanda y distribución via CDN. Logrando entregar sus datos con baja latencia.'
   }, {
     id: 3,
     img: service10Img,
-    h2: '99.9% Disponibilidad Garantizada',
-    p: 'Nuestro equipo técnicos esta capacitados para solucionar cualquier incidente en el menor tiempo posible',
+    h2: 'Cloud Data Base',
+    p: 'Conecte su infraestructura a una base de datos en la nube y logre tener una infraestructura hibrida.'
   }, {
     id: 4,
     img: service11Img,
-    h2: '99.9% Disponibilidad Garantizada',
-    p: 'Nuestro equipo técnicos esta capacitados para solucionar cualquier incidente en el menor tiempo posible',
+    h2: 'Monitoring',
+    p: 'Servicio de atención a incidentes, control de riesgo y ciberataques. Con un equipo de DevOps, SRE, Cybersecurity...'
   }, {
     id: 5,
     img: service12Img,
-    h2: '99.9% Disponibilidad Garantizada',
-    p: 'Nuestro equipo técnicos esta capacitados para solucionar cualquier incidente en el menor tiempo posible',
+    h2: 'Premium Domain',
+    p: 'Gestionamos y localizamos el dominio que necesita su negocio con su nombre preferido. Sabemos lo importante que es un nombre.'
   },
 ]
 
@@ -297,7 +297,7 @@ const remarksData = [
     compromiso con la excelencia la superado nuesteras
     expectativas. Estamos encantados con los resultados y
     esperamos una colaboratión a largo plazo."`,
-    pf: 'Jane Smith, CEO de Tech Solutions Inc.'
+    pf: 'Michael Brown, COO de NextGen Solutions'
   },
   {
     id: 2,
@@ -307,7 +307,7 @@ const remarksData = [
     tengamos. Su apoyo continuo ha sido invaluable para
     garantizar que nuestros sistemas funcionen sin
     problemas y de manera eficiente."`,
-    pf: 'Jane Smith, CEO de Tech Solutions Inc.'
+    pf: 'Emily Johnson, Directora de TI de Global Enterprises'
   },
   {
     id: 3,
@@ -318,25 +318,22 @@ const remarksData = [
     resultados de alta calidad a tiempo y dentro del
     presupuesto los ha convertido en nuestro socio
     technolóico preferido"`,
-    pf: 'Jane Smith, CEO de Tech Solutions Inc.'
+    pf: 'David Garcia, CIO de FutureTech Innovations'
   }
 ]
 
 const listData=[
   {
-    li:'Escalabilidad y personalización',
-    p: `Todos los servidores dedicados incluyen un sistema anti-DDoS con
-        el fin de ofrecerle la máxima seguridad en sus infraestructuras.`
+    li:'Protección anti-DDoS',
+    p: `Todos los servidores dedicados incluyen un sistema anti-DDoS con el fin de ofrecerle la máxima seguridad en sus infraestructuras.`
   },
   {
-    li:'Ancho de banda ilimitado de hasta 2 Gb/s*',
-    p: `Todos los servidores dedicados incluyen un sistema anti-DDoS con
-              el fin de ofrecerle la máxima seguridad en sus infraestructuras.`
+    li:'Rendimiento',
+    p: `Con un servidor dedicado, tendrá asignada la totalidad de los recursos para así disfrutar del máximo rendimiento.`
   },
   {
-    li:'Protección anti-DDoS incluida',
-    p: ` Todos los servidores dedicados incluyen un sistema anti-DDoS con
-          el fin de ofrecerle la máxima seguridad en sus infraestructuras.`
+    li:'Disponibilidad',
+    p: `Despliegue sus servidores en menos de 60 minutos. Disfrute también de una red segura de alta resiliencia para garantizar la continuidad del servicio a sus clientes.`
   }
 ]
 return (

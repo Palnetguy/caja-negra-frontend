@@ -69,6 +69,10 @@
 .aboutus_page .aboutusop {
   padding-bottom: 6em;
   margin-top: 4.5em;
+  /* background-color: black; */
+}
+.aboutus_page .footer{
+  background: black;
 }
 
 @media (max-width: 780px) {

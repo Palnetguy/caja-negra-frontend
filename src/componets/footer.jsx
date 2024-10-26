@@ -1,4 +1,5 @@
 import "../styles/footer.css";
+import "../styles/aboutus_page.css";
 import watIco from "../assets/images/Group 48.png";
      
 
