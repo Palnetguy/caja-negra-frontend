@@ -5,6 +5,8 @@ import includedfeat2 from "../assets/images/included-feature-3.png";
 import includedfeat3 from "../assets/images/included-feature-4.png";
 import includedfeat4 from "../assets/images/included-feature-5.png";
 import bestVpsImg from "../assets/images/Best-VPS-Hosting-Plans 1 (1).png";
+import img0 from "../assets/images/Products_Low-latency-min 1.png";
+import img1 from "../assets/images/png-transparent-technical-support-business-customer-service-consultant-business-service-computer-people 1.png";
 import pngTree from "../assets/images/pngtree-technological-isometric-server-illustrated-on-background-png-image_3174520 1.png";
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
@@ -350,20 +352,20 @@ const ServidoresOp1 = () => {
         </div>
         <div className="servidoresOp_1_each" >
           <div className="image" >
-            <img src={bestVpsImg} alt="" />
+            <img src={img0} alt="" />
           </div>
-          <h1>Servidores de última generación</h1>
+          <h1>Red de baja latencia y protección</h1>
           <p>
-            Caja Negra presenta más de 1000 modelos de servidores a configurar
+          Respaldado por una red de baja latencia de más de 120 Tbps y DDoS
           </p>
         </div>
         <div className="servidoresOp_1_each" >
           <div className="image" >
-            <img src={bestVpsImg} alt="" />
+            <img src={img1} alt="" />
           </div>
-          <h1>Servidores de última generación</h1>
+          <h1>Servicio al cliente dedicado</h1>
           <p>
-            Caja Negra presenta más de 1000 modelos de servidores a configurar
+          Obtendrá una atención enfocada y profesional.
           </p>
         </div>
       </div>
