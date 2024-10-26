@@ -2,6 +2,10 @@ import NavBar from "../componets/nav_bar";
 import pagedomaion1 from "../assets/images/Landing Page_Domains_1200x800_APAC 1.png";
 import pagedomaion2 from "../assets/images/pngtree-computer-information-file-privacy-protection-illustration-png-image_4267628 1.png";
 import pagedomaion3 from "../assets/images/png-transparent-technical-support-business-customer-service-consultant-business-service-computer-people 2.png";
+import im1 from "../assets/images/dominio.png";
+import im2 from "../assets/images/configuracion.png";
+import im3 from "../assets/images/apoyo-tecnico.png";
+import im4 from "../assets/images/privacy-policy.png";
 import "../styles/registra_dominio.css";
 import { Link } from "react-router-dom";
 import { DomionBotomomponent } from "../componets/registra_dominio/domionBotom";
@@ -51,8 +55,8 @@ const RegisterDominioOp = () => {
           <div className="image" >
             <img src={pagedomaion2} alt="" />
           </div>
-          <h1>Soporte y orientación technico</h1>
-          <p>Ayuda y asesoramiento de expertos, siempre que lo necesite.</p>
+          <h1>Servicios gratis al registrarse</h1>
+          <p>Protección de privacidad gratuita de por vida y mucho más.</p>
         </div>
         <div className="register_domin_each" >
           <div className="image" >
@@ -70,7 +74,7 @@ const Domains = () => {
   const dData =[
     {
       id: 0,
-      img: pagedomaion1,
+      img: im1,
       h1: 'Fácil Gestión e Dominions',
       p: `Despuès de la compra, puede dirigirse directamente
       al panel de su cuenta de Bluerey Group y comezar a
@@ -80,7 +84,7 @@ const Domains = () => {
     },
     {
       id: 1,
-      img: pagedomaion1,
+      img: im2,
       h1: 'Configuracio Fácil',
       p: `Tu dirección de correo elctrónico gratuita está lista y
       esperádote. ¿Ya tienes configurada una própera
@@ -91,7 +95,7 @@ const Domains = () => {
     ,
     {
       id: 2,
-      img: pagedomaion1,
+      img: im3,
       h1: 'Estamos Par Ayudarte',
       p:`Su dominio Ileva su marca. Imagen pública y
       reputacion profesional. Además de atención al
@@ -101,7 +105,7 @@ const Domains = () => {
     },
     {
       id: 3,
-      img: pagedomaion1,
+      img: im4,
       h1: 'Privacidad y seguridad',
       p: `La seguridad y la privacidad de su sitio web son lo
       primero en Bluerey Group, y siempre apoyaremos los

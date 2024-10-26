@@ -198,7 +198,9 @@ text-align: center;
   flex-shrink: 0;
   width: 290px;
 height: 230px;
-
+display: flex;
+align-items: center;
+justify-content: center;
 
 }
 .register_domino .domains .more_domain .more_domain_each h1 {
