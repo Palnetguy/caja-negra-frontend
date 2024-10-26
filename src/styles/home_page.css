@@ -19,7 +19,7 @@ left: 100px;
 gap: 0px;
 border-radius: 12px 0px 0px 0px;
 border: 1px 0px 0px 0px;
-opacity: 0px;
+
 /* ee */
 }
 .home_page .main > h1 {
@@ -38,7 +38,7 @@ height: 203px;
 top: 367px;
 left: 130px;
 gap: 0px;
-opacity: 0px;
+
 font-family: Saira;
 font-size: 64px;
 font-weight: 800;
@@ -76,7 +76,7 @@ height: 138px;
 top: 600px;
 left: 130px;
 gap: 0px;
-opacity: 0px;
+
 font-family: Saira;
 font-size: 32px;
 font-weight: 500;
@@ -98,7 +98,7 @@ padding: 6px 30px 6px 30px;
 gap: 10px;
 border-radius: 12px 0px 0px 0px;
 border: 1px 0px 0px 0px;
-opacity: 0px;
+
 backdrop-filter: blur(300px)
 
   /* ee */
