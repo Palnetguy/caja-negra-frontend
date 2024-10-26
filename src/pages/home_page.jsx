@@ -4,6 +4,8 @@ import bgVideo from "../assets/images/gif-bg blue stars.gif";
 import chooseUs1Img from "../assets/images/choose-us-1.png";
 import chooseUs2Img from "../assets/images/choose-us-2.png";
 import chooseUs3Img from "../assets/images/choose-us-3.png";
+import wvffas from "../assets/images/Windows-VPS-For-FOCUS-Accounting-Software 1.png";
+import fwvh from '../assets/images/Free-Windows-VPS-Hosting 1.png';
 
 import service7Img from "../assets/images/service-7 (1).png";
 import service8Img from "../assets/images/service-8 (1) (1).png";
@@ -731,7 +733,7 @@ return (
             <div className="image" >
               <div className="bgSpan" ></div>
               <div className="img" >
-                <img src={bestVPSiM} alt="" />
+                <img src={wvffas} alt="" />
               </div>
             </div>
           </div>
@@ -739,7 +741,7 @@ return (
             <div className="image" >
               <div className="bgSpan" ></div>
               <div className="img" >
-                <img src={bestVPSiM} alt="" />
+                <img src={fwvh} alt="" />
               </div>
             </div>
           </div>
