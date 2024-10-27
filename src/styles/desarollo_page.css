@@ -266,6 +266,7 @@ border-radius: 12px 0px 0px 0px;
 } */
 
 @media (max-width: 780px) {
+
   .desarollo_page .desarollo .desarollo_more {
     display: flex;
     justify-content: space-between;
@@ -279,4 +280,97 @@ border-radius: 12px 0px 0px 0px;
     width: 50%;
     display: contents;
   }
+}
+@media (max-width: 768px) {
+  .desarollo_page .top {
+    height: auto;
+    background-size: cover;
+}
+  .desarollo_page .top > .info {
+      padding: 0 1em;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      height: 100px;
+  }
+  .desarollo_page .top > .info > h1 {
+    font-size: 24px;
+    line-height: 36px;
+    margin-bottom: 1em;
+  }
+  .desarollo_page .top > .info > p {
+    font-size: 14px;
+    line-height: 24px;
+    margin: 0.3em 0;
+}
+
+.desarollo_page .desarollo .desarollo_more {
+  flex-direction: column;
+  padding: 1em;
+  padding-top: 2em;
+}
+.desarollo_page .desarollo .desarollo_more .lft {
+  width: 100%;
+  height: auto;
+  margin-bottom: 1em;
+}
+.desarollo_page .desarollo .desarollo_more .lft > h1 {
+  font-size: 24px;
+  line-height: 30px;
+  margin-bottom: 0.5em;
+  text-align: center;
+}
+.desarollo_page .desarollo .desarollo_more .lft > p {
+  font-size: 16px;
+  line-height: 24px;
+  margin-bottom: 0.5em;
+  text-align: center;}
+  .desarollo_page .desarollo .desarollo_more .lft > ul {
+    width: 100%;
+    height: auto;
+    max-height: 150px;
+}
+.desarollo_page .desarollo .desarollo_more .lft > ul > li {
+  font-size: 16px;
+  line-height: 24px;
+  margin-left: 1em;
+  text-align: center;
+}
+.desarollo_page .desarollo .desarollo_each_cont {
+  justify-content: center;
+  padding: 0 1em;
+}
+.desarollo_page .desarollo .desarollo_each_cont .desarollo_bottom_each {
+  width: 96%;
+  height: auto;
+  flex-direction: column;
+  margin-left: 0;
+  padding: 1em;
+}
+.desarollo_page .desarollo .desarollo_each_cont .desarollo_bottom_each .align {
+  width: 90%; 
+  height: auto;
+  padding: 1em;
+  box-sizing: border-box;
+}
+desarollo_page .desarollo .desarollo_each_cont .desarollo_bottom_each .align > h1 {
+  font-size: 32px;
+  line-height: 36px;
+  margin-left: 1em;
+}
+.desarollo_page .desarollo .desarollo_each_cont .desarollo_bottom_each .align .desc {
+  width: 100%;
+  height: auto;
+  padding: 0.5em;
+}
+.desarollo_page .desarollo .desarollo_each_cont .desarollo_bottom_each .align .desc > p {
+  font-size: 20px;
+  line-height: 30px;
+  margin-bottom: 0.4em;
+}
+.desarollo_page .desarollo .desarollo_each_cont .desarollo_bottom_each .align .desc > ul {
+  font-size: 20px;
+  line-height: 30px;
+  margin-left: 1em;
+}
 }
