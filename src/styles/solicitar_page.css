@@ -162,6 +162,7 @@ font-size: 20px;
   .solicitar_page .quieres_saber .quieres .quiery {
     width: calc((100% / 2) - 2em);
     margin: 1em;
+    margin-left: 4em;
   }
   .solicitar_page input,
   .solicitar_page textarea {
@@ -172,3 +173,32 @@ font-size: 20px;
   }
 }
 
+@media only screen and (max-width: 768px) {
+  .solicitar_page .top {
+      height: 50vh;
+      background-size: cover;
+  }
+  .solicitar_page .top > .info {
+    width: 90vw;
+    left: 0; 
+    padding: 0 1em; 
+}
+.solicitar_page .top > .info > h1 {
+  font-size: 28px;
+  line-height: 40px;
+  letter-spacing: -1px;
+}
+.solicitar_page .top > .info > p {
+  font-size: 14px;
+  line-height: 28px;
+}
+.solicitar_page .quieres_saber .quieres {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  margin-top: 1.5em;
+  margin-bottom: 2em;
+  width: 100%;
+  height: auto;
+}
+}
