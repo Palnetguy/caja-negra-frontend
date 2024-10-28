@@ -234,7 +234,7 @@ height: 524px;
   font-style: normal;
   font-weight: 700;
   /* line-height: 42px; 116.667% */
-  margin: 1em 0;
+  margin: 2em 0;
   /* min-width: 435px; */
   /* width:auto;  */
   height: 80px;
@@ -254,7 +254,7 @@ height: 524px;
   font-weight: 500;
   /* line-height: 36px; 150% */
   /* width: 386px; */
-height: 144px;
+height: fit-content;
 font-family: Saira;
 font-size: 24px;
 font-weight: 500;
@@ -288,14 +288,17 @@ text-align: center;
   .hosting_page .top > .info > p {
     width: auto;
     font-size: 18px;
+    margin: 1em 0;
   }
   .hosting_page .revender .hosting_compartido_each {
     width: calc((100% / 1) - 8em);
     margin: 4em;
+    height: fit-content;
   }
   .hosting_page .revender .hosting_compartido_cont {
     display: flex;
     flex-wrap: wrap;
+    height: fit-content;
   }
   .hosting_page .hosting_compartido .hosting_compartido_each {
     width: calc((100% / 1) - 8em);
@@ -316,7 +319,13 @@ text-align: center;
     width: calc((100% / 1) - 4em);
     padding: 2em 1.7em;
     margin: 2em;
+    height: fit-content;
   }
+  .hosting_page .revender {
+height: fit-content;
+}
+
+
 }
 
 @media(max-width: 780px){

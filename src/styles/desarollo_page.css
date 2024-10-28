@@ -84,7 +84,9 @@ border-image-source: linear-gradient(148.77deg, #86FFE9 4.57%, #237D8D 22.17%, #
     padding: 3em 2em;
     width: calc((100% / 1) - 2em);
     margin: 1em;
+    height: auto;
   }
+  
 }
 .desarollo_page .desarollo_each h1 {
   margin-bottom: 0.1em;
@@ -372,5 +374,15 @@ desarollo_page .desarollo .desarollo_each_cont .desarollo_bottom_each .align > h
   font-size: 20px;
   line-height: 30px;
   margin-left: 1em;
+}
+.desarollo_page .desarollo_each h1 {
+  margin-bottom: 0.1em;
+  color: #fff;
+  text-align: center;
+  font-family: Saira, sans-serif;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 42px;
+  max-width: 100%;
 }
 }
