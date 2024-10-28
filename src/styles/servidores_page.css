@@ -510,6 +510,8 @@ height: 436.03px;
   .servidores_page .servidores_op .nuestros .nuetro {
     width: calc((100% / 1) - 2em);
     margin: 1em;
+    flex-basis: 100%;
+    margin: 0.5em 0; 
   }
   .servidores_page .servidoresOp_1_contain {
     display: flex;
@@ -535,5 +537,164 @@ height: 436.03px;
   .servidores_page .servidoresOp_1 .nuestros_cont .nuetro {
     width: calc((100% / 1) - 2em);
     margin: 1em;
+    margin-bottom: 2em;
   }
 }
+@media (max-width: 780px) {
+  .servidores_page .top {
+    height: 50vh;
+    background-size: cover;
+  }
+
+  .servidores_page .top > .info {
+    padding: 1em; 
+    font-size: 0.9em;
+  }
+  .servidores_page .top > .info > h1 {
+    font-size: 24px; 
+    line-height: 40px; 
+    letter-spacing: -1px;
+}
+.servidores_page .top > .info > p {
+  font-size: 16px; 
+  line-height: 28px; 
+  letter-spacing: -0.3px
+}
+servidores_page .servidores_op .specs_contain {
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 1em;
+}
+.servidores_page .servidores_op .specs {
+  width: 90%;
+  height: auto;
+  margin: 1em auto;
+  left: 0;
+  padding: 1.5em 1em;
+}
+.servidores_page .servidores_op .nuestros {
+  padding: 1em;
+}
+.servidores_page .servidores_op .nuestros > h2 {
+  margin-top: 2em; 
+}
+.servidores_page .servidores_op .nuestros > h1 {
+  margin-bottom: 1em;
+}
+.servidores_page .servidores_op .nuestros_cont {
+  display: flex;             
+  flex-wrap: nowrap;           
+  width: 100%;                 
+  padding: 1em;               
+  max-height: 90vh;            
+  flex-direction: column;       
+  align-items: center;         
+  overflow-y: auto;             
+  box-sizing: border-box;        
+}
+
+.servidores_page .servidores_op .nuestros .nuetro {
+  width: calc(100% - 2em);      
+  margin: 1em 0;           
+  height: auto;                   
+  box-sizing: border-box;
+}
+.servidores_page .servidoresOp_1_contain {
+  display: flex;
+    flex-direction: column; 
+    align-items: center;
+    justify-content: space-around; 
+    padding-top: 3em;
+    width: 100%; 
+    box-sizing: border-box; 
+  flex-direction: row; 
+  padding-top: 0; 
+}
+.servidores_page .servidoresOp_1_contain .servidoresOp_1_each {
+  width: 290px;
+  height: 488px; 
+  margin: 1em; 
+}
+.servidores_page .servidoresOp_1_contain .servidoresOp_1_each h1 {
+  font-size: 26px; 
+  font-weight: 700;
+  line-height: 1.2; 
+  text-align: center;
+  margin: 0.3em 0;
+  width: 90%; 
+  max-width: 364px; 
+  height: auto;  
+  font-size: 26px;
+  line-height: 42px; 
+}
+.servidores_page .servidoresOp_1_contain .servidoresOp_1_each p {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.5; 
+  text-align: center;
+  margin: 0.5em 0;
+  width: 90%;  
+  max-width: 333px; 
+  height: auto;
+  font-size: 24px; 
+  line-height: 36px;
+}
+.servidoresOp_1_contain1 {
+  display: block;
+  flex-wrap: nowrap;
+  padding: 10px;
+  margin: 0 auto;
+}
+.servidores_page .servidoresOp_1_contain1 .servidoresOp_1_each_1 h1 {
+  font-size: 24px;
+  width: 100%;
+  height: auto;
+  line-height: 1.2;
+  margin-top: 1em;
+  margin-left: 0;
+  padding: 0 15px;
+}
+.servidores_page .servidoresOp_1_contain1 .servidoresOp_1_each_1 h2 {
+  font-size: 20px;
+  width: 100%;
+  height: auto;
+  line-height: 1.3;
+  margin-left: 0;
+  padding: 0 15px;
+  margin-top: 0.5em;
+  margin-bottom: 1em;
+}
+.servidores_page .servidoresOp_1_contain1 .servidoresOp_1_each_1 li {
+  font-size: 16px;
+  width: 100%;
+  height: auto;
+  line-height: 1.4;
+  margin-left: 0;
+  margin-top: 0.5em;
+  padding: 0 15px; 
+}
+.servidores_page .servidoresOp_1_contain1 .servidoresOp_1_each_1 .full_gradient_btn{
+  width: 100%;
+        height: auto;
+        color: black;
+        font-family: Saira; 
+        font-weight: 700; 
+        font-size: 24px;
+        margin-top: 1.5em;
+        margin-left: 0;
+        padding: 0 15px;
+}
+.servidores_page .servidoresOp_1 .nuestros_cont .nuetro .image {
+  border-radius: 12px;
+  border: 1px solid #86ffe9;
+  background: #003C50;
+  /* max-width: 300px; */
+  /* padding: 1em;  */
+  display: flex; 
+  justify-content: center;
+  /* align-items: center; */
+  margin: .5em auto; 
+}
+}
+
+

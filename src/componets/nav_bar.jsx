@@ -240,7 +240,7 @@ const NavBar = () => {
               </li>
               <div style={{ position: 'relative', display: 'inline-block' }}>
                 <button onClick={toggleDropdown} style={{
-                  background: 'transparent', fontSize: '20px', fontWeight: '600', border: 'none', cursor: 'pointer'
+                  background: 'transparent', fontSize: '20px', fontWeight: '600', border: 'none', cursor: 'pointer', color: 'white'
                 }}>
                   Servicios <span><img src={v} alt="Dropdown arrow" /></span>
                 </button>
