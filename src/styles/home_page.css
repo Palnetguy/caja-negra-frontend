@@ -1265,6 +1265,12 @@ text-align: left;
   .home_page .services .th_words {
     font-size: 20px;
     margin: 0.5em;
+    font-size: 16px;
+    margin: 1.5em auto;
+    padding-left: 1.2em;
+    padding-right: 1.2em;
+    max-width: 80%;
+    box-sizing: border-box;
   }
   .home_page .services > .services_container {
     padding-top: 0.5em;
