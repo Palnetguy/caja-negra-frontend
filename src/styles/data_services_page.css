@@ -150,5 +150,51 @@ font-family: Saira;
     padding: 2.5em;
     width: calc((100% / 1) - 1em);
     margin: 0.5em;
+    height: fit-content;
+    text-align: center;
   }
+}
+@media (max-width: 768px) {
+  .data_services .top {
+      height: 70vh; 
+      background-size: cover;
+      display: flex;
+      flex-direction: column;
+      width: 100vw;
+      padding: 1em;
+      box-sizing: border-box;
+  }
+  .data_services .top > .info {
+    padding: 0 1em;
+    width: 90vw;
+    height: auto;
+    justify-content: flex-start;
+}
+.data_services .top > .info > h1 {
+  font-size: 26px;
+  line-height: 44px;
+}
+.data_services .top > .info > p {
+  font-size: 14px;
+  line-height: 24px;
+}
+.data_services .data_services_op > .data_serv_container {
+  padding: 0 1em;
+  width: 100vw;
+ height: fit-content;   
+}
+.data_services .data_services_op .data_serv > h1 {
+  font-size: 30px;
+  line-height: 36px;
+  text-align: center;
+  width: 100%;
+  height: fit-content;
+}
+.data_services .data_services_op .data_serv > p {
+  font-size: 18px;
+  line-height: 26px;
+  width: 100%;
+  height: fit-content;
+  margin: 1.4em 0;
+}
 }
