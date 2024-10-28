@@ -486,6 +486,13 @@ height: 436.03px;
     width: auto;
     margin: 0 auto;
   }
+  .servidores_page .servidoresOp_1 .nuestros_cont .nuetro h1{
+    width: 100%;
+    margin-bottom: 0.2em;
+  }
+  .servidores_page .servidoresOp_1 .nuestros_cont .nuetro p{
+    height: fit-content;
+  }
   .servidores_page .servidores_op .changeBtns .changeBtn {
     flex-shrink: 0;
     border-radius: 8px;
@@ -538,6 +545,7 @@ height: 436.03px;
     width: calc((100% / 1) - 2em);
     margin: 1em;
     margin-bottom: 2em;
+    height: fit-content;
   }
 }
 @media (max-width: 780px) {
