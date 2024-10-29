@@ -1567,7 +1567,7 @@ text-align: left;
 }
 
 /* Extra Large Devices (min-width: 1201px) */
-@media (min-width: 1201px) {
+@media (min-width: 1200px) {
   .home_page .services > .services_container {
       justify-content: flex-start;
       padding-top: 1em;
@@ -1584,7 +1584,7 @@ text-align: left;
 }
 
 /* Medium Devices (min-width: 601px and max-width: 900px) */
-@media (min-width: 601px) and (max-width: 900px) {
+@media (min-width: 601px)  {
   .home_page .services .service.profesional-services {
       width: calc((100% / 2) - 3em); 
       margin: 0 1.5em; 
