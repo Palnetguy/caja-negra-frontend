@@ -173,6 +173,7 @@ font-family: Saira;
 .data_services .top > .info > h1 {
   font-size: 26px;
   line-height: 44px;
+  /* position: absolute */
 }
 .data_services .top > .info > p {
   font-size: 14px;

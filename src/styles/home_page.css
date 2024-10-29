@@ -115,7 +115,7 @@ backdrop-filter: blur(300px)
     color: #86ffe9;
     font-size: 34px;
     font-family: 800;
-
+    width: 100vw;
   }
   .home_page .main > p {
     /* color: #86FFE9; */
@@ -1272,6 +1272,7 @@ text-align: left;
     max-width: 80%;
     box-sizing: border-box;
   }
+
   .home_page .services > .services_container {
     padding-top: 0.5em;
     justify-content: flex-start;
@@ -1283,6 +1284,7 @@ text-align: left;
     margin-bottom: 2em;
     border-radius: 12px;
   }
+
   .home_page .garantee .contain_grns {
     justify-content: center;
     margin-top: 1em; 
@@ -1417,7 +1419,11 @@ text-align: left;
   margin-bottom: 2em;
   height: fit-content;
 }
-
+.home_page .services .service.profesional-services {
+  width: calc(100% - 4em);
+  height: auto; 
+  margin: 1em 2em; 
+}
 .home_page .vps {
   flex-direction: column;
   margin-top: 3em;
@@ -1526,4 +1532,86 @@ text-align: left;
     opacity: 0.9;
     margin: 0.5em 0;
 }
+}
+
+
+.home_page .services > .services_container {
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 1em;
+  justify-content: center;
+}
+
+/* Small Devices (max-width: 600px) */
+@media (max-width: 600px) {
+  .home_page .services > .services_container {
+      flex-direction: column;
+      align-items: center;
+      padding-top: 0.5em;
+  }
+}
+
+/* Medium Devices (min-width: 601px and max-width: 900px) */
+@media (min-width: 601px) and (max-width: 900px) {
+  .home_page .services > .services_container {
+      flex-direction: row;
+      justify-content: space-around; 
+  }
+}
+
+/* Large Devices (min-width: 901px and max-width: 1200px) */
+@media (min-width: 901px) and (max-width: 1200px) {
+  .home_page .services > .services_container {
+      justify-content: space-between;
+  }
+}
+
+/* Extra Large Devices (min-width: 1201px) */
+@media (min-width: 1201px) {
+  .home_page .services > .services_container {
+      justify-content: flex-start;
+      padding-top: 1em;
+  }
+}
+
+/* Small Devices (max-width: 600px) */
+@media (max-width: 600px) {
+  .home_page .services .service.profesional-services {
+      width: calc(100% - 2em);
+      margin: 1em;
+      height: auto; 
+  }
+}
+
+/* Medium Devices (min-width: 601px and max-width: 900px) */
+@media (min-width: 601px) and (max-width: 900px) {
+  .home_page .services .service.profesional-services {
+      width: calc((100% / 2) - 3em); 
+      margin: 0 1.5em; 
+      /* height: 400px;  */
+      height: fit-content;
+      margin-bottom: 1.5em;
+  }
+  .home_page .main {
+    width: 50vw;
+    margin-left: 2.5em;
+  }
+}
+
+/* Large Devices (min-width: 901px and max-width: 1200px) */
+@media (min-width: 901px) and (max-width: 1200px) {
+  .home_page .services .service.profesional-services {
+      width: calc((100% / 3) - 4em);
+      margin: 0 1em; 
+      height: 450px;
+  }
+}
+
+/* Extra Large Devices (min-width: 1201px) */
+@media (min-width: 1201px) {
+  .home_page .services .service.profesional-services {
+      width: calc((100% / 3) - 4.75em);
+      margin: 0 2em;
+      height: 486px;
+  }
 }
