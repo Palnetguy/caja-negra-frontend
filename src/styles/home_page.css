@@ -1541,77 +1541,156 @@ text-align: left;
   padding-top: 1em;
   justify-content: center;
 }
-
-/* Small Devices (max-width: 600px) */
-@media (max-width: 600px) {
-  .home_page .services > .services_container {
-      flex-direction: column;
-      align-items: center;
-      padding-top: 0.5em;
-  }
-}
-
-/* Medium Devices (min-width: 601px and max-width: 900px) */
-@media (min-width: 601px) and (max-width: 900px) {
-  .home_page .services > .services_container {
-      flex-direction: row;
-      justify-content: space-around; 
-  }
-}
-
-/* Large Devices (min-width: 901px and max-width: 1200px) */
-@media (min-width: 901px) and (max-width: 1200px) {
-  .home_page .services > .services_container {
-      justify-content: space-between;
-  }
-}
-
-/* Extra Large Devices (min-width: 1201px) */
-@media (min-width: 1200px) {
-  .home_page .services > .services_container {
-      justify-content: flex-start;
-      padding-top: 1em;
-  }
-}
-
-/* Small Devices (max-width: 600px) */
-@media (max-width: 600px) {
-  .home_page .services .service.profesional-services {
-      width: calc(100% - 2em);
-      margin: 1em;
-      height: auto; 
-  }
-}
-
-/* Medium Devices (min-width: 601px and max-width: 900px) */
-@media (min-width: 601px)  {
-  .home_page .services .service.profesional-services {
-      width: calc((100% / 2) - 3em); 
-      margin: 0 1.5em; 
-      /* height: 400px;  */
-      height: fit-content;
-      margin-bottom: 1.5em;
-  }
-  .home_page .main {
-    width: 50vw;
-    margin-left: 2.5em;
-  }
-}
-
-/* Large Devices (min-width: 901px and max-width: 1200px) */
-@media (min-width: 901px) and (max-width: 1200px) {
-  .home_page .services .service.profesional-services {
-      width: calc((100% / 3) - 4em);
-      margin: 0 1em; 
-      height: 450px;
-  }
-}
-
-/* Extra Large Devices (min-width: 1201px) */
-@media (min-width: 1201px) {
-  .home_page .services .service.profesional-services {
-      width: calc((100% / 3) - 4.75em);
-      margin: 0 2em;
-      height: 486px;
-  }
+/* Here is my sugesstion..................................... */ 
+/* ServicesSection.css */ 
+:root { 
+  /* Custom breakpoints */ 
+  --bp-xs: 600px;    /* Mobile */ 
+  --bp-sm: 800px;    /* Tablet */ 
+  --bp-md: 1000px;   /* Small desktop */ 
+  --bp-lg: 1500px;   /* Large desktop */ 
+  --bp-xl: 2000px;   /* Extra large screens */ 
+   
+  /* Spacing variables */ 
+  --spacing-xs: 1rem;      /* 16px */ 
+  --spacing-sm: 1.5rem;    /* 24px */ 
+  --spacing-md: 2rem;      /* 32px */ 
+  --spacing-lg: 2.5rem;    /* 40px */ 
+  --spacing-xl: 3rem;      /* 48px */ 
+} 
+ 
+.services-section { 
+  width: 100%; 
+  padding: var(--spacing-sm); 
+  background-color: #f5f5f5; 
+} 
+ 
+.services-container { 
+  max-width: 100%; 
+  margin: 0 auto; 
+  display: grid; 
+  gap: var(--spacing-sm); 
+  padding: var(--spacing-xs); 
+   
+  /* Mobile first - single column */ 
+  grid-template-columns: 1fr; 
+} 
+ 
+/* 600px - Mobile landscape */ 
+@media (min-width: 600px) { 
+  .services-container { 
+    grid-template-columns: repeat(2, 1fr); 
+    gap: var(--spacing-sm); 
+    padding: var(--spacing-sm); 
+    max-width: 580px; 
+  } 
+ 
+  .service-card { 
+    height: 350px; 
+  } 
+} 
+ 
+/* 800px - Tablet */ 
+@media (min-width: 800px) { 
+  .services-container { 
+    grid-template-columns: repeat(2, 1fr); 
+    gap: var(--spacing-md); 
+    padding: var(--spacing-md); 
+    max-width: 780px; 
+  } 
+ 
+  .service-card { 
+    height: 400px; 
+  } 
+} 
+ 
+/* 1000px - Small desktop */ 
+@media (min-width: 1000px) { 
+  .services-container { 
+    grid-template-columns: repeat(3, 1fr); 
+    gap: var(--spacing-md); 
+    max-width: 980px; 
+  } 
+ 
+  .service-card { 
+    height: 450px; 
+  } 
+} 
+ 
+/* 1500px - Large desktop */ 
+@media (min-width: 1500px) { 
+  .services-container { 
+    grid-template-columns: repeat(4, 1fr); 
+    gap: var(--spacing-lg); 
+    max-width: 1480px; 
+  } 
+ 
+  .service-card { 
+    height: 500px; 
+  } 
+} 
+ 
+/* 2000px - Extra large screens */ 
+@media (min-width: 2000px) { 
+  .services-container { 
+    grid-template-columns: repeat(5, 1fr); 
+    gap: var(--spacing-xl); 
+    max-width: 1980px; 
+  } 
+ 
+  .service-card { 
+    height: 550px; 
+  } 
+} 
+ 
+.service-card { 
+  background-color: white; 
+  border-radius: 8px; 
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+  padding: var(--spacing-md); 
+  transition: transform 0.3s ease, box-shadow 0.3s ease; 
+  display: flex; 
+  flex-direction: column; 
+   
+  /* Mobile first - default height */ 
+  height: 300px; 
+} 
+ 
+.service-card:hover { 
+  transform: translateY(-4px); 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); 
+} 
+ 
+.service-title { 
+  font-size: clamp(1.25rem, 2vw, 1.5rem); 
+  font-weight: 600; 
+  margin-bottom: var(--spacing-sm); 
+  color: #333; 
+} 
+ 
+.service-description { 
+  color: #666; 
+  line-height: 1.6; 
+  font-size: clamp(0.875rem, 1.5vw, 1rem); 
+} 
+ 
+/* Container width adjustments for different screen sizes */ 
+.services-section { 
+  display: flex; 
+  justify-content: center; 
+} 
+ 
+/* Responsive padding adjustments */ 
+@media (max-width: 599px) { 
+  .services-container { 
+    padding: var(--spacing-xs); 
+  } 
+} 
+ 
+/* Added better touch targets for mobile */ 
+@media (max-width: 600px) { 
+  .service-card { 
+    min-height: 250px; 
+    padding: var(--spacing-sm); 
+  } 
 }
