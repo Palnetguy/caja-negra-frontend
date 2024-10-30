@@ -411,16 +411,30 @@ height: fit-content;
  
 /* 800px - Tablet */ 
 @media (min-width: 800px) { 
-  .services-container { 
-    grid-template-columns: repeat(2, 1fr); 
-    gap: var(--spacing-md); 
-    padding: var(--spacing-md); 
-    max-width: 780px; 
-  } 
- 
-  .service-card { 
-    height: 400px; 
-  } 
+  
+.hosting_page .revender .hosting_compartido_each {
+  min-width: 280px;
+  height: fit-content;
+}
+.hosting_page .hosting_compartido .hosting_compartido_each {
+  min-width: 300px;
+}
+.hosting_page .hosting_compartido .hosting_compartido_cont {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+}
+.hosting_page .revender .hosting_compartido_cont {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+}
 } 
  
 /* 1000px - Small desktop */ 
