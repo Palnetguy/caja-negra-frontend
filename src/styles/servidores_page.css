@@ -803,16 +803,25 @@ servidores_page .servidores_op .specs_contain {
 .servidores_page .servidores_op .nuestros .nuetro {
   height: fit-content;
 }
-  .services-container { 
-    grid-template-columns: repeat(2, 1fr); 
-    gap: var(--spacing-md); 
-    padding: var(--spacing-md); 
-    max-width: 780px; 
-  } 
- 
-  .service-card { 
-    height: 400px; 
-  } 
+.servidores_page .servidoresOp_1_contain1 {
+  margin: 4em 0;
+  justify-content: center;
+}
+.servidores_page .servidoresOp_1_contain1 .servidoresOp_1_each_1 {
+  min-width: calc((100% / 2) - 4em);
+  width: 660px;
+  height: fit-content;
+}
+.servidores_page .servidoresOp_1_contain1 .servidoresOp_1_each_1 h2 {
+  width:400px;
+}
+.servidores_page .servidoresOp_1 .nuestros_cont .nuetro {
+  height: fit-content;
+  margin-top: 1em;
+}
+.servidores_page .servidoresOp_1 .nuestros_cont .nuetro p {
+  height: fit-content;
+}
 } 
  
 /* 1000px - Small desktop */ 
