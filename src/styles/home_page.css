@@ -1843,6 +1843,7 @@ text-align: left;
 .home_page .vps.sus .lft h1{
   height: fit-content;
 }
+
 /* .home_page .vps .lft {
   width: 877px;
   height: 546px;
@@ -1863,6 +1864,7 @@ height: 450px; */
   width: 60%;
   font-size: 38px;
 }
+
 }
 /* @media (min-width: 1000px) {
   .home_page .services > .services_container {
