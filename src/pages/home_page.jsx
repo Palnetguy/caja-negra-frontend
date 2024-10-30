@@ -514,7 +514,7 @@ return (
       </div>
       <h2 className="sub_title">Servicios Profesionales</h2>
       <h1 className="title" >Nuestros servicios</h1>
-      <div className="services_container">
+      <div className="services_container.bt">
         {profesionalesServiceData.map(i => (
           <ProfessionaleService img={i.img} h2={i.h2} p={i.p}/>
         ))}
