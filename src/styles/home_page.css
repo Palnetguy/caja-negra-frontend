@@ -1380,7 +1380,7 @@ text-align: left;
   }
 }
 
-@media(max-width: 780px){
+/* @media(max-width: 780px){
 
 .home_page .top .bgVideo {
   width: 100vw;
@@ -1396,7 +1396,6 @@ text-align: left;
   position: absolute;
   left: 0;
   top:7em;
-  /* overflow-y: auto; */
 }
 .home_page .main > h1 {
   width:80%;
@@ -1441,11 +1440,9 @@ text-align: left;
   height: auto;
 }
 .home_page .vps .service .image {
-  /* height: 250px; */
   border-radius: 8px;
 }
 .home_page .vps .service .image > .bgSpan {
-  /* height: 240px; */
   width: 90%;
   border-radius: 8px;
   left: 50%; 
@@ -1532,7 +1529,7 @@ text-align: left;
     opacity: 0.9;
     margin: 0.5em 0;
 }
-}
+} */
 
 
 .home_page .services > .services_container {
@@ -1583,6 +1580,11 @@ text-align: left;
     left: 0.4em;
     line-height: 30px;  
     height: fit-content;
+  }
+  .home_page .main > p{
+    width: 60%;
+    height: fit-content;
+    line-height: 24px;
   }
   .services-container { 
     grid-template-columns: repeat(2, 1fr); 
@@ -1641,6 +1643,11 @@ text-align: left;
   height: auto;
   align-items: center;
 }
+.home_page .services .service.profesional-services {
+  width: calc(100% - 4em);
+  height: auto; 
+  margin: 1em 2em; 
+}
 .home_page .services > .services_container{
   margin-bottom: 5em;
 }
@@ -1674,8 +1681,7 @@ text-align: left;
   transition: 0.5s;
   justify-self: center;
   margin-bottom: -5em;
-  /* margin-top: -3em; */
-  /* background: yellowgreen; */
+
 }
 .home_page .vps .service .image > .bgSpan {
   width: 100%;
@@ -1702,10 +1708,60 @@ text-align: left;
 .home_page .remarks .remark .inner_div > p:nth-child(2) {
   margin-top: 1.5em;
 }
+.home_page .vps {
+ width: 100vw;
+ height: fit-content;
+ display: flex;
+ flex-direction: column;
+}
+.home_page .vps .lft > h1 {
+  width: 80vw;
+}
+.home_page .remarks .remark .inner_div > p {
+  height: fit-content;
+  }
 } 
  
 /* 800px - Tablet */ 
-@media (min-width: 800px) { 
+@media (min-width: 800px) {
+  .home_page .main {
+    width: 90vw;
+  }
+  .home_page .main > h1{
+    line-height: 50px;
+
+  }
+  .home_page .main >p {
+    line-height: 28px;
+  }
+  .home_page .services > .services_container {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 1em;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+  .home_page .services .service {
+    width: calc((100% / 2) - 4em);
+  }
+  .home_page .services .service.profesional-services {
+    width: calc((100% / 2) - 4em);
+    height: auto; 
+    margin: 1em 2em; 
+  }
+
+
+  .home_page .vps {
+    width: 100vw;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+   }
+   .home_page .vps .lft > h1 {
+     width: 80vw;
+   }
   .services-container { 
     grid-template-columns: repeat(2, 1fr); 
     gap: var(--spacing-md); 
