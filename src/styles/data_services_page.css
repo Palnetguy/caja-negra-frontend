@@ -253,6 +253,7 @@ font-family: Saira;
 @media (min-width: 800px) { 
   .data_services .data_services_op .data_serv {
     width: calc((100% / 2) - 4em);
+    height: 600px;
   }
   .data_services .data_services_op > .data_serv_container {
     display: flex;
