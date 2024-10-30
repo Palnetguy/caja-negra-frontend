@@ -126,16 +126,14 @@
  
 /* 600px - Mobile landscape */ 
 @media (min-width: 600px) { 
-  .services-container { 
-    grid-template-columns: repeat(2, 1fr); 
-    gap: var(--spacing-sm); 
-    padding: var(--spacing-sm); 
-    max-width: 580px; 
-  } 
- 
-  .service-card { 
-    height: 350px; 
-  } 
+  .aboutus_page .top{
+    height: fit-content;
+  }
+  .aboutus_page .top > .info {
+    /* position: absolute; */
+    margin-top: 5em;
+    height: fit-content;
+  }
 } 
  
 /* 800px - Tablet */ 
