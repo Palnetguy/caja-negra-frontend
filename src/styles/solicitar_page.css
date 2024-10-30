@@ -248,26 +248,28 @@ font-size: 20px;
     margin-top: 8em;
   }
   .solicitar_page .quieres_saber .quieres {
+    display: flex;
     align-items: center;
+    justify-content: center;
+    height: fit-content;
   }
   .solicitar_page .quieres_saber .quieres .quiery {
     width: 80vw;
     margin: 1em;
 }
+
+.solicitar_page .quieres_saber .quieres .quiery > p {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
 } 
  
 /* 800px - Tablet */ 
 @media (min-width: 800px) { 
-  .services-container { 
-    grid-template-columns: repeat(2, 1fr); 
-    gap: var(--spacing-md); 
-    padding: var(--spacing-md); 
-    max-width: 780px; 
-  } 
- 
-  .service-card { 
-    height: 400px; 
-  } 
+  .solicitar_page .quieres_saber .quieres .quiery {
+    width: 400px;
+  }
 } 
  
 /* 1000px - Small desktop */ 
