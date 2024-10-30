@@ -630,7 +630,7 @@ servidores_page .servidores_op .specs_contain {
   text-align: center;
   margin: 0.3em 0;
   width: 90%; 
-  max-width: 364px; 
+  /* max-width: 364px;  */
   height: auto;  
   font-size: 26px;
   line-height: 42px; 
@@ -642,7 +642,7 @@ servidores_page .servidores_op .specs_contain {
   text-align: center;
   margin: 0.5em 0;
   width: 90%;  
-  max-width: 333px; 
+  /* max-width: 333px;  */
   height: auto;
   font-size: 24px; 
   line-height: 36px;
@@ -705,6 +705,39 @@ servidores_page .servidores_op .specs_contain {
 }
 }
 
+.servidores_page .servidoresOp_1_contain1 .servidoresOp_1_each_1 .full_gradient_btn {
+  --bp-xs: 600px;
+  --bp-sm: 800px;
+  --bp-md: 1000px;
+  --bp-lg: 1500px;
+  --bp-xl: 2000px;
+  --spacing-xs: 1rem;
+  --spacing-sm: 1.5rem;
+  --spacing-md: 2rem;
+  --spacing-lg: 2.5rem;
+  --spacing-xl: 3rem;
+  margin: 0;
+  box-sizing: border-box;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  min-width: 150px;
+  text-decoration: none;
+  background: linear-gradient(90deg, #86FFE9 0%, #02BAC6 50%, #037B83 100%);
+  margin-left: 0;
+  padding: 0 15px;
+  width: 180px;
+  height: 80px;
+  color: black;
+  font-family: Saira;
+  font-weight: 700;
+  font-size: 24px;
+  margin-top: 2em;
+}
+
 /* Here is my sugesstion..................................... */ 
 /* ServicesSection.css */ 
 :root { 
@@ -742,16 +775,24 @@ servidores_page .servidores_op .specs_contain {
  
 /* 600px - Mobile landscape */ 
 @media (min-width: 600px) { 
-  .services-container { 
-    grid-template-columns: repeat(2, 1fr); 
-    gap: var(--spacing-sm); 
-    padding: var(--spacing-sm); 
-    max-width: 580px; 
-  } 
- 
-  .service-card { 
-    height: 350px; 
-  } 
+  .servidores_page .top {
+    height: 70vh;
+  }
+  .servidores_page .top > .info {
+    position: absolute;
+    margin-top: 10em;
+  }
+  .servidores_page .servidoresOp_1_contain .servidoresOp_1_each p {
+    width: auto;
+  }
+  .servidores_page .servidoresOp_1_contain1 .servidoresOp_1_each_1 {
+    height:fit-content;
+  }
+  .servidores_page .servidoresOp_1_contain1 .servidoresOp_1_each_1 .full_gradient_btn {
+    width: auto;
+    height: auto;
+    font-size: 22px;
+  }
 } 
  
 /* 800px - Tablet */ 

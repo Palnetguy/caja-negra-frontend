@@ -668,8 +668,8 @@ return (
             <li> Protección anti-DDoS incluida</li>
           </ul>
           <button className="full_gradient_btn" style={{
-            width: '234px',
-          height: '80px',
+            width: 'auto',
+          height: 'auto',
           fontFamily: 'Saira',
             fontSize: '32px',
             fontWeight: '700',
@@ -717,8 +717,8 @@ return (
               <ListComponent li={d.li} p={d.p}/>
             ))}
           </ul>
-          <button className="full_gradient_btn" style={{width: '234px',
-          height: '80px',
+          <button className="full_gradient_btn" style={{width: 'auto',
+          height: 'auto',
           fontFamily: 'Saira',
           fontSize: '32px',
           fontWeight: '700',

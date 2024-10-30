@@ -1578,6 +1578,12 @@ text-align: left;
  
 /* 600px - Mobile landscape */ 
 @media (min-width: 600px) { 
+  .home_page .main > h1 {
+    width: 80%;
+    left: 0.4em;
+    line-height: 30px;  
+    height: fit-content;
+  }
   .services-container { 
     grid-template-columns: repeat(2, 1fr); 
     gap: var(--spacing-sm); 
@@ -1588,6 +1594,114 @@ text-align: left;
   .service-card { 
     height: 350px; 
   } 
+  .home_page .services .oferta > .ofertas_container {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-top: 2.5em;
+  }
+  
+  .home_page .services .oferta > .ofertas_container .each_ofertas {
+    width: 80%;
+    max-width: 90%;
+    height: auto;
+    border-radius: 8px;
+    position: relative;
+    padding: 2.5em 2.5em;
+    overflow: hidden;
+    transition: 0.5s;
+    margin-bottom: 5em;
+  }
+  .home_page .services .oferta > .ofertas_container .each_ofertas > .bgSpan {
+  width: 100%;
+}
+.home_page .services .oferta > .ofertas_container .each_ofertas > .info > h1 {
+  color: #d9d9d9;
+  font-size: 40px;
+  font-weight: 700;
+  font-family: Saira, sans-serif;
+  line-height: 42px;
+  text-align: left;
+}
+.home_page .services .oferta > .ofertas_container .each_ofertas > .info > h2 {
+  color: #d9d9d9;
+  font-size: 24px;
+  font-weight: 500;
+  margin-bottom: 1em;
+  font-family: Saira, sans-serif;
+  line-height: 36px;
+  text-align: left;
+}
+.home_page .services .oferta > .ofertas_container .each_ofertas > .info > a > button  {
+  font-size: 18px;
+  width: auto;
+  height: auto;
+  align-items: center;
+}
+.home_page .services > .services_container{
+  margin-bottom: 5em;
+}
+.home_page .services .word_btn > a > button {
+  font-size: 22px;
+  width: auto;
+  height: auto;
+  align-items: center;
+}
+.home_page .garantee .contain_grns {
+  height: fit-content;
+  height: auto;
+}
+.home_page .garantee .each_grns > .info  {
+  height: fit-content;
+}
+.home_page .garantee .each_grns > .info > button {
+  font-size: 22px;
+  width: auto;
+  height: auto;
+  align-items: center;
+}
+.home_page .services .service {
+  width: 80%;
+  max-width: fit-content;
+  height: fit-content;
+  border-radius: 8px;
+  position: relative;
+  padding: 2.5em 2.5em;
+  overflow: hidden;
+  transition: 0.5s;
+  justify-self: center;
+  margin-bottom: -5em;
+  /* margin-top: -3em; */
+  /* background: yellowgreen; */
+}
+.home_page .vps .service .image > .bgSpan {
+  width: 100%;
+}
+
+.home_page .vps .service .image{
+  height: 229;
+}
+.home_page .vps .lft > button {
+  font-size: 22px;
+  width: auto;
+  height: auto;
+  align-items: center;
+}
+.home_page .services .oferta > .ofertas_container .each_ofertas > .info button {
+  font-size: 22px;
+  width: auto;
+  height: auto;
+  align-items: center;
+}
+.home_page .remarks .remark {
+  height: fit-content;
+}
+.home_page .remarks .remark .inner_div > p:nth-child(2) {
+  margin-top: 1.5em;
+}
 } 
  
 /* 800px - Tablet */ 

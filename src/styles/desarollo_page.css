@@ -424,16 +424,23 @@ desarollo_page .desarollo .desarollo_each_cont .desarollo_bottom_each .align > h
  
 /* 600px - Mobile landscape */ 
 @media (min-width: 600px) { 
-  .services-container { 
-    grid-template-columns: repeat(2, 1fr); 
-    gap: var(--spacing-sm); 
-    padding: var(--spacing-sm); 
-    max-width: 580px; 
-  } 
- 
-  .service-card { 
-    height: 350px; 
-  } 
+  .desarollo_page .top {
+    height: 70vh;
+  }
+  .desarollo_page .top > .info {
+    padding: 0 1em;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: flex-start;
+    height: 100px;
+    width: 70%;
+    position: absolute;
+    margin-top: 12em;
+}
+.desarollo_page .top > .info > p {
+  text-align: start;
+}
+
 } 
  
 /* 800px - Tablet */ 

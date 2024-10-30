@@ -343,18 +343,25 @@ text-align: left;
  
 /* 600px - Mobile landscape */ 
 @media (min-width: 600px) { 
-  .services-container { 
-    grid-template-columns: repeat(2, 1fr); 
-    gap: var(--spacing-sm); 
-    padding: var(--spacing-sm); 
-    max-width: 580px; 
-  } 
- 
-  .service-card { 
-    height: 350px; 
-  } 
+  .register_domino .top {
+    height: 70vh;
+  }
+  .register_domino .top > .info {
+    position: absolute;
+    margin-top: 10em;
+  }
+  .register_domino .domains > a >  button{
+    width: auto;
+    color: black;
+    height: auto; 
+    font-family: Saira;
+    font-size: 22px;
+    font-weight: 700;
+    text-align: center;
+  }
 } 
  
+
 /* 800px - Tablet */ 
 @media (min-width: 800px) { 
   .services-container { 
@@ -392,7 +399,18 @@ text-align: left;
  
   .service-card { 
     height: 500px; 
-  } 
+  }
+
+  .register_domino .domains > a >  button{
+    color: black;
+    width: 234px;
+    height: 80px;
+    font-family: Saira;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 42px;
+    text-align: center;
+  }
 } 
  
 /* 2000px - Extra large screens */ 

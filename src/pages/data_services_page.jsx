@@ -43,8 +43,8 @@ const DataServices = () => {
 
           <Link target="_top" to="/solicitar" >
             <button className="full_gradient_btn" style={{
-              width: '234px',
-              height: '80px',
+              width: 'auto',
+              height: 'auto',
               color: 'black',
               fontFamily: 'Saira',
               fontSize: '32px',
@@ -63,8 +63,8 @@ const DataServices = () => {
           </p>
           <Link target="_top" to="/solicitar">
             <button className="full_gradient_btn" style={{
-              width: '234px',
-              height: '80px',
+              width: 'auto',
+              height: 'auto',
               color: 'black',
               fontFamily: 'Saira',
               fontSize: '32px',
@@ -84,8 +84,8 @@ const DataServices = () => {
           </p>
           <Link target="_top" to="/solicitar">
             <button className="full_gradient_btn" style={{
-             width: '234px',
-             height: '80px',
+             width: 'auto',
+             height: 'auto',
              color: 'black',
              fontFamily: 'Saira',
              fontSize: '32px',
@@ -104,8 +104,8 @@ const DataServices = () => {
           </p>
           <Link target="_top" to="/solicitar">
             <button className="full_gradient_btn" style={{
-              width: '234px',
-              height: '80px',
+              width: 'auto',
+              height: 'auto',
               color: 'black',
               fontFamily: 'Saira',
               fontSize: '32px',
@@ -124,8 +124,8 @@ const DataServices = () => {
           </p>
           <Link target="_top" to="/solicitar">
             <button className="full_gradient_btn" style={{
-              width: '234px',
-              height: '80px',
+              width: 'auto',
+              height: 'auto',
               color: 'black',
               fontFamily: 'Saira',
               fontSize: '32px',
@@ -144,8 +144,8 @@ const DataServices = () => {
           </p>
           <Link target="_top" to="/solicitar">
             <button className="full_gradient_btn" style={{
-             width: '234px',
-             height: '80px',
+             width: 'auto',
+             height: 'auto',
              color: 'black',
              fontFamily: 'Saira',
              fontSize: '32px',
@@ -165,8 +165,8 @@ const DataServices = () => {
           </p>
           <Link target="_top" to="/solicitar">
             <button className="full_gradient_btn" style={{
-              width: '234px',
-              height: '80px',
+              width: 'auto',
+              height: 'auto',
               color: 'black',
               fontFamily: 'Saira',
               fontSize: '32px',
@@ -185,8 +185,8 @@ const DataServices = () => {
           </p>
           <Link target="_top" to="/solicitar">
             <button className="full_gradient_btn" style={{
-              width: '234px',
-              height: '80px',
+              width: 'auto',
+              height: 'auto',
               color: 'black',
               fontFamily: 'Saira',
               fontSize: '32px',
@@ -206,8 +206,8 @@ const DataServices = () => {
           </p>
           <Link target="_top" to="/solicitar">
             <button className="full_gradient_btn" style={{
-              width: '234px',
-              height: '80px',
+              width: 'auto',
+              height: 'auto',
               color: 'black',
               fontFamily: 'Saira',
               fontSize: '32px',
@@ -226,8 +226,8 @@ const DataServices = () => {
           </p>
           <Link target="_top" to="/solicitar">
             <button className="full_gradient_btn" style={{
-             width: '234px',
-             height: '80px',
+             width: 'auto',
+             height: 'auto',
              color: 'black',
              fontFamily: 'Saira',
              fontSize: '32px',
@@ -246,8 +246,8 @@ const DataServices = () => {
           </p>
           <Link target="_top" to="/solicitar">
             <button className="full_gradient_btn" style={{
-              width: '234px',
-              height: '80px',
+              width: 'auto',
+              height: 'auto',
               color: 'black',
               fontFamily: 'Saira',
               fontSize: '32px',
@@ -267,8 +267,8 @@ const DataServices = () => {
           </p>
           <Link target="_top" to="/solicitar">
             <button className="full_gradient_btn" style={{
-              width: '234px',
-              height: '80px',
+              width: 'auto',
+              height: 'auto',
               color: 'black',
               fontFamily: 'Saira',
               fontSize: '32px',
@@ -287,8 +287,8 @@ const DataServices = () => {
           </p>
           <Link target="_top" to="/solicitar">
             <button className="full_gradient_btn" style={{
-             width: '234px',
-             height: '80px',
+             width: 'auto',
+             height: 'auto',
              color: 'black',
              fontFamily: 'Saira',
              fontSize: '32px',

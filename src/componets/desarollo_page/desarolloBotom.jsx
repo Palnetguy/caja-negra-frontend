@@ -16,9 +16,9 @@ export const DesarolloBotomComponent = ({title, des, info, buttonTitle}) => {
     <Link target="_top" to="/solicitar">
     <button className='bottom_btn full_gradient_btn' 
     style={{ fontFamily : 'Saira',
-      width: '234px',
-      height: '80px',
-fontSize: '32px',
+      width: 'auto',
+      height: 'auto',
+fontSize: '24px',
 fontWeight: '700',
 lineHeight: '42px',
 textAlign: 'center',

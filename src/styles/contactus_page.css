@@ -218,16 +218,14 @@
  
 /* 600px - Mobile landscape */ 
 @media (min-width: 600px) { 
-  .services-container { 
-    grid-template-columns: repeat(2, 1fr); 
-    gap: var(--spacing-sm); 
-    padding: var(--spacing-sm); 
-    max-width: 580px; 
-  } 
- 
-  .service-card { 
-    height: 350px; 
-  } 
+  .servidores_page .servidoresOp_1_contain .servidoresOp_1_each  {
+    width: 90vw;
+  }
+  .servidores_page .servidoresOp_1_contain .servidoresOp_1_each h1 {
+    width: auto;
+    text-align: center;
+    max-width: auto;
+  }
 } 
  
 /* 800px - Tablet */ 

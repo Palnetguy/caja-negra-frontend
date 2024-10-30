@@ -237,16 +237,10 @@ font-family: Saira;
  
 /* 600px - Mobile landscape */ 
 @media (min-width: 600px) { 
-  .services-container { 
-    grid-template-columns: repeat(2, 1fr); 
-    gap: var(--spacing-sm); 
-    padding: var(--spacing-sm); 
-    max-width: 580px; 
-  } 
- 
-  .service-card { 
-    height: 350px; 
-  } 
+  .data_services .top > .info {
+    margin-top: 8em;
+    position: absolute;
+  }
 } 
  
 /* 800px - Tablet */ 

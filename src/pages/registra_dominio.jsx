@@ -129,16 +129,7 @@ const Domains = () => {
         <p>.mobi</p>
       </div>
       <Link target="_top" to="/solicitar">
-        <button className="full_gradient_btn" style={{
-          color:'black',
-          width: '234px',
-          height: '80px',
-          fontFamily: 'Saira',
-          fontSize: '32px',
-          fontWeight: '700',
-          lineHeight: '42px',
-          textAlign: 'center'
-        }}>Solicitar</button>
+        <button className="full_gradient_btn" >Solicitar</button>
       </Link>
       <div className="more_domain" >
         <h2 className="sub_title" >

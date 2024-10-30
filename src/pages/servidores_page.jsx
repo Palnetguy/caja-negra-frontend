@@ -96,7 +96,7 @@ const ServidoresOp = () => {
       IP: "1",
     },
     {
-      name: "Basico",
+      name: "Empresarial",
       cpu: "1 Core",
       Bandwidth: "12 TB",
       BandwidthTwo: "150 GB",

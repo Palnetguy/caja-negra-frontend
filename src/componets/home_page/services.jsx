@@ -13,7 +13,8 @@ export const ServicesComponent = ({image, heading, paragraph}) => {
       </div>
       <div style={{width: '80%',
         height: 'auto',
-        color: '#FFFFFF'
+        color: '#FFFFFF',
+        marginBottom:'2em'
         }}>
       <h2 style={{fontFamily: 'Saira',
       fontSize: '36px',
