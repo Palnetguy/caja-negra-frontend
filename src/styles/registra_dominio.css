@@ -363,7 +363,17 @@ text-align: left;
  
 
 /* 800px - Tablet */ 
-@media (min-width: 800px) { 
+@media (min-width: 800px) {
+  .register_domino .register_domino_op .register_domin_each {
+    width: calc((100% / 2) - 5em);
+  }
+  .register_domino .register_domino_op .register_domino_op_container {
+    align-items: center;
+    justify-content: center;
+  }
+  .register_domino .domains .more_domain .more_domain_each {
+    height: fit-content;
+  }
   .services-container { 
     grid-template-columns: repeat(2, 1fr); 
     gap: var(--spacing-md); 

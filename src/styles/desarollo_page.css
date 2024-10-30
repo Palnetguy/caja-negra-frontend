@@ -477,13 +477,13 @@ desarollo_page .desarollo .desarollo_each_cont .desarollo_bottom_each .align > h
     }
     .desarollo_page .desarollo .desarollo_more .lft > ul {
       height: fit-content;
-      }
-      .desarollo_page .desarollo .desarollo_each_cont .desarollo_bottom_each {
+    }
+    .desarollo_page .desarollo .desarollo_each_cont .desarollo_bottom_each {
       width: 660px;
-      }
-      .desarollo_page .desarollo .desarollo_each_cont .desarollo_bottom_each .align .desc > a > button {
+    }
+    .desarollo_page .desarollo .desarollo_each_cont .desarollo_bottom_each .align .desc > a > button {
         left: 1em;
-      }
+    }
   .services-container { 
     grid-template-columns: repeat(2, 1fr); 
     gap: var(--spacing-md); 
