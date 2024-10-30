@@ -1804,7 +1804,6 @@ text-align: left;
 .home_page .services > .services_container.bt {
   flex-wrap: wrap;
   flex-direction: row;
-  background: red;
 }
   .home_page .services .oferta > .ofertas_container .each_ofertas {
     display: flex;
@@ -1812,6 +1811,7 @@ text-align: left;
     width: calc((100% / 2) - 2em)
   }
   .home_page .vps {
+    width: 100vw;
     display: flex;
     justify-content: flex-start;
     margin-top: 5em;
@@ -1827,9 +1827,21 @@ text-align: left;
   justify-content: space-between;
   margin-top: 5em;
   padding: 1.5em;
+  /* flex-direction: row-reverse; */
+  width: auto;
+  height: 998px;
+}
+.home_page .vps.sus {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 5em;
+  padding: 1.5em;
   flex-direction: row-reverse;
   width: auto;
   height: 998px;
+}
+.home_page .vps.sus .lft h1{
+  height: fit-content;
 }
 /* .home_page .vps .lft {
   width: 877px;
@@ -1840,14 +1852,16 @@ text-align: left;
   height: 546px;
 } */
 .home_page .services .service {
-  width:100%;
+  width:80%;
   height: fit-content;
 }
 .home_page .vps .service .image > .img img {
-  width: 450px;
-height: 450px;
-
-
+  /* width: 450px;
+height: 450px; */
+}
+.home_page .vps .lft > h1 {
+  width: 60%;
+  font-size: 38px;
 }
 }
 /* @media (min-width: 1000px) {
