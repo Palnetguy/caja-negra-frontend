@@ -181,20 +181,6 @@
  
 /* 600px - Mobile landscape */ 
 @media (min-width: 600px) { 
-  /* .nav_bar.mobile {
-    display: flex;
-    width: 100vw;
-    height: fit-content;
-    flex-direction: column;
-    width: 100%;
-    padding: 1em;
-    gap: 1em;
-    height: auto;
-    
-} */
-/* .nav_bar {
- 
-} */
 .nav_bar.mobile .nav_bar .links > ul {
   display: flex;
   flex-direction: column;
@@ -215,29 +201,112 @@
  
 /* 800px - Tablet */ 
 @media (min-width: 800px) { 
-  /* .services-container { 
-    grid-template-columns: repeat(2, 1fr); 
-    gap: var(--spacing-md); 
-    padding: var(--spacing-md); 
-    max-width: 780px; 
-  } 
- 
-  .service-card { 
-    height: 400px; 
-  } */
+  .nav_bar {
+    /* background: red; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5em;
+  
+    display: block;
+  }
+  .nav_bar * {
+    transition: 0.5s;
+  }
+  .nav_bar .links > ul > li > a {
+    font-weight: 600;
+    font-size: 20px;
+    color: #ffffff;
+    text-decoration: none;
+    transition: 0.5s ease-in-out;
+  }
+  .nav_bar .links > ul > li > a:hover {
+    color: #86ffe9;
+  }
+  .nav_bar .links > ul > li {
+    margin: 0 0.5em;
+    list-style-type: none;
+  }
+  .nav_bar .links > ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .nav_bar .contact_btn button {
+    padding: 6px 20px;
+    font-size: 18px;
+    color: #003330;
+    font-weight: 700;
+    border-radius: 3px;
+    background: linear-gradient(90deg, #86ffe9, #02bac6, #037b83);
+    border: none;
+    outline: none;
+    cursor: pointer;
+  }
+  .nav_bar .logo > img {
+    width: 150px;
+  }
+  .nav_bar.mobile {
+    display: none;
+  }
+  .nav_bar.pc {
+    display: flex;
+  }
 } 
  
 /* 1000px - Small desktop */ 
 @media (min-width: 1000px) { 
-  .services-container { 
-    grid-template-columns: repeat(3, 1fr); 
-    gap: var(--spacing-md); 
-    max-width: 980px; 
-  } 
- 
-  .service-card { 
-    height: 450px; 
-  } 
+  .nav_bar {
+    /* background: red; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5em;
+  
+    display: block;
+  }
+  .nav_bar * {
+    transition: 0.5s;
+  }
+  .nav_bar .links > ul > li > a {
+    font-weight: 600;
+    font-size: 20px;
+    color: #ffffff;
+    text-decoration: none;
+    transition: 0.5s ease-in-out;
+  }
+  .nav_bar .links > ul > li > a:hover {
+    color: #86ffe9;
+  }
+  .nav_bar .links > ul > li {
+    margin: 0 0.5em;
+    list-style-type: none;
+  }
+  .nav_bar .links > ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .nav_bar .contact_btn button {
+    padding: 6px 20px;
+    font-size: 18px;
+    color: #003330;
+    font-weight: 700;
+    border-radius: 3px;
+    background: linear-gradient(90deg, #86ffe9, #02bac6, #037b83);
+    border: none;
+    outline: none;
+    cursor: pointer;
+  }
+  .nav_bar .logo > img {
+    width: 150px;
+  }
+  .nav_bar.mobile {
+    display: none;
+  }
+  .nav_bar.pc {
+    display: flex;
+  }
 } 
  
 /* 1500px - Large desktop */ 
