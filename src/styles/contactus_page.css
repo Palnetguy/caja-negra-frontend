@@ -244,15 +244,9 @@
  
 /* 1000px - Small desktop */ 
 @media (min-width: 1000px) { 
-  .services-container { 
-    grid-template-columns: repeat(3, 1fr); 
-    gap: var(--spacing-md); 
-    max-width: 980px; 
-  } 
- 
-  .service-card { 
-    height: 450px; 
-  } 
+  .servidores_page .servidoresOp_1_contain .servidoresOp_1_each {
+    width: calc((100% / 3) - 4em);
+  }
 } 
  
 /* 1500px - Large desktop */ 
