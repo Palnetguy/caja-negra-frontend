@@ -42,17 +42,7 @@ const DataServices = () => {
           </p>
 
           <Link target="_top" to="/solicitar" >
-            <button className="full_gradient_btn" style={{
-              width: 'auto',
-              height: 'auto',
-              color: 'black',
-              fontFamily: 'Saira',
-              fontSize: '32px',
-              fontWeight: '700',
-              lineHeight: '42px',
-              textAlign: 'center',
-              marginLeft:'2px'
-            }}>Solicitar</button>
+            <button className="full_gradient_btn" >Solicitar</button>
           </Link>
         </div>
         <div className="data_serv" >
@@ -62,17 +52,7 @@ const DataServices = () => {
             Visualización de datos Análisis de rendimiento
           </p>
           <Link target="_top" to="/solicitar">
-            <button className="full_gradient_btn" style={{
-              width: 'auto',
-              height: 'auto',
-              color: 'black',
-              fontFamily: 'Saira',
-              fontSize: '32px',
-              fontWeight: '700',
-              lineHeight: '42px',
-              textAlign: 'center',
-              marginLeft:'2px'
-            }}>Solicitar</button>
+            <button className="full_gradient_btn" >Solicitar</button>
           </Link>
         </div>
         <div className="data_serv" >
@@ -83,17 +63,7 @@ const DataServices = () => {
             de big data
           </p>
           <Link target="_top" to="/solicitar">
-            <button className="full_gradient_btn" style={{
-             width: 'auto',
-             height: 'auto',
-             color: 'black',
-             fontFamily: 'Saira',
-             fontSize: '32px',
-             fontWeight: '700',
-             lineHeight: '42px',
-             textAlign: 'center',
-             marginLeft:'2px'
-            }}>Solicitar</button>
+            <button className="full_gradient_btn" >Solicitar</button>
           </Link>
         </div>
         <div className="data_serv" >
@@ -103,17 +73,7 @@ const DataServices = () => {
             Transformación de datos (ETL) Calidad de datos y limpieza de datos
           </p>
           <Link target="_top" to="/solicitar">
-            <button className="full_gradient_btn" style={{
-              width: 'auto',
-              height: 'auto',
-              color: 'black',
-              fontFamily: 'Saira',
-              fontSize: '32px',
-              fontWeight: '700',
-              lineHeight: '42px',
-              textAlign: 'center',
-              marginLeft:'2px'
-            }}>Solicitar</button>
+            <button className="full_gradient_btn" >Solicitar</button>
           </Link>
         </div>
         <div className="data_serv" >
@@ -123,17 +83,7 @@ const DataServices = () => {
             estructurados Descubrimiento de conocimiento en bases de datos (KDD)
           </p>
           <Link target="_top" to="/solicitar">
-            <button className="full_gradient_btn" style={{
-              width: 'auto',
-              height: 'auto',
-              color: 'black',
-              fontFamily: 'Saira',
-              fontSize: '32px',
-              fontWeight: '700',
-              lineHeight: '42px',
-              textAlign: 'center',
-              marginLeft:'2px'
-            }}>Solicitar</button>
+            <button className="full_gradient_btn" >Solicitar</button>
           </Link>
         </div>
         <div className="data_serv" >
@@ -143,17 +93,7 @@ const DataServices = () => {
             Optimización de consultas y rendimiento de bases de datos
           </p>
           <Link target="_top" to="/solicitar">
-            <button className="full_gradient_btn" style={{
-             width: 'auto',
-             height: 'auto',
-             color: 'black',
-             fontFamily: 'Saira',
-             fontSize: '32px',
-             fontWeight: '700',
-             lineHeight: '42px',
-             textAlign: 'center',
-             marginLeft:'2px'
-            }}>Solicitar</button>
+            <button className="full_gradient_btn" >Solicitar</button>
           </Link>
         </div>
         <div className="data_serv" >
@@ -164,17 +104,7 @@ const DataServices = () => {
             Gestión de accesos y autenticación
           </p>
           <Link target="_top" to="/solicitar">
-            <button className="full_gradient_btn" style={{
-              width: 'auto',
-              height: 'auto',
-              color: 'black',
-              fontFamily: 'Saira',
-              fontSize: '32px',
-              fontWeight: '700',
-              lineHeight: '42px',
-              textAlign: 'center',
-              marginLeft:'2px'
-            }}>Solicitar</button>
+            <button className="full_gradient_btn" >Solicitar</button>
           </Link>
         </div>
         <div className="data_serv" >
@@ -184,17 +114,7 @@ const DataServices = () => {
             Modelos de datos y arquitectura de datos
           </p>
           <Link target="_top" to="/solicitar">
-            <button className="full_gradient_btn" style={{
-              width: 'auto',
-              height: 'auto',
-              color: 'black',
-              fontFamily: 'Saira',
-              fontSize: '32px',
-              fontWeight: '700',
-              lineHeight: '42px',
-              textAlign: 'center',
-              marginLeft:'2px'
-            }}>Solicitar</button>
+            <button className="full_gradient_btn" >Solicitar</button>
           </Link>
         </div>
         <div className="data_serv" >
@@ -205,17 +125,7 @@ const DataServices = () => {
             de lenguaje natural (NLP)
           </p>
           <Link target="_top" to="/solicitar">
-            <button className="full_gradient_btn" style={{
-              width: 'auto',
-              height: 'auto',
-              color: 'black',
-              fontFamily: 'Saira',
-              fontSize: '32px',
-              fontWeight: '700',
-              lineHeight: '42px',
-              textAlign: 'center',
-              marginLeft:'2px'
-            }}>Solicitar</button>
+            <button className="full_gradient_btn" >Solicitar</button>
           </Link>
         </div>
         <div className="data_serv" >
@@ -225,17 +135,7 @@ const DataServices = () => {
             ruta de datos Optimización de procesos basados en datos
           </p>
           <Link target="_top" to="/solicitar">
-            <button className="full_gradient_btn" style={{
-             width: 'auto',
-             height: 'auto',
-             color: 'black',
-             fontFamily: 'Saira',
-             fontSize: '32px',
-             fontWeight: '700',
-             lineHeight: '42px',
-             textAlign: 'center',
-             marginLeft:'2px'
-            }}>Solicitar</button>
+            <button className="full_gradient_btn" >Solicitar</button>
           </Link>
         </div>
         <div className="data_serv" >
@@ -245,17 +145,7 @@ const DataServices = () => {
             Análisis de datos en tiempo real
           </p>
           <Link target="_top" to="/solicitar">
-            <button className="full_gradient_btn" style={{
-              width: 'auto',
-              height: 'auto',
-              color: 'black',
-              fontFamily: 'Saira',
-              fontSize: '32px',
-              fontWeight: '700',
-              lineHeight: '42px',
-              textAlign: 'center',
-              marginLeft:'2px'
-            }}>Solicitar</button>
+            <button className="full_gradient_btn" >Solicitar</button>
           </Link>
         </div>
         <div className="data_serv">
@@ -266,17 +156,7 @@ const DataServices = () => {
             accesible
           </p>
           <Link target="_top" to="/solicitar">
-            <button className="full_gradient_btn" style={{
-              width: 'auto',
-              height: 'auto',
-              color: 'black',
-              fontFamily: 'Saira',
-              fontSize: '32px',
-              fontWeight: '700',
-              lineHeight: '42px',
-              textAlign: 'center',
-              marginLeft:'2px'
-            }}>Solicitar</button>
+            <button className="full_gradient_btn" >Solicitar</button>
           </Link>
         </div>
         <div className="data_serv" >
@@ -286,17 +166,7 @@ const DataServices = () => {
             y datos Automatización de análisis y reportes
           </p>
           <Link target="_top" to="/solicitar">
-            <button className="full_gradient_btn" style={{
-             width: 'auto',
-             height: 'auto',
-             color: 'black',
-             fontFamily: 'Saira',
-             fontSize: '32px',
-             fontWeight: '700',
-             lineHeight: '42px',
-             textAlign: 'center',
-             marginLeft:'2px'
-            }}>Solicitar</button>
+            <button className="full_gradient_btn" >Solicitar</button>
           </Link>
         </div>
       </div>
