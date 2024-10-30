@@ -440,11 +440,50 @@ desarollo_page .desarollo .desarollo_each_cont .desarollo_bottom_each .align > h
 .desarollo_page .top > .info > p {
   text-align: start;
 }
-
+@media (max-width: 780px) {
+  .desarollo_page .desarollo_each {
+      border-radius: 12px;
+      border: 1px solid #86ffe9;
+      background: #003C50;
+      -webkit-backdrop-filter: blur(150px);
+      backdrop-filter: blur(150px);
+      padding: 3em 2em;
+      width: calc((100% / 1) - 2em);
+      margin: 1em;
+      height: auto;
+  }
+}
 } 
  
 /* 800px - Tablet */ 
 @media (min-width: 800px) { 
+    .desarollo_page .desarollo_each {
+        border-radius: 12px;
+        border: 1px solid #86ffe9;
+        /* background: rgba(43, 43, 43, 0.9); */
+        background: #003C50;
+        -webkit-backdrop-filter: blur(150px);
+        backdrop-filter: blur(150px);
+        padding: 3em 2em;
+        width: calc((100% / 2) - 2em);
+        margin: 1em;
+        height: auto;
+    }
+    .desarollo_page .desarollo .desarollo_more {
+      height: fit-content;
+    }
+    .desarollo_page .desarollo .desarollo_more .lft {
+      height: fit-content;
+    }
+    .desarollo_page .desarollo .desarollo_more .lft > ul {
+      height: fit-content;
+      }
+      .desarollo_page .desarollo .desarollo_each_cont .desarollo_bottom_each {
+      width: 660px;
+      }
+      .desarollo_page .desarollo .desarollo_each_cont .desarollo_bottom_each .align .desc > a > button {
+        left: 1em;
+      }
   .services-container { 
     grid-template-columns: repeat(2, 1fr); 
     gap: var(--spacing-md); 
@@ -509,24 +548,8 @@ desarollo_page .desarollo .desarollo_each_cont .desarollo_bottom_each .align > h
   height: 300px; 
 } 
  
-.service-card:hover { 
-  transform: translateY(-4px); 
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); 
-} 
- 
-.service-title { 
-  font-size: clamp(1.25rem, 2vw, 1.5rem); 
-  font-weight: 600; 
-  margin-bottom: var(--spacing-sm); 
-  color: #333; 
-} 
- 
-.service-description { 
-  color: #666; 
-  line-height: 1.6; 
-  font-size: clamp(0.875rem, 1.5vw, 1rem); 
-} 
- 
+
+
 /* Container width adjustments for different screen sizes */ 
 .services-section { 
   display: flex; 
