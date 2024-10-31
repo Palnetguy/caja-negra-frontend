@@ -86,16 +86,16 @@ text-align: left;
   /* ee */
 }
 .home_page .main > a{
-  display: flex;
+  /* display: flex; */
   align-self: start;
   /* margin-left: 100px; */
   /* eee */
   width: Fixed (234px)px;
-height: Fixed (80px)px;
+/* height: Fixed (80px)px; */
 top: 778px;
-left: 130px;
-padding: 6px 30px 6px 30px;
-gap: 10px;
+/* left: 130px; */
+/* padding: 6px 30px 6px 30px; */
+/* gap: 10px; */
 border-radius: 12px 0px 0px 0px;
 border: 1px 0px 0px 0px;
 
