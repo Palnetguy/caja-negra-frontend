@@ -297,7 +297,31 @@ font-size: 20px;
  
  
 /* Responsive padding adjustments */ 
-@media (max-width: 599px) { 
+@media (max-width: 599px) {
+  .solicitar_page .quieres_saber .quieres {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin-top: 1.5em;
+    margin-bottom: 2em;
+    width: 100%;
+    height: auto;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+.solicitar_page .quieres_saber .quieres .quiery {
+  width: calc((100% / 1) - 2em);
+  margin: 1em;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.solicitar_page .quieres_saber .quieres .quiery > p {
+  text-align: center;
+}
   .services-container { 
     padding: var(--spacing-xs); 
   } 

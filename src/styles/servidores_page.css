@@ -869,6 +869,9 @@ servidores_page .servidores_op .specs_contain {
  
 /* Responsive padding adjustments */ 
 @media (max-width: 599px) { 
+  .servidores_page .servidoresOp_1_contain1 .servidoresOp_1_each_1 {
+    height: fit-content;
+  }
   .services-container { 
     padding: var(--spacing-xs); 
   } 

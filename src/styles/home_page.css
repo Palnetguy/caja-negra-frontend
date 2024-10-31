@@ -1933,8 +1933,109 @@ text-align: left;
 } 
  
 /* Added better touch targets for mobile */ 
-@media (max-width: 600px) { 
-  .service-card { 
+@media (max-width: 599px) {
+  .home_page .main {
+    left: 1.5em;
+    width: 80vw;
+  }
+  .home_page .main > h1 {
+    line-height: 32px;
+    margin-left: 0.5em;
+    width: 100%;
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+  .home_page .main > p {
+    line-height: 22px;
+    margin-left: 0.5em;
+    margin-bottom: 0;
+    margin-top: 0;
+    width: 100%;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  .home_page .services .oferta > .ofertas_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 2.5em;
+    align-items: center;
+  }
+  .home_page .services .oferta > .ofertas_container .each_ofertas {
+    min-width: 400px;
+    width: calc(100% - 4em);
+  }
+  .home_page .services > .services_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 1em;
+    gap: 2em;
+  }
+  
+  .home_page .services .service.profesional-services {
+    width: calc(100% - 4em);
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 3em;
+    height: 486px;
+    border-radius: 12px 0 0 0;
+    border: 1px solid transparent;
+    justify-content: space-around;
+  }
+  
+  .home_page .garantee .contain_grns {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 2em;
+    gap: 1.5em;
+    height: fit-content;
+
+  }
+  
+  .home_page .garantee .each_grns {
+    position: relative;
+    border-radius: 8px;
+    padding: 2.5em;
+    width: calc(100% - 3em);
+    max-width: 590px;
+    margin-bottom: 2em;
+    height: fit-content;
+    transition: transform 0.3s ease, background 0.5s ease;
+  }
+  
+  .home_page .garantee .each_grns:hover {
+    transform: scale(1.05);
+  }
+  .home_page .garantee .each_grns > .info {
+    height: fit-content;
+  }
+  .home_page .vps.sus .lft > ul {
+    height: fit-content;
+  }
+  .home_page .vps.sus .lft > ul p {
+    height: fit-content;
+  }
+  .home_page .vps.sus {
+    height: fit-content;
+  }
+  .home_page .remarks .remark {
+    height: fit-content;
+  }
+  .home_page .remarks .remark .inner_div {
+    height: fit-content;
+  }
+
+.home_page .remarks .remark .inner_div > p {
+  height: auto;
+}
+  .service-card {
+    
     min-height: 250px; 
     padding: var(--spacing-sm); 
   } 
