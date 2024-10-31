@@ -84,6 +84,7 @@
     margin-top: 1.5em;
     background: black;
     width: 100vw;
+    height: 100vh;
   }
   .nav_bar.mobile .nav_bar .links > ul li {
     margin: 0.3em 0;
