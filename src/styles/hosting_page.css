@@ -303,6 +303,7 @@ text-align: center;
   .hosting_page .hosting_compartido .hosting_compartido_each {
     width: calc((100% / 1) - 8em);
     margin: 4em;
+    height: 392px;
   }
   .hosting_page .hosting_compartido .hosting_compartido_cont {
     display: flex;
