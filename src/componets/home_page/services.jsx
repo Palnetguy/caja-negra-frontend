@@ -11,23 +11,9 @@ export const ServicesComponent = ({image, heading, paragraph}) => {
           <img src={image} alt="" />
         </div>
       </div>
-      <div style={{width: '80%',
-        height: 'auto',
-        color: '#FFFFFF',
-        marginBottom:'2em'
-        }}>
-      <h2 style={{fontFamily: 'Saira',
-      fontSize: '36px',
-      fontWeight: '700',
-      lineHeight: '42px',
-      textAlign: 'center'
-      }}>{heading}</h2>
-      <p style={{fontFamily: 'Saira',
-      fontSize: '24px',
-      fontWeight: '500',
-      lineHeight: '36px',
-      textAlign: 'center'
-      }}>
+      <div>
+      <h2>{heading}</h2>
+      <p >
         {paragraph}
       </p>
       </div>
