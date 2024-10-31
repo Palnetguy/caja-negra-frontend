@@ -265,6 +265,7 @@ border: 1px 0px 0px 0px;
     font-weight: 700;
     line-height: 42px;
     text-align: center;
+    margin-top: 0.6em;
 }
 /* .home_page .services .service.profesional-services {
   width: calc((100% / 3) - 4.75em);
