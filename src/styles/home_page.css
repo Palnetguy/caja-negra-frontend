@@ -265,7 +265,7 @@ border: 1px 0px 0px 0px;
     font-weight: 700;
     line-height: 42px;
     text-align: center;
-    margin-top: 0.6em;
+    /* margin-top: 0.6em; */
 }
 /* .home_page .services .service.profesional-services {
   width: calc((100% / 3) - 4.75em);
@@ -1970,7 +1970,7 @@ text-align: left;
   }
   .home_page .main > p {
     line-height: 22px;
-    margin-left: 0.5em;
+    margin-left: 1.5em;
     margin-bottom: 0;
     margin-top: 0;
     width: 100%;
