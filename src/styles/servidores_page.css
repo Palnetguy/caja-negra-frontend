@@ -838,15 +838,17 @@ servidores_page .servidores_op .specs_contain {
  
 /* 1500px - Large desktop */ 
 @media (min-width: 1500px) { 
-  .services-container { 
-    grid-template-columns: repeat(4, 1fr); 
-    gap: var(--spacing-lg); 
-    max-width: 1480px; 
-  } 
- 
-  .service-card { 
-    height: 500px; 
-  } 
+  .servidores_page .top > .info {
+    margin-top: 18em;
+  }
+
+  .servidores_page .top > .info > h1 {
+    font-size: 48px;
+  }
+  .servidores_page .top > .info > p {
+    font-size: 32px;
+  }
+
 } 
  
 /* 2000px - Extra large screens */ 

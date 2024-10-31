@@ -452,14 +452,8 @@ height: fit-content;
  
 /* 1500px - Large desktop */ 
 @media (min-width: 1500px) { 
-  .services-container { 
-    grid-template-columns: repeat(4, 1fr); 
-    gap: var(--spacing-lg); 
-    max-width: 1480px; 
-  } 
- 
-  .service-card { 
-    height: 500px; 
+  .hosting_page .top > .info {
+    margin-top: 18em;
   } 
 } 
  
