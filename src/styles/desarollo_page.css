@@ -232,10 +232,8 @@ font-size: 40px;
 font-weight: 700;
 line-height: 42px;
 text-align: center;
-text-align: left;
-margin-left: 2em;
 margin-bottom: 0.4em;
-width: 100%;
+
 }
 .desarollo_page .desarollo .desarollo_each_cont .desarollo_bottom_each .align .desc{
   width: 448px;
@@ -561,7 +559,12 @@ margin-left: 2em;
 } 
  
 /* Responsive padding adjustments */ 
-@media (max-width: 599px) { 
+@media (max-width: 599px) {
+  .desarollo_page .desarollo .desarollo_each_cont .desarollo_bottom_each .align > h1{
+    text-align: left;
+margin-left: 2em;
+width: 100%;
+  }
   .services-container { 
     padding: var(--spacing-xs); 
   } 
