@@ -174,3 +174,9 @@ body {
 html, body {
   height: 100%;
 }
+
+@media (min-width: 1500px) {
+  .btn-1 {
+    font-size: 32px;
+  }
+}

@@ -756,22 +756,8 @@ servidores_page .servidores_op .specs_contain {
   --spacing-xl: 3rem;      /* 48px */ 
 } 
  
-.services-section { 
-  width: 100%; 
-  padding: var(--spacing-sm); 
-  background-color: #f5f5f5; 
-} 
- 
-.services-container { 
-  max-width: 100%; 
-  margin: 0 auto; 
-  display: grid; 
-  gap: var(--spacing-sm); 
-  padding: var(--spacing-xs); 
-   
-  /* Mobile first - single column */ 
-  grid-template-columns: 1fr; 
-} 
+
+
  
 /* 600px - Mobile landscape */ 
 @media (min-width: 600px) { 
@@ -876,42 +862,8 @@ servidores_page .servidores_op .specs_contain {
   } 
 } 
  
-.service-card { 
-  background-color: white; 
-  border-radius: 8px; 
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
-  padding: var(--spacing-md); 
-  transition: transform 0.3s ease, box-shadow 0.3s ease; 
-  display: flex; 
-  flex-direction: column; 
-   
-  /* Mobile first - default height */ 
-  height: 300px; 
-} 
+
  
-.service-card:hover { 
-  transform: translateY(-4px); 
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); 
-} 
- 
-.service-title { 
-  font-size: clamp(1.25rem, 2vw, 1.5rem); 
-  font-weight: 600; 
-  margin-bottom: var(--spacing-sm); 
-  color: #333; 
-} 
- 
-.service-description { 
-  color: #666; 
-  line-height: 1.6; 
-  font-size: clamp(0.875rem, 1.5vw, 1rem); 
-} 
- 
-/* Container width adjustments for different screen sizes */ 
-.services-section { 
-  display: flex; 
-  justify-content: center; 
-} 
  
 /* Responsive padding adjustments */ 
 @media (max-width: 599px) { 

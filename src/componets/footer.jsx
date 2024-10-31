@@ -9,10 +9,11 @@ const Footer = () => {
       <h1>Caja Negra</h1>
       <div className="links" >
         <div className="lft" >
-          <a href="">Inicio</a>
-          <a href="">Desarollo</a>
+          <a href="">Categorias</a>
           <a href="">Dominios</a>
           <a href="">Servidores</a>
+          <a href="">Hosting</a>
+          <a href="">Desarollo</a>
         </div>
         <div className="rgt" >
           <div className="wtpIm" >

@@ -277,28 +277,31 @@ font-family: Saira;
  
 /* 1000px - Small desktop */ 
 @media (min-width: 1000px) { 
-  .services-container { 
-    grid-template-columns: repeat(3, 1fr); 
-    gap: var(--spacing-md); 
-    max-width: 980px; 
-  } 
- 
-  .service-card { 
-    height: 450px; 
-  } 
+  
 } 
  
 /* 1500px - Large desktop */ 
 @media (min-width: 1500px) { 
-  .services-container { 
-    grid-template-columns: repeat(4, 1fr); 
-    gap: var(--spacing-lg); 
-    max-width: 1480px; 
-  } 
- 
-  .service-card { 
-    height: 500px; 
-  } 
+  .data_services .top > .info > h1 {
+    font-size: 78px;
+    line-height: 60px;
+  }
+  .data_services .top > .info > p {
+    font-size: 44px;
+    line-height: 38px;
+  }
+
+.data_services .data_services_op > h1 {
+  font-size: 42px;
+}
+
+.data_services .data_services_op .data_serv > h1 {
+  font-size: 44px;
+  text-align: center;
+}
+.data_services .data_services_op .data_serv > p {
+  font-size: 38px;
+}
 } 
  
 /* 2000px - Extra large screens */ 
