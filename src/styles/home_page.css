@@ -1936,12 +1936,12 @@ text-align: left;
 @media (max-width: 599px) {
   .home_page .main {
     left: 1.5em;
-    width: 80vw;
+    width: 95vw;
   }
   .home_page .main > h1 {
     line-height: 32px;
     margin-left: 0.5em;
-    width: 100%;
+    width: auto;
     margin-bottom: 0;
     padding-bottom: 0;
   }
@@ -1953,6 +1953,7 @@ text-align: left;
     width: 100%;
     padding-top: 0;
     padding-bottom: 0;
+    height: 110px;
   }
   .home_page .services .oferta > .ofertas_container {
     display: flex;
