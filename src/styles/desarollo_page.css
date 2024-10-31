@@ -474,6 +474,7 @@ desarollo_page .desarollo .desarollo_each_cont .desarollo_bottom_each .align > h
  
 /* 1000px - Small desktop */ 
 @media (min-width: 1000px) { 
+
   .desarollo_page .desarollo .desarollo_each_cont .desarollo_bottom_each {
     width: calc((100% / 2) - 4em);
     display: flex;
@@ -487,15 +488,41 @@ margin-left: 2em;
  
 /* 1500px - Large desktop */ 
 @media (min-width: 1500px) { 
-  .services-container { 
-    grid-template-columns: repeat(4, 1fr); 
-    gap: var(--spacing-lg); 
-    max-width: 1480px; 
-  } 
- 
-  .service-card { 
-    height: 500px; 
-  } 
+
+    .desarollo_page .top > .info {
+      margin-top: 18em;
+    }
+  .desarollo_page .top > .info > h1 {
+    font-size: 70px;
+  }
+  .desarollo_page .top > .info > p {
+    font-size: 38px;
+  }
+  .desarollo_page .desarollo_each h1 {
+    font-size: 48px;
+  }
+  .desarollo_page .desarollo_each p {
+    font-size: 34px;
+  }
+
+.desarollo_page .desarollo .desarollo_more .lft > h1 {
+  font-size: 48px;
+}
+.desarollo_page .desarollo .desarollo_more .lft > p {
+  font-size: 40px;
+}
+.desarollo_page .desarollo .desarollo_more .lft > ul > li {
+  font-size: 28px;
+}
+.desarollo_page .desarollo .desarollo_each_cont .desarollo_bottom_each .align > h1 {
+  font-size: 50px;
+}
+.desarollo_page .desarollo .desarollo_each_cont .desarollo_bottom_each .align .desc >p {
+  font-size: 30px;
+}
+.desarollo_page .desarollo .desarollo_each_cont .desarollo_bottom_each .align .desc > ul {
+  font-size: 30px;
+}
 } 
  
 /* 2000px - Extra large screens */ 
