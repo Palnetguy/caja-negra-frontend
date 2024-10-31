@@ -330,7 +330,7 @@ height: fit-content;
 
 @media(max-width: 780px){
   .hosting_page .top {
-    height: 50vh;
+    height: 72vh;
     background-size: cover;
   }
   .hosting_page .top > .info {
