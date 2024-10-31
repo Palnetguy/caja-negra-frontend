@@ -234,7 +234,7 @@ height: 524px;
   font-style: normal;
   font-weight: 700;
   /* line-height: 42px; 116.667% */
-  margin: 2em 0;
+  margin: 0.2em 0;
   /* min-width: 435px; */
   /* width:auto;  */
   height: 80px;
@@ -509,7 +509,10 @@ height: fit-content;
 } 
  
 /* Responsive padding adjustments */ 
-@media (max-width: 599px) { 
+@media (max-width: 599px) {
+  .hosting_page .hosting_compartido .select_plan{
+    margin-top: 3.5em;
+  } 
   .services-container { 
     padding: var(--spacing-xs); 
   } 
