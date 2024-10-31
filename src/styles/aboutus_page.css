@@ -165,15 +165,16 @@
  
 /* 1500px - Large desktop */ 
 @media (min-width: 1500px) { 
-  .services-container { 
-    grid-template-columns: repeat(4, 1fr); 
-    gap: var(--spacing-lg); 
-    max-width: 1480px; 
-  } 
- 
-  .service-card { 
-    height: 500px; 
-  } 
+  .aboutus_page .top > .info > h1 {
+    font-size: 48px;
+  }
+
+.aboutus_page .top > .info > p {
+  font-size: 28px;
+}
+.aboutus_page .aboutusop p {
+  font-size: 28px;
+}
 } 
  
 /* 2000px - Extra large screens */ 
