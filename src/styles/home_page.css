@@ -99,7 +99,7 @@ gap: 10px;
 border-radius: 12px 0px 0px 0px;
 border: 1px 0px 0px 0px;
 
-backdrop-filter: blur(300px)
+/* backdrop-filter: blur(300px) */
 
   /* ee */
 }
