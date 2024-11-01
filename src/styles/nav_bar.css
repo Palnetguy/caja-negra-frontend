@@ -349,14 +349,13 @@
         width: 100vw;
         height: 100vh;
         height: fit-content;
-        position: absolute;
-        margin-left: -2em;
+        /* position: absolute; */
+        /* margin-left: -2em; */
         background: none;
     }
     .nav_bar.mobile .nav_bar .contact_btn button{
       /* z-index: 99; */
       margin-top: calc(100% - 0.5em);
-      left: -1;
     }
 } 
 
