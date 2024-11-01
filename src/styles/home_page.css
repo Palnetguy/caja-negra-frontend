@@ -1960,6 +1960,8 @@ text-align: left;
   .home_page .main {
     left: 1.5em;
     width: 95vw;
+    position: absolute;
+    margin-top: 16em;
   }
   .home_page .main > h1 {
     line-height: 32px;
