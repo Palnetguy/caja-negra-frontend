@@ -1356,7 +1356,7 @@ text-align: left;
   .home_page .vps .service {
     width: 90%;
     margin-bottom: 2em;
-    height: 200px; 
+    /* height: 200px;  */
   }
   /* .home_page .vps .service .image {
     height: 200px; 
