@@ -345,8 +345,8 @@
       }
       .nav_bar.mobile .nav_bar .links {
         margin-top: 4.5em;
-        background: black;
-        width: 100vw;
+        /* background: black; */
+        width: 80vw;
         height: 100vh;
         height: fit-content;
         /* position: absolute; */
