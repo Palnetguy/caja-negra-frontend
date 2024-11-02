@@ -1,5 +1,4 @@
-// src/api/backendService.js
-import api from './axios';
+import api from './connect';
 
 export const getWhyChooseUs = async () => {
   try {
