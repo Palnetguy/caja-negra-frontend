@@ -47,6 +47,46 @@ export const getDevelopmentInfo = async () => {
         return response.data;
     }catch(error){
         console.error("Error fetching development information");
+        throw error;
+    }
+}
+
+export const getVpsInfo = async ()=>{
+    try{
+        const response = await api.get('/api/vps-info');
+        return response.data;
+    }catch(error){
+        console.error("Error gettin vps information");
+        throw error;
+    }
+}
+
+export const getDedicatedServers=async()=>{
+    try{
+        const response  = await api.get("/api/dedicated-servers");
+        return response.data;
+    }catch(error){
+        console.error("Error fetchin dedicated servers");
+        throw error;
+    }
+}
+
+export const getHostingPlans = async () => {
+    try{
+        const response = await api.get("/api/hosting-plans");
+        return response.data;
+    }catch(error){
+        console.error("Error fetching hosting plans");
+        throw error;
+    }
+}
+
+export const getContactInfo = async () => {
+    try{
+        const response = await api.get("/api/contact-info");
+        return response.data;
+    } catch(error){
+        console.error("Error while fetching contact information")
         throw error
     }
 }
