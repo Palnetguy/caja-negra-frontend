@@ -1596,11 +1596,12 @@ text-align: left;
 /* 600px - Mobile landscape */ 
 @media (min-width: 600px) {
 
-/* .home_page .main{
+.home_page .main{
   position: absolute;
   margin-top: 8em;
   left: 2em;
-}  */
+  z-index: 1;
+} 
   .home_page .main > h1 {
     width: 80%;
     left: 0.4em;
@@ -1686,6 +1687,9 @@ text-align: left;
 .home_page .garantee .contain_grns {
   height: fit-content;
   height: auto;
+  position: relative;
+  z-index: 1;
+
 }
 .home_page .garantee .each_grns > .info  {
   height: fit-content;
