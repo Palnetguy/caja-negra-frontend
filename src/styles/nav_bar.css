@@ -357,12 +357,17 @@
     }
     .nav_bar.mobile .nav_bar .contact_btn button{
       /* z-index: 99; */
-      margin-top: calc(100% - 10em);
+      /* margin-top: calc(100% - 8em); */
+      margin-top: 30vh;
     }
 } 
 
-
- 
+/* 
+@media (max-width: 600px) { 
+  .nav_bar.mobile .nav_bar .contact_btn button{
+    margin-top: calc(100% - 0.5em);
+  }
+} */
 /* Added better touch targets for mobile */ 
 @media (max-width: 600px) { 
   .nav_bar.mobile .nav_bar .contact_btn button{
