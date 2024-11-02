@@ -342,6 +342,8 @@
       .nav_bar.mobile.active {
         background: black;
         height: 100vh;
+        width: 999px;
+        z-index: 99;
       }
       .nav_bar.mobile .nav_bar .links {
         margin-top: 4.5em;
