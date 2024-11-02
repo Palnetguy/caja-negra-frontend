@@ -216,7 +216,7 @@
 } 
  
 /* 800px - Tablet */ 
-@media (min-width: 800px) { 
+@media (min-width: 769px) { 
   .nav_bar {
     /* background: red; */
     display: flex;
@@ -338,7 +338,7 @@
  
 
 /* Responsive padding adjustments */ 
-@media (max-width: 800px) {
+@media (max-width: 768px) {
       .nav_bar.mobile.active {
         background: black;
         height: 100vh;
