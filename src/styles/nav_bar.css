@@ -357,7 +357,7 @@
     }
     .nav_bar.mobile .nav_bar .contact_btn button{
       /* z-index: 99; */
-      margin-top: calc(100% - 0.5em);
+      margin-top: calc(100% - 10em);
     }
 } 
 
@@ -365,5 +365,9 @@
  
 /* Added better touch targets for mobile */ 
 @media (max-width: 600px) { 
- 
+  .nav_bar.mobile .nav_bar .contact_btn button{
+    /* z-index: 99; */
+    margin-top: calc(100% - 0.5em);
+  }
 }
+
