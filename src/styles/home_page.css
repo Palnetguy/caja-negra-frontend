@@ -1604,15 +1604,18 @@ text-align: left;
   z-index: 1;
 } 
   .home_page .main > h1 {
-    /* width: 80%; */
+    width: 80%;
     /* left: 0.4em; */
     line-height: 30px;  
     height: fit-content;
+    margin-left: -2em;
+
   }
   .home_page .main > p{
-    /* width: 60%; */
+    width: 80%;
     height: fit-content;
     line-height: 24px;
+    margin-left: -6em;
   }
   .services-container { 
     grid-template-columns: repeat(2, 1fr); 
@@ -1760,9 +1763,12 @@ text-align: left;
   }
   .home_page .main > h1{
     line-height: 50px;
+    margin-left: -2.5em;
 
   }
   .home_page .main >p {
+    margin-left: -8.8em;
+
     line-height: 28px;
   }
   .home_page .services > .services_container {
@@ -1812,6 +1818,16 @@ text-align: left;
  
 /* 1000px - Small desktop */ 
 @media (min-width: 1000px) {
+  .home_page .main > h1{
+    line-height: 50px;
+    margin-left: -1.5em;
+
+  }
+  .home_page .main >p {
+    margin-left: -5.8em;
+
+    line-height: 28px;
+  }
   .home_page .services .oferta > .ofertas_container {
     flex-direction: row;
     align-items: center;
