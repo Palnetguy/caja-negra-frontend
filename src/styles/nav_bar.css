@@ -338,7 +338,7 @@
  
 
 /* Responsive padding adjustments */ 
-@media (max-width: 599px) {
+@media (max-width: 800px) {
       .nav_bar.mobile.active {
         background: black;
         height: 100vh;
