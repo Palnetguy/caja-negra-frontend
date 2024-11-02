@@ -344,6 +344,7 @@
         height: 100vh;
         z-index: 5;
         position: relative;
+
       }
       .nav_bar.mobile .nav_bar .links {
         margin-top: 4.5em;
@@ -355,24 +356,22 @@
         /* margin-left: -2em; */
         background: none;
     }
-    .nav_bar.mobile .nav_bar .contact_btn button{
-      /* z-index: 99; */
-      /* margin-top: calc(100% - 8em); */
+    /* .nav_bar.mobile .nav_bar .contact_btn button{
+
       margin-top: 30vh;
-    }
+    } */
 } 
 
-/* 
-@media (max-width: 600px) { 
-  .nav_bar.mobile .nav_bar .contact_btn button{
-    margin-top: calc(100% - 0.5em);
-  }
-} */
-/* Added better touch targets for mobile */ 
-@media (max-width: 600px) { 
-  .nav_bar.mobile .nav_bar .contact_btn button{
-    /* z-index: 99; */
-    margin-top: calc(100% - 0.5em);
-  }
-}
+  /* 
+  @media (max-width: 600px) { 
+    .nav_bar.mobile .nav_bar .contact_btn button{
+      margin-top: calc(100% - 0.5em);
+    }
+  } */
+  /* Added better touch targets for mobile */ 
+  /* @media (max-width: 600px) { 
+    .nav_bar.mobile .nav_bar .contact_btn button{
+      margin-top: calc(100% - 0.5em);
+    } 
+}*/
 

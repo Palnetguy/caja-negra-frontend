@@ -98,11 +98,12 @@ const NavBar = () => {
               <li><Link target="_top" to="/hosting">Hosting</Link></li>
               <li><Link target="_top" to="/about">Sobre nosotros</Link></li>
             </ul>
-          </div>
-          <div className="contact_btn">
+            <div className="contact_btn">
             <Link target="_top" to="/contact">
               <button>Contacto</button>
             </Link>
+          </div>
+          
           </div>
         </div>
       </div>
