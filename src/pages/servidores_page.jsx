@@ -132,7 +132,7 @@ const ServidoresOp = () => {
   return (
     <div className="servidores_op" id="servidores_op" >
       <div className="changeBtns" >
-        {servers.map((e, index) => (
+        {serversData.map((e, index) => (
           <div
             className={`changeBtn ${current_server === index ? "active" : ""}`}
             onClick={() => handleChangeServer(index)}
@@ -150,27 +150,27 @@ const ServidoresOp = () => {
             <div className="specs" >
               <div className="info" >
                 <p>CPU</p>
-                <p>{servers[current_server].cpu}</p>
+                <p>{serversData[current_server].cpu}</p>
               </div>
               <div className="info" >
                 <p>Bandwidth</p>
-                <p>{servers[current_server].Bandwidth}</p>
+                <p>{serversData[current_server].Bandwidth}</p>
               </div>
               <div className="info" >
                 <p>Bandwidth Two</p>
-                <p>{servers[current_server].BandwidthTwo}</p>
+                <p>{serversData[current_server].BandwidthTwo}</p>
               </div>
               <div className="info" >
                 <p>RAM</p>
-                <p>{servers[current_server].RAM}</p>
+                <p>{serversData[current_server].RAM}</p>
               </div>
               <div className="info" >
                 <p>Disk Space</p>
-                <p>{servers[current_server].DiskSpace}</p>
+                <p>{serversData[current_server].DiskSpace}</p>
               </div>
               <div className="info" >
                 <p>IP</p>
-                <p>{servers[current_server].IP}</p>
+                <p>{serversData[current_server].IP}</p>
               </div>
               <Link target="_top" to="/solicitar">
                 <button className="full_gradient_btn" >Solicitar</button>
@@ -371,7 +371,7 @@ const ServidoresOp1 = () => {
       </div>
 
       <div className="servidoresOp_1_contain1" >
-        {serverDetailIndepth.map(i=>(
+        {dicatedserversData.map(i=>(
           <ServidoresOpOneComponent key={i.id} h1={i.h1} h2={i.h2} liItem={i.liItem} bt={i.bt}/>
         ))}
         {/* <div className="servidoresOp_1_each_1">

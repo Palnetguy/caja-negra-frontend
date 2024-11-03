@@ -2,7 +2,7 @@ import React from 'react'
 import { Link } from "react-router-dom";
 import '../../styles/home_page.css'
 
-export const VpsComponent = ({heading1, heading2, buttonTitle}) => {
+export const VpsComponent = ({heading1, heading2}) => {
          
   return (
 <div className="each_ofertas" >
@@ -11,7 +11,7 @@ export const VpsComponent = ({heading1, heading2, buttonTitle}) => {
             <h1>{heading1}</h1>
             <h2>{heading2}</h2>
             <Link target="_top" to="/solicitar">
-                <button>{buttonTitle}</button>
+            <button>Solicitar</button>
             </Link>
         </div>
     </div>

@@ -112,7 +112,7 @@ const Services = ({ handleLoading }) => {
       .then((response) => {
         setwhyChooseUsData(response.data);
         setisloadingwhychooseus(false);
-        console.log(response.data);
+        console.log('why choose us data', response.data);
       })
       .catch((error) => {
         // setError(error.message);
@@ -130,8 +130,9 @@ const Services = ({ handleLoading }) => {
       })
       .then((response) => {
         setoffersData(response.data);
+        console.log('Full response:', response);
         setisloadingoffer(false);
-        console.log(response.data);
+        console.log('offers', response.data);
       })
       .catch((error) => {
         // setError(error.message);
@@ -148,7 +149,7 @@ const Services = ({ handleLoading }) => {
       })
       .then((response) => {
         setservicesData(response.data);
-        console.log(response.data);
+        console.log('services', response.data);
       })
       .catch((error) => {
         // setError(error.message);
@@ -165,7 +166,7 @@ const Services = ({ handleLoading }) => {
       .then((response) => {
         setisloadingcomments(false);
         setcommetsData(response.data);
-        console.log(response.data);
+        console.log('comments', response.data);
       })
       .catch((error) => {
         // setError(error.message);
@@ -174,155 +175,42 @@ const Services = ({ handleLoading }) => {
       });
   }, []); // Empty dependency array means this effect runs once on mount
 
-const services_data=[
-  {
-    id: 0,
-    img: chooseUs1Img,
-    heading: '99.9% Disponibilidad Garantizada',
-    body: 'Nuestro equipo técnicos esta capacitados para solucionar cualquier incidente en el menor tiempo posible'
-  },
-  {
-    id: 1,
-    img: chooseUs2Img,
-    heading: 'Protocolos de Seguridad Avanzados',
-    body: 'Nuestro estándar de seguridad esta basado en protocolos (TLS, IPsec, VPN...) cumpliendo con normativas internaciones.'
-  },
-  {
-    id: 2,
-    img: chooseUs3Img,
-    heading: 'Soporte Técnico Dedicado 24/7',
-    body: 'Disponibilidad en cualquier horario para cumplir las exigencias de su empresa o negocio y brindar apoyo inmediato.'
-  },
-];
 
-const vpsData=[
-  {
-    id: 0,
-    h1: 'VPS Linux',
-    h2: 'CPU 2 - RAM 8GB - SSD 200GB',
-    bt: 'Solicitar'
-  },
-  {
-    id: 1,
-    h1: 'Basic VPS Linux',
-    h2: 'CPU  - RAM 16GB - SSD 200GB',
-    bt: 'Solicitar'
-  },
-  {
-    id: 2,
-    h1: 'VPS Remote Desktop',
-    h2: 'CPU 2 - RAM 4GB - SSD 80GB',
-    bt: 'Solicitar'
-  }
-]
-
-const dedicaoData = [
-  {
-    id: 0,
-    h1: 'Startup Dedicated Server',
-    h2: `Están diseñados para alojar sitios web, de
-    streaming o aplicaciones profesionales, de
-    alta demanda.`,
-    bt: 'Solicitar'
-  },
-  {
-    id: 1,
-    h1: 'Storage Dedicate Server SDS',
-    h2: `CPU : AMD Ryzen 5 Pro 3600
-    6c/12t - RAM : 32 GB - HDD : 4x
-    6TB - Network : 2Gb/s`,
-    bt: 'Solicitar'
-  },
-  {
-    id: 2,
-    h1: 'High Grade Dedicated Server HGDS-1',
-    h2: `Dual Intel Xeon Gold 6226R -
-    32c/64t - 2.9GHz/3.9GHz 2x SSD
-    SATA 480GB 192GB DDR4 ECC 
-    2933MHz 6× 3.84TB SSD NVMe
-    Soft RAID 1Gbit/s unmetered and
-    guaranteed`,
-    bt: 'Solicitar'
-  }
-];
-const profesionalesServiceData=[
-  {
-    id: 0,
-    img: service7Img,
-    h2: 'Backups',
-    p: 'Mantenga sus datos asegurados, con nuestro servicio de copia de seguridad para su computadora o servidor hacia la nube.'
-    },
-  {
-    id: 1,
-    img: service8Img,
-    h2: 'Reseller VPS',
-    p: 'Brindamos las herramientas para que pueda rentar nuestros VPS a sus clientes y recibir comisiones por cada venta.'
-  }, {
-    id: 2,
-    img: service9Img,
-    h2: 'Storage High Grade',
-    p: 'Ofrecemos almacenamiento de alta demanda y distribución via CDN. Logrando entregar sus datos con baja latencia.'
-  }, {
-    id: 3,
-    img: service10Img,
-    h2: 'Cloud Data Base',
-    p: 'Conecte su infraestructura a una base de datos en la nube y logre tener una infraestructura hibrida.'
-  }, {
-    id: 4,
-    img: service11Img,
-    h2: 'Monitoring',
-    p: 'Servicio de atención a incidentes, control de riesgo y ciberataques. Con un equipo de DevOps, SRE, Cybersecurity...'
-  }, {
-    id: 5,
-    img: service12Img,
-    h2: 'Premium Domain',
-    p: 'Gestionamos y localizamos el dominio que necesita su negocio con su nombre preferido. Sabemos lo importante que es un nombre.'
-  },
-]
-
-const remarksData = [
-  {
-    id: 0,
-    pb: `"Trabajar con Caja Negra ha sido un cambio radical para nuestra
-          empresa. Su experiencia en análisis de datos e integración nos
-          permitió optimizar nuestras operaciones y obtener valiosos
-          conocimientos que han impulsado nuestras decisiones estratégicas.
-          La dedicación del equipo para entender nuestras necesidades y
-          ofrecer soluciones personalizadas es incomparable."`,
-    pf: 'Jane Smith, CEO de Tech Solutions Inc.'
-  },
-  {
-    id: 1,
-    pb: `"Caja Negra ha demonstrado ser un socio confiable y 
-    visionario en nuestro viaje de transfomarción digital. 
-    Su enfoque innovador para resolver problemas y su 
-    compromiso con la excelencia la superado nuesteras
-    expectativas. Estamos encantados con los resultados y
-    esperamos una colaboratión a largo plazo."`,
-    pf: 'Michael Brown, COO de NextGen Solutions'
-  },
-  {
-    id: 2,
-    pb: `El servio al cliente y el soporte de Caja Negra son
-    exceptionales. Siempre  so receptivos y están listos
-    para abordar cualqier problema o inquietud que
-    tengamos. Su apoyo continuo ha sido invaluable para
-    garantizar que nuestros sistemas funcionen sin
-    problemas y de manera eficiente."`,
-    pf: 'Emily Johnson, Directora de TI de Global Enterprises'
-  },
-  {
-    id: 3,
-    pb: `"Las soluciones innovadoras y el profundo
-    conocimiento de la industria de Caja Negra los han
-    distinguido de otras firmas technológicas con las que
-    hemos trabajado. Su capacidad para ofrecer
-    resultados de alta calidad a tiempo y dentro del
-    presupuesto los ha convertido en nuestro socio
-    technolóico preferido"`,
-    pf: 'David Garcia, CIO de FutureTech Innovations'
-  }
-]
+// const profesionalesServiceData=[
+  // {
+  //   id: 0,
+  //   img: service7Img,
+  //   h2: 'Backups',
+  //   p: 'Mantenga sus datos asegurados, con nuestro servicio de copia de seguridad para su computadora o servidor hacia la nube.'
+  //   },
+  // {
+  //   id: 1,
+  //   img: service8Img,
+  //   h2: 'Reseller VPS',
+  //   p: 'Brindamos las herramientas para que pueda rentar nuestros VPS a sus clientes y recibir comisiones por cada venta.'
+  // }, {
+  //   id: 2,
+  //   img: service9Img,
+  //   h2: 'Storage High Grade',
+  //   p: 'Ofrecemos almacenamiento de alta demanda y distribución via CDN. Logrando entregar sus datos con baja latencia.'
+  // }, {
+  //   id: 3,
+  //   img: service10Img,
+  //   h2: 'Cloud Data Base',
+  //   p: 'Conecte su infraestructura a una base de datos en la nube y logre tener una infraestructura hibrida.'
+  // }, 
+//   {
+//     id: 4,
+//     img: service11Img,
+//     h2: 'Monitoring',
+//     p: 'Servicio de atención a incidentes, control de riesgo y ciberataques. Con un equipo de DevOps, SRE, Cybersecurity...'
+//   }, {
+//     id: 5,
+//     img: service12Img,
+//     h2: 'Premium Domain',
+//     p: 'Gestionamos y localizamos el dominio que necesita su negocio con su nombre preferido. Sabemos lo importante que es un nombre.'
+//   },
+// ]
 
 const listData=[
   {
@@ -344,9 +232,6 @@ return (
       <h1 className="title" >¿Por qué elegirnos?</h1>
       {/* Services */}
       <div className="services_container" >
-        {services_data.map(item=>(
-        <ServicesComponent key={item.id} image={item.img} heading={item.heading} paragraph={item.body} />
-      ))}
         {whyChooseUsdata.map((e) => (
           <div className="service" key={Math.random()}>
             <div className="image">
@@ -387,9 +272,15 @@ return (
         {/* for vps */}
         {vpsOpen && (
           <div className="ofertas_container">
-            {vpsData.map(i =>(
-              <VpsComponent key={i.id} heading1={i.h1} heading2={i.h2} buttonTitle={i.bt}/>
-            ))}
+           {offersData && offersData.length > 0 ? (
+  offersData
+    .filter((e) => e.offer_type === "VPS")
+    .map((e) => (
+      <VpsComponent key={e.id} heading1={e.title} heading2={e.info} />
+    ))
+) : (
+  <p>Loading VPS offers...</p>
+)}
             {/* <div className="each_ofertas ">
               <div className="bgSpan"></div>
               <div className="info">
@@ -421,7 +312,7 @@ return (
               </div>
             </div> */}
 
-            {offersData
+            {/* {offersData
               .filter((e) => e.offer_type === "VPS")
               .map((e) => (
                 <div className="each_ofertas " >
@@ -434,15 +325,20 @@ return (
                     </Link>
                   </div>
                 </div>
-              ))}
+              ))} */}
           </div>
         )}
         {/* for dedicado */}
         {!vpsOpen && (
           <div className="ofertas_container ">
-            {dedicaoData.map(i => (
-              <DedicaoComponent key={i.id} heading1={i.h1} heading2={i.h2} buttonTitle={i.bt}/>
-            ))}
+            {offersData && offersData.length > 0 ? (
+              offersData.filter((e) => e.offer_type === "Dedicated")
+              .map((i) => (
+              <VpsComponent key={i.id} heading1={i.title} heading2={i.info} />
+            ))
+          ) : (
+          <p>No dedicated offers available.</p>
+        )}
 
             {/* <div className="each_ofertas ">
               <div className="bgSpan"></div>
@@ -479,7 +375,7 @@ return (
               </div>
             </div> */}
 
-            {offersData
+            {/* {offersData
               .filter((e) => e.offer_type === "Dedicated")
               .map((e) => (
                 <div className="each_ofertas ">
@@ -492,7 +388,7 @@ return (
                     </Link>
                   </div>
                 </div>
-              ))}
+              ))} */}
           </div>
         )}
       </div>
@@ -515,8 +411,8 @@ return (
       <h2 className="sub_title">Servicios Profesionales</h2>
       <h1 className="title" >Nuestros servicios</h1>
       <div className="services_container bt">
-        {profesionalesServiceData.map(i => (
-          <ProfessionaleService img={i.img} h2={i.h2} p={i.p}/>
+        {servicesData.map(i => (
+          <ProfessionaleService img={i.image} h2={i.title} p={i.info}/>
         ))}
         {/* <div className="service">
           <div className="image">
@@ -597,7 +493,7 @@ return (
           </p>
         </div> */}
 
-        {servicesData.map((e) => (
+        {/* {servicesData.map((e) => (
           <div className="service" >
             <div className="image" >
               <div className="bgSpan" ></div>
@@ -608,7 +504,7 @@ return (
             <h2>{e.title}</h2>
             <p>{e.info}</p>
           </div>
-        ))}
+        ))} */}
       </div>
       <div className="word_btn" >
         <h1>
@@ -753,8 +649,8 @@ return (
           asesoramiento para ayudar a que sus negocios prosperen.
         </h1>
         <div className="remarks_container" >
-          {remarksData.map(i=>(
-            <RemarksContainer key={i.id} pBody={i.pb} pFooter={i.pf}/>
+          {commetsData.map(i=>(
+            <RemarksContainer key={i.id} pBody={i.info} pFooter={i.name} pProf={i.profession}/>
           ))}
           {/* <div className="remark">
             <div className="bgSpan"></div>
@@ -804,7 +700,7 @@ return (
             </p>
             <p> Jane Smith, CEO de Tech Solutions Inc.</p>
           </div> */}
-
+{/* 
           {commetsData.map((e) => (
             <div className="remark" >
               <div className="bgSpan" ></div>
@@ -813,7 +709,7 @@ return (
                 {e.name}, {e.profession}
               </p>
             </div>
-          ))}
+          ))} */}
         </div>
       </div>
     </div>

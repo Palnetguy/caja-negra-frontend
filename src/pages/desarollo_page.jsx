@@ -56,21 +56,21 @@ const Desarollo = () => {
   }, []);
 
   const developmentInfoData=[
-    {
-      id: 0,
-      title: 'Imagen de Marca',
-      info: 'Implemente la imagen de su marca en una aplicación para su negocio.',
-    },
-    {
-      id: 1,
-      title: 'Diseño Personalizable',
-      info: 'Con su logo, perfiles de redes sociales, imágenes y esquema de colores. Donde su negocio se destaque.',
-    },
-    {
-      id: 2,
-      title: 'Presencia en Internet',
-      info: 'Lleve su negocio a todas partes. El Internet le da potencial a cualquier negocio.',
-    },
+    // {
+    //   id: 0,
+    //   title: 'Imagen de Marca',
+    //   info: 'Implemente la imagen de su marca en una aplicación para su negocio.',
+    // },
+    // {
+    //   id: 1,
+    //   title: 'Diseño Personalizable',
+    //   info: 'Con su logo, perfiles de redes sociales, imágenes y esquema de colores. Donde su negocio se destaque.',
+    // },
+    // {
+    //   id: 2,
+    //   title: 'Presencia en Internet',
+    //   info: 'Lleve su negocio a todas partes. El Internet le da potencial a cualquier negocio.',
+    // },
     {
       id: 3,
       title: 'Aplicaciones Android - IOS',
@@ -124,7 +124,7 @@ const Desarollo = () => {
           </p>
         </div> */}
 
-        {developmentInfoData.map((e) => (
+        {developmentinfoData.map((e) => (
           <DesarolloComponent className="desarollo_each" key={e.id} title={e.title} info={e.info}/>
         ))}
       </div>
