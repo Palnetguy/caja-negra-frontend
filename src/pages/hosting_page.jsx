@@ -137,8 +137,8 @@ const HostingCompartido = () => {
         <h2 className="sub_title" >Especificaciones Técnicas</h2>
         <h1 className="title" >SELECCIONAR PLAN</h1>
         <div className="select_plan_cont" >
-          {planData.map(p=>(
-            <PlanComponent key={p.id} h1={p.h1} p={p.p}/>
+          {hosting_plans.map(p=>(
+            <PlanComponent key={p.id} planType={p.plan_type} info={p.info}/>
           ))}
           {/* <div className="selct_plan_each">
             <h1>REGULAR</h1>
@@ -170,7 +170,7 @@ const HostingCompartido = () => {
               <button className="full_gradient_btn">Solicitar</button>
             </Link>
           </div> */}
-
+{/* 
           {hosting_plans.map((e) => (
             <div className="selct_plan_each">
               <h1>
@@ -183,7 +183,7 @@ const HostingCompartido = () => {
                 <button className="full_gradient_btn" >Solicitar</button>
               </Link>
             </div>
-          ))}
+          ))} */}
         </div>
       </div>
     </div>

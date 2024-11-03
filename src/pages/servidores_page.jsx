@@ -372,7 +372,7 @@ const ServidoresOp1 = () => {
 
       <div className="servidoresOp_1_contain1" >
         {dicatedserversData.map(i=>(
-          <ServidoresOpOneComponent key={i.id} h1={i.h1} h2={i.h2} liItem={i.liItem} bt={i.bt}/>
+          <ServidoresOpOneComponent key={i.id} processor={i.PROCESSORS} memory={i.memoria} storage={i.storage} time={i.time} transfer={i.transfer}/>
         ))}
         {/* <div className="servidoresOp_1_each_1">
           <h1>PROCESADOR</h1>
