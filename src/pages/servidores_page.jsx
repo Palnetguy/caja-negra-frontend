@@ -58,53 +58,53 @@ const ServidoresOp = () => {
   const [serversData, setserversData] = useState([]);
   const [isDoneLoadingserversData, setisDoneLoadingserversData] =
     useState(true);
-  const servers = [
-    {
-      name: "Basico",
-      cpu: "1 Core",
-      Bandwidth: "100 GB",
-      BandwidthTwo: "100 GB",
-      RAM: "1 GB",
-      DiskSpace: "20 GB",
-      IP: "1",
-    },
-    {
-      name: "Freelancer",
-      cpu: "2 Core",
-      Bandwidth: "2 TB",
-      BandwidthTwo: "100 GB",
-      RAM: "2 GB",
-      DiskSpace: "80 GB",
-      IP: "0",
-    },
-    {
-      name: "Ecommerce",
-      cpu: "2 Core",
-      Bandwidth: "2 GB",
-      BandwidthTwo: "200 GB",
-      RAM: "2 GB",
-      DiskSpace: "100 GB SSD",
-      IP: "1",
-    },
-    {
-      name: "Agencia",
-      cpu: "8 Core",
-      Bandwidth: "12T TB",
-      BandwidthTwo: "150 GB",
-      RAM: "16 GB",
-      DiskSpace: "2 GB SSD",
-      IP: "1",
-    },
-    {
-      name: "Empresarial",
-      cpu: "1 Core",
-      Bandwidth: "12 TB",
-      BandwidthTwo: "150 GB",
-      RAM: "8 GB",
-      DiskSpace: "1TB SSD",
-      IP: "5",
-    },
-  ];
+  // const servers = [
+    // {
+    //   name: "Basico",
+    //   cpu: "1 Core",
+    //   Bandwidth: "100 GB",
+    //   BandwidthTwo: "100 GB",
+    //   RAM: "1 GB",
+    //   DiskSpace: "20 GB",
+    //   IP: "1",
+    // },
+    // {
+    //   name: "Freelancer",
+    //   cpu: "2 Core",
+    //   Bandwidth: "2 TB",
+    //   BandwidthTwo: "100 GB",
+    //   RAM: "2 GB",
+    //   DiskSpace: "80 GB",
+    //   IP: "0",
+    // },
+    // {
+    //   name: "Ecommerce",
+    //   cpu: "2 Core",
+    //   Bandwidth: "2 GB",
+    //   BandwidthTwo: "200 GB",
+    //   RAM: "2 GB",
+    //   DiskSpace: "100 GB SSD",
+    //   IP: "1",
+    // },
+    // {
+    //   name: "Agencia",
+    //   cpu: "8 Core",
+    //   Bandwidth: "12T TB",
+    //   BandwidthTwo: "150 GB",
+    //   RAM: "16 GB",
+    //   DiskSpace: "2 GB SSD",
+    //   IP: "1",
+    // },
+    // {
+  //     name: "Empresarial",
+  //     cpu: "1 Core",
+  //     Bandwidth: "12 TB",
+  //     BandwidthTwo: "150 GB",
+  //     RAM: "8 GB",
+  //     DiskSpace: "1TB SSD",
+  //     IP: "5",
+  //   },
+  // ];
 
   useEffect(() => {
     axios
@@ -154,23 +154,23 @@ const ServidoresOp = () => {
               </div>
               <div className="info" >
                 <p>Bandwidth</p>
-                <p>{serversData[current_server].Bandwidth}</p>
+                <p>{serversData[current_server].bandwidth}</p>
               </div>
               <div className="info" >
                 <p>Bandwidth Two</p>
-                <p>{serversData[current_server].BandwidthTwo}</p>
+                <p>{serversData[current_server].bandwidth_two}</p>
               </div>
               <div className="info" >
                 <p>RAM</p>
-                <p>{serversData[current_server].RAM}</p>
+                <p>{serversData[current_server].ram}</p>
               </div>
               <div className="info" >
                 <p>Disk Space</p>
-                <p>{serversData[current_server].DiskSpace}</p>
+                <p>{serversData[current_server].diskspace}</p>
               </div>
               <div className="info" >
                 <p>IP</p>
-                <p>{serversData[current_server].IP}</p>
+                <p>{serversData[current_server].ip}</p>
               </div>
               <Link target="_top" to="/solicitar">
                 <button className="full_gradient_btn" >Solicitar</button>
@@ -263,67 +263,67 @@ const ServidoresOp1 = () => {
   }, []);
 
   const serverDetailIndepth=[
-    {
-      id:0,
-      h1: 'PROCESADOR',
-      h2: 'Dual Xeon 2603',
-      liItem: ['Memoria 64GB', 'Almacenamiento 120GB SSD', 'Transferencia 1Gpbs/ilimitado','Entrega 12 horas'],
-      bt: 'Solicitar'
-    },{
-      id:1,
-      h1: 'PROCESADOR',
-      h2: 'DELL Dual Xenon 5520',
-      liItem: ['Memoria 72GB', 'Almacenamiento 4 x 250GB SSD', 'Transferencia 10Gpbs at 95%','Entrega 12 horas'],
-      bt: 'Solicitar'
-    },
-    {
-      id:2,
-      h1: 'PROCESADOR',
-      h2: 'Dual Xenon ES-2650CPU',
-      liItem: ['Memoria 128GB', 'Almacenamiento 240GB SSD', 'Transferencia 10Gpbs, port 100TB','Entrega 12 horas'],
-      bt: 'Solicitar'
-    },{
-      id:3,
-      h1: 'PROCESADOR',
-      h2: 'Dual Xenon 5520',
-      liItem: ['Memoria 72GB', 'Almacenamiento 4x4TB SSD', 'Transferencia 10Gpbs/ilimitado','Entrega 24 horas'],
-      bt: 'Solicitar'
-    },
-    {
-      id:4,
-      h1: 'PROCESADOR',
-      h2: 'Dual Xenon 5520',
-      liItem: ['Memoria 64GB', 'Almacenamiento 4x18TB HDD', 'Transferencia 10Gpbs/ilimitado','Entrega 12 horas'],
-      bt: 'Solicitar'
-    },
-    {
-      id:5,
-      h1: 'PROCESADOR',
-      h2: 'Dual Xenon ES-2650',
-      liItem: ['Memoria 128GB', 'Almacenamiento 2 x 4TB NVMe', 'Transferencia 40Gpbs/ilimitado','Entrega 72 horas'],
-      bt: 'Solicitar'
-    },
-    {
-      id:6,
-      h1: 'PROCESADOR',
-      h2: 'Dual AMD Epyc - 128c/256f',
-      liItem: ['Memoria 1TB', 'Almacenamiento 2 x 2TB NVMe', 'Transferencia 10Gpbs/ilimitado','Entrega 72 horas'],
-      bt: 'Solicitar'
-    },
-    {
-      id:7,
-      h1: 'PROCESADOR',
-      h2: 'AMD Ryzen 9 5950X',
-      liItem: ['Memoria 128GB', 'Almacenamiento 2 x 2Tb NVMe', 'Transferencia 10Gpbs/ilimitado','Entrega 72 horas'],
-      bt: 'Solicitar'
-    },
-    {
-      id:8,
-      h1: 'PROCESADOR',
-      h2: 'Dual AMD Epyc - 128c/256f',
-      liItem: ['Memoria 1TB', 'Almacenamiento 2 x 2TB NVMe', 'Transferencia 200Gpbs/ilimitado','Entrega 24 horas'],
-      bt: 'Solicitar'
-    },
+    // {
+    //   id:0,
+    //   h1: 'PROCESADOR',
+    //   h2: 'Dual Xeon 2603',
+    //   liItem: ['Memoria 64GB', 'Almacenamiento 120GB SSD', 'Transferencia 1Gpbs/ilimitado','Entrega 12 horas'],
+    //   bt: 'Solicitar'
+    // },{
+    //   id:1,
+    //   h1: 'PROCESADOR',
+    //   h2: 'DELL Dual Xenon 5520',
+    //   liItem: ['Memoria 72GB', 'Almacenamiento 4 x 250GB SSD', 'Transferencia 10Gpbs at 95%','Entrega 12 horas'],
+    //   bt: 'Solicitar'
+    // },
+    // {
+    //   id:2,
+    //   h1: 'PROCESADOR',
+    //   h2: 'Dual Xenon ES-2650CPU',
+    //   liItem: ['Memoria 128GB', 'Almacenamiento 240GB SSD', 'Transferencia 10Gpbs, port 100TB','Entrega 12 horas'],
+    //   bt: 'Solicitar'
+    // },{
+    //   id:3,
+    //   h1: 'PROCESADOR',
+    //   h2: 'Dual Xenon 5520',
+    //   liItem: ['Memoria 72GB', 'Almacenamiento 4x4TB SSD', 'Transferencia 10Gpbs/ilimitado','Entrega 24 horas'],
+    //   bt: 'Solicitar'
+    // },
+    // {
+    //   id:4,
+    //   h1: 'PROCESADOR',
+    //   h2: 'Dual Xenon 5520',
+    //   liItem: ['Memoria 64GB', 'Almacenamiento 4x18TB HDD', 'Transferencia 10Gpbs/ilimitado','Entrega 12 horas'],
+    //   bt: 'Solicitar'
+    // },
+    // {
+    //   id:5,
+    //   h1: 'PROCESADOR',
+    //   h2: 'Dual Xenon ES-2650',
+    //   liItem: ['Memoria 128GB', 'Almacenamiento 2 x 4TB NVMe', 'Transferencia 40Gpbs/ilimitado','Entrega 72 horas'],
+    //   bt: 'Solicitar'
+    // },
+    // {
+    //   id:6,
+    //   h1: 'PROCESADOR',
+    //   h2: 'Dual AMD Epyc - 128c/256f',
+    //   liItem: ['Memoria 1TB', 'Almacenamiento 2 x 2TB NVMe', 'Transferencia 10Gpbs/ilimitado','Entrega 72 horas'],
+    //   bt: 'Solicitar'
+    // },
+    // {
+    //   id:7,
+    //   h1: 'PROCESADOR',
+    //   h2: 'AMD Ryzen 9 5950X',
+    //   liItem: ['Memoria 128GB', 'Almacenamiento 2 x 2Tb NVMe', 'Transferencia 10Gpbs/ilimitado','Entrega 72 horas'],
+    //   bt: 'Solicitar'
+    // },
+    // {
+    //   id:8,
+    //   h1: 'PROCESADOR',
+    //   h2: 'Dual AMD Epyc - 128c/256f',
+    //   liItem: ['Memoria 1TB', 'Almacenamiento 2 x 2TB NVMe', 'Transferencia 200Gpbs/ilimitado','Entrega 24 horas'],
+    //   bt: 'Solicitar'
+    // },
     {
       id:9,
       h1: 'PROCESADOR',
