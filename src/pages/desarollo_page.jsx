@@ -55,7 +55,7 @@ const Desarollo = () => {
       });
   }, []);
 
-  const developmentInfoData=[
+  // const developmentInfoData=[
     // {
     //   id: 0,
     //   title: 'Imagen de Marca',
@@ -71,12 +71,12 @@ const Desarollo = () => {
     //   title: 'Presencia en Internet',
     //   info: 'Lleve su negocio a todas partes. El Internet le da potencial a cualquier negocio.',
     // },
-    {
-      id: 3,
-      title: 'Aplicaciones Android - IOS',
-      info: 'Los equipos móviles de sus clientes no son una limitante, desarrollamos 100% nativo',
-    }
-  ]
+  //   {
+  //     id: 3,
+  //     title: 'Aplicaciones Android - IOS',
+  //     info: 'Los equipos móviles de sus clientes no son una limitante, desarrollamos 100% nativo',
+  //   }
+  // ]
   const extraData =[
     {
       id: 0,
