@@ -135,7 +135,7 @@ const Domains = () => {
         <h2 className="sub_title" >
           Estamos aquí para apoyar su viaje en línea
         </h2>
-        <h1 className="title" style={{marginBottom: '2.5em'}}>AYUDA EN CADA ETAPA</h1>
+        <h1 className="title">AYUDA EN CADA ETAPA</h1>
         <div className="more_domain_container" >
           {dData.map(d=>(
             <DomionBotomomponent key={d.id} img={d.img} h1={d.h1} p={d.p}/>

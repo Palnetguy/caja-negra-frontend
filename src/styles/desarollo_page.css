@@ -123,12 +123,11 @@ text-align: center;
   padding: 1.5em;
   padding-top: 4em;
 }
-.desarollo_page .desarollo .desarollo_more .lft{
+/* .desarollo_page .desarollo .desarollo_more .lft{
   width: calc((100% / 2) - 2em);
-height: 374px;
+  height: 374px;
 
-
-}
+} */
 .desarollo_page .desarollo .desarollo_more .lft > h1 {
   color: #fff;
   font-family: Saira;
@@ -174,7 +173,7 @@ height: 184px;
   font-family: Saira;
 font-size: 24px;
 font-weight: 500;
-line-height: 36px;
+line-height: 28px;
 text-align: left;
 
 }
@@ -204,8 +203,8 @@ height: 410px;
   justify-content: space-around;
 }
 .desarollo_page .desarollo .desarollo_each_cont .desarollo_bottom_each{
-  width: calc((100% / 2) - 4em);
-  /* width: 660px; */
+  /* width: calc((100% / 2) - 4em); */
+  width: 660px;
   height: 614px;
   display: flex;
   color: white;

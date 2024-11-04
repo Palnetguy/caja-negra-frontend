@@ -1,7 +1,8 @@
 .footer {
   padding: 1.5em;
   /* height: 500px; */
-  padding-top: 8em;
+  /* padding-top: 8em; */
+  margin-top: 9em;
   /* background: url('../assets/images/65f462326356e70fa630f505_hero1-img\ \(1\)-p-1600.png'); */
   /* background-size: cover; */
   /* background-position: 5em ; */
@@ -60,7 +61,7 @@
   justify-content: space-between;
   color: #fff;
   font-family: Saira;
-  font-size: 10px;
+  font-size: 14px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
@@ -73,21 +74,22 @@
 }
 .footer > .cc {
   cursor: pointer;
+  padding-top: 1.2em;
 }
 .footer .links .rgt{
   margin-top: -2em;
 }
 .footer .links .rgt .rlnk>a{
-  margin-top: -4.2em;
+  margin-top: -6em;
 }
 
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
   .footer {
       padding-top: 4em;
       margin-bottom: 0;
     }
 
-}
+} */
 
 /* Here is my sugesstion..................................... */ 
 /* ServicesSection.css */ 

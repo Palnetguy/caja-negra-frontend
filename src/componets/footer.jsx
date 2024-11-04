@@ -10,10 +10,10 @@ const Footer = () => {
       <div className="links" >
         <div className="lft" >
           <a href="">Categorias</a>
-          <a href="">Dominios</a>
-          <a href="">Servidores</a>
-          <a href="">Hosting</a>
-          <a href="">Desarollo</a>
+          <a href="/dominos">Dominios</a>
+          <a href="/data-services">Servidores</a>
+          <a href="/hosting">Hosting</a>
+          <a href="/desarollo">Desarollo</a>
         </div>
         <div className="rgt" >
           <div className="wtpIm" >
@@ -21,7 +21,7 @@ const Footer = () => {
           </div>
           <div className="rlnk">
             {/* <a href="">Hosting</a> */}
-            <a href="">Sobre nosotros</a>
+            <a href="/about">Sobre nosotros</a>
           </div>
         </div>
       </div>

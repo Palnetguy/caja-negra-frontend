@@ -375,14 +375,14 @@ margin-left: 2.5em;
   font-weight: 500;
   /* line-height: 36px; 128.571% */
   margin-left: 3.8em;
-  width: 441px;
-height: 41px;
-font-family: Saira;
-font-size: 28px;
-font-weight: 500;
-line-height: 36px;
-text-align: left;
-margin-top:0.2em;
+  /* width: 441px;
+  height: 41px; */
+  font-family: Saira;
+  font-size: 28px;
+  font-weight: 500;
+  line-height: 36px;
+  text-align: left;
+  margin-top:0.2em;
 
 }
 
@@ -548,7 +548,7 @@ height: 436.03px;
     height: fit-content;
   }
 }
-@media (max-width: 780px) {
+@media (max-width: 799px) {
   .servidores_page .top {
     height: 50vh;
     background-size: cover;
@@ -778,6 +778,7 @@ servidores_page .servidores_op .specs_contain {
     width: auto;
     height: auto;
     font-size: 22px;
+    padding: 0.5em;
   }
 } 
  

@@ -337,7 +337,7 @@ height: 230px;
 }
 .home_page .services .service > p {
   font-weight: 500;
-  font-size: 14px;
+  font-size: 17px;
   color: #ffffff;
   text-align: center;
 }
@@ -348,9 +348,9 @@ height: 230px;
   position: absolute;
  
 }
-.home_page .services .oferta {
-  padding-top: 4em;
-}
+/* .home_page .services .oferta {
+  padding-top: 2em;
+} */
 .home_page .services > h1 {
   font-size: 40px;
   font-family: 700;
@@ -515,10 +515,10 @@ background: linear-gradient(148.77deg, #86FFE9 4.57%, #237D8D 22.17%, #1A9CA6 43
 }
 .home_page .services .oferta > .ofertas_container .each_ofertas > .info > h1 {
   color: #d9d9d9;
-  font-size: 28px;
+  font-size: 30px;
   font-weight: 700;
   font-family: Saira;
-  font-size: 40px;
+  /* font-size: 40px; */
   font-weight: 700;
   line-height: 42px;
   text-align: left;
@@ -526,11 +526,11 @@ background: linear-gradient(148.77deg, #86FFE9 4.57%, #237D8D 22.17%, #1A9CA6 43
 }
 .home_page .services .oferta > .ofertas_container .each_ofertas > .info > h2 {
   color: #d9d9d9;
-  font-size: 16px;
+  font-size: 20px;
   font-weight: 500;
   margin-bottom: 1em;
   font-family: Saira;
-  font-size: 24px;
+  /* font-size: 24px; */
   font-weight: 500;
   line-height: 36px;
   text-align: left;
@@ -547,7 +547,7 @@ background: linear-gradient(148.77deg, #86FFE9 4.57%, #237D8D 22.17%, #1A9CA6 43
 
   background: linear-gradient(90deg, #86FFE9 0%, #02BAC6 50%, #037B83 100%);
   font-family: Saira;
-  font-size: 32px;
+  /* font-size: 32px; */
   font-weight: 700;
   line-height: 42px;
   text-align: center;
@@ -1213,13 +1213,12 @@ height: 464px;
   margin: 0.5em 0;
   color: #ffffff;
   font-family: 500;
-  font-size: 16px;
-height: 302px;
-font-family: Saira;
-font-size: 24px;
-font-weight: 500;
-line-height: 36px;
-text-align: left;
+  height: 302px;
+  font-family: Saira;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 36px;
+  text-align: left;
 /* height: 40px; */
 /* background: yellow;
 margin-top: 5em; */
@@ -1230,20 +1229,19 @@ margin-top: 5em; */
   margin: 0.5em 0;
   color: #ffffff;
   font-family: 500;
-  font-size: 13px;
   opacity: 0.8;
 
   font-family: Saira;
-font-size: 24px;
-font-weight: 500;
-line-height: 36px;
-text-align: left;
+  /* font-size: 24px; */
+  font-weight: 500;
+  line-height: 36px;
+  text-align: left;
 
-font-family: Saira;
-font-size: 24px;
-font-weight: 500;
-line-height: 36px;
-text-align: left;
+  font-family: Saira;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 36px;
+  text-align: left;
 
 
 }
@@ -1600,22 +1598,22 @@ text-align: left;
 .home_page .main{
   /* position: absolute; */
   /* margin-top: 8em; */
-  /* left: 2em; */
+  left: 2em;
   z-index: 1;
 } 
   .home_page .main > h1 {
     width: 80%;
     /* left: 0.4em; */
-    line-height: 30px;  
+    line-height: 40px;  
     height: fit-content;
-    margin-left: -2em;
+    margin-left: -3em;
 
   }
   .home_page .main > p{
     width: 80%;
     height: fit-content;
     line-height: 24px;
-    margin-left: -6em;
+    margin-left: -10em;
   }
   .services-container { 
     grid-template-columns: repeat(2, 1fr); 
@@ -1714,7 +1712,7 @@ text-align: left;
   overflow: hidden;
   transition: 0.5s;
   justify-self: center;
-  margin-bottom: -5em;
+  margin-bottom: -1em;
 
 }
 .home_page .vps .service .image > .bgSpan {
@@ -1785,7 +1783,7 @@ text-align: left;
   }
   
   .home_page .services .service.profesional-services {
-    max-width: calc((100% / 3) - 4.75em);
+    max-width: calc((100% / 2) - 4.75em);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -1903,7 +1901,7 @@ text-align: left;
 
 .home_page .vps .lft > h1 {
   width: 60%;
-  font-size: 38px;
+  font-size: 37px;
 }
 }
  
@@ -1982,7 +1980,7 @@ text-align: left;
     left: 1.5em;
     width: 95vw;
     position: absolute;
-    margin-top: 16em;
+    margin-top: 13em;
   }
   .home_page .main > h1 {
     line-height: 32px;
@@ -1990,6 +1988,7 @@ text-align: left;
     width: auto;
     margin-bottom: 0;
     padding-bottom: 0;
+    height: auto;
   }
   .home_page .main > p {
     line-height: 22px;
@@ -2001,6 +2000,7 @@ text-align: left;
     padding-bottom: 0;
     height: 110px;
   }
+  
   .home_page .services .oferta > .ofertas_container {
     display: flex;
     flex-direction: column;
@@ -2086,4 +2086,35 @@ text-align: left;
     min-height: 250px; 
     padding: var(--spacing-sm); 
   } 
+}
+
+@media (max-width: 999px){
+
+.home_page .vps .rht {
+    margin-right: 2em;
+    display: none;
+}
+}
+
+@media (max-width: 799px ){
+.home_page .main > p {
+    
+    margin-left: -8em;
+}
+}
+@media (max-width: 768px){
+  .home_page .main > a {
+    
+    margin-left: -1.3em;
+  }
+}
+
+@media (max-width: 599px){
+.home_page .main > p {
+    margin-left: 0px;
+}
+.home_page .main > a {
+   
+  margin-left: 0;
+}
 }
