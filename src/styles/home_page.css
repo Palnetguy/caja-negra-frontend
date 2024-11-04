@@ -2098,13 +2098,11 @@ margin-top: 5em; */
 
 @media (max-width: 799px ){
 .home_page .main > p {
-    
     margin-left: -8em;
 }
 }
 @media (max-width: 768px){
   .home_page .main > a {
-    
     margin-left: -1.3em;
   }
 }
@@ -2114,7 +2112,6 @@ margin-top: 5em; */
     margin-left: 0px;
 }
 .home_page .main > a {
-   
   margin-left: 0;
 }
 }
