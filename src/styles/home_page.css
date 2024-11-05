@@ -204,7 +204,7 @@ border: 1px 0px 0px 0px;
 .home_page .services .oferta > h2 {
   font-size: 26px;
   font-weight: 500;
-  color: #d9d9d9;
+  color: #ffffff;;
   text-align: center;
 }
 
@@ -361,7 +361,7 @@ height: 230px;
 .home_page .services > h2 {
   font-size: 26px;
   font-weight: Saira;
-  color: #d9d9d9;
+  color: #ffffff;;
   text-align: center;
   margin-top: 2em;
 }
@@ -375,7 +375,7 @@ height: 230px;
 .home_page .services .oferta > h2 {
   font-size: 26px;
   font-weight: 500;
-  color: #d9d9d9;
+  color: #ffffff;;
   text-align: center;
 }
 .home_page .services .oferta > .btns > .btn_op {
@@ -514,7 +514,7 @@ background: linear-gradient(148.77deg, #86FFE9 4.57%, #237D8D 22.17%, #1A9CA6 43
   z-index: 1;
 }
 .home_page .services .oferta > .ofertas_container .each_ofertas > .info > h1 {
-  color: #d9d9d9;
+  color: #ffffff;;
   font-size: 30px;
   font-weight: 700;
   font-family: Saira;
@@ -525,7 +525,7 @@ background: linear-gradient(148.77deg, #86FFE9 4.57%, #237D8D 22.17%, #1A9CA6 43
 
 }
 .home_page .services .oferta > .ofertas_container .each_ofertas > .info > h2 {
-  color: #d9d9d9;
+  color: #ffffff;;
   font-size: 20px;
   font-weight: 500;
   margin-bottom: 1em;
@@ -570,12 +570,12 @@ background: linear-gradient(148.77deg, #86FFE9 4.57%, #237D8D 22.17%, #1A9CA6 43
 }
 .home_page .services .ver > p {
   font-size: 26px;
-  color: #d9d9d9;
+  color: #ffffff;;
   font-weight: 600;
 }
 .home_page .services .th_words {
   font-size: 26px;
-  color: #d9d9d9;
+  color: #ffffff;;
   font-weight: 600;
   display: flex;
   justify-content: center;
@@ -584,7 +584,7 @@ background: linear-gradient(148.77deg, #86FFE9 4.57%, #237D8D 22.17%, #1A9CA6 43
 @media (max-width: 980px) {
   .home_page .services .th_words {
     font-size: 16px;
-    color: #d9d9d9;
+    color: #ffffff;;
     font-weight: 600;
     display: flex;
     justify-content: center;
@@ -594,7 +594,7 @@ background: linear-gradient(148.77deg, #86FFE9 4.57%, #237D8D 22.17%, #1A9CA6 43
 @media (max-width: 780px) {
   .home_page .services .th_words {
     font-size: 16px;
-    color: #d9d9d9;
+    color: #ffffff;;
     font-weight: 600;
     display: flex;
     justify-content: center;
@@ -610,12 +610,14 @@ background: linear-gradient(148.77deg, #86FFE9 4.57%, #237D8D 22.17%, #1A9CA6 43
   color: #ffffff;
   text-align: center;
   margin-bottom: 1em;
+  padding: 0 0.6em;
+  line-height: 1em;
 }
 
 @media (max-width: 980px) {
   .home_page .services .ver > p {
     font-size: 16px;
-    color: #d9d9d9;
+    color: #ffffff;;
     font-weight: 600;
   }
   .home_page .services .ver > .btn_op {
@@ -639,7 +641,7 @@ background: linear-gradient(148.77deg, #86FFE9 4.57%, #237D8D 22.17%, #1A9CA6 43
 @media (max-width: 780px) {
   .home_page .services .ver > p {
     font-size: 16px;
-    color: #d9d9d9;
+    color: #ffffff;;
     font-weight: 600;
   }
   .home_page .services .ver {
@@ -666,7 +668,7 @@ color: black;
 }
 .home_page .services .ver > p {
   font-size: 26px;
-  color: #d9d9d9;
+  color: #ffffff;;
   font-weight: 600;
 }
 
@@ -696,6 +698,8 @@ color: black;
   margin-top: 1.5em;
   text-align: center;
   margin-bottom: 1em;
+  padding: 0 0.6em;
+  line-height: 1em;
 }
 @media (max-width: 780px) {
   .home_page .garantee > h1 {
@@ -764,7 +768,7 @@ height: 290px;
 /* background: linear-gradient(148.77deg, #86FFE9 4.57%, #237D8D 22.17%, #1A9CA6 43.61%, #AA6F56 62.75%, #26AABC 81.13%); */
 }
 .home_page .garantee .each_grns > .info > h1 {
-  color: #d9d9d9;
+  color: #ffffff;;
   font-size: 32px;
   font-weight: 700;
 
@@ -776,7 +780,7 @@ text-align: center;
 
 }
 .home_page .garantee .each_grns > .info > h2 {
-  color: #d9d9d9;
+  color: #ffffff;;
   font-size: 18px;
   font-weight: 500;
   margin-bottom: 1em;
@@ -790,25 +794,25 @@ text-align: center;
 .home_page .garantee .each_grns > .info > button {
   /* background: linear-gradient(90deg, #3cd1e3b2, #98adaeb2, #af745cb2); */
   color: #86ffe9;
-  padding: 0.3em 1em;
+  padding: 0.3em 2.5em;
   border: none;
   font-size: 20px;
   font-weight: 700;
-  border-radius: 6px;
+  border-radius: 8px;
   cursor: pointer;
 
   background: linear-gradient(90deg, #86FFE9 0%, #02BAC6 50%, #037B83 100%);
   backdrop-filter: blur(300px);
   width: 234px;
-height: 80px;
+  height: 80px;
 
-font-family: Saira;
-font-size: 32px;
-font-weight: 700;
-line-height: 42px;
-text-align: center;
-color: linear-gradient(90deg, #002C3A 0%, #33817C 50%, #012B38 100%);
-color: black;
+  font-family: Saira;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 42px;
+  text-align: center;
+  color: linear-gradient(90deg, #002C3A 0%, #33817C 50%, #012B38 100%);
+  color: black;
 }
 .home_page .garantee .contain_grns {
   display: flex;
@@ -1232,13 +1236,12 @@ margin-top: 5em; */
   opacity: 0.8;
 
   font-family: Saira;
-  /* font-size: 24px; */
   font-weight: 500;
   line-height: 36px;
   text-align: left;
 
   font-family: Saira;
-  font-size: 20px;
+  font-size: 15px;
   font-weight: 500;
   line-height: 36px;
   text-align: left;
@@ -1652,7 +1655,7 @@ margin-top: 5em; */
   width: 100%;
 }
 .home_page .services .oferta > .ofertas_container .each_ofertas > .info > h1 {
-  color: #d9d9d9;
+  color: #ffffff;;
   font-size: 40px;
   font-weight: 700;
   font-family: Saira, sans-serif;
@@ -1660,7 +1663,7 @@ margin-top: 5em; */
   text-align: left;
 }
 .home_page .services .oferta > .ofertas_container .each_ofertas > .info > h2 {
-  color: #d9d9d9;
+  color: #ffffff;;
   font-size: 24px;
   font-weight: 500;
   margin-bottom: 1em;
