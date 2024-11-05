@@ -23,6 +23,8 @@
 .nav_bar .links > ul > li {
   margin: 0 0.5em;
   list-style-type: none;
+  padding-left: 1.5em;
+  padding-right: 1.5em;
 }
 .nav_bar .links > ul {
   display: flex;
@@ -260,7 +262,7 @@
     cursor: pointer;
   }
   .nav_bar .logo > img {
-    width: 150px;
+    width: 120px;
   }
   .nav_bar.mobile {
     display: none;

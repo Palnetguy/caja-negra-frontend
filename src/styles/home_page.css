@@ -1815,6 +1815,14 @@ margin-top: 5em; */
     height: 400px; 
   } 
 } 
+
+@media (min-width: 900px) {
+ 
+ .home_page .main > a {
+  margin-left: 0.6em;
+ }
+  
+} 
  
 /* 1000px - Small desktop */ 
 @media (min-width: 1000px) {
@@ -1831,7 +1839,7 @@ margin-top: 5em; */
         font-size: 30px;
   }
   .home_page .main > a {
-    margin-left: 1.8em;
+    margin-left: 2em;
   }
   .home_page .services .oferta > .ofertas_container {
     flex-direction: row;
@@ -1912,6 +1920,12 @@ margin-top: 5em; */
 }
 }
  
+@media (min-width: 1100px){
+.home_page .main > a .btn-1 {
+    margin-left: 1.2em;
+}
+}
+
 /* 1500px - Large desktop */ 
 @media (min-width: 1500px) { 
   .home_page .main > h1 {
