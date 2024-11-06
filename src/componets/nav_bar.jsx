@@ -49,19 +49,19 @@ const NavBar = () => {
                   <ul style={{
                     position: 'absolute', top: '100%', left: 0, listStyle: 'none', padding: '4px', borderRadius: '5px', zIndex: 1, background: 'transparent',
                   }}>
-                    <li style={{ padding: '4px 12px', cursor: 'pointer' }}>
+                    <li style={{ padding: '4px 0px', cursor: 'pointer' }}>
                       <Link target="_top" to="/data-services" style={{ color: 'white', textDecoration: 'none' }}>Servicios</Link>
                     </li>
-                    <li style={{ padding: '4px 12px', cursor: 'pointer' }}>
+                    <li style={{ padding: '4px 0px', cursor: 'pointer' }}>
                       <Link target="_top" to="/desarollo" style={{ color: 'white', textDecoration: 'none' }}>Desarollo</Link>
                     </li>
-                    <li style={{ padding: '4px 12px', cursor: 'pointer' }}>
+                    <li style={{ padding: '4px 0px', cursor: 'pointer' }}>
                       <Link target="_top" to="/dominos" style={{ color: 'white', textDecoration: 'none' }}>Dominios</Link>
                     </li>
-                    <li style={{ padding: '4px 12px', cursor: 'pointer' }}>
+                    <li style={{ padding: '4px 0px', cursor: 'pointer' }}>
                       <Link target="_top" to="/servers" style={{ color: 'white', textDecoration: 'none' }}>Servidores</Link>
                     </li>
-                    <li style={{ padding: '4px 12px', cursor: 'pointer' }}>
+                    <li style={{ padding: '4px 0px', cursor: 'pointer' }}>
                       <Link target="_top" to="/hosting" style={{ color: 'white', textDecoration: 'none' }}>Hosting</Link>
                     </li>
                   </ul>
