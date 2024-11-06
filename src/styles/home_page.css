@@ -1803,8 +1803,8 @@ margin-top: 5em; */
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 0 2em;
-    margin-bottom: 3em;
+    margin: 0 0em;
+    /* margin-bottom: 3em; */
     /* height: 486px; */
 }
 
