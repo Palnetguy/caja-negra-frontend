@@ -842,7 +842,7 @@ font-size: 50px;
 font-weight: 700;
 line-height: 64px;
 text-align: left;
-
+margin-top: -2.5em;
 }
 .home_page .vps .lft > p {
   font-size: 18px;
@@ -1013,7 +1013,7 @@ height: 998px;
   box-sizing: content-box;
   /* margin-left: 1.5em; */
   margin-top: 1em ;
-  margin-bottom: 3.5em;
+  margin-bottom: 1.5em;
 width: auto;
 height: 72px;
 font-family: Saira;
@@ -1037,7 +1037,7 @@ font-size: 32px;
 font-weight: 500;
 line-height: 36px;
 text-align: left; */
-margin-top: 2em;
+margin-top: 1em;
 width: auto;
 height: 36px;
 font-family: Saira;
@@ -1049,7 +1049,7 @@ text-align: left;
 
 .home_page .vps.sus .service:nth-child(1) {
   margin-bottom: 1em;
-height: 380px;
+height: 340px;
 }
 .home_page .vps.sus .service .image {
   background: linear-gradient(
@@ -1065,8 +1065,9 @@ height: 380px;
   border-radius: 12px;
   background: linear-gradient(148.77deg, #86FFE9 4.57%, #237D8D 22.17%, #1A9CA6 43.61%, #AA6F56 62.75%, #26AABC 81.13%);
   /* height: 100%; */
-  height: 380px;
-  margin-bottom: 2em;
+  height: 340px;
+  /* margin-bottom: 2em; */
+  margin-top:2em;
 }
 .home_page .vps.sus .service .image > .img {
   position: absolute;
@@ -1079,7 +1080,7 @@ height: 380px;
 .home_page .vps.sus .service .image > .img img {
   width: 270px;
   /* width: auto; */
-  height:346px;
+  height:320px;
 }
 .home_page .vps.sus .service {
   width: calc((100% / 3) - 4em);
@@ -1121,7 +1122,7 @@ height: 480px;
   top: 50%;
   transform: translate(-50%, -50%);
   border-radius: 12px;
-  height: 398px;
+  height: 338px;
 
 }
 .home_page .rht .service .image .bgSpan {
