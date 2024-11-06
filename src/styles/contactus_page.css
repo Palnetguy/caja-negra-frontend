@@ -63,6 +63,7 @@
 .contactus_page .contactus_pageop .more_info {
   display: flex;
   justify-content: center;
+  margin-top: 3em;
 
 }
 .contactus_page .contactus_pageop .info h1 {
@@ -124,6 +125,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-top: 2em;
 }
 .contactus_page .contactus_pageop .contact_form > .full_gradient_btn {
   margin-top: 0.8em;
