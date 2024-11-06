@@ -25,7 +25,7 @@ export const ProfessionaleService = ({img, h2, p}) => {
     }}>{h2}</h2>
     <p style={{
       fontFamily: 'Saira',
-      fontSize: '24px',
+      fontSize: '18px',
       fontWeight: '500',
       lineHeight: '36px',
       textAlign: 'center'   
