@@ -132,7 +132,7 @@ const Services = ({ handleLoading }) => {
         setoffersData(response.data);
         console.log('Full response:', response);
         setisloadingoffer(false);
-        console.log('offers', response.data);
+        console.log('offers updated', response.data);
       })
       .catch((error) => {
         // setError(error.message);
