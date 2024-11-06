@@ -148,11 +148,11 @@ text-align: center;
   font-style: normal;
   font-weight: 500;
   font-family: Saira;
-font-size: 24px;
+/* font-size: 24px; */
 font-weight: 500;
 line-height: 36px;
 text-align: center;
-
+font-size: 17px;
 }
 .register_domino .domains {
   padding-top: 3em;
@@ -176,6 +176,7 @@ text-align: center;
   line-height: 42px; /* 116.667% */
   margin: 0.3em 1.7em;
   flex: 1;
+  font-size: 17px;
 }
 .register_domino .domains .more_domain .more_domain_each {
   width: calc((100% / 2) - 5em);
@@ -227,11 +228,10 @@ justify-content: center;
   font-style: normal;
   font-weight: 500;
   font-family: Saira;
-font-size: 24px;
 font-weight: 500;
 line-height: 36px;
 text-align: left;
-
+font-size: 17px;
 }
 .register_domino .domains .more_domain .more_domain_container {
   display: flex;

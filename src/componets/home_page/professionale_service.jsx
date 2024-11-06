@@ -13,8 +13,10 @@ export const ProfessionaleService = ({img, h2, p}) => {
   </div>
   <div style={{
     marginTop: '1em',
-    color: '#FFFFFF'
-
+    color: '#FFFFFF',
+    display: 'flex',
+    flexDirection: 'column',
+    alignItems: 'center',
   }}>
     <h2 style={{
       fontFamily: 'Saira',
@@ -25,10 +27,11 @@ export const ProfessionaleService = ({img, h2, p}) => {
     }}>{h2}</h2>
     <p style={{
       fontFamily: 'Saira',
-      fontSize: '24px',
+      fontSize: '17px',
       fontWeight: '500',
       lineHeight: '36px',
-      textAlign: 'center'   
+      textAlign: 'center',
+      width: '80%', 
     }}>
       {p}
     </p>

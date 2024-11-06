@@ -112,10 +112,11 @@ text-align: center;
   font-weight: 500;
   /* line-height: 36px; 128.571% */
   font-family: Saira;
-font-size: 24px;
+/* font-size: 24px; */
 font-weight: 500;
 line-height: 36px;
 text-align: center;
+font-size: 17px;
 }
 .desarollo_page .desarollo .desarollo_more {
   display: flex;
@@ -152,10 +153,11 @@ text-align: left;
   /* line-height: 36px; 128.571% */
   margin-bottom: 1em;
   font-family: Saira;
-font-size: 24px;
+/* font-size: 24px; */
 font-weight: 500;
 line-height: 36px;
 text-align: left;
+font-size: 17px;
 }
 .desarollo_page .desarollo .desarollo_more .lft > ul{
   width: 80%;
@@ -245,11 +247,12 @@ border-radius: 12px 0px 0px 0px;
 }
 .desarollo_page .desarollo .desarollo_each_cont .desarollo_bottom_each .align .desc >p{
   font-family: Saira;
-  font-size: 24px;
+  /* font-size: 24px; */
   font-weight: 500;
   line-height: 36px;
   text-align: center;
   margin-bottom: 0.6em;
+  font-size: 17px;
 }
 
 .desarollo_page .desarollo .desarollo_each_cont .desarollo_bottom_each .align .desc > ul{

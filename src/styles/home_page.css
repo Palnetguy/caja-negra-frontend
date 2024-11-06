@@ -846,7 +846,8 @@ text-align: left;
   font-weight: 400;
   margin: 1em 0;
   font-family: Saira;
-font-size: 32px;
+/* font-size: 32px; */
+font-size: 17px;
 font-weight: 500;
 line-height: 36px;
 text-align: left;
@@ -1009,10 +1010,11 @@ height: 998px;
 width: auto;
 height: 72px;
 font-family: Saira;
-font-size: 24px;
+/* font-size: 24px; */
 font-weight: 500;
 line-height: 36px;
 text-align: left;
+font-size: 17px;
 }
 
 .home_page .vps.sus .lft > ul li {
@@ -1216,7 +1218,8 @@ height: 464px;
   font-family: 500;
   height: 302px;
   font-family: Saira;
-  font-size: 20px;
+  /* font-size: 20px; */
+  font-size: 17px;
   font-weight: 500;
   line-height: 36px;
   text-align: left;
@@ -1239,7 +1242,8 @@ margin-top: 5em; */
   text-align: left;
 
   font-family: Saira;
-  font-size: 20px;
+  /* font-size: 20px; */
+  font-size: 17px;
   font-weight: 500;
   line-height: 36px;
   text-align: left;

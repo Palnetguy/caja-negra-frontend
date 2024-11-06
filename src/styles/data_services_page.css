@@ -63,7 +63,7 @@ text-align: left;
 .data_services .top > .info > p {
   color: #fff;
   font-family: Roboto;
-  font-size: 16x;
+  font-size: 30px;
   font-style: normal;
   font-weight: 400;
   line-height: 34px; /* 121.429% */
@@ -127,11 +127,11 @@ height: 42px;
   line-height: 26px; /* 128.571% */
   margin: 1em 0;
   font-family: Saira;
-font-size: 28px;
+/* font-size: 28px; */
 font-weight: 500;
 line-height: 36px;
 text-align: left;
-
+font-size: 17px;
 width: 477px;
 height: 216px;
 
