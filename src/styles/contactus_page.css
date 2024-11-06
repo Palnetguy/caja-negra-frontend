@@ -63,6 +63,8 @@
 .contactus_page .contactus_pageop .more_info {
   display: flex;
   justify-content: center;
+  margin-top: 3em;
+
 }
 .contactus_page .contactus_pageop .info h1 {
   color: #fff;
@@ -72,6 +74,7 @@
   font-style: normal;
   font-weight: 700;
   /* line-height: 42px; 105% */
+  margin-top: 1em;
 }
 .contactus_page .contactus_pageop .info p {
   color: #fff;
@@ -122,6 +125,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-top: 2em;
 }
 .contactus_page .contactus_pageop .contact_form > .full_gradient_btn {
   margin-top: 0.8em;
