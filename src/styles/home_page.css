@@ -151,7 +151,6 @@ border: 1px 0px 0px 0px;
   background: #237d8d;
 
 
-
 }
 /* .home_page .main > button::after{
     content: '';
@@ -553,6 +552,7 @@ background: linear-gradient(148.77deg, #86FFE9 4.57%, #237D8D 22.17%, #1A9CA6 43
   text-align: center;
   /* color: linear-gradient(90deg, #002C3A 0%, #33817C 50%, #012B38 100%); */
   color: #012B38 ;
+  min-width: 150px;
 }
 
 .home_page .services .ver {
@@ -809,6 +809,7 @@ line-height: 42px;
 text-align: center;
 color: linear-gradient(90deg, #002C3A 0%, #33817C 50%, #012B38 100%);
 color: black;
+min-width: 150px;
 }
 .home_page .garantee .contain_grns {
   display: flex;
