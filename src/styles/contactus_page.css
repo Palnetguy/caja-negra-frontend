@@ -63,6 +63,8 @@
 .contactus_page .contactus_pageop .more_info {
   display: flex;
   justify-content: center;
+  margin-top: -0.2em;
+  margin-bottom: -3em;
 }
 .contactus_page .contactus_pageop .info h1 {
   color: #fff;
