@@ -39,31 +39,15 @@
   font-size: 34px;
   font-style: normal;
   font-weight: 800;
-  line-height: 60px; /* 93.75% */
+  line-height: 60px;
   letter-spacing: -1.28px;
   text-transform: uppercase;
-  font-family: Saira;
-  font-size: 64px;
-  font-weight: 800;
-  line-height: 79px;
-  letter-spacing: -0.02em;
-  text-align: start;
-  margin-bottom: 0.5em;
-  margin-left: 0;
-  /* eee */
-  font-family: Saira;
-font-size: 50px;
-font-weight: 800;
-line-height: 60px;
-letter-spacing: -0.02em;
-text-align: left;
-
-  /* ee */
+ 
 }
 .data_services .top > .info > p {
   color: #fff;
   font-family: Roboto;
-  font-size: 30px;
+  font-size: 16px;
   font-style: normal;
   font-weight: 400;
   line-height: 34px; /* 121.429% */
