@@ -23,6 +23,11 @@ const NavBar = () => {
       mobileNav.classList.remove('active')
     }
   };
+  const imgStyle = {
+    transform: isOpen ? 'rotate(180deg)' : 'rotate(0deg)', 
+    transition: 'filter 0.3s ease',
+    display: 'inline-block', 
+  };
 
   return (
     <div className="navContainer">
@@ -43,25 +48,25 @@ const NavBar = () => {
                 <button onClick={toggleDropdown} style={{
                   background: 'transparent', fontSize: '20px', fontWeight: '600', border: 'none', cursor: 'pointer', color: 'white'
                 }}>
-                  Servicios <span><img src={v} alt="Dropdown arrow" /></span>
+                  Servicios <span><img src={v} alt="Dropdown arrow" style={imgStyle} /></span>
                 </button>
                 {isOpen && (
                   <ul style={{
                     position: 'absolute', top: '100%', left: 0, listStyle: 'none', padding: '4px', borderRadius: '5px', zIndex: 1, background: 'transparent',
                   }}>
-                    <li style={{ padding: '4px 0px', cursor: 'pointer' }}>
+                    <li style={{ padding: '4px 0', cursor: 'pointer' }}>
                       <Link target="_top" to="/data-services" style={{ color: 'white', textDecoration: 'none' }}>Servicios</Link>
                     </li>
-                    <li style={{ padding: '4px 0px', cursor: 'pointer' }}>
+                    <li style={{ padding: '4px 0', cursor: 'pointer' }}>
                       <Link target="_top" to="/desarollo" style={{ color: 'white', textDecoration: 'none' }}>Desarollo</Link>
                     </li>
-                    <li style={{ padding: '4px 0px', cursor: 'pointer' }}>
+                    <li style={{ padding: '4px 0', cursor: 'pointer' }}>
                       <Link target="_top" to="/dominos" style={{ color: 'white', textDecoration: 'none' }}>Dominios</Link>
                     </li>
-                    <li style={{ padding: '4px 0px', cursor: 'pointer' }}>
+                    <li style={{ padding: '4px 0', cursor: 'pointer' }}>
                       <Link target="_top" to="/servers" style={{ color: 'white', textDecoration: 'none' }}>Servidores</Link>
                     </li>
-                    <li style={{ padding: '4px 0px', cursor: 'pointer' }}>
+                    <li style={{ padding: '4px 0', cursor: 'pointer' }}>
                       <Link target="_top" to="/hosting" style={{ color: 'white', textDecoration: 'none' }}>Hosting</Link>
                     </li>
                   </ul>
