@@ -1748,7 +1748,9 @@ margin-top: 5em; */
   height: auto;
   align-items: center;
 }
-
+/* .home_page .remarks .remark {
+  height: fit-content;
+} */
 .home_page .remarks .remark .inner_div > p:nth-child(2) {
   margin-top: 1.5em;
 }
@@ -2134,16 +2136,4 @@ display: flex;
 flex-direction: column;
 /* align-items: center; */
 justify-content: space-between;
-}
-@media (max-width: 954px){
-  .home_page .remarks .remark {
-    height: fit-content;
-    height: 400px;
-  }
-}
-@media (max-width: 881px){
-  .home_page .remarks .remark {
-    height: fit-content;
-    height: 450px;
-  }
 }
