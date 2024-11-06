@@ -216,8 +216,8 @@ border: 1px 0px 0px 0px;
     #aa6f56,
     #26aabc
   );
-  height: 230px;
-  width: 290px;
+  height: 190px;
+  width: 230px;
   position: relative;
   border-radius: 12px;
   /* overflow: hidden; */
@@ -345,6 +345,8 @@ height: 230px;
   height: 229px;
   width: 289px;
   position: absolute;
+  height: 189px;
+  width: 229px;
  
 }
 /* .home_page .services .oferta {
