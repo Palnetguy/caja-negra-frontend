@@ -2133,5 +2133,12 @@ justify-content: space-between;
 @media (max-width: 954px){
   .home_page .remarks .remark {
     height: fit-content;
+    height: 400px;
+  }
+}
+@media (max-width: 881px){
+  .home_page .remarks .remark {
+    height: fit-content;
+    height: 450px;
   }
 }
