@@ -1165,7 +1165,7 @@ height: 480px;
   position: relative;
   border-radius: 12px;
   /* overflow: hidden; */
-  width: calc((100% / 2) - 4em);
+  width: calc((100% / 2) - 2em);
   padding: 1em;
   margin-bottom: 2em;
   margin: 1em;
