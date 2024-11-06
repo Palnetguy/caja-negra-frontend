@@ -149,8 +149,7 @@ font-size: 24px;
 font-weight: 500;
 line-height: 36px;
 text-align: center;
-
-
+font-size: 17px;
 }
 .hosting_page .hosting_compartido .select_plan .select_plan_cont {
   display: flex;
@@ -199,7 +198,7 @@ font-size: 20px;
 font-weight: 500;
 line-height: 36px;
 text-align: center;
-
+font-size: 17px;
 }
 
 .hosting_page .revender .hosting_compartido_cont {
@@ -261,6 +260,7 @@ font-size: 24px;
 font-weight: 500;
 line-height: 36px;
 text-align: center;
+font-size: 17px;
 }
 @media (max-width: 980px) {
   .servidores_page .servidoresOp_1_contain {

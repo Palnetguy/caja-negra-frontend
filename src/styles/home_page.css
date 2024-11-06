@@ -216,8 +216,8 @@ border: 1px 0px 0px 0px;
     #aa6f56,
     #26aabc
   );
-  height: 230px;
-  width: 290px;
+  height: 190px;
+  width: 230px;
   position: relative;
   border-radius: 12px;
   /* overflow: hidden; */
@@ -303,6 +303,8 @@ width: 100%;
 /* height: 100%; */
 width: 290px;
 height: 230px;
+height: 189px;
+width: 229px;
 }
 .home_page .services .service.profesional-services > .image > .img > img{
   width: 80%;
@@ -345,6 +347,8 @@ height: 230px;
   height: 229px;
   width: 289px;
   position: absolute;
+  height: 189px;
+  width: 229px;
  
 }
 /* .home_page .services .oferta {
@@ -847,12 +851,14 @@ text-align: left;
 .home_page .vps .lft > p {
   font-size: 18px;
   color: #ffffff;
-  font-weight: 500;
-  /* margin: 1em 0; */
-  /* font-family: Saira; */
-  font-weight: 500;
-  line-height: 36px;
-  text-align: left;
+  font-weight: 400;
+  margin: 1em 0;
+  font-family: Saira;
+/* font-size: 32px; */
+font-size: 17px;
+font-weight: 500;
+line-height: 36px;
+text-align: left;
 }
 /* .home_page .vps .rht > .service  image{
     height: 260px;
@@ -1012,10 +1018,11 @@ height: 998px;
 width: auto;
 height: 72px;
 font-family: Saira;
-font-size: 24px;
+/* font-size: 24px; */
 font-weight: 500;
 line-height: 36px;
 text-align: left;
+font-size: 17px;
 }
 
 .home_page .vps.sus .lft > ul li {
@@ -1219,7 +1226,8 @@ height: 464px;
   font-family: 500;
   height: 302px;
   font-family: Saira;
-  font-size: 20px;
+  /* font-size: 20px; */
+  font-size: 17px;
   font-weight: 500;
   line-height: 36px;
   text-align: left;
@@ -1241,7 +1249,8 @@ margin-top: 5em; */
   text-align: left;
 
   font-family: Saira;
-  font-size: 15px;
+  /* font-size: 20px; */
+  font-size: 17px;
   font-weight: 500;
   line-height: 36px;
   text-align: left;

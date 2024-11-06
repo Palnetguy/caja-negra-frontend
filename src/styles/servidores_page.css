@@ -200,11 +200,11 @@ margin-bottom: 0.4em;
   font-weight: 500;
   /* line-height: 36px; 128.571% */
   font-family: Saira;
-font-size: 28px;
+/* font-size: 28px; */
 font-weight: 500;
 line-height: 36px;
 text-align: left;
-
+font-size: 17px;
 }
 .servidores_page .servidores_op .nuestros .nuetro {
   width: calc((100% / 2) - 2em);
@@ -303,7 +303,7 @@ font-size: 24px;
 font-weight: 500;
 line-height: 36px;
 text-align: center;
-
+font-size: 17px;
 }
 .servidores_page .servidoresOp_1_contain1 .servidoresOp_1_each_1 {
   border-radius: 12px;
