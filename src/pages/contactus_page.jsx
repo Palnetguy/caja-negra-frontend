@@ -55,7 +55,7 @@ const ContactUsPageOp = () => {
     // Create the WhatsApp message
     const whatsappMessage = `Hello, my name is ${name}. Email: ${email}. Message: ${message}`;
 
-    // WhatsApp API URL
+    // WhatsApp API URL needs number to be changed
     const whatsappUrl = `https://wa.me/256783808236?text=${encodeURIComponent(
       whatsappMessage
     )}`;
