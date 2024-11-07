@@ -1,3 +1,4 @@
+import React, { useState } from 'react';
 import NavBar from "../componets/nav_bar";
 import timage from "../assets/images/timage4.png";
 import "../styles/solicitar_page.css";
@@ -28,8 +29,36 @@ const SolicitarPage = () => {
 };
 
 const QuieresSaber = () => {
+
+  const [name, setName] = useState('');
+  const [email, setEmail] = useState('');
+  const [phone, setPhone] = useState('');
+  const [service, setService] = useState('');
+  const [details, setDetails] = useState('');
+
   const handleSelect = (option) => {
     console.log("Selected option:", option);
+    setService(option.value);
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    sendToWhatsApp();
+    clearForm();
+  };
+
+  const sendToWhatsApp = () => {
+    const whatsappMessage = `Nombre: ${name}\nCorreo: ${email}\nTeléfono: ${phone}\nServicio: ${service}\nDetalles: ${details}`;
+    const whatsappUrl = `https://wa.me/256783808236?text=${encodeURIComponent(whatsappMessage)}`;
+    window.open(whatsappUrl, '_blank');
+  };
+
+  const clearForm = () => {
+    setName('');
+    setEmail('');
+    setPhone('');
+    setService('');
+    setDetails('');
   };
 
   return (
@@ -62,9 +91,16 @@ const QuieresSaber = () => {
 
       <h1 className="title" style={{marginBottom: '2em'}}>SOLICITA TUS SERVICIOS</h1>
       <div className="form" >
-        <input type="text" placeholder="Nombre completo" />
-        <input type="text" placeholder="Correo electronico" />
-        <input type="text" placeholder="Telefono" />
+
+        <input type="text" placeholder="Nombre completo" value={name}
+          onChange={(e) => setName(e.target.value)} />
+
+        <input type="text" placeholder="Correo electronico" value={email}
+          onChange={(e) => setEmail(e.target.value)} />
+
+        <input type="text" placeholder="Telefono" value={phone}
+          onChange={(e) => setPhone(e.target.value)} />
+
         <CustomDropdown
           options={[
             { value: "Hosting compartido", label: "Hosting compartido" },
@@ -81,13 +117,16 @@ const QuieresSaber = () => {
           ]}
           onSelect={handleSelect}
           placeholder="Tipo de servicio"
+          value={service}
         />
         <textarea
           name=""
           id=""
           placeholder="Detalles/ Especificaciones"
+          value={details}
+          onChange={(e) => setDetails(e.target.value)}
         ></textarea>
-        <button className="full_gradient_btn"  style={{color:'black'}}>Enviar</button>
+        <button className="full_gradient_btn" type="submit" onClick={handleSubmit} style={{color:'black'}}>Enviar</button>
       </div>
     </div>
   );
