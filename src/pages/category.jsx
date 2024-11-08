@@ -158,10 +158,12 @@ const Category = () => {
   const handleCategorySelect = (category, index) => {
     setSelectedCategory(category);
 
-    const emToPx = parseFloat(getComputedStyle(document.documentElement).fontSize) * 22;
+    const vhToPx = window.innerHeight;
   
-    window.scrollTo({ top: emToPx, behavior: 'smooth' });
-
+    const emToPx = parseFloat(getComputedStyle(document.documentElement).fontSize) * 2;
+    
+    window.scrollTo({ top: vhToPx + emToPx, behavior: 'smooth' });
+  
     setTimeout(() => {
       if (categoryRefs.current[index]) {
         categoryRefs.current[index].focus();
