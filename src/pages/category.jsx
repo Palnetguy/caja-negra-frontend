@@ -177,7 +177,7 @@ const CategoryPage = () => {
         <div className="category-navbar">
         <div>
          {selectedCategory && (
-          <img src={selectedCategory.image} alt={selectedCategory.name} />
+          <img src={selectedCategory.image || defaultImage} alt={selectedCategory.name} />
          )}
       </div>
         <ul>
