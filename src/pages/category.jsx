@@ -157,6 +157,7 @@ const CategoryPage = () => {
   };
 
   if (isLoading) return <div className="loading">Loading...</div>;
+  const defaultImage = 'https://via.placeholder.com/150';
 
   return (
     <div className="category-page">
@@ -170,7 +171,7 @@ const CategoryPage = () => {
               onClick={() => handleCategorySelect(category)}
             >
               <div className="category-image">
-                <img src={category.image} alt={category.name} />
+                <img src={category.image || defaultImage} alt={category.name} />
               </div>
               <h3>{category.name}</h3>
               {selectedCategory?.id === category.id && (
