@@ -111,7 +111,7 @@
 /* category_page.css */
 .category-page {
   min-height: 100vh;
-  background-color: #1a1a1a;
+  /* background-color: #1a1a1a; */
   color: #ffffff;
 }
 
@@ -180,10 +180,13 @@
 }
 
 .service-card {
-  background-color: rgba(255, 255, 255, 0.1);
   border-radius: 8px;
   padding: 1rem;
   transition: transform 0.3s, background-color 0.3s;
+  border: 1px solid; 
+  background: #003C50;
+  border-image: linear-gradient(148.77deg, #86FFE9 4.57%, #237D8D 22.17%, #1A9CA6 43.61%, #AA6F56 62.75%, #26AABC 81.13%) 1;
+
 }
 
 .service-card:hover {

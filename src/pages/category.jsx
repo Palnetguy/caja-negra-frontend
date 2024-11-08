@@ -1,7 +1,6 @@
 // // import { Link } from "react-router-dom";
 import NavBar from "../componets/nav_bar";
-// import CategoryCard from "../componets/category/category_card";
-import "../styles/data_services_page.css";
+// import "../styles/data_services_page.css";
 import "../styles/category_page.css";
 import { useState, useEffect, useRef } from "react";
 import config from "./config";
@@ -131,14 +130,6 @@ import axios from "axios";
 
 // export default CategoryPage;
 
-// CategoryPage.jsx
-// import React, { useState, useEffect } from 'react';
-// import NavBar from "../components/nav_bar";
-// // import CategoryCard from "../components/category/category_card";
-// import "../styles/data_services_page.css";
-// import "../styles/category_page.css";
-// import config from "./config";
-// import axios from "axios";
 
 const CategoryPage = () => {
   const [categories, setCategories] = useState([]);
