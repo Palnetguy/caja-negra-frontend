@@ -131,10 +131,13 @@ import axios from "axios";
 // export default CategoryPage;
 
 
+
 const CategoryPage = () => {
   const [categories, setCategories] = useState([]);
   const [selectedCategory, setSelectedCategory] = useState(null);
   const [isLoading, setIsLoading] = useState(true);
+  
+  const categoryRefs = useRef([]);
 
   useEffect(() => {
     axios.get(`${config.apiEndpoint}/categories`, {
@@ -152,8 +155,16 @@ const CategoryPage = () => {
     });
   }, []);
 
-  const handleCategorySelect = (category) => {
+  const handleCategorySelect = (category, index) => {
     setSelectedCategory(category);
+
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+
+    setTimeout(() => {
+      if (categoryRefs.current[index]) {
+        categoryRefs.current[index].focus();
+      }
+    }, 0);
   };
 
   if (isLoading) return <div className="loading">Loading...</div>;
@@ -164,11 +175,13 @@ const CategoryPage = () => {
       <NavBar />
       <div className="category-content">
         <div className="category-navbar">
-          {categories.map((category) => (
-            <div 
+          {categories.map((category, index) => (
+            <div
               key={category.id}
               className={`category-item ${selectedCategory?.id === category.id ? 'active' : ''}`}
-              onClick={() => handleCategorySelect(category)}
+              onClick={() => handleCategorySelect(category, index)}
+              ref={(el) => (categoryRefs.current[index] = el)}
+              tabIndex="0" // Makes it focusable
             >
               <div className="category-image">
                 <img src={category.image || defaultImage} alt={category.name} />
