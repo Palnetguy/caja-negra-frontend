@@ -186,7 +186,7 @@
   border: 1px solid; 
   background: #003C50;
   border-image: linear-gradient(148.77deg, #86FFE9 4.57%, #237D8D 22.17%, #1A9CA6 43.61%, #AA6F56 62.75%, #26AABC 81.13%) 1;
-
+  height: 350px;
 }
 
 .service-card:hover {
