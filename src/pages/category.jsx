@@ -13,7 +13,7 @@ const CategoryPage = () => {
       <div className="top" >
         <NavBar />
         <div className="info">
-          <h1>CATEGORY </h1>
+          <h1>CATEGORIAS</h1>
           <p>
             En Caja Negra, comprendemos la importancia de los datos en el mundo
             digital actual. Ofrecemos soluciones avanzadas de análisis y gestión
