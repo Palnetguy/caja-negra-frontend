@@ -43,7 +43,7 @@
   margin-bottom: 40px; 
   display: flex;
   flex-direction: row;
-  align-items: center;
+  /* align-items: center; */
   padding: 20px;
   border-radius: 8px;
   margin: 3px;
@@ -79,7 +79,7 @@
 .category-card{
   width: 30%;
   min-width: 250px;
-  height: 650px;
+  height: 700px;
   margin: 10px;
   padding: 10px;
   border-radius: 8px;
@@ -91,8 +91,8 @@
   background: linear-gradient(148.77deg, #86FFE9 4.57%, #237D8D 22.17%, #1A9CA6 43.61%, #AA6F56 62.75%, #26AABC 81.13%);
 }
 .category-card .inner-div{
-  width:99.9%;
-  height: 99.9%;
+  width:100%;
+  height: 100%;
   background: #003C50;
 }
 .category-card img{
@@ -103,7 +103,7 @@
 /* Main content area next to the sidebar */
 .all-categories {
   flex: 1; 
-  padding: 20px;
+  /* padding: 20px; */
   overflow-y: auto;
   box-sizing: border-box;
 }
