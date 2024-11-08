@@ -57,6 +57,7 @@ const NavBar = () => {
                     <li style={{ padding: '4px 0', cursor: 'pointer' }}>
                       <Link target="_top" to="/data-services" style={{ color: 'white', textDecoration: 'none' }}>Servicios</Link>
                     </li>
+                    {/* Added Category */}
                     <li style={{ padding: '4px 0', cursor: 'pointer' }}>
                       <Link target="_top" to="/category" style={{ color: 'white', textDecoration: 'none' }}>Category</Link>
                     </li>
