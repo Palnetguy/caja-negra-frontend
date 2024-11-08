@@ -238,7 +238,7 @@ font-size: 17px;
   flex-wrap: wrap;
   justify-content: space-between;
   padding: 2em;
-  height: 1125px;
+  /* height: 1125px; */
 }
 @media (max-width: 980px) {
   .register_domino .domains .more_domain .more_domain_each {
@@ -251,7 +251,7 @@ font-size: 17px;
     margin-bottom: 1em;
   }
 }
-@media (max-width: 780px) {
+@media (max-width: 799px) {
   .register_domino .domains .more_domain .more_domain_each {
     width: calc((100% / 1) - 5em);
     /* margin: 2.5em; */
@@ -279,10 +279,10 @@ font-size: 17px;
 }
 .register_domino .domains .more_domain {
   height: fit-content;
-  overflow: auto;
+  /* overflow: auto; */
   padding: 1em;
   box-sizing: border-box;
-  margin-bottom: 1em;
+  /* margin-bottom: 20em; */
 }
 @media (max-width: 768px) {
   .register_domino .domains {
