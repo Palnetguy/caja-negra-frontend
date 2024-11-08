@@ -205,10 +205,13 @@ const CategoryPage = () => {
 // CategoryCard.jsx
 
 const CategoryCard = ({ image, title, description }) => {
+  const defaultImage = 'https://via.placeholder.com/150';
+
   return (
     <div className="service-card">
       <div className="service-image">
-        <img src={image} alt={title} />
+        <img src={image || defaultImage} alt={title} />
+
       </div>
       <h4>{title}</h4>
       <div 
