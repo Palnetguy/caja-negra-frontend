@@ -1,149 +1,94 @@
-.category_container {
-    display: flex;
-  }
-  
-  .category_left {
-    width: 25%;
-    padding: 20px;
-    align-self: center;
-    position: relative;
-  }
-  .category_left > img {
-    height: 100px;
-  }
-  .category_left ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-    flex-direction: column;
-  }
-  
-  .category_left li {
-    padding: 10px;
-    cursor: pointer;
-    margin-bottom: 10px;
-    border-radius: 4px;
-    position: relative;
-    transition: background-color 0.3s ease;
-  }
-  
-  .category_left li:hover {
-    background-color: #ddd;
-  }
-  
-  .category_left li.active {
-    background-color: #007bff;
-    color: white;
-  }
+/* Flex container to hold the navbar and main content side-by-side */
+.category-container {
+  display: flex;
+}
 
-  .category-left li.active::after {
-    content: '→'; 
-    position: absolute;
-    right: 10px;
-    top: 50%;
-    transform: translateY(-50%);
-    font-size: 18px;
-    color: white;
-  }
-  .category-left li.active::after {
-    content: '→';
-    position: absolute;
-    right: 10px; 
-    font-size: 18px;
-    transform: translateY(-50%);
-  }
-  
-  .category_right {
-    width: 75%;
-    padding: 20px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-  }
-  
-  .category-card {
-    padding: 20px;
-    border-radius: 8px;
-    width: calc((100% / 3) - 40px);
-    /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); */
-  }
-  .category-card .image {
-    width: 94%;
-    height: 100px;
-    background-size: cover;
-    background-position: center;
-    border-radius: 8px;
-  }
-  .category-card .image > img{
-    width: 100%;
-    height: 100%;
-  }
-    .category-card .content .title {
-        font-size: 36px;
-        font-weight: 600;
-        margin-top: 10px;
-    }
-    .category-card .content .list {
-        font-size: 16px;
-        margin-top: 10px;
-        list-style: none;
-    }
-  .category-card.selected {
-    /* border: 2px solid #007bff; */
-    /* background-color: #f0f8ff; */
+/* Fixed sidebar on the left */
+.category-navbar {
+  width: 25%;
+  /* height: 100%;  */
+  position: sticky;
+  top: 0;
+  color: white;
+  padding: 20px;
+  box-sizing: border-box;
+  overflow-y: auto;
+}
 
-  }
-  
+/* Main content area with left margin to avoid overlapping the fixed navbar */
+.all-categories {
+  padding: 20px;
+  width: 75%; 
+  box-sizing: border-box;
+}
 
+/* Optional: Add some styling for selected and highlighted categories */
+.category-navbar ul li.active {
+  font-weight: bold;
+  /* color: #ff9800;  */
+}
 
-
-  .category-container {
-    display: flex;
-  }
-  
-  .category-content {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .category-navbar {
-    width: 200px; /* Adjust as needed */
-    margin-left: auto;
-    padding: 20px;
-    background-color: #f4f4f4; /* Optional background */
-  }
-  
-  .category-navbar ul {
-    list-style-type: none;
-    padding: 0;
-  }
-  
-  .category-navbar li {
-    cursor: pointer;
-    padding: 10px;
-    margin-bottom: 5px;
-    border-radius: 4px;
-    transition: background 0.3s;
-  }
-  
-  .category-navbar li.active,
-  .category-navbar li:hover {
-    background-color: #007bff; /* Highlight color */
-    color: #fff;
-  }
-  
-  .category-details img {
-    width: 100%;
-    height: auto;
-  }
-  
-  .category-items {
-    margin-top: 20px;
-  }
-.category-item-container{
+/* Optional: Style for each category content area */
+.category-content {
+  margin-bottom: 40px; 
   display: flex;
   flex-direction: row;
+  align-items: center;
+  padding: 20px;
+  border-radius: 8px;
+  margin: 3px;
+}
+
+.category-content.highlight {
+  padding-left: 16px;
+}
+
+.category-details img {
+  max-width: 100%; /* Ensure images don't overflow */
+  border-radius: 8px;
+}
+
+/* Main container for sidebar and content */
+.category-container {
+  display: flex;
+  flex-direction: row; /* Align items side-by-side */
+  height: 100vh; /* Full viewport height */
+  overflow: hidden; /* Prevent overflow issues */
+}
+
+.category-item-container {
+  display: flex;
+  flex-direction: row;
+  /* width: 25%; */
+  color: white;
+  /* padding: 20px; */
+  box-sizing: border-box;
+  overflow-y: auto;
   flex-wrap: wrap;
+  align-content: space-around;
   justify-content: space-around;
-}  
+}
+.category-card{
+  width: 30%;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 8px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+/* Main content area next to the sidebar */
+.all-categories {
+  flex: 1; 
+  padding: 20px;
+  overflow-y: auto;
+  box-sizing: border-box;
+}
+
+/* Optional: Style for active category */
+.category-navbar ul li.active {
+  font-weight: bold;
+  color: #ff9800;
+}
