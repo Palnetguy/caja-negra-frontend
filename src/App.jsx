@@ -8,6 +8,7 @@ import Servidores from "./pages/servidores_page";
 import HostingPage from "./pages/hosting_page";
 import AboutUsPage from "./pages/aboutus_page";
 import ContactUsPage from "./pages/contactus_page";
+import CategoryPage from "./pages/category";
 import Footer from "./componets/footer";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
@@ -27,6 +28,7 @@ function App() {
           <Route path="/servers" element={<Servidores />} />
           <Route path="/solicitar" element={<SolicitarPage />} />
           <Route path="/data-services" element={<DataServicesPage />} />
+          <Route path="/category" element={<CategoryPage />} />
         </Routes>
       </BrowserRouter>
       <Footer />
