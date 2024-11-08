@@ -274,3 +274,18 @@
     min-width: auto;
   }
 }
+
+.category-navbar ul li{
+  list-style: none;
+  padding: 10px;
+  margin: 5px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.category-navbar ul li.active {
+  font-weight: bold;
+  font-size: large;
+  color: #86FFE9;
+
+}

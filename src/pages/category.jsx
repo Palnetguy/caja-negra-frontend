@@ -175,7 +175,23 @@ const CategoryPage = () => {
       <NavBar />
       <div className="category-content">
         <div className="category-navbar">
-          {categories.map((category, index) => (
+        <div>
+         {selectedCategory && (
+          <img src={selectedCategory.image} alt={selectedCategory.name} />
+         )}
+      </div>
+        <ul>
+        {categories.map((category) => (
+             <li
+               key={category.id}
+               onClick={() => handleCategorySelect(category)}
+               className={selectedCategory?.id === category.id ? 'active' : ''}
+             >
+               {category.name}
+               <span style={{marginRight: 0}}>{selectedCategory?.id === category.id ? '→' : ''}</span>
+             </li>
+           ))}
+          {/* {categories.map((category, index) => (
             <div
               key={category.id}
               className={`category-item ${selectedCategory?.id === category.id ? 'active' : ''}`}
@@ -197,7 +213,8 @@ const CategoryPage = () => {
                 </div>
               )}
             </div>
-          ))}
+          ))} */}
+          </ul>
         </div>
         
         <div className="services-grid">
