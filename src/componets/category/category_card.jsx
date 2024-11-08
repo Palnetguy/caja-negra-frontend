@@ -5,7 +5,7 @@ const CategoryCard = ({ image, title = 'Placeholder Title', description, isSelec
   return (
     <div className={`category-card ${isSelected ? 'selected' : ''}`}>
       <div className='image'>
-        <img src={image || defaultImage} alt={title} />
+        <img className='img' src={image || defaultImage} alt={title} />
       </div>
       <div className='content'>
         <h2 className='title'>{title}</h2>
