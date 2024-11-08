@@ -4,6 +4,7 @@ const CategoryCard = ({ image, title = 'Placeholder Title', description, isSelec
   const defaultImage = 'https://via.placeholder.com/150'; 
   return (
     <div className={`category-card ${isSelected ? 'selected' : ''}`}>
+      <div className="inner-div">
       <div className='image'>
         <img src={image || defaultImage} alt={title} />
       </div>
@@ -15,6 +16,7 @@ const CategoryCard = ({ image, title = 'Placeholder Title', description, isSelec
             <li key={index}>{item}</li>
           ))}
         </ul> */}
+      </div>
       </div>
     </div>
   );
