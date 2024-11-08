@@ -250,6 +250,7 @@ const Category = () => {
               className={selectedCategory?.id === category.id ? 'active' : ''}
             >
               {category.name}
+              <span style={{marginRight: 0}}>{selectedCategory?.id === category.id ? '→' : ''}</span>
             </li>
           ))}
         </ul>
@@ -260,7 +261,7 @@ const Category = () => {
         {categories.map((category) => (
           <div
             key={category.id}
-            ref={(el) => (categoryRefs.current[category.id] = el)} // assign ref for scrolling
+            ref={(el) => (categoryRefs.current[category.id] = el)}
             className={`category-content ${selectedCategory?.id === category.id ? 'highlight' : ''}`}
           >
             <div className="category-details">

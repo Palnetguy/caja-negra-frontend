@@ -14,7 +14,9 @@
   box-sizing: border-box;
   overflow-y: auto;
 }
-
+.category-navbar > div{
+  height: 150px
+}
 /* Main content area with left margin to avoid overlapping the fixed navbar */
 .all-categories {
   padding: 20px;
@@ -92,3 +94,13 @@
   font-weight: bold;
   color: #ff9800;
 }
+
+/* .category-navbar ul li span::after {
+  content: '';
+}
+
+.category-navbar ul li.active span::after {
+  content: '→'; 
+  margin-left: 5px; 
+} */
+
