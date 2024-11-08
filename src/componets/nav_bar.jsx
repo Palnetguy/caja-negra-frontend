@@ -58,6 +58,9 @@ const NavBar = () => {
                       <Link target="_top" to="/data-services" style={{ color: 'white', textDecoration: 'none' }}>Servicios</Link>
                     </li>
                     <li style={{ padding: '4px 0', cursor: 'pointer' }}>
+                      <Link target="_top" to="/category" style={{ color: 'white', textDecoration: 'none' }}>Category</Link>
+                    </li>
+                    <li style={{ padding: '4px 0', cursor: 'pointer' }}>
                       <Link target="_top" to="/desarollo" style={{ color: 'white', textDecoration: 'none' }}>Desarollo</Link>
                     </li>
                     <li style={{ padding: '4px 0', cursor: 'pointer' }}>
@@ -69,9 +72,7 @@ const NavBar = () => {
                     <li style={{ padding: '4px 0', cursor: 'pointer' }}>
                       <Link target="_top" to="/hosting" style={{ color: 'white', textDecoration: 'none' }}>Hosting</Link>
                     </li>
-                    <li style={{ padding: '4px 0', cursor: 'pointer' }}>
-                      <Link target="_top" to="/category" style={{ color: 'white', textDecoration: 'none' }}>Category</Link>
-                    </li>
+                 
                   </ul>
                 )}
               </div>
@@ -100,12 +101,13 @@ const NavBar = () => {
           <div className="links">
             <ul>
               <li><Link target="_top" to="/">Inicio</Link></li>
+              <li><Link target="_top" to="/data-services">Servicios</Link></li>
+              <li><Link target="_top" to="/category">Category</Link></li>
               <li><Link target="_top" to="/desarollo">Desarollo</Link></li>
               <li><Link target="_top" to="/dominos">Dominios</Link></li>
               <li><Link target="_top" to="/servers">Servidores</Link></li>
               <li><Link target="_top" to="/hosting">Hosting</Link></li>
               <li><Link target="_top" to="/about">Sobre nosotros</Link></li>
-              <li><Link target="_top" to="/category">Category</Link></li>
             </ul>
             <div className="contact_btn">
             <Link target="_top" to="/contact">
