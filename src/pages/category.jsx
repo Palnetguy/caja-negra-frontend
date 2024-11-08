@@ -7,30 +7,30 @@ import config from "./config";
 import axios from "axios";
      
 
-// const CategoryPage = () => {
-//   return (
-//     <div className="data_services" >
-//       <div className="top" >
-//         <NavBar />
-//         <div className="info">
-//           <h1>CATEGORY </h1>
-//           <p>
-//             En Caja Negra, comprendemos la importancia de los datos en el mundo
-//             digital actual. Ofrecemos soluciones avanzadas de análisis y gestión
-//             de datos para ayudarte a aprovechar al máximo la información
-//             disponible. Ya sea que busques optimizar tus operaciones, entender
-//             mejor a tus clientes o descubrir nuevas oportunidades de
-//             crecimiento, nuestros servicios de datos están diseñados para
-//             brindarte las herramientas y conocimientos necesarios.
-//           </p>
-//         </div>
-//       </div>
-//       <div className="more" >
-//         <Category/>
-//       </div>
-//     </div>
-//   );
-// };
+const CategoryPage = () => {
+  return (
+    <div className="data_services" >
+      <div className="top" >
+        <NavBar />
+        <div className="info">
+          <h1>CATEGORY </h1>
+          <p>
+            En Caja Negra, comprendemos la importancia de los datos en el mundo
+            digital actual. Ofrecemos soluciones avanzadas de análisis y gestión
+            de datos para ayudarte a aprovechar al máximo la información
+            disponible. Ya sea que busques optimizar tus operaciones, entender
+            mejor a tus clientes o descubrir nuevas oportunidades de
+            crecimiento, nuestros servicios de datos están diseñados para
+            brindarte las herramientas y conocimientos necesarios.
+          </p>
+        </div>
+      </div>
+      <div className="more" >
+        <Category/>
+      </div>
+    </div>
+  );
+};
 
 // const Category = () => {
 //   const [categories, setCategories] = useState([]);
@@ -132,7 +132,7 @@ import axios from "axios";
 
 
 
-const CategoryPage = () => {
+const Category = () => {
   const [categories, setCategories] = useState([]);
   const [selectedCategory, setSelectedCategory] = useState(null);
   const [isLoading, setIsLoading] = useState(true);
@@ -172,7 +172,6 @@ const CategoryPage = () => {
 
   return (
     <div className="category-page">
-      <NavBar />
       <div className="category-content">
         <div className="category-navbar">
         <div>
