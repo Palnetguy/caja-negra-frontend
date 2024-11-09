@@ -113,6 +113,7 @@
   min-height: 100vh;
   /* background-color: #1a1a1a; */
   color: #ffffff;
+  margin-top: 3em;
 }
 
 .category-content {
@@ -289,4 +290,12 @@
   font-size: large;
   color: #86FFE9;
 
+}
+
+.category_solicitar{
+  display: flex;
+  flex-direction: row;
+  align-content: space-around;
+  justify-content: center;
+  margin-top: 2em;
 }

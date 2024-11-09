@@ -2,7 +2,7 @@
   background: linear-gradient(27.09deg, #012B38 11.5%, #002C3B 33.12%, #002C3A 43.32%, #00090B 93.09%);
 } */
 .desarollo_page .top {
-  height: 100vh;
+  height: 130vh;
   background: url("../assets/images/timage5.png");
   background-repeat: no-repeat;
   background-size: contain;
@@ -410,9 +410,9 @@ desarollo_page .desarollo .desarollo_each_cont .desarollo_bottom_each .align > h
  
 /* 600px - Mobile landscape */ 
 @media (min-width: 600px) { 
-  .desarollo_page .top {
+  /* .desarollo_page .top {
     height: 70vh;
-  }
+  } */
   .desarollo_page .top > .info {
     padding: 0 1em;
     flex-direction: column;
@@ -421,7 +421,7 @@ desarollo_page .desarollo .desarollo_each_cont .desarollo_bottom_each .align > h
     height: 100px;
     width: 70%;
     position: absolute;
-    margin-top: 12em;
+    margin-top: 19em;
 }
 .desarollo_page .top > .info > p {
   text-align: start;
