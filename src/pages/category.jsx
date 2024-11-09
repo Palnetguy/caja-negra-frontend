@@ -67,18 +67,24 @@ const Category = () => {
 
   const handleCategorySelect = (category, index) => {
     setSelectedCategory(category);
+    let vhToPx;
 
-    const vhToPx = window.innerHeight;
-  
-    const emToPx = parseFloat(getComputedStyle(document.documentElement).fontSize) * 2;
-    
-    window.scrollTo({ top: vhToPx + emToPx, behavior: 'smooth' });
-  
-    setTimeout(() => {
-      if (categoryRefs.current[index]) {
-        categoryRefs.current[index].focus();
-      }
-    }, 0);
+  if (window.innerWidth >= 1300) {
+    vhToPx = window.innerHeight + (window.innerHeight * 0.3); 
+  } else {
+    vhToPx = window.innerHeight;
+  }
+
+  const emToPx = parseFloat(getComputedStyle(document.documentElement).fontSize) * 2;
+
+  window.scrollTo({ top: vhToPx + emToPx, behavior: 'smooth' });
+
+  setTimeout(() => {
+    if (categoryRefs.current[index]) {
+      categoryRefs.current[index].focus();
+    }
+  }, 0);
+
   };
 
   if (isLoading) return <div className="loading">Loading...</div>;
