@@ -175,7 +175,7 @@ font-size: 20px;
 
 @media only screen and (max-width: 768px) {
   .solicitar_page .top {
-      height: 50vh;
+      /* height: 50vh; */
       background-size: cover;
   }
   .solicitar_page .top > .info {
@@ -225,7 +225,7 @@ font-size: 20px;
 /* 600px - Mobile landscape */ 
 @media (min-width: 600px) { 
   .solicitar_page .top {
-    height: 130vh;
+    /* height: 130vh; */
   }
   .solicitar_page .top > .info {
     position: absolute;
@@ -269,7 +269,7 @@ font-size: 20px;
     height: 450px; 
   } 
 } 
- 
+
 /* 1500px - Large desktop */ 
 @media (min-width: 1500px) { 
   .services-container { 
@@ -335,3 +335,9 @@ font-size: 20px;
     padding: var(--spacing-sm); 
   } 
 }
+
+@media (min-width: 1300px) {
+  .data_services .top {
+    height: 130vh !important;
+  }
+} 

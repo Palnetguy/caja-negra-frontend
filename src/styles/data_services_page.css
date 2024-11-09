@@ -1,6 +1,6 @@
 .data_services .top {
   /* height: 100vh; */
-  height: 130vh;
+  height: 100vh;
   background: url("../assets/images/timage7.png");
   background-repeat: no-repeat;
   background-size: cover;
@@ -209,7 +209,7 @@ font-family: Saira;
 @media (min-width: 600px) { 
   .data_services .top > .info {
     margin-top: 10em;
-    position: absolute;
+    /* position: absolute; */
   }
   .data_services .data_services_op .data_serv {
     width: calc(100% - 8em);
