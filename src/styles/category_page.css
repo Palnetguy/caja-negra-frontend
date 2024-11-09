@@ -291,3 +291,11 @@
   color: #86FFE9;
 
 }
+
+.category_solicitar{
+  display: flex;
+  flex-direction: row;
+  align-content: space-around;
+  justify-content: center;
+  margin-top: 2em;
+}
