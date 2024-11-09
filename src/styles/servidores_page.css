@@ -887,3 +887,8 @@ servidores_page .servidores_op .specs_contain {
     padding: var(--spacing-sm); 
   } 
 }
+@media (min-width: 1300px) {
+  .servidores_page .top {
+    height: 150vh !important;
+  }
+} 
