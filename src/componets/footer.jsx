@@ -9,7 +9,8 @@ const Footer = () => {
       <h1>Caja Negra</h1>
       <div className="links" >
         <div className="lft" >
-          <a href="">Categorias</a>
+          <a href="/data-services">Servicios</a>
+          <a href="/category">Categorias</a>
           <a href="/dominos">Dominios</a>
           <a href="/data-services">Servidores</a>
           <a href="/hosting">Hosting</a>
