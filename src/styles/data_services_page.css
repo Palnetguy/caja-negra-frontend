@@ -58,7 +58,9 @@
 }
 .data_services .data_services_op > h1 {
   /* width: 500px; */
-  margin:3em auto;
+  /* margin:3em auto; */
+  margin-top: 2em;
+  margin-bottom: 0.5em;
 
 }
 .data_services .data_services_op > .data_serv_container {

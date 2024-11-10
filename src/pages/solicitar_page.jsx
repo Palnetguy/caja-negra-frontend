@@ -89,7 +89,7 @@ const QuieresSaber = () => {
         </div>
       </div>
 
-      <h1 className="title" style={{marginBottom: '2em'}}>SOLICITA TUS SERVICIOS</h1>
+      <h1 className="title" style={{marginBottom: '1.2em'}}>SOLICITA TUS SERVICIOS</h1>
       <div className="form" >
 
         <input type="text" placeholder="Nombre completo" value={name}

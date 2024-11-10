@@ -59,7 +59,7 @@
 .desarollo_page .desarollo_each_cont {
   display: flex;
   flex-wrap: wrap;
-  margin-top:6em;
+  margin-top:4em;
 }
 .desarollo_page .desarollo_each {
   border-radius: 12px;
@@ -486,6 +486,10 @@ desarollo_page .desarollo .desarollo_each_cont .desarollo_bottom_each .align > h
 
 .desarollo_page .desarollo .desarollo_each_cont .desarollo_bottom_each .align .desc > a > button {
 margin-left: 2em;
+}
+
+.desarollo_page .desarollo_each_cont {
+  margin-top: 1em;
 }
 } 
  

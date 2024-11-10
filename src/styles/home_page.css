@@ -359,7 +359,7 @@ width: 229px;
   font-family: 700;
   color: #ffffff;
   text-align: center;
-  margin-bottom: 2em;
+  margin-bottom: 0em;
 }
 .home_page .services > h2 {
   font-size: 26px;
@@ -1664,7 +1664,7 @@ margin-top: 5em; */
     padding: 2.5em 2.5em;
     overflow: hidden;
     transition: 0.5s;
-    margin-bottom: 5em;
+    margin-bottom: 2em;
   }
   .home_page .services .oferta > .ofertas_container .each_ofertas > .bgSpan {
   width: 100%;
@@ -1910,7 +1910,7 @@ margin-top: 5em; */
 .home_page .vps.sus {
   display: flex;
   justify-content: space-between;
-  margin-top: 5em;
+  margin-top: -1.5em;
   padding: 1.5em;
   flex-direction: row-reverse;
   width: auto;
