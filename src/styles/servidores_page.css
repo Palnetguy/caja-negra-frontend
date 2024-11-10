@@ -761,7 +761,8 @@ servidores_page .servidores_op .specs_contain {
 /* 600px - Mobile landscape */ 
 @media (min-width: 600px) { 
   .servidores_page .top {
-    height: 130vh;
+    height: 100vh;
+    /* height: 130vh; */
   }
   .servidores_page .top > .info {
     position: absolute;

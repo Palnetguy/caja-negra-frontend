@@ -1,6 +1,6 @@
 .data_services .top {
-  /* height: 100vh; */
-  height: 130vh;
+  height: 100vh;
+  /* height: 130vh; */
   background: url("../assets/images/timage7.png");
   background-repeat: no-repeat;
   background-size: cover;

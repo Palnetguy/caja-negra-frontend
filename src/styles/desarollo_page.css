@@ -2,7 +2,8 @@
   background: linear-gradient(27.09deg, #012B38 11.5%, #002C3B 33.12%, #002C3A 43.32%, #00090B 93.09%);
 } */
 .desarollo_page .top {
-  height: 130vh;
+  height: 100vh;
+  /* height: 130vh; */
   background: url("../assets/images/timage5.png");
   background-repeat: no-repeat;
   background-size: contain;
@@ -202,12 +203,12 @@ height: 410px;
 }
 .desarollo_page .desarollo .desarollo_each_cont{
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
 }
 .desarollo_page .desarollo .desarollo_each_cont .desarollo_bottom_each{
   /* width: calc((100% / 2) - 4em); */
   width: 660px;
-  height: 614px;
+  /* height: 614px; */
   display: flex;
   color: white;
   margin: 0.5em;
@@ -220,12 +221,13 @@ height: 410px;
   border-radius: 8px;
 }
 .desarollo_page .desarollo .desarollo_each_cont .desarollo_bottom_each .align{
-  width: 448px;
-height: 418px;
+  /* width: 448px;
+  height: 418px;
 
-align-items: center;
-justify-items: center;
-justify-content: center;
+  align-items: center;
+  justify-items: center;
+  justify-content: center; */
+  padding: 3em 0em;
 }
 .desarollo_page .desarollo .desarollo_each_cont .desarollo_bottom_each .align > h1{
   font-family: Saira;
@@ -477,7 +479,7 @@ desarollo_page .desarollo .desarollo_each_cont .desarollo_bottom_each .align > h
 @media (min-width: 1000px) { 
 
   .desarollo_page .desarollo .desarollo_each_cont .desarollo_bottom_each {
-    width: calc((100% / 2) - 4em);
+    width: calc((100% / 2) - 2.5em);
     display: flex;
     flex-direction: row;
   }
@@ -487,6 +489,8 @@ margin-left: 2em;
 }
 } 
  
+
+
 /* 1500px - Large desktop */ 
 @media (min-width: 1500px) { 
 
