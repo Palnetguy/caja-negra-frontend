@@ -226,11 +226,12 @@ font-size: 20px;
 /* 600px - Mobile landscape */ 
 @media (min-width: 600px) { 
   .solicitar_page .top {
+    height: 100vh;
     /* height: 130vh; */
   }
   .solicitar_page .top > .info {
     position: absolute;
-    margin-top: 18em;
+    margin-top: 16em;
   
   }
   .solicitar_page .quieres_saber .quieres {

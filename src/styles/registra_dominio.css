@@ -134,12 +134,12 @@ height: 230px;
   font-size: 26px;
   font-style: normal;
   font-weight: 700;
-  margin: 0.8em 0;
+  margin: 0.5em 0;
   font-family: Saira;
-font-size: 36px;
-font-weight: 700;
-line-height: 42px;
-text-align: center;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 42px;
+  text-align: center;
 
 }
 .register_domino .register_domino_op .register_domin_each p {
@@ -345,7 +345,8 @@ font-size: 17px;
 /* 600px - Mobile landscape */ 
 @media (min-width: 600px) { 
   .register_domino .top {
-    height: 130vh;
+    height: 100vh;
+    /* height: 130vh; */
   }
   .register_domino .top > .info {
     position: absolute;
